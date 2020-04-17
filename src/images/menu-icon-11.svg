@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="53.825" viewBox="0 0 41 53.825">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a6b5d1;
+      }
+
+      .cls-2 {
+        fill: #697895;
+      }
+    </style>
+  </defs>
+  <g id="Group_680" data-name="Group 680" transform="translate(69.214 6187.162)">
+    <g id="file_6_" data-name="file (6)" transform="translate(-69.214 -6187.162)">
+      <g id="Group_597" data-name="Group 597" transform="translate(0)">
+        <g id="Group_596" data-name="Group 596">
+          <path id="Path_529" data-name="Path 529" class="cls-1" d="M68.231,0,61,7.231V53.825h41V0ZM98.846,50.672H64.154V9.462h6.308V3.154H98.846Z" transform="translate(-61)"/>
+        </g>
+      </g>
+    </g>
+    <g id="computing-cloud_1_" data-name="computing-cloud (1)" transform="translate(-57.836 -6173.5)">
+      <g id="Group_557" data-name="Group 557" transform="translate(0 0)">
+        <path id="Path_517" data-name="Path 517" class="cls-2" d="M9.041,16.275,0,7.233H5.425V0h7.233V7.233h5.425Z" transform="translate(0 0)"/>
+      </g>
+    </g>
+    <g id="Group_662" data-name="Group 662" transform="translate(-60.68 -6151.851)">
+      <g id="Group_599" data-name="Group 599" transform="translate(0 0)">
+        <g id="Group_598" data-name="Group 598">
+          <rect id="Rectangle_244" data-name="Rectangle 244" class="cls-1" width="23" height="2"/>
+        </g>
+      </g>
+      <g id="Group_661" data-name="Group 661" transform="translate(0 4)">
+        <g id="Group_598-2" data-name="Group 598" transform="translate(0 0)">
+          <rect id="Rectangle_244-2" data-name="Rectangle 244" class="cls-1" width="16" height="2"/>
+        </g>
+      </g>
+      <g id="Group_665" data-name="Group 665" transform="translate(0 8)">
+        <g id="Group_598-3" data-name="Group 598">
+          <rect id="Rectangle_244-3" data-name="Rectangle 244" class="cls-1" width="9" height="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

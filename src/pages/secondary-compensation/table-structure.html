@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Webpack Config</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .list-group-item {
+            border: 1px solid rgba(189, 189, 189, 0.125);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page-wrapper">
+        <div class="header-sec">
+            <div class="container-fluid m-0">
+                <div class="row m-">
+                    <div class="col-7 p-0">
+                        <div class="header-left">
+                            <div class="menu-list"></div>
+                            <div class="logo clearfix">
+                                <a href="#"><img src="../../images/logo-icon.png" alt="logo-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 padd-0">
+                        <div class="header-nav clearfix">
+                            <ul>
+                                <li><a href="#"><img src="../../images/header-icon-1.png" alt="header-icon-1"></a></li>
+                                <li><a href="#"><img src="../../images/header-icon-2.png" alt="header-icon-2"></a></li>
+                                <li><a href="#"><img src="../../images/header-icon-3.png" alt="header-icon-3"></a></li>
+                                <li><a href="#">Rp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="page-title main-content-header">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="sg-sub-block clearfix">
+                            <h4 class="sg-section-sub-heading">Secondary Compensation Plan Maintenance</h4>
+                            <div class="">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">configuration management</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">client configuration</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="complete-btn">
+                            <button class="sg-submit-btn">Complete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-body">
+                <div class="sub-head clearfix">
+                    <ul>
+                        <li><div class="back-btn"><a href="#"><</a></div></li>
+                        <li class="m-0"><div>Compensation ID <span>SCOMP-002</span></div></li>
+                        <li><div>Description <span>Long term seniority Allowance</span></div></li>
+                        <li><div>Start Date <span>17/01/2017</span></div></li>
+                        <li><div>Status <button class="pend-btn">Pending</button></div></li>
+                        <li><div><a href="#" class="add-btn">Edit</a></div></li>
+                    </ul>
+                </div>
+                <div class="row m-0">
+                    <div class="col-3 p-0">
+                        <div class="sg-sub-block">
+                            <div class="aside-menu">
+                                <ul>
+                                  <li><a  href="basic-information.html">Basic Information</a></li>
+                                  <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
+                                  <li><a href="payment-rules.html">Payment Rules</a></li>
+                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
+                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
+                                  <li><a href="rounding-rules.html">Rounding Rules</a></li>
+                                  <li><a href="temporary-variable.html" class="active">Temporary variable</a></li>
+                                  <li><a href="table-structure.html">Table structure</a></li>
+                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
+                                  <li><a href="production-service.html">Production Service</a></li>
+                                  <li><a href="compensation-flow.html">Compensation Flow</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-9 p-0">
+                        <div class="side-menu-title">
+                            <h3>Table Structures List </h3>
+                        </div>
+
+                        <div class="record-part">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4 class="show-record">Showing 0 records</h4>
+                                </div>
+                                <div class="col-6">
+                                    <div class="search-part">
+                                        <input type="search" name="" placeholder="Search" class="search-box">
+                                        <button type="button" class="sg-submit-btn">Add New</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="record-list">
+                            <div class="rocord-head clearfix">
+                                <ul>
+                                    <li><span>Table ID</span></li>
+                                    <li><span>Description</span></li>
+                                    <li><span>Table Type</span></li>
+                                    <li><span>No.of Columns</span></li>
+                                </ul>
+                            </div>    
+                            <div class="error-msg">
+                                <img src="../../images/no-found-img.svg" alt="no-found">
+                                <span>No Results Found</span>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="" id="pagination">
+                            <div class="sg-sub-block">
+                                <div class="">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination pagination-default">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0">
+                        <div class="data-assign-part clearfix">
+                            <div class="save-btn">
+                                <a href="#"  class="sg-submit-btn">Prev</a>
+                                <a href="#"  class="sg-submit-btn">Next</a>
+                            </div>
+                            <div class="close-btn-part">
+                                <button type="button" class="close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+            <p>Powered by <a href="#">Salzzappo</a></p>
+        </div>
+    </section>
+    
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

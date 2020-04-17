@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Webpack Config</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .list-group-item {
+            border: 1px solid rgba(189, 189, 189, 0.125);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sg-main-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3" style="padding: 0;box-shadow: #f1f1f1 0 0 10px;" id="sidebar">
+                    <div class="sg-header">
+                        <h1>Style Guide</h1>            
+                    </div>
+                    <div class="list-group list-group-flush sg-sidebar">
+                        <a href="#navigation" class="list-group-item list-group-item-action active">Navigation</a>
+                        <a href="#icons" class="list-group-item list-group-item-action">Icons</a>
+                        <a href="#form" class="list-group-item list-group-item-action">Form</a>
+                        <a href="#table" class="list-group-item list-group-item-action">Table</a>
+                        <a href="#pagination" class="list-group-item list-group-item-action">Pagination</a>
+                        <a href="#tab" class="list-group-item list-group-item-action">Tabs</a>
+                        <a href="#button" class="list-group-item list-group-item-action">Buttons</a>
+                        <a href="#modal" class="list-group-item list-group-item-action">Modal Box</a>
+                        <a href="#typography" class="list-group-item list-group-item-action">Typography</a>
+                        <a href="#color" class="list-group-item list-group-item-action">Color</a>
+                        <a href="#units" class="list-group-item list-group-item-action">Unit Conversion</a>
+                    </div>
+                </div>
+                <div class="col-9" style="padding-top: 40px; padding-left: 25px; height: 100vh; overflow: auto;">
+                    <!-- Color -->
+                    <div class="sg-block" id="color">
+                        <h2 class="sg-section-heading">Color</h2>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card sg-card-1">
+                                    <div class="sg-primary-color-box"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Primary</h5>
+                                        <p class="card-text">Color Code</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card sg-card-1">
+                                    <div class="sg-secondary-color-box"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Secondary</h5>
+                                        <p class="card-text">Color Code</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Icons -->
+                    <div class="sg-block" id="icons">
+                        <h2 class="sg-section-heading">Icons</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Heading</h4>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-badge"></i></div>
+                                        <p>icon-badge</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-bin"></i></div>
+                                        <p>icon-bin</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-clock"></i></div>
+                                        <p>icon-clock</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-close"></i></div>
+                                        <p>icon-close</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-document"></i></div>
+                                        <p>icon-document</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-dollar"></i></div>
+                                        <p>icon-dollar</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-error"></i></div>
+                                        <p>icon-error</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-exam"></i></div>
+                                        <p>icon-exam</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-family"></i></div>
+                                        <p>icon-family</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-file"></i></div>
+                                        <p>icon-file</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-help"></i></div>
+                                        <p>icon-help</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-information"></i></div>
+                                        <p>icon-information</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-license"></i></div>
+                                        <p>icon-license</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-logout"></i></div>
+                                        <p>icon-logout</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-magnifiying-glass"></i></div>
+                                        <p>icon-magnifiying-glass</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-mail"></i></div>
+                                        <p>icon-mail</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-menu"></i></div>
+                                        <p>icon-menu</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-notifications-button"></i></div>
+                                        <p>icon-notifications-button</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-pencil-edit"></i></div>
+                                        <p>icon-pencil-edit</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-phone-call"></i></div>
+                                        <p>icon-phone-call</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-pin"></i></div>
+                                        <p>icon-pin</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-question"></i></div>
+                                        <p>icon-question</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-rating"></i></div>
+                                        <p>icon-rating</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-student"></i></div>
+                                        <p>icon-student</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-tick"></i></div>
+                                        <p>icon-tick</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-transfer"></i></div>
+                                        <p>icon-transfer</p>
+                                    </div>
+                                    <div class="col-3 text-center">
+                                        <div><i class="icon-video"></i></div>
+                                        <p>icon-video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Typography -->
+                    <div class="sg-block" id="typography">
+                        <h2 class="sg-section-heading">Typography</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Heading</h4>
+                            <div>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code></p>
+                                <h1>Heading 1</h1>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code></p>
+                                <h2>Heading 2</h2>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code></p>
+                                <h3>Heading 3</h3>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code></p>
+                                <h4>Heading 4</h4>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code></p>
+                                <h5>Heading 5</h5>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code></p>
+                                <h6>Heading 6</h6>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Paragraph</h4>
+                            <div>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;p class="lead"&gt;&lt;/p&gt;</code></p>
+                                <p class="lead">Lead Text. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                                <hr>
+                                <p class="m-0"><code class="highlighter-rouge">&lt;p&gt;&lt;/p&gt;</code></p>
+                                <p>Paragraph Text. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Table -->
+                    <div class="sg-block" id="table">
+                        <h2 class="sg-section-heading">Table</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Table Default</h4>
+                            <div class="">
+                                <table class="table table-default table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Product Code</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Product Version</th>
+                                            <th>Description</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck2">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck5">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck5"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck6">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck6"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck7">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck7"></label>
+                                                </div>
+                                            </th>
+                                            <td>TERM</td>
+                                            <td>01/01/2018</td>
+                                            <td>01/01/2018</td>
+                                            <td>1</td>
+                                            <td>Term assurance</td>
+                                            <td>
+                                                <a href="#" class="kebab"> </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="sg-block" id="pagination">
+                        <h2 class="sg-section-heading">Pagination</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Pagination Default</h4>
+                            <div class="">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-default">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tabs -->
+                    <div class="sg-block" id="tab">
+                        <h2 class="sg-section-heading">Tabs</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Tab Default</h4>
+                            <div class="">
+                                <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Basic Configuration</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-2" role="tab" aria-controls="tab-item-2" aria-selected="false">Agency / Agent Codes Configuration</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum vitae felis nec auctor. Integer ut condimentum risus. Maecenas dictum elit eleifend diam blandit luctus. Sed eu lectus sit amet nunc posuere euismod ac non nunc. Praesent ut turpis pulvinar, tincidunt ipsum vitae, tincidunt erat. Etiam vitae nulla fringilla, bibendum odio dignissim, elementum nulla. Suspendisse laoreet felis a neque tristique aliquam. Fusce mi sem, ornare nec felis ac, pretium faucibus enim. Morbi non aliquam turpis. Vestibulum molestie, lectus et efficitur pellentesque, nibh felis ultrices lacus, eget laoreet ligula ex a nibh. Integer mollis nibh sit amet scelerisque pharetra. Phasellus at nulla erat. Sed ullamcorper ac dui consequat gravida. Pellentesque volutpat sapien sit amet nunc pretium dictum. Vivamus efficitur neque porttitor, venenatis tortor vel, gravida diam. Phasellus vitae malesuada ipsum.</div>
+                                    <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">Aenean varius hendrerit metus, a elementum ipsum pulvinar ut. Sed ut interdum libero. Vestibulum feugiat ante eget erat tincidunt euismod. Maecenas interdum libero et quam pretium pharetra. Duis sodales cursus venenatis. Sed pulvinar non augue ac pharetra. Aenean blandit viverra eros in tempus. Quisque non sem quis dui blandit lacinia. Sed interdum dolor leo, sit amet euismod diam molestie ut. Donec vel erat condimentum, auctor mi nec, dictum magna. Vivamus tincidunt ipsum ornare mi fermentum bibendum. Mauris facilisis, risus eu scelerisque imperdiet, sapien mauris congue diam, nec ultrices quam quam eu nibh. Ut sit amet elit faucibus dui placerat mattis. Etiam vehicula lectus elit, quis elementum dolor facilisis sed. Sed quis dictum sapien. Phasellus vehicula diam vel risus suscipit, id vehicula ante semper.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tabs -->
+                    <div class="sg-block" id="button">
+                        <h2 class="sg-section-heading">First Level Buttons</h2>
+                        <div class="sg-sub-block">
+                            <div class="">
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-secondary">Secondary</button>
+                                <button type="button" class="btn btn-primary text-left"><i class="icon-exam"></i> Save</button>
+                                
+                                <!--
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-light">Light</button>
+                                <button type="button" class="btn btn-dark">Dark</button>
+                                <button type="button" class="btn btn-link">Link</button>-->
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Sub Level Buttons</h4>
+                            <div class="">
+                                <button type="button" class="btn btn-label">Pending</button>
+                                <button type="button" class="btn btn-dull">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form -->
+                    <div class="sg-block" id="form">
+                        <h2 class="sg-section-heading">Form</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Form Default</h4>
+                            <div class="" style="max-width: 500px;">
+                                <form class="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="">Email address</label>
+                                        <input type="email" class="form-control" id="id-1" required>
+                                        <div class="invalid-feedback">Enter valid email-id.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Password</label>
+                                        <input type="password" class="form-control" id="id-2">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="required-mark">Disabled Input</label>
+                                        <input type="text" class="form-control" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="required-mark">Custom Select Box</label>
+                                        <div class="drop-down-box custom-select-box">
+											<a class="dropdown-toggle form-control custom-select-toggle" data-toggle="dropdown" href="#">Agent(default)</a>
+											<ul class="dropdown-menu custom-select-options full-width">
+											  <li class="dropdown-item custom-option">Agent</li>
+											  <li class="dropdown-item custom-option">business head</li>
+											  <li class="dropdown-item custom-option">manager</li>
+											  <li class="dropdown-item custom-option">CEO</li>
+											</ul>
+										</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Terminology Mapping</label>
+                                        <div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
+                                            <label class="custom-control-label" for="customRadioInline5">Yes</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
+                                            <label class="custom-control-label" for="customRadioInline6">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Terminology Mapping</label>
+                                        <div>
+                                            <div class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck1" required>
+                                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck2" required>
+                                                <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="button" class="btn btn-secondary">Clear</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Form Submission Message</h4>
+                            <div>
+                                <div class="toastr clearfix mb-2">
+                                    <div class="icon-box">
+                                       <img src="/images/select-icon.svg" alt="select-icon">
+                                    </div>
+                                    <div class="success-cont">
+                                       <p>Client information saved <br> successfully!</p>
+                                       <img src="/images/close-icon.svg" alt="close-icon">
+                                    </div>
+                                 </div>
+                                 <div class="toastr clearfix">
+                                    <div class="icon-box error-box">
+                                       <img src="/images/error-icon.svg" alt="error-icon">
+                                    </div>
+                                    <div class="success-cont">
+                                       <p>Server connection failed. Please try again to save.</p>
+                                       <img src="/images/close-icon.svg" alt="close-icon">
+                                    </div>
+                                 </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <div class="sg-block active" id="navigation">
+                        <h2 class="sg-section-heading">Navigation</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Default Link</h4>
+                            <div class="">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link default" href="#">Active</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Main Navigation</h4>
+                            <div>
+                                <section class="main-menu">
+                                    <div class="search-menu">
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <img src="/images/search-icon.svg" alt="search-icon" class="search-icon">
+                                                <input type="search" name="" class="searh-box" placeholder="Search  menu">
+                                                <img src="/images/clock-icon.svg" alt="clock-icon" class="clock-icon">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="menu-list">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-1.svg" alt="menu-icon">
+                                                        <span>Configuration Management</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-2.svg" alt="menu-icon">
+                                                        <span>Channel Management</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-3.svg" alt="menu-icon">
+                                                        <span>Movements</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-4.svg" alt="menu-icon">
+                                                        <span>Primary Compensation</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-5.svg" alt="menu-icon">
+                                                        <span>Secondary Compensation</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-6.svg" alt="menu-icon">
+                                                        <span>Campaigns / Contest</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-7.svg" alt="menu-icon">
+                                                        <span>Business Process Management</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-8.svg" alt="menu-icon">
+                                                        <span>Document Management</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-9.svg" alt="menu-icon">
+                                                        <span>Performance Management</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-10.svg" alt="menu-icon">
+                                                        <span>File Upload</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-11.svg" alt="menu-icon">
+                                                        <span>File Download</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-12.svg" alt="menu-icon">
+                                                        <span>Batch Jobs</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-13.svg" alt="menu-icon">
+                                                        <span>User Management</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="menu-cont">
+                                                    <a class="menu-box" href="#">
+                                                        <img src="/images/menu-icon-14.svg" alt="menu-icon">
+                                                        <span>AI based Analytics</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Main Navigation - Subpage</h4>
+                            <div>
+                                <div class="main-nav-list">
+                                    <div class="nav-title">
+                                      <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+                                      <a href="#">Configuration Management</a>
+                                    </div>
+                                    <div class="nav-list">
+                                      <ul>
+                                        <li><a href="#" class="client-txt">Client Configuration</a></li>
+                                        <li><a href="#" class="map-txt">Terminology Mapping</a></li>
+                                        <li>
+                                            <a href="#" class="data-txt">Master Data</a>
+                                            <ul class="nav-drop-down-list">
+                                              <li><a href="#">Variable Master</a></li>
+                                              <li><a href="#">Allowed values</a></li>
+                                              <li><a href="#">Product Master</a></li>
+                                              <li><a href="#">LOB Master</a></li>
+                                              <li><a href="#">Default list of questions for a Channel / Agency type</a></li>
+                                              <li><a href="#">Default list of questions for a Channel / Agent type</a></li>
+                                              <li><a href="#">Default list of exams for a License type</a></li>
+                                              <li><a href="#">Default list of exams for a Designation</a></li>
+                                              <li><a href="#">Default list of trainings for a License type</a></li>
+                                              <li><a href="#">Default list of trainings for a Designation</a></li>
+                                              <li><a href="#">Groupings of Designation-ids</a></li>
+                                              <li><a href="#">Business event Master</a></li>
+                                            </ul>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Dropdown</h4>
+                            <div class="">
+                                <div class="dropdown dropdown-default">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="text-avatar">RP</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li class="dropdown-item">
+                                          <a href="#">
+                                              <label>Welcome</label>
+                                              <span>Renu Prakash</span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="test-me">
+                                                <label>Role</label>
+                                                <span>Agent (default)</span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#"><span>Something else here</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- <ul class="dropdown-menu-special" aria-labelledby="dropdownMenuSubLink" style="position: absolute; transform: translate3d(0px, 24px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="back">
+                                                <label>Role</label>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#">
+                                                <span>Agent</span>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#">
+                                                <span>Manager</span>
+                                            </a>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Notification</h4>
+                            <div>
+                                <div class="app-info">
+                                    <div class="app-title">
+                                       <h3>Application Info</h3>
+                                    </div>
+                                    <div class="app-list">
+                                       <ul>
+                                          <li><p class="lt-text">Business Date <span class="rt-text">03/02/2020</span></p></li>
+                                          <li><p class="lt-text">Environment <span class="rt-text">Demo</span></p></li>
+                                          <li><p class="lt-text">Version <span class="rt-text">R20.2</span></p></li>
+                                          <li>
+                                             <span class="lt-text">Database</span>
+                                             <div class="drop-down-box custom-select-box d-inline-block">
+                                                <a class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="fas fa-angle-down"></i></a>
+                                                <ul class="dropdown-menu custom-select-options">
+                                                  <li class="dropdown-item custom-option">DB-001</li>
+                                                  <li class="dropdown-item custom-option">DB-002</li>
+                                                  <li class="dropdown-item custom-option">DB-003</li>
+                                                  <li class="dropdown-item custom-option">DB-004</li>
+                                                  <li class="dropdown-item custom-option">DB-005</li>
+                                                </ul>
+                                            </div>
+                                          </li>
+                                          <li>
+                                             <span class="lt-text">Language</span>
+                                             <div class="drop-down-box custom-select-box d-inline-block">
+                                                <a class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">English  <i class="fas fa-angle-down"></i></a>
+                                                <ul class="dropdown-menu custom-select-options">
+                                                    <li class="dropdown-item custom-option">English</li>
+                                                    <li class="dropdown-item custom-option">Chinese</li>
+                                                    <li class="dropdown-item custom-option">Bahasa</li>
+                                                </ul>
+                                            </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Breadcrumb</h4>
+                            <div class="">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">configuration management</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">client configuration</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Aside Navigation</h4>
+                            <div class="">
+                                <div class="aside-menu">
+                                    <ul>
+                                      <li><a class="active" href="#">Basic Information</a></li>
+                                      <li><a href="#">Employment</a></li>
+                                      <li><a href="#">Qualification</a></li>
+                                      <li><a href="#">training</a></li>
+                                      <li><a href="#">exam</a></li>
+                                      <li><a href="#">license details</a></li>
+                                      <li><a href="#">payment details</a></li>
+                                      <li><a href="#">questions list</a></li>
+                                      <li><a href="#">documents list</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- List Group 
+                    <div class="sg-block">
+                        <h2 class="sg-section-heading">List Group</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Sub Heading</h4>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Tabs -->
+                    <div class="sg-block" id="modal">
+                        <h2 class="sg-section-heading">Modal Box</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Default</h4>
+                            <div class="">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myCenterAlignedModal">
+                                    Modal - Center Algined
+                                </button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myRightAlignedModal">
+                                    Modal - Right Aligned
+                                </button>
+                                <div class="modal fade partial-model-box" id="myRightAlignedModal">
+                                    <div class="modal-dialog ">
+                                       <div class="modal-content">
+                                          <div class="modal-head">
+                                             <div class="row">
+                                                <div class="col-8">
+                                                   <h3>product master maintenence <span>* Fields are mandatory</span></h3>
+                                                </div>
+                                                <div class="col-4">
+                                                   <div class="btn-part">
+                                                      <a href="#" class="complete-btn">complete</a>
+                                                      <span type="button" data-dismiss="modal" class="close-icon"><i class="fas fa-times"></i></span>
+                                                      <p class="reset-btn"><a href="#"><i class="fas fa-times"></i> Reset</a></p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="modal-body">
+                                          </div>
+                                          <div class="modal-footer">
+                                             <a href="#" class="save-btn">save</a>
+                                             <a href="#" class="close-btn">close</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myCenterAlignedModal">
+                                    <div class="modal-dialog ">
+                                       <div class="modal-content">
+                                          <div class="modal-header">
+                                             <button type="button" class="close-btn" data-dismiss="modal">Close</button>
+                                          </div>
+                                          <div class="modal-body">
+                                                <p>Do you want to save the date before exit?</p>
+                                                <a href="#" class="yes-btn">Yes</a>
+                                                <a href="#" class="no-btn">No</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Toster -->
+                    <div class="sg-block" id="toster">
+                        <h2 class="sg-section-heading">Toster</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Sub Heading</h4>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Unit Values -->
+                    <div class="sg-block" id="units">
+                        <h2 class="sg-section-heading">Unit Conversion</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">px vs rem</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <table class="table table-1 table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Size in px</th>
+                                                <th>Value in rem</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>0.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>0.875</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>18</td>
+                                                <td>1.125</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20</td>
+                                                <td>1.25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>22</td>
+                                                <td>1.375</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col">
+                                    <table class="table table-1 table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Size in px</th>
+                                                <th>Value in rem</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td>24</td>
+                                                <td>1.5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26</td>
+                                                <td>1.625</td>
+                                            </tr>
+                                            <tr>
+                                                <td>28</td>
+                                                <td>1.75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>30</td>
+                                                <td>1.875</td>
+                                            </tr>
+                                            <tr>
+                                                <td>32</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>34</td>
+                                                <td>2.125</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tabs 
+                    <div class="sg-block">
+                        <h2 class="sg-section-heading">Component</h2>
+                        <div class="sg-sub-block">
+                            <h4 class="sg-section-sub-heading">Sub Heading</h4>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/app.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+
+        $(function() {
+           
+            $(".list-group-item-action").click(function(e){
+
+                e.preventDefault();
+
+                var $this = $(this),
+                    $target = $($this.attr('href'));
+                
+                //Update Block
+                $(".sg-block.active").removeClass('active');
+                $target.addClass('active');
+
+                //Updade List
+                $this.parent().find('.active').removeClass('active');
+                $this.addClass('active');
+
+            });
+
+            $(".test-me").click(function(e){
+                e.preventDefault();
+                $('.dropdown-menu-special').addClass('show').removeClass('hide');
+            });
+            $('.back').click(function(e){
+                e.preventDefault();
+                console.log("back");
+                $('.dropdown-menu-special').addClass('hide').removeClass('show');
+                setTimeout(function(){
+                    $('.dropdown-toggle-1').dropdown('show');
+                }, 200)
+            });
+
+            $('.custom-control-input').click(function(){
+                var $this = $(this);
+                if($this.prop("checked") == true){
+                    $this.closest('table').addClass('show-checkbox');
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

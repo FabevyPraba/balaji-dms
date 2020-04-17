@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Webpack Config</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .list-group-item {
+            border: 1px solid rgba(189, 189, 189, 0.125);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page-wrapper">
+        <div class="header-sec">
+            <div class="container-fluid m-0">
+                <div class="row m-">
+                    <div class="col-7 p-0">
+                        <div class="header-left">
+                            <div class="menu-list"></div>
+                            <div class="logo clearfix">
+                                <a href="#"><img src="../../images/logo-icon.png" alt="logo-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 padd-0">
+                        <div class="header-nav clearfix">
+                            <ul>
+                                <li><a href="#"><img src="../../images/header-icon-1.png" alt="header-icon-1"></a></li>
+                                <li><a href="#"><img src="../../images/header-icon-2.png" alt="header-icon-2"></a></li>
+                                <li><a href="#"><img src="../../images/header-icon-3.png" alt="header-icon-3"></a></li>
+                                <li><a href="#">Rp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="page-title main-content-header">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="sg-sub-block clearfix">
+                            <h4 class="sg-section-sub-heading">Secondary Compensation Plan List</h4>
+                            <div class="">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Secondary Compensation</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Secondary Compensation Plan Configuration</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-body">
+                <div class="secondary-plan-list">
+                    <div class="record-part">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4 class="show-record">Showing 0 records</h4>
+                            </div>
+                            <div class="col-6">
+                                <div class="search-part">
+                                    <input type="search" name="" placeholder="Search" class="search-box">
+                                    <button type="button" class="sg-submit-btn">Add New</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-table">
+                        <table class="table table-default table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Compensation ID</th>
+                                    <th>Description</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-001</td>
+                                    <td>Persistency Bonus</td>
+                                    <td>14/05/2018</td>
+                                    <td>—</td>
+                                    <td><button class="pending-btn">Pending</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-002</td>
+                                    <td>Long term seniority Allowance</td>
+                                    <td>17/01/2017</td>
+                                    <td>—</td>
+                                    <td><button class="pending-btn">Inactive</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-003</td>
+                                    <td>Special monthly bonus</td>
+                                    <td>01/02/2018</td>
+                                    <td>31/01/2019</td>
+                                    <td><button class="inactive-btn">Inactive</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-004</td>
+                                    <td>Training Allowance</td>
+                                    <td>11/07/2016</td>
+                                    <td>—</td>
+                                    <td><button class="active-btn">Active</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-005</td>
+                                    <td>Recruitment Bonus</td>
+                                    <td>01/12/2019</td>
+                                    <td>—</td>
+                                    <td><button class="active-btn">Active</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="list-footer">
+                        <!-- Pagination -->
+                        <div id="pagination">
+                            <div class="">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-default">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="close-part">
+                            <button class="cancel-btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+            <p>Powered by <a href="#">Salzzappo</a></p>
+        </div>
+    </section>
+    
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+</html>
+

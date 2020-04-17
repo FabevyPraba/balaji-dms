@@ -1,0 +1,10 @@
+<svg id="clock_1_" data-name="clock (1)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8695b1;
+      }
+    </style>
+  </defs>
+  <path id="clock_1_2" data-name="clock (1)" class="cls-1" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm1.946,13.129-8.81-.015,0-1.582,7.225.012V5.994h1.582v7.135Z" transform="translate(24) rotate(90)"/>
+</svg>

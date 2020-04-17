@@ -1,0 +1,115 @@
+.sg-header{
+    margin: 0;
+    h1{
+        padding: 16px 0 16px 15px;
+        margin: 0;
+        font-size: 24px;
+        background: #6fbc78;
+    color: #fff;
+    }
+}
+.sg-sidebar{
+    .list-group-item.active {
+        z-index: 2;
+        background-color: #e0f8e1;
+        border-color: #e0f8e1;
+        color: #495057;
+    }
+}
+.sg-block{
+    margin: 0 0 60px;
+    display: none;
+    &.active{
+        display: block;
+    }
+    .sg-sub-block{
+        padding: 1px 20px 30px;
+        box-shadow: #f1f1f1 0 0 10px;
+        margin: 0 0 30px;
+    }
+    .sg-section-heading{
+        margin: 0 0 30px;
+        padding: 0 0 10px;
+        border-bottom: solid 1px $gray-300;
+    }
+    .sg-section-sub-heading{
+        margin: 30px 0;
+        background: #f9f9f9;
+        padding: 10px 15px;
+    }
+}
+.sg-card-1{
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px $gray-300;
+    .card-body{
+        padding: 0.5rem;
+        .card-title {
+            margin-bottom: 0;
+        }
+        p{
+            display: none;
+        }
+    }
+    
+}
+
+.sg-primary-color-box,
+.sg-secondary-color-box,
+.sg-success-color-box,
+.sg-danger-color-box,
+.sg-warning-color-box,
+.sg-info-color-box,
+.sg-light-color-box,
+.sg-dark-color-box{
+    min-height: 130px;
+}
+
+.sg-primary-color-box{
+    background-color: $primary;
+}
+
+.sg-secondary-color-box{
+    background-color: $secondary;
+}
+
+.sg-success-color-box
+{
+    background-color: $success;
+}
+
+.sg-danger-color-box{
+    background-color: $danger;
+}
+
+.sg-warning-color-box
+{
+    background-color: $warning;
+}
+
+.sg-info-color-box{
+    background-color: $info;
+}
+
+.sg-light-color-box{
+    background-color: $light;
+}
+
+.sg-dark-color-box{
+    background-color: $dark;
+}
+
+
+.sg-submit-btn{
+    background: #6fbc78;
+    border-radius: 26px;
+  border: solid 1px #6fbc78;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding:4px 20px;
+  text-transform: capitalize;
+  &:focus{
+    outline: none;
+  }
+}
