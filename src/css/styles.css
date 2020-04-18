@@ -7966,7 +7966,8 @@ a:hover {
     .page-wrapper .main-content-wrapper .main-content-body {
       margin-top: 20px;
       background: #fff;
-      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05); }
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 5px; }
       .page-wrapper .main-content-wrapper .main-content-body .sg-sub-block, .page-wrapper .main-content-wrapper .main-content-body .aside-menu {
         height: 100%; }
       .page-wrapper .main-content-wrapper .main-content-body .sub-head {
@@ -8663,6 +8664,28 @@ a:hover {
   .active-btn:hover {
     color: #01b516; }
 
+.client-configuration-tab {
+  padding: 20px 0 0; }
+  .client-configuration-tab #myTab {
+    margin: 0;
+    padding: 0; }
+  .client-configuration-tab .client-configuration-form {
+    padding: 20px 20px 0; }
+    .client-configuration-tab .client-configuration-form input:focus {
+      border: solid 1px #e50000;
+      box-shadow: none; }
+  .client-configuration-tab #client-configuration-tab-1 {
+    padding: 20px 0 0; }
+    .client-configuration-tab #client-configuration-tab-1 .custom-control-label {
+      color: #000;
+      padding-top: 3px; }
+    .client-configuration-tab #client-configuration-tab-1 .save-btn {
+      width: 50%; }
+    .client-configuration-tab #client-configuration-tab-1 .close-btn-part {
+      width: 50%; }
+    .client-configuration-tab #client-configuration-tab-1 .client-configuration-footer {
+      margin-top: 50px; }
+
 /* Layout End */
 .sg-header {
   margin: 0; }
@@ -8753,3 +8776,5 @@ a:hover {
   text-transform: capitalize; }
   .sg-submit-btn:focus {
     outline: none; }
+  .sg-submit-btn:hover {
+    color: #fff; }

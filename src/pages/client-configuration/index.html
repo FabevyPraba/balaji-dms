@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Webpack Config</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .list-group-item {
+            border: 1px solid rgba(189, 189, 189, 0.125);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page-wrapper">
+        <div class="header-sec">
+            <div class="container-fluid m-0">
+                <div class="row m-">
+                    <div class="col-7 p-0">
+                        <div class="header-left">
+                            <div class="menu-list"></div>
+                            <div class="logo clearfix">
+                                <a href="#"><img src="../../images/logo-icon.png" alt="logo-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 padd-0">
+                        <div class="header-nav clearfix">
+                            <ul>
+                                <li><a href="#"><img src="../../images/header-icon-1.png" alt="header-icon-1"></a></li>
+                                <li><a href="#"><img src="../../images/header-icon-2.png" alt="header-icon-2"></a></li>
+                                <li><a href="#"><img src="../../images/header-icon-3.png" alt="header-icon-3"></a></li>
+                                <li><a href="#">Rp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="page-title main-content-header">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="sg-sub-block clearfix">
+                            <h4 class="sg-section-sub-heading">Client Configuration Menu</h4>
+                            <div class="">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">configuration management</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">client configuration</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="complete-btn">
+                            <button class="sg-submit-btn">Complete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-body">
+                <!-- Tabs -->
+                <div id="tab" class="client-configuration-tab">
+                    <div class="">
+                        <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Basic Configuration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-2" role="tab" aria-controls="tab-item-2" aria-selected="false">Agency / Agent Codes Configuration</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+
+                            <div class="tab-pane fade show active" id="client-configuration-tab-1" role="tabpanel" aria-labelledby="default-tab-1">
+                                <form action="#">
+                                    <div class="client-configuration-form" >
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Name of the client *</label>
+                                                   <input type="text" name=""  class="form-control">
+                                                   <div class="valid-feedback">
+                                                        <p>Name field should not include numerics</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Industry *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Insurance</a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">Insurance</li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Home Country *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Indonesia</a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">Indonesia</li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Home Currency *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home Currency</a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">Home Currency</li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Currency Symbol *</label>
+                                                   <input type="text" name=""  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Maximum digits before decimal for numbers *</label>
+                                                   <input type="text" name=""  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Number of digits for cents *</label>
+                                                   <input type="text" name=""  class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Date format *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Date format</a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">Date format</li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Number format *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comma and decimal point</a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">Comma and decimal point</li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Language for Screen Labels *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">English </a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">English </li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="validationDatabase">Data entry language for name and address *</label>
+                                                    <div class="drop-down-box">
+                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">English</a>
+                                                      <ul class="dropdown-menu">
+                                                         <li class="dropdown-item">English</li>
+                                                         <li class="dropdown-item">2</li>
+                                                         <li class="dropdown-item">3</li>
+                                                         <li class="dropdown-item">4</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label for="" class="radio-text required-mark">Terminology Mapping  </label>
+                                                    <div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="customRadioInline2">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label for="" class="radio-text required-mark">Basic Commission Calculation  </label>
+                                                    <div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="customRadioInline3">Internal</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="customRadioInline4">External</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label for="" class="radio-text required-mark">Over-riding Commission Calculation  </label>
+                                                        <div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="customRadioInline5">Internal</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="customRadioInline6">External</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            <p>Selection required</p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="data-assign-part clearfix client-configuration-footer">
+                                        <div class="save-btn">
+                                            <a href="submit"  class="sg-submit-btn">Save</a>
+                                        </div>
+                                        <div class="close-btn-part">
+                                            <button type="button" class="close-btn">Close</button>
+                                        </div>
+                                    </div>
+                                </form>    
+                            </div>
+
+                            <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+            <p>Powered by <a href="#">Salzzappo</a></p>
+        </div>
+    </section>
+    
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+</html>

@@ -955,6 +955,7 @@ display: block;
         margin-top: 20px;
         background:#fff;
         box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+        border-radius:5px;
         .sg-sub-block , .aside-menu{
             height: 100%;
         }
@@ -1928,6 +1929,39 @@ display: block;
   &:hover{
     color: #01b516;
   } 
+}
+
+.client-configuration-tab{
+  padding:20px 0 0;
+  #myTab{
+    margin: 0;
+    padding:0;
+  }
+  .client-configuration-form{
+    padding:20px 20px 0;
+    input{
+      &:focus{
+        border: solid 1px #e50000;
+        box-shadow:none;
+      }
+    }
+  }
+  #client-configuration-tab-1{
+    padding:20px 0 0;
+    .custom-control-label{
+      color: #000;
+      padding-top: 3px;
+    }
+    .save-btn{
+      width: 50%;
+    }
+    .close-btn-part{
+      width: 50%;
+    }
+    .client-configuration-footer{
+      margin-top: 50px;
+    }
+  }
 }
 
 /* Layout End */
