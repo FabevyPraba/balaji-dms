@@ -380,7 +380,7 @@ tbody {
   .nav-title {
     padding: 18px 15px;
 
-    a {
+    h3, a {
       color: #1c2b48;
       font-size: 18px;
       font-weight: 600;
@@ -416,7 +416,7 @@ tbody {
       }
     }
 
-    .nav-drop-down-list {
+    ul {
       padding-left: 65px;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -434,11 +434,13 @@ tbody {
 }
 
 .app-info {
-  max-width: 210px;
+  width: 230px;
   background: #fff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
   border-radius: 3px;
-
+  position: absolute;
+  top: 100%;
+  z-index: 10;
   .app-title h3 {
     font-size: 14px;
     font-weight: 600;
@@ -895,6 +897,14 @@ display: block;
 
 /* Layout Start */
 
+#main-navigation-trigger {
+    color: #fff;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    padding: 18px 0;
+}
+
 .page-wrapper{
   background-color: #e7e9eb;
   .header-sec{
@@ -902,7 +912,7 @@ display: block;
      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.05);
      height: 75px;
     .header-left{
-      .menu-list{
+      .menu-wrapper{
         background-color: #1c2b48;
         float: left;
         width: 80px ;
@@ -926,6 +936,7 @@ display: block;
         padding-right:20px;
         li{
           float: left;
+          position: relative;
           a{
             display: inline-block;
             padding:21px 20px;
