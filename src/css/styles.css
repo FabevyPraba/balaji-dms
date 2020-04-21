@@ -9010,18 +9010,19 @@ a:hover {
         min-width: 75px !important;
         left: -5px !important;
         padding-right: 0;
-        top: 5px !important; }
+        top: -6px !important; }
         .app-info .app-list .drop-down-box .dropdown-menu .dropdown-item {
           padding: 7px 15px;
           margin-bottom: 0; }
 
 .aside-menu {
-  background: #f5f6f8; }
+  background: #f5f6f8;
+  border-right: 1px solid #ebedf1; }
   .aside-menu ul {
     padding: 10px 0 50px;
     list-style: none; }
     .aside-menu ul li a {
-      padding: 12px 15px 12px 30px;
+      padding: 12px 15px;
       display: block;
       color: #4a566e;
       font-size: 14px;
@@ -9090,7 +9091,7 @@ a:hover {
   font-weight: 600;
   padding: 4px 0;
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-transform: capitalize;
   border-radius: 25px;
   outline: none; }
@@ -9332,7 +9333,8 @@ a:hover {
   background: #1b2a47;
   border-radius: 50%;
   color: #fff;
-  font-size: 14px; }
+  font-size: 14px;
+  cursor: pointer; }
 
 /* Components End */
 /* Layout Start */
@@ -9377,7 +9379,7 @@ a:hover {
           color: #1c2b48;
           text-transform: capitalize; }
       .page-wrapper .main-content-wrapper .main-content-body .form-part {
-        padding: 30px;
+        padding: 30px 60px;
         position: relative; }
         .page-wrapper .main-content-wrapper .main-content-body .form-part label {
           font-size: 14px; }
@@ -9445,16 +9447,28 @@ a:hover {
       border-radius: 50%;
       text-align: center;
       line-height: 25px;
-      font-size: 13px; }
+      font-size: 13px;
+      padding: 0; }
     .sub-head ul li div {
       font-size: 15px;
       font-weight: 500;
       color: #9a9a9a;
+      padding-top: 3px;
       text-transform: capitalize;
       margin-left: 20px; }
       .sub-head ul li div span {
-        margin-left: 15px;
-        color: #000000; }
+        min-width: 100px;
+        display: inline-block;
+        color: #000000;
+        margin-left: 5px; }
+      .sub-head ul li div .txt-1 {
+        min-width: 100px; }
+      .sub-head ul li div .txt-2 {
+        min-width: 150px; }
+      .sub-head ul li div .txt-3 {
+        min-width: 100px; }
+      .sub-head ul li div .txt-4 {
+        min-width: 100px; }
       .sub-head ul li div .pend-btn {
         border-radius: 5px;
         border: solid 1px #0878fa;
@@ -9496,6 +9510,11 @@ a:hover {
         .header-sec .header-nav ul li a i {
           color: #79859d;
           font-size: 25px; }
+  .header-sec .dropdown-toggle:after {
+    cursor: pointer;
+    margin: 0; }
+  .header-sec .dropdown .dropdown-menu {
+    top: 7px !important; }
 
 #account-info {
   padding: 8px !important; }
@@ -9627,8 +9646,7 @@ a:hover {
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
-  font-size: 13px;
-  margin-top: 7px; }
+  font-size: 13px; }
 
 #myTab {
   margin-top: 20px;
@@ -9650,9 +9668,10 @@ a:hover {
   padding: 5px; }
 
 .tabel-part .table-head {
-  padding: 20px 20px 0 20px;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+  padding: 15px 20px 15px 20px;
   border-bottom: 1px solid #f2f3f6; }
+  .tabel-part .table-head h3 {
+    margin-bottom: 0; }
 
 .tabel-part table {
   padding: 20px 50px;
@@ -9674,17 +9693,30 @@ a:hover {
       width: 20%; }
 
 #tab-item-2 form {
-  width: 90%;
+  width: 95%;
   margin: auto;
-  margin-left: 80px; }
-  #tab-item-2 form input:focus {
+  margin-left: 0px; }
+  #tab-item-2 form input {
     background: #f2f2f2; }
+    #tab-item-2 form input:focus {
+      background: #f2f2f2; }
   #tab-item-2 form .btn-part {
     padding: 30px 0;
     margin-bottom: 0; }
     #tab-item-2 form .btn-part li {
       display: inline-block;
       margin-left: 15px; }
+    #tab-item-2 form .btn-part img {
+      max-width: 100%; }
+    #tab-item-2 form .btn-part .add-tb-btn {
+      width: 20px;
+      display: inline-block; }
+    #tab-item-2 form .btn-part .del-btn {
+      width: 20px;
+      display: inline-block; }
+
+#tab-item-2 .modal-btn {
+  bottom: 0; }
 
 .nav-tabs-default .nav-item .nav-link {
   color: #1c2b48;
@@ -9936,14 +9968,14 @@ a:hover {
     width: 5%;
     padding: 0; }
   .production-services-list table tr th:nth-child(2) {
-    width: 25%; }
+    width: 20%; }
   .production-services-list table tr th:nth-child(3) {
-    width: 35%; }
+    width: 30%; }
   .production-services-list table tr th:nth-child(4) {
-    width: 25%; }
+    width: 20%; }
   .production-services-list table tr th:nth-child(5) {
     width: 15%;
-    text-align: right; }
+    text-align: left; }
 
 .production-services-list table tr td {
   padding: 10px 0; }
@@ -10003,7 +10035,8 @@ a:hover {
   margin-top: 10px; }
 
 .aggregation-services-model.temporary-variable-form .modal .modal-title h3 {
-  line-height: 1.3; }
+  line-height: 1.7;
+  display: inline; }
 
 .aggregation-services-model.temporary-variable-form .modal .modal-dialog {
   width: 30%; }
@@ -10023,7 +10056,8 @@ a:hover {
 .kebab {
   position: absolute;
   right: 20px;
-  top: 25px; }
+  top: 25px;
+  margin-top: 0 !important; }
 
 .edit-part {
   position: absolute;
@@ -10137,6 +10171,31 @@ a:hover {
 .dropdown .dropdown-menu {
   padding-right: 0 !important;
   top: -3px !important; }
+
+.save-model-box .modal-header {
+  padding-bottom: 15px; }
+
+.save-model-box .modal-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%) !important; }
+  .save-model-box .modal-dialog .modal-content {
+    padding: 20px; }
+    .save-model-box .modal-dialog .modal-content .no-btn {
+      padding: 5px 30px; }
+    .save-model-box .modal-dialog .modal-content .yes-btn {
+      padding: 8px 30px 9px; }
+
+#basic-back {
+  margin-top: 5px; }
+
+.secondary-compensation-success .success-cont {
+  padding: 22px 20px; }
+
+#secondary-compensation-breadcrumb {
+  padding-top: 22px; }
 
 /* Layout End */
 .sg-header {

@@ -207,7 +207,7 @@
                                               <li>
                                                  <span class="lt-text">Database</span>
                                                  <div class="drop-down-box custom-select-box d-inline-block">
-                                                    <a class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="fas fa-angle-down"></i></a>
+                                                    <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="fas fa-angle-down"></i></span>
                                                     <ul class="dropdown-menu custom-select-options">
                                                       <li class="dropdown-item custom-option">DB-001</li>
                                                       <li class="dropdown-item custom-option">DB-002</li>
@@ -220,7 +220,7 @@
                                               <li>
                                                  <span class="lt-text">Language</span>
                                                  <div class="drop-down-box custom-select-box d-inline-block">
-                                                    <a class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">English  <i class="fas fa-angle-down"></i></a>
+                                                    <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">English  <i class="fas fa-angle-down"></i></span>
                                                     <ul class="dropdown-menu custom-select-options">
                                                         <li class="dropdown-item custom-option">English</li>
                                                         <li class="dropdown-item custom-option">Chinese</li>
@@ -276,8 +276,8 @@
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">configuration management</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">client configuration</li>
+                                    <li class="breadcrumb-item"><a href="#">Secondary Compensation</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Secondary Compensation Plan Configuration</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -295,10 +295,10 @@
                 <div class="sub-head clearfix">
                     <ul>
                         <li><div class="back-btn"><a href="#"><</a></div></li>
-                        <li class="m-0"><div>Compensation ID <span>—</span></div></li>
-                        <li><div>Description <span>—</span></div></li>
-                        <li><div>Start Date <span>—</span></div></li>
-                        <li><div>Status <span>—</span></div></li>
+                        <li class="m-0"><div >Compensation ID <span class="txt-1">—</span></div></li>
+                        <li><div >Description <span class="txt-2">—</span></div></li>
+                        <li><div >Start Date <span class="txt-3">—</span></div></li>
+                        <li><div>Status <span class="txt-4">—</span></div></li>
                         <li><div><a href="#" class="add-btn">Add</a></div></li>
                     </ul>
                 </div>
@@ -329,7 +329,7 @@
                         <div class="form-part">
                             <div class="" id="form">
                                 <form class="needs-validation" novalidate>
-                                    <span class="reset-btn">Reset</span>
+                                  <a href="#" class="reset-btn">Reset</a>
                                     <div class="row">  
                                         <div class="col-4">
                                              <div class="form-group">
@@ -360,80 +360,157 @@
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
+                                            <div class="form-group">
                                                 <label for="">Status *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Status</div>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pending</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Pending</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
+                                            <div class="form-group">
                                                 <label for="">Compensation Type *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Compensation Type</div>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Seniority Allowance</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Seniority Allowance</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
+                                            <div class="form-group">
                                                 <label for="">Trigger *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Trigger</div>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Time</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Time</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Event Level </label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Event Level</div>
+                                            <div class="form-group">
+                                                <label for="">Event Level *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Event Level</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Select Event Level</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
+                                            <div class="form-group">
                                                 <label for="">Event  *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Event </div>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Event</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Select Event</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Calculation Frequency  *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Calculation Frequency </div>
+                                            <div class="form-group">
+                                                <label for="">Calculation Frequency *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Monthly</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Monthly</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Channel  *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Channel </div>
+                                            <div class="form-group">
+                                                <label for="">Channel *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tied Agents</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Tied Agents</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Output Level  </label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Output Level  </div>
+                                            <div class="form-group">
+                                                <label for="">Output Level *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">A value for each eligible agent</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">A value for each eligible agent</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Campaign   *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Campaign  </div>
+                                            <div class="form-group">
+                                                <label for="">Campaign  *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Campaign</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Select Campaign</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Unit of Measure for the Credit  </label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Unit of Measure for the Credit </div>
+                                            <div class="form-group">
+                                                <label for="">Unit of Measure for the Credit *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Monetary amount</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Monetary amount</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Reward Type  *</label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Reward Type </div>
+                                            <div class="form-group">
+                                                <label for="">Reward Type *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Reward Type</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Select Reward Type</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
                                         <div class="col-4">
@@ -452,10 +529,17 @@
                                             </div>
                                         </div>
                                         <div class="col-4">
-                                             <div class="form-group">
-                                                <label for="">Output Type </label>
-                                                <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter Output Type </div>
+                                            <div class="form-group">
+                                                <label for="">Output Type *</label>
+                                                <div class="drop-down-box">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Credit</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Credit</li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div>    
                                             </div>
                                         </div>
 

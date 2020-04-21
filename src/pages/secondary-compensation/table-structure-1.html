@@ -327,63 +327,171 @@
                             <h3>Table Structures List </h3>
                         </div>
 
-                        <div class="record-part">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4 class="show-record">Showing 0 records</h4>
-                                </div>
-                                <div class="col-6">
-                                    <div class="search-part">
-                                        <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" class="sg-submit-btn">Add New</button>
+                        <!-- Tabs -->
+                        <div id="tab">
+                            <div class="">
+                                <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
+                                    <li><span class="back-btn" id="basic-back"><</span></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Basic Configuration</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-2" role="tab" aria-controls="tab-item-2" aria-selected="false">Table Data</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
+                                        <form class="form-part">
+                                            <span class="reset-btn">Reset</span>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="">Table ID *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Table ID</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="form-group">
+                                                        <label for="">Description *</label>
+                                                        <textarea rows="3" ></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="validationDatabase">Table Type</label>
+                                                        <div class="drop-down-box">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Compensation table</a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Compensation table</li>
+                                                              <li class="dropdown-item">Option-1</li>
+                                                              <li class="dropdown-item">Option-2</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="validationDatabase">Table Nature</label>
+                                                        <div class="drop-down-box">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Simple banded</a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Simple banded</li>
+                                                              <li class="dropdown-item">Option-1</li>
+                                                              <li class="dropdown-item">Option-2</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="">Date of Creation *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Date of Creation</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="">Date of Termination *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Date of Termination</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="">No.of Columns *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter No.of Columns   </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="validationDatabase">Output Variable ID</label>
+                                                        <div class="drop-down-box">
+                                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">RNEP-CREDIT</a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">RNEP-CREDIT</li>
+                                                              <li class="dropdown-item">Option-1</li>
+                                                              <li class="dropdown-item">Option-2</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    <div class="form-group">
+                                                        <label for="">Description *</label>
+                                                        <textarea rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button class="sg-submit-btn">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <label for="">Variable 1 value *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Variable 1 Value </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <label for="">Variable 2 From Value  *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Table ID</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <label for="">Variable 2 To Value  *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Variable 2 Value</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <label for="">Variable 3 Value *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Variable 3 Value</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <label for="">Variable 4 Value *</label>
+                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <div class="invalid-feedback">Enter Variable 4 Value</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <ul class="btn-part">
+                                                        <li><a href="#" class="del-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></a></li>
+                                                        <li><a href="#" class="add-tb-btn"><img src="../../images/add-icon.svg" alt="add-icon"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="record-list">
-                            <div class="rocord-head clearfix">
-                                <ul>
-                                    <li><span>Table ID</span></li>
-                                    <li><span>Description</span></li>
-                                    <li><span>Table Type</span></li>
-                                    <li><span>No.of Columns</span></li>
-                                </ul>
-                            </div>    
-                            <div class="error-msg">
-                                <img src="../../images/no-found-img.svg" alt="no-found">
-                                <span>No Results Found</span>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="" id="pagination">
-                            <div class="sg-sub-block">
-                                <div class="">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination pagination-default">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                     </div>
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
                             <div class="save-btn">
+                                <a href="#"  class="sg-submit-btn">Save</a>
                                 <a href="#"  class="sg-submit-btn">Prev</a>
                                 <a href="#"  class="sg-submit-btn">Next</a>
                             </div>

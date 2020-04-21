@@ -154,7 +154,7 @@
                                     </section>
                                     <div class="main-nav-list" style="display: none;">
                                         <div class="nav-title">
-                                          <a href="#" class="back-btn" id="basic-back"><i class="fas fa-chevron-left"></i></a>
+                                          <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
                                           <h3>Configuration Management</h3>
                                         </div>
                                         <div class="nav-list">
@@ -271,8 +271,8 @@
             <div class="page-title main-content-header">
                 <div class="row">
                     <div class="col-8">
-                        <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">Secondary Compensation Plan Maintenance</h4>
+                        <div class="sg-sub-block clearfix" id="secondary-compensation-breadcrumb">
+                            <h4 class="sg-section-sub-heading">Secondary Compensation Plan List</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
@@ -284,112 +284,193 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="complete-btn">
-                            <button class="sg-submit-btn">Complete</button>
+                        <div class="secondary-compensation-success">
+                            <div class="toastr clearfix">
+                                <div class="icon-box">
+                                   <img src="/images/select-icon.svg" alt="select-icon">
+                                </div>
+                                <div class="success-cont">
+                                   <p>Record deleted successfully!!</p>
+                                   <img src="/images/close-icon.svg" alt="close-icon">
+                                </div>
+                             </div>
+                             <!-- <div class="toastr clearfix">
+                                <div class="icon-box error-box">
+                                   <img src="/images/error-icon.svg" alt="error-icon">
+                                </div>
+                                <div class="success-cont">
+                                   <p>Server connection failed. Please try again to save.</p>
+                                   <img src="/images/close-icon.svg" alt="close-icon">
+                                </div>
+                             </div>  -->
                         </div>
-                    </div>
                 </div>
             </div>
 
             <div class="main-content-body">
-                <div class="sub-head clearfix">
-                    <ul>
-                        <li><div class="back-btn"><a href="#"><</a></div></li>
-                        <li class="m-0"><div>Compensation ID <span>SCOMP-002</span></div></li>
-                        <li><div>Description <span>Long term seniority Allowance</span></div></li>
-                        <li><div>Start Date <span>17/01/2017</span></div></li>
-                        <li><div>Status <button class="pend-btn">Pending</button></div></li>
-                        <li><div><a href="#" class="add-btn">Edit</a></div></li>
-                    </ul>
-                </div>
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <div class="sg-sub-block">
-                            <div class="aside-menu">
-                                <ul>
-                                  <li><a  href="basic-information.html">Basic Information</a></li>
-                                  <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
-                                  <li><a href="payment-rules.html">Payment Rules</a></li>
-                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
-                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
-                                  <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html" >Temporary variable</a></li>
-                                  <li><a href="table-structure.html" class="active">Table structure</a></li>
-                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
-                                  <li><a href="compensation-flow.html">Compensation Flow</a></li>
-                                </ul>
-                              </div>
+                <div class="secondary-plan-list">
+                    <div class="record-part">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4 class="show-record">Showing 0 records</h4>
+                            </div>
+                            <div class="col-6">
+                                <div class="search-part">
+                                    <input type="search" name="" placeholder="Search" class="search-box">
+                                    <button type="button" class="sg-submit-btn">Add New</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-9 p-0">
-                        <div class="side-menu-title">
-                            <h3>Table Structures List </h3>
-                        </div>
 
-                        <div class="record-part">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4 class="show-record">Showing 0 records</h4>
-                                </div>
-                                <div class="col-6">
-                                    <div class="search-part">
-                                        <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" class="sg-submit-btn">Add New</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="record-list">
-                            <div class="rocord-head clearfix">
-                                <ul>
-                                    <li><span>Table ID</span></li>
-                                    <li><span>Description</span></li>
-                                    <li><span>Table Type</span></li>
-                                    <li><span>No.of Columns</span></li>
-                                </ul>
-                            </div>    
-                            <div class="error-msg">
-                                <img src="../../images/no-found-img.svg" alt="no-found">
-                                <span>No Results Found</span>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="" id="pagination">
-                            <div class="sg-sub-block">
-                                <div class="">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination pagination-default">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
+                    <div class="list-table">
+                        <table class="table table-default table-hover">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Compensation ID</th>
+                                    <th>Description</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-001</td>
+                                    <td>Persistency Bonus</td>
+                                    <td>14/05/2018</td>
+                                    <td>—</td>
+                                    <td><button class="pending-btn">Pending</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
                                         </ul>
-                                    </nav>
-                                </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-002</td>
+                                    <td>Long term seniority Allowance</td>
+                                    <td>17/01/2017</td>
+                                    <td>—</td>
+                                    <td><button class="pending-btn">Inactive</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-003</td>
+                                    <td>Special monthly bonus</td>
+                                    <td>01/02/2018</td>
+                                    <td>31/01/2019</td>
+                                    <td><button class="inactive-btn">Inactive</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-004</td>
+                                    <td>Training Allowance</td>
+                                    <td>11/07/2016</td>
+                                    <td>—</td>
+                                    <td><button class="active-btn">Active</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox invisible">
+                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                        </div>
+                                    </td>
+                                    <td>SCOMP-005</td>
+                                    <td>Recruitment Bonus</td>
+                                    <td>01/12/2019</td>
+                                    <td>—</td>
+                                    <td><button class="active-btn">Active</button></td>
+                                    <td>
+                                        <a href="#" class="kebab"> </a>
+                                        <!-- <ul class="edit-part">
+                                            <li><button>Edit</button></li>
+                                            <li><button>Delete</button></li>
+                                            <li><button>Review</button></li>
+                                        </ul> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="list-footer">
+                        <!-- Pagination -->
+                        <div id="pagination">
+                            <div class="">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pagination-default">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part clearfix">
-                            <div class="save-btn">
-                                <a href="#"  class="sg-submit-btn">Prev</a>
-                                <a href="#"  class="sg-submit-btn">Next</a>
-                            </div>
-                            <div class="close-btn-part">
-                                <button type="button" class="close-btn">Close</button>
-                            </div>
+                        <div class="close-part">
+                            <button class="cancel-btn">Close</button>
                         </div>
                     </div>
                 </div>
@@ -406,3 +487,4 @@
     <script src="../../js/app.js"></script>
 </body>
 </html>
+
