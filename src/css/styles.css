@@ -9410,18 +9410,19 @@ a:hover {
           width: 40%;
           text-align: right;
           padding-right: 20px; }
-          .page-wrapper .main-content-wrapper .main-content-body .data-assign-part .close-btn-part .close-btn {
-            background: transparent;
-            border-radius: 26px;
-            border: solid 1px #6fbc78;
-            color: #6fbc78;
-            font-size: 15px;
-            font-weight: 600;
-            padding: 4px 20px;
-            text-transform: capitalize; }
         .page-wrapper .main-content-wrapper .main-content-body .data-assign-part .close-sec {
           float: none;
           width: 100%; }
+
+.close-btn {
+  background: transparent;
+  border-radius: 26px;
+  border: solid 1px #6fbc78;
+  color: #6fbc78;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 4px 20px;
+  text-transform: capitalize; }
 
 .footer-sec {
   text-align: center;
@@ -10064,7 +10065,8 @@ a:hover {
   bottom: -90px;
   background: #fff;
   right: 25px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  z-index: 3; }
 
 .secondary-plan-list {
   background: #fff;
@@ -10196,6 +10198,84 @@ a:hover {
 
 #secondary-compensation-breadcrumb {
   padding-top: 22px; }
+
+/*  -----------  Configuration Management  ------- */
+.pagination-part {
+  padding: 30px 0;
+  position: relative;
+  margin-top: 50px; }
+  .pagination-part .close-btn-part {
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+
+.variable-master-table table {
+  width: 95%;
+  margin: auto; }
+  .variable-master-table table tr {
+    margin-bottom: 20px; }
+    .variable-master-table table tr:hover {
+      background: #fdf7eb; }
+    .variable-master-table table tr th {
+      border-bottom: 1px solid #a5aebf; }
+      .variable-master-table table tr th:nth-child(1) {
+        width: 2%; }
+      .variable-master-table table tr th:nth-child(2) {
+        width: 15%; }
+      .variable-master-table table tr th:nth-child(3) {
+        width: 20%; }
+      .variable-master-table table tr th:nth-child(4) {
+        width: 20%;
+        text-align: center; }
+      .variable-master-table table tr th:nth-child(5) {
+        width: 20%; }
+    .variable-master-table table tr td {
+      color: rgba(0, 0, 0, 0.9);
+      font-size: 14px; }
+      .variable-master-table table tr td:last-child a {
+        float: right;
+        margin-top: 15px; }
+      .variable-master-table table tr td:nth-child(4) {
+        text-align: center; }
+
+.aggregation-services-model.production-services-form.variable-master-model {
+  padding: 20px 20px 10px !important;
+  position: relative; }
+  .aggregation-services-model.production-services-form.variable-master-model .modal .modal-title span {
+    display: block; }
+  .aggregation-services-model.production-services-form.variable-master-model .modal .remove-btn {
+    margin-top: 5px; }
+  .aggregation-services-model.production-services-form.variable-master-model .modal .modal-dialog {
+    width: 53% !important; }
+  .aggregation-services-model.production-services-form.variable-master-model .modal .sg-submit-btn {
+    background: #6fbc78;
+    padding: 8px 30px; }
+  .aggregation-services-model.production-services-form.variable-master-model form {
+    width: 85% !important;
+    padding: 20px 20px 0 !important; }
+    .aggregation-services-model.production-services-form.variable-master-model form .reset-btn {
+      position: absolute;
+      right: 50px;
+      top: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #6fbc78; }
+  .aggregation-services-model.production-services-form.variable-master-model .modal-footer {
+    margin-top: 60px !important; }
+
+#add-icon {
+  margin-top: 30px; }
+
+#allowed-value {
+  min-height: 60vh;
+  width: 80%;
+  margin: auto; }
+
+.data-assign-part.allowed-value-btn .save-btn {
+  width: 50% !important; }
+
+.data-assign-part.allowed-value-btn .close-btn-part {
+  width: 50% !important; }
 
 /* Layout End */
 .sg-header {

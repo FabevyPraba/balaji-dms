@@ -272,12 +272,14 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">Client Configuration Menu</h4>
+                            <h4 class="sg-section-sub-heading">Allowed values</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">configuration management</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">client configuration</li>
+                                    <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Master Data</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Allowed values</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Variables with Allowed values</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -292,211 +294,57 @@
             </div>
 
             <div class="main-content-body">
-                <!-- Tabs -->
-                <div id="tab" class="client-configuration-tab">
-                    <div class="">
-                        <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Basic Configuration</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-2" role="tab" aria-controls="tab-item-2" aria-selected="false">Agency / Agent Codes Configuration</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
+                <div class="sub-head clearfix">
+                    <ul>
+                        <li><div class="back-btn"><a href="#"><</a></div></li>
+                        <li class="m-0"><div>Variable-id <span>AGENCY-NAME</span></div></li>
+                        <li><div>Description <span>Agency type</span></div></li>
+                        <li><div>D/M <span>Domain</span></div></li>
+                        <li><div>Screen Label <span>Agency type</span></div></li>
+                    </ul>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 p-0">
+                        <div class="form-part" id="allowed-value">
+                            <div class="" id="form">
+                                <form class="needs-validation" novalidate>
+                                    <div class="row">
 
-                            <div class="tab-pane fade show active" id="client-configuration-tab-1" role="tabpanel" aria-labelledby="default-tab-1">
-                                <form action="#">
-                                    <div class="client-configuration-form" >
-                                        <div class="row">
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Name of the client *</label>
-                                                   <input type="text" name=""  class="form-control">
-                                                   <div class="valid-feedback">
-                                                        <p>Name field should not include numerics</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Industry *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Insurance</a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">Insurance</li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Home Country *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Indonesia</a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">Indonesia</li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Home Currency *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home Currency</a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">Home Currency</li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Currency Symbol *</label>
-                                                   <input type="text" name=""  class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Maximum digits before decimal for numbers *</label>
-                                                   <input type="text" name=""  class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Number of digits for cents *</label>
-                                                   <input type="text" name=""  class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Date format *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Date format</a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">Date format</li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Number format *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comma and decimal point</a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">Comma and decimal point</li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Language for Screen Labels *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">English </a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">English </li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Data entry language for name and address *</label>
-                                                    <div class="drop-down-box">
-                                                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">English</a>
-                                                      <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">English</li>
-                                                         <li class="dropdown-item">2</li>
-                                                         <li class="dropdown-item">3</li>
-                                                         <li class="dropdown-item">4</li>
-                                                      </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                    <label for="" class="radio-text required-mark">Terminology Mapping  </label>
-                                                    <div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
-                                                            <label class="custom-control-label" for="customRadioInline1">Yes</label>
-                                                        </div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
-                                                            <label class="custom-control-label" for="customRadioInline2">No</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                    <label for="" class="radio-text required-mark">Basic Commission Calculation  </label>
-                                                    <div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
-                                                            <label class="custom-control-label" for="customRadioInline3">Internal</label>
-                                                        </div>
-                                                        <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
-                                                            <label class="custom-control-label" for="customRadioInline4">External</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                    <label for="" class="radio-text required-mark">Over-riding Commission Calculation  </label>
-                                                        <div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
-                                                                <label class="custom-control-label" for="customRadioInline5">Internal</label>
-                                                            </div>
-                                                            <div class="custom-control custom-radio custom-control-inline">
-                                                                <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
-                                                                <label class="custom-control-label" for="customRadioInline6">External</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            <p>Selection required</p>
-                                                        </div>
-                                                </div>
+                                        <div class="col-5">
+                                            <div class="form-group">
+                                                <label for="validationDatabase">Allowed value </label>
+                                                <input type="text" name="" class="form-control">
+                                                
                                             </div>
                                         </div>
+                                        <div class="col-5">
+                                            <div class="form-group">
+                                                <label for="validationDatabase">Allowed value Description </label>
+                                                <input type="text" name="" class="form-control">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="edit-sec">
+                                               <!-- <button><img src="../../images/edit-icon.svg" alt="edit-icon"></button> -->
+                                               <!-- <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button> -->
+                                               <button class="add-btn" id="add-icon"><img src="../../images/add-icon.svg" alt="add-icon"></button>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="data-assign-part clearfix client-configuration-footer">
-                                        <div class="save-btn">
-                                            <a href="submit"  class="sg-submit-btn">Save</a>
-                                        </div>
-                                        <div class="close-btn-part">
-                                            <button type="button" class="close-btn">Close</button>
-                                        </div>
-                                    </div>
-                                </form>    
+                                </form>
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="col-12 p-0">
+                        <div class="data-assign-part allowed-value-btn clearfix">
+                            <div class="save-btn">
+                                <button type="button" class="sg-submit-btn">Save</button>
                             </div>
-
-                            <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2"></div>
-
+                            <div class="close-btn-part">
+                                <button type="button" class="close-btn">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>

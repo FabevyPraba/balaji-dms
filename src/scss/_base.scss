@@ -663,6 +663,8 @@ a:hover {
     }
 }
 
+
+
 // Kebab styling
 .kebab {
     cursor: pointer;
@@ -968,17 +970,7 @@ a:hover {
                     float: left;
                     width: 40%;
                     text-align: right;
-                    padding-right: 20px;
-                    .close-btn {
-                        background: transparent;
-                        border-radius: 26px;
-                        border: solid 1px #6fbc78;
-                        color: #6fbc78;
-                        font-size: 15px;
-                        font-weight: 600;
-                        padding: 4px 20px;
-                        text-transform: capitalize;
-                    }
+                    padding-right: 20px; 
                 }
                 .close-sec {
                     float: none;
@@ -987,6 +979,17 @@ a:hover {
             }
         }
     }
+}
+
+.close-btn {
+    background: transparent;
+    border-radius: 26px;
+    border: solid 1px #6fbc78;
+    color: #6fbc78;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4px 20px;
+    text-transform: capitalize;
 }
 
 .footer-sec {
@@ -1879,6 +1882,7 @@ a:hover {
     background: #fff;
     right: 25px;
     margin-bottom: 20px;
+    z-index: 3;
 }
 
 .secondary-plan-list {
@@ -2063,5 +2067,120 @@ a:hover {
     padding-top:22px;
 }
 
+
+/*  -----------  Configuration Management  ------- */
+
+.pagination-part {
+    padding:30px 0;
+    position:relative;
+    margin-top: 50px;
+    .close-btn-part{
+        position:absolute;
+        right: 20px;
+        bottom:20px;
+    }
+}
+
+.variable-master-table{
+    table {
+        width: 95%;
+        margin: auto;
+        tr {
+            margin-bottom: 20px;
+            &:hover {
+                background: #fdf7eb;
+            }
+            th {
+                border-bottom: 1px solid #a5aebf;
+                &:nth-child(1) {
+                    width: 2%;
+                }
+                &:nth-child(2) {
+                    width: 15%;
+                }
+                &:nth-child(3) {
+                    width: 20%;
+                }
+                &:nth-child(4) {
+                    width: 20%;
+                    text-align: center;
+                }
+                &:nth-child(5) {
+                    width: 20%;
+                }
+            }
+            td {
+                color: rgba(0, 0, 0, 0.9);
+                font-size: 14px;
+                &:last-child {
+                    a {
+                        float: right;
+                        margin-top: 15px;
+                    }
+                }
+                &:nth-child(4) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+.aggregation-services-model.production-services-form.variable-master-model{
+    padding: 20px 20px 10px !important;
+    position:relative;
+    .modal {
+        .modal-title{
+            span{
+                display: block;
+            }
+        }
+        .remove-btn{
+            margin-top: 5px;
+        }
+        .modal-dialog{
+            width: 53% !important;
+        }
+        .sg-submit-btn{
+            background:#6fbc78;
+            padding:8px 30px;
+        }
+    }
+    form{
+        width: 85% !important;
+        padding:20px 20px 0 !important;
+        .reset-btn{
+            position:absolute;
+            right: 50px;
+            top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #6fbc78;
+
+        }
+    }
+    .modal-footer{
+        margin-top: 60px !important;
+    }
+}
+
+#add-icon{
+    margin-top: 30px;
+}
+#allowed-value{
+    min-height: 60vh;
+    width: 80%;
+    margin: auto;
+}
+
+.data-assign-part.allowed-value-btn{
+    .save-btn{
+        width: 50% !important;
+    }
+    .close-btn-part{
+        width: 50% !important;
+    }
+}
 
 /* Layout End */
