@@ -10203,7 +10203,8 @@ a:hover {
 .pagination-part {
   padding: 30px 0;
   position: relative;
-  margin-top: 50px; }
+  margin-top: 50px;
+  border-top: 1px solid #dee2e6; }
   .pagination-part .close-btn-part {
     position: absolute;
     right: 20px;
@@ -10242,7 +10243,9 @@ a:hover {
   padding: 20px 20px 10px !important;
   position: relative; }
   .aggregation-services-model.production-services-form.variable-master-model .modal .modal-title span {
-    display: block; }
+    display: block;
+    color: #a1acbf;
+    font-size: 14px; }
   .aggregation-services-model.production-services-form.variable-master-model .modal .remove-btn {
     margin-top: 5px; }
   .aggregation-services-model.production-services-form.variable-master-model .modal .modal-dialog {
@@ -10270,12 +10273,127 @@ a:hover {
   min-height: 60vh;
   width: 80%;
   margin: auto; }
+  #allowed-value form input:focus {
+    background: #f2f2f2; }
 
 .data-assign-part.allowed-value-btn .save-btn {
   width: 50% !important; }
 
 .data-assign-part.allowed-value-btn .close-btn-part {
   width: 50% !important; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-dialog {
+  width: 30% !important; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .sg-submit-btn {
+  padding: 8px 20px; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .remove-btn {
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: -30px; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-title h3 {
+  line-height: 1.6;
+  display: inline;
+  margin-right: 0; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-title .add-btn {
+  padding: 4px 15px;
+  font-size: 13px; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-title span {
+  margin-top: 5px; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .reset-btn {
+  right: 85px;
+  top: -18px; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-dialog {
+  min-height: 100vh; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-footer {
+  margin-top: 220px !important; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal form label {
+  padding-top: 3px; }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal form .custom-control-label {
+  color: #000; }
+
+#maintain-footer {
+  margin-top: 20px !important; }
+
+.allowed-value-form {
+  width: 100%; }
+  .allowed-value-form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9a9a9a; }
+  .allowed-value-form tr td {
+    padding-right: 20px; }
+    .allowed-value-form tr td input {
+      margin-bottom: 15px; }
+    .allowed-value-form tr td #add-icon {
+      margin-top: 0; }
+    .allowed-value-form tr td .edit-sec {
+      margin-top: -15px;
+      padding: 0; }
+    .allowed-value-form tr td .close-icon {
+      width: 12px; }
+    .allowed-value-form tr td:nth-child(3) {
+      padding-right: 0; }
+
+.lob-master-body {
+  width: 60%;
+  margin: auto; }
+  .lob-master-body .variable-master-table table tr th:nth-child(4) {
+    text-align: left;
+    width: 30%; }
+  .lob-master-body .variable-master-table table tr td:nth-child(4) {
+    text-align: left; }
+
+.list-channel-sec .variable-master-table table {
+  width: 100%; }
+  .list-channel-sec .variable-master-table table tr th:nth-child(2) {
+    width: 15%; }
+  .list-channel-sec .variable-master-table table tr th:nth-child(3) {
+    width: 20%; }
+  .list-channel-sec .variable-master-table table tr th:nth-child(4) {
+    width: 15%;
+    text-align: left; }
+  .list-channel-sec .variable-master-table table tr th:nth-child(5) {
+    width: 18%; }
+  .list-channel-sec .variable-master-table table tr th:nth-child(6) {
+    width: 15%; }
+  .list-channel-sec .variable-master-table table tr td:nth-child(4) {
+    text-align: left; }
+
+.maintain-default-sec .variable-master-table table {
+  width: 100%; }
+  .maintain-default-sec .variable-master-table table tr th:nth-child(2) {
+    width: 10%; }
+  .maintain-default-sec .variable-master-table table tr th:nth-child(3) {
+    width: 10%; }
+  .maintain-default-sec .variable-master-table table tr th:nth-child(4) {
+    width: 10%;
+    text-align: left; }
+  .maintain-default-sec .variable-master-table table tr th:nth-child(5) {
+    width: 40%; }
+  .maintain-default-sec .variable-master-table table tr td:nth-child(4) {
+    text-align: left; }
+
+.list-of-license .variable-master-table table {
+  width: 100%; }
+  .list-of-license .variable-master-table table tr th:nth-child(2) {
+    width: 15%; }
+  .list-of-license .variable-master-table table tr th:nth-child(3) {
+    width: 30%; }
+  .list-of-license .variable-master-table table tr th:nth-child(4) {
+    width: 20%;
+    text-align: left; }
+  .list-of-license .variable-master-table table tr td:nth-child(4) {
+    text-align: left; }
 
 /* Layout End */
 .sg-header {

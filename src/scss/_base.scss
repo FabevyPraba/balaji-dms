@@ -2074,6 +2074,7 @@ a:hover {
     padding:30px 0;
     position:relative;
     margin-top: 50px;
+    border-top: 1px solid #dee2e6;
     .close-btn-part{
         position:absolute;
         right: 20px;
@@ -2134,6 +2135,8 @@ a:hover {
         .modal-title{
             span{
                 display: block;
+                 color: #a1acbf;
+                 font-size: 14px;
             }
         }
         .remove-btn{
@@ -2172,6 +2175,13 @@ a:hover {
     min-height: 60vh;
     width: 80%;
     margin: auto;
+    form{
+        input{
+            &:focus{
+                background:#f2f2f2;
+            }
+        }
+    }
 }
 
 .data-assign-part.allowed-value-btn{
@@ -2182,5 +2192,192 @@ a:hover {
         width: 50% !important;
     }
 }
+
+.aggregation-services-model.production-services-form.variable-master-model.lob-modal{
+    .modal-dialog{
+        width: 30% !important;
+    }
+    .sg-submit-btn{
+        padding:8px 20px;
+    }
+    .remove-btn{
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-left: -30px;
+    }
+    .modal-title{
+        h3{
+            line-height: 1.6;
+            display: inline;
+            margin-right: 0;
+        }
+        .add-btn{
+            padding:4px 15px;
+            font-size: 13px;
+        }
+        span{
+            margin-top: 5px;
+        }
+    }
+    .reset-btn{
+        right: 85px;
+        top: -18px;
+    }
+    .modal-dialog {
+        min-height: 100vh;
+    }
+    .modal-footer{
+        margin-top: 220px !important;
+    }
+    form{
+        label{
+            padding-top:3px;
+        }
+        .custom-control-label{
+            color: #000;
+        }
+    }
+}
+
+#maintain-footer{
+    margin-top: 20px !important;
+}
+
+
+.allowed-value-form{
+    width: 100%;
+    label{
+        font-size: 16px;
+        font-weight: 500;
+        color: #9a9a9a;
+    }
+    tr{
+        td{
+            padding-right: 20px;
+            input{
+                margin-bottom: 15px;
+            }
+            #add-icon{
+                margin-top: 0;
+            }
+            .edit-sec{
+                margin-top: -15px;
+                padding:0;  
+            }
+            .close-icon{
+                width: 12px;
+            }
+            &:nth-child(3){
+                padding-right:0;
+            }
+        }
+    }
+}
+
+.lob-master-body{
+    width: 60%;
+    margin: auto;
+    .variable-master-table{
+        table tr th:nth-child(4){
+            text-align: left;
+            width: 30%;
+        } 
+        table tr td:nth-child(4){
+            text-align: left;
+        }
+    }
+}
+
+.list-channel-sec{
+    .variable-master-table{
+        table{
+            width: 100%;
+            tr{
+                th{
+                    &:nth-child(2){
+                        width: 15%;
+                    }
+                    &:nth-child(3){
+                        width: 20%;
+                    }
+                    &:nth-child(4){
+                        width: 15%;
+                        text-align: left;
+                    }
+                    &:nth-child(5){
+                        width: 18%;
+                    }
+                    &:nth-child(6){
+                        width: 15%;
+                    }
+                }
+                td{
+                   &:nth-child(4){
+                        text-align: left;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.maintain-default-sec{
+    .variable-master-table{
+        table{
+            width: 100%;
+            tr{
+                th{
+                    &:nth-child(2){
+                        width: 10%;
+                    }
+                    &:nth-child(3){
+                        width: 10%;
+                    }
+                    &:nth-child(4){
+                        width: 10%;
+                        text-align: left;
+                    }
+                    &:nth-child(5){
+                        width: 40%;
+                    }
+                }
+                td{
+                   &:nth-child(4){
+                        text-align: left;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.list-of-license{
+    .variable-master-table{
+        table{
+            width: 100%;
+            tr{
+                th{
+                    &:nth-child(2){
+                        width: 15%;
+                    }
+                    &:nth-child(3){
+                        width: 30%;
+                    }
+                    &:nth-child(4){
+                        width: 20%;
+                        text-align: left;
+                    }
+                }
+                td{
+                   &:nth-child(4){
+                        text-align: left;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+
 
 /* Layout End */

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.39" height="15.389" viewBox="0 0 15.39 15.389">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #394e74;
+        stroke: #394e74;
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <g id="close_1_" data-name="close (1)" transform="translate(0.25 0.234)">
+    <g id="Group_526" data-name="Group 526" transform="translate(0 0.016)">
+      <path id="Path_478" data-name="Path 478" class="cls-1" d="M9.085,7.461l5.567-5.567a.816.816,0,0,0,0-1.152L14.164.254a.816.816,0,0,0-1.152,0L7.445,5.821,1.878.254a.816.816,0,0,0-1.151,0L.238.741a.815.815,0,0,0,0,1.152L5.806,7.461.238,13.028a.817.817,0,0,0,0,1.152l.488.488a.816.816,0,0,0,1.151,0L7.445,9.1l5.567,5.567a.808.808,0,0,0,.576.238h0a.808.808,0,0,0,.576-.238l.488-.488a.817.817,0,0,0,0-1.152Z" transform="translate(0 -0.016)"/>
+    </g>
+  </g>
+</svg>
