@@ -127,6 +127,58 @@ var siteMapData = {
       },
     ],
   },
+  "channel-management": {
+    title: "Channel Management",
+    "sub-menu":[]
+  },
+  "movements": {
+    title: "Movements",
+    "sub-menu":[]
+  },
+  "primary-compensation": {
+    title: "Primary Compensation",
+    "sub-menu":[]
+  },
+  "secondary-compensation": {
+    title: "Secondary Compensation",
+    "sub-menu":[]
+  },
+  "campaigns-contest": {
+    title: "Campaigns / Contest",
+    "sub-menu":[]
+  },
+  "business-process-management": {
+    title: "Business Process Management",
+    "sub-menu":[]
+  },
+  "document-management": {
+    title: "Document Management",
+    "sub-menu":[]
+  },
+  "performance-management": {
+    title: "Performance Management",
+    "sub-menu":[]
+  },
+  "file-upload": {
+    title: "File Upload",
+    "sub-menu":[]
+  },
+  "file-download": {
+    title: "File Download",
+    "sub-menu":[]
+  },
+  "batch-jobs": {
+    title: "Batch Jobs",
+    "sub-menu":[]
+  },
+  "user-management": {
+    title: "User Management",
+    "sub-menu":[]
+  },
+  "ai-based-analytics": {
+    title: "AI based Analytics",
+    "sub-menu":[]
+  }
 };
 
 $(document).ready(function () {
@@ -227,6 +279,19 @@ $(document).ready(function () {
 	  var searchKeyword = $searchInput.val(),
 		  firstLevelData, $resultList,
 		  resultArray = [];
+
+    // Plot main menu 
+      //Hide all 'menu-cont' parent
+    $('.menu-cont').each(function(){
+      $(this).parent().addClass('d-none');
+    });
+	  for (const firstLevelKey in siteMapData) {
+      if(siteMapData[firstLevelKey].title.toLowerCase().indexOf(searchKeyword.toLowerCase()) >= 0){
+        //show currosponding 'menu-cont' parent
+        $('.menu-box[data-target="'+ firstLevelKey +'"]').parent('.menu-cont').parent().removeClass('d-none');
+      }
+    }
+    // Plot sub menu
 
 	  for (const firstLevelKey in siteMapData) {
 		firstLevelData = siteMapData[firstLevelKey];
