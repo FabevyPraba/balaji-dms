@@ -2378,6 +2378,36 @@ a:hover {
     }
 }
 
+.business-event{
+    .variable-master-table{
+        table{
+            width: 100%;
+            tr{
+                th{
+                    &:nth-child(3){
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+}
 
+
+#designation-btn{
+    margin-left: 180px;
+    margin-bottom: 20px;
+    padding:6px 20px;
+    display: inline-block;
+    margin-top:4px;
+}
+
+.course-label{
+    width: 100%;
+}
+
+#training-footer{
+    margin-top: 130px !important;
+}
 
 /* Layout End */
