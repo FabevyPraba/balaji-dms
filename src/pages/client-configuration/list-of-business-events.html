@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Webpack Config</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        .list-group-item {
+            border: 1px solid rgba(189, 189, 189, 0.125);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="page-wrapper">
+        <div class="header-sec">
+            <div class="container-fluid m-0">
+                <div class="row m-">
+                    <div class="col-7 p-0">
+                        <div class="header-left">
+                            <div class="menu-wrapper" style="position: relative;">
+                                <a data-toggle="collapse" href="#main-navigation" role="button" aria-expanded="false" aria-controls="main-navigation" id="main-navigation-trigger"><i class="icon-menu"></i></a>
+                                <div class="collapse" id="main-navigation" style="position: absolute; top: 100%; background-color: #fff; z-index: 10;">
+                                    <section class="main-menu">
+                                        <div class="search-menu">
+                                            <form action="#">
+                                                <div class="form-group">
+                                                    <img src="/images/search-icon.svg" alt="search-icon" class="search-icon">
+                                                    <input type="search" name="" class="searh-box" placeholder="Search  menu">
+                                                    <img src="/images/clock-icon.svg" alt="clock-icon" class="clock-icon">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="menu-list">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#" data-target="configuration-management">
+                                                            <img src="/images/menu-icon-1.svg" alt="menu-icon">
+                                                            <span>Configuration Management</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#" data-target="" data-target="channel-management">
+                                                            <img src="/images/menu-icon-2.svg" alt="menu-icon">
+                                                            <span>Channel Management</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-3.svg" alt="menu-icon">
+                                                            <span>Movements</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-4.svg" alt="menu-icon">
+                                                            <span>Primary Compensation</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-5.svg" alt="menu-icon">
+                                                            <span>Secondary Compensation</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-6.svg" alt="menu-icon">
+                                                            <span>Campaigns / Contest</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-7.svg" alt="menu-icon">
+                                                            <span>Business Process Management</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-8.svg" alt="menu-icon">
+                                                            <span>Document Management</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-9.svg" alt="menu-icon">
+                                                            <span>Performance Management</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-10.svg" alt="menu-icon">
+                                                            <span>File Upload</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-11.svg" alt="menu-icon">
+                                                            <span>File Download</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-12.svg" alt="menu-icon">
+                                                            <span>Batch Jobs</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-13.svg" alt="menu-icon">
+                                                            <span>User Management</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="menu-cont">
+                                                        <a class="menu-box" href="#">
+                                                            <img src="/images/menu-icon-14.svg" alt="menu-icon">
+                                                            <span>AI based Analytics</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                
+                                        </div>
+                                    </section>
+                                    <div class="main-nav-list" style="display: none;">
+                                        <div class="nav-title">
+                                          <a href="#" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+                                          <h3>Configuration Management</h3>
+                                        </div>
+                                        <div class="nav-list">
+                                          <ul>
+                                            <li><a href="#" class="">Client Configuration</a></li>
+                                            <li><a href="#" class="map-txt">Terminology Mapping</a></li>
+                                            <li>
+                                                <a href="#" class="data-txt">Master Data</a>
+                                                <ul class="">
+                                                  <li><a href="#">Variable Master</a></li>
+                                                  <li><a href="#">Allowed values</a></li>
+                                                  <li><a href="#">Product Master</a></li>
+                                                  <li><a href="#">LOB Master</a></li>
+                                                  <li><a href="#">Default list of questions for a Channel / Agency type</a></li>
+                                                  <li><a href="#">Default list of questions for a Channel / Agent type</a></li>
+                                                  <li><a href="#">Default list of exams for a License type</a></li>
+                                                  <li><a href="#">Default list of exams for a Designation</a></li>
+                                                  <li><a href="#">Default list of trainings for a License type</a></li>
+                                                  <li><a href="#">Default list of trainings for a Designation</a></li>
+                                                  <li><a href="#">Groupings of Designation-ids</a></li>
+                                                  <li><a href="#">Business event Master</a></li>
+                                                </ul>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo clearfix">
+                                <a href="#"><img src="../../images/logo-icon.png" alt="logo-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 padd-0">
+                        <div class="header-nav clearfix">
+                            <ul>
+                                <li>
+                                    <a data-toggle="collapse" href="#app-info" role="button" aria-expanded="true" aria-controls="app-info">
+                                        <i class="icon-information"></i>
+                                    </a>
+                                    <div class="app-info collapse dropdown dropdown-default" id="app-info">
+                                        <div class="app-title">
+                                           <h3>Application Info</h3>
+                                        </div>
+                                        <div class="app-list ">
+                                           <ul>
+                                              <li><p class="lt-text">Business Date <span class="rt-text">03/02/2020</span></p></li>
+                                              <li><p class="lt-text">Environment <span class="rt-text">Demo</span></p></li>
+                                              <li><p class="lt-text">Version <span class="rt-text">R20.2</span></p></li>
+                                              <li>
+                                                 <span class="lt-text">Database</span>
+                                                 <div class="drop-down-box custom-select-box d-inline-block">
+                                                    <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="fas fa-angle-down"></i></span>
+                                                    <ul class="dropdown-menu custom-select-options">
+                                                      <li class="dropdown-item custom-option">DB-001</li>
+                                                      <li class="dropdown-item custom-option">DB-002</li>
+                                                      <li class="dropdown-item custom-option">DB-003</li>
+                                                      <li class="dropdown-item custom-option">DB-004</li>
+                                                      <li class="dropdown-item custom-option">DB-005</li>
+                                                    </ul>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                 <span class="lt-text">Language</span>
+                                                 <div class="drop-down-box custom-select-box d-inline-block">
+                                                    <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">English  <i class="fas fa-angle-down"></i></span>
+                                                    <ul class="dropdown-menu custom-select-options">
+                                                        <li class="dropdown-item custom-option">English</li>
+                                                        <li class="dropdown-item custom-option">Chinese</li>
+                                                        <li class="dropdown-item custom-option">Bahasa</li>
+                                                    </ul>
+                                                </div>
+                                              </li>
+                                           </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">
+                                    <i class="icon-help"></i>
+                                </a></li>
+                                <li><a href="#">
+                                    <i class="icon-notifications-button"></i>
+                                </a></li>
+                                <li class="dropdown dropdown-default" id="account-info">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="text-avatar">RP</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="account-info">
+                                      <li class="dropdown-item">
+                                        <a href="#">
+                                            <label>Welcome</label>
+                                            <span>Renu Prakash</span>
+                                          </a>
+                                      </li>
+                                      <li class="dropdown-item">
+                                          <a href="#" class="test-me">
+                                              <label>Role</label>
+                                              <span>Agent (default)</span>
+                                          </a>
+                                      </li>
+                                      <li class="dropdown-item">
+                                          <a href="#"><span>Something else here</span></a>
+                                      </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="page-title main-content-header">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="sg-sub-block clearfix">
+                            <h4 class="sg-section-sub-heading">List of  Business events </h4>
+                            <div class="">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
+                                    <li class="breadcrumb-item " aria-current="page">Master Data</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Business event Master</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="complete-btn">
+                            <button class="sg-submit-btn">Complete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content-body lob-master-body business-event">
+                <div class="row m-0">
+                    <div class="col-12 p-0">
+                        <div class="record-part">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4 class="show-record">Showing 4 records</h4>
+                                </div>
+                                <div class="col-6">
+                                    <div class="search-part">
+                                        <input type="search" name="" placeholder="Search" class="search-box">
+                                        <button type="button" class="sg-submit-btn">Add New</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="record-list">
+                            <!-- Table -->
+                            <div class="variable-master-table">
+                                <div class="">
+                                    <table class="table table-default table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Business event</th>
+                                                <th>Business event Description</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>FYP</td>
+                                                <td>First year Premium</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <!-- <ul class="edit-part">
+                                                        <li><button>Edit</button></li>
+                                                        <li><button>Delete</button></li>
+                                                        <li><button>Review</button></li>
+                                                    </ul> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>FYP</td>
+                                                <td>First year Premium</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <!-- <ul class="edit-part">
+                                                        <li><button>Edit</button></li>
+                                                        <li><button>Delete</button></li>
+                                                        <li><button>Review</button></li>
+                                                    </ul> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>FYP</td>
+                                                <td>First year Premium</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><button>Edit</button></li>
+                                                        <li><button>Delete</button></li>
+                                                        <li><button>Review</button></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>FYP</td>
+                                                <td>First year Premium</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <!-- <ul class="edit-part">
+                                                        <li><button>Edit</button></li>
+                                                        <li><button>Delete</button></li>
+                                                        <li><button>Review</button></li>
+                                                    </ul> -->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> 
+                            <!-- <div class="error-msg">
+                                <img src="../../images/no-found-img.svg" alt="no-found">
+                                <span>No Results Found</span>
+                            </div> -->
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 p-0">
+                        <div class="pagination-part clearfix">
+                            <div class="pagination">
+                                <div class="">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination pagination-default">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="close-btn-part">
+                                <button type="button" class="close-btn">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-sec">
+            <p>Powered by <a href="#">Salzzappo</a></p>
+        </div>
+    </section>
+    
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+</html>
