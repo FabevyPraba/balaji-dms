@@ -273,13 +273,12 @@
                     <div class="col-10">
                         <div class="sg-sub-block clearfix">
                             <h4 class="sg-section-sub-heading">List of Channels & Agent type for default questions </h4>
-                            <div class="">
+                            <div class="breadcrumb-inner">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
-                                    <li class="breadcrumb-item " aria-current="page">Master Data</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Default list of questions for a channel</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Agent-type</li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Default list of questions for a Channel / Agent type</li>
 
                                     </ol>
                                 </nav>
@@ -300,7 +299,7 @@
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
-                                    <h4 class="show-record">Showing 4 records</h4>
+                                    <h4 class="show-record">Showing 2 records</h4>
                                 </div>
                                 <div class="col-6">
                                     <div class="search-part">
@@ -313,8 +312,8 @@
 
                         <div class="record-list">
                             <!-- Table -->
-                            <div class="variable-master-table">
-                                <div class="">
+                            <div class="variable-master-table" id="full-table">
+                                <div class="table-part">
                                     <table class="table table-default table-hover">
                                         <thead>
                                             <tr>
@@ -341,7 +340,7 @@
                                                 <td>Captive agent</td>
                                                 <td>01/01/2016</td>
                                                 <td>
-                                                    <a href="#" class="kebab"> </a>
+                                                    <a href="#" class="kebab active-edit"> </a>
                                                     <ul class="edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Delete</button></li>
@@ -369,49 +368,7 @@
                                                         <li><button>Review</button></li>
                                                     </ul> -->
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
-                                                    </div>
-                                                </td>
-                                                <td>AGENTS</td>
-                                                <td>Insurance Agents</td>
-                                                <td>CAPTIV</td>
-                                                <td>Captive agent</td>
-                                                <td>01/01/2016</td>
-                                                <td>
-                                                    <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
-                                                        <li><button>Edit</button></li>
-                                                        <li><button>Delete</button></li>
-                                                        <li><button>Review</button></li>
-                                                    </ul> -->
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
-                                                    </div>
-                                                </td>
-                                                <td>AGENTS</td>
-                                                <td>Insurance Agents</td>
-                                                <td>CAPTIV</td>
-                                                <td>Captive agent</td>
-                                                <td>01/01/2016</td>
-                                                <td>
-                                                    <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
-                                                        <li><button>Edit</button></li>
-                                                        <li><button>Delete</button></li>
-                                                        <li><button>Review</button></li>
-                                                    </ul> -->
-                                                </td>
-                                            </tr>
+                                            </tr>   
                                         </tbody>
                                     </table>
                                 </div>
@@ -448,7 +405,7 @@
                                 </div>
                             </div>
                             <div class="close-btn-part">
-                                <button type="button" class="close-btn">Close</button>
+                                <button type="button" class="close-btn" data-toggle="modal" data-target="#myRightAlignedModal">Close</button>
                             </div>
                         </div>
 
@@ -456,6 +413,77 @@
                 </div>
             </div>
         </div>
+        <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="myRightAlignedModal">
+               <div class="modal-dialog ">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-6 pr-0">
+                              <div class="modal-title">
+                                 <h3>Add Channel /  Agent type for default list of questions </h3>
+                                 <span>* Fields are mandatory</span>
+                              </div>
+                           </div>
+                           <div class="col-6 pl-0 pr-0">
+                              <div class="btn-part">
+                                 <button class="sg-submit-btn">Complete</button>
+                                 <button class="remove-btn" data-dismiss="modal"><img src="../../images/close-icon.svg"></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <form>
+                           <a href="#" class="reset-btn">Reset</a>
+                           <div class="row">                                 
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Channel  *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Call centre</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Call centre</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Agency type *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Retail Broker</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Retail Broker</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Effective Date *</label>
+                                    <input type="" name=""  class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <a href="#" class="save-btn">save</a>
+                              <a href="#" class="close-btn" data-dismiss="modal">Close</a>
+                           </div>
+                        </form>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
         <div class="footer-sec">
             <p>Powered by <a href="#">Salzzappo</a></p>

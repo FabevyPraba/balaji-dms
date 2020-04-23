@@ -277,7 +277,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
-                                    <li class="breadcrumb-item " aria-current="page">Master Data</li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Groupings of Designation-ids</li>
                                     </ol>
                                 </nav>
@@ -310,8 +310,8 @@
 
                         <div class="record-list">
                             <!-- Table -->
-                            <div class="variable-master-table">
-                                <div class="">
+                            <div class="variable-master-table" id="full-table">
+                                <div class="table-part">
                                     <table class="table table-default table-hover">
                                         <thead>
                                             <tr>
@@ -333,7 +333,7 @@
                                                 <td>Sales Director</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Review</button></li>
                                                     </ul> -->
@@ -342,15 +342,15 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck2">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                                     </div>
                                                 </td>
                                                 <td>SD</td>
                                                 <td>Sales Director</td>
                                                 <td>
-                                                    <a href="#" class="kebab"> </a>
-                                                    <ul class="edit-part">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Review</button></li>
                                                     </ul>
@@ -359,15 +359,15 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                                     </div>
                                                 </td>
                                                 <td>SD</td>
                                                 <td>Sales Director</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Review</button></li>
                                                     </ul> -->
@@ -376,15 +376,15 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                                     </div>
                                                 </td>
                                                 <td>SD</td>
                                                 <td>Sales Director</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Review</button></li>
                                                     </ul> -->
@@ -394,11 +394,6 @@
                                     </table>
                                 </div>
                             </div> 
-                            <!-- <div class="error-msg">
-                                <img src="../../images/no-found-img.svg" alt="no-found">
-                                <span>No Results Found</span>
-                            </div> -->
-                            
                         </div>
                         
                     </div>
@@ -426,7 +421,7 @@
                                 </div>
                             </div>
                             <div class="close-btn-part">
-                                <button type="button" class="close-btn">Close</button>
+                                <button type="button" class="close-btn" data-toggle="modal" data-target="#myRightAlignedModal">Close</button>
                             </div>
                         </div>
 
@@ -434,6 +429,64 @@
                 </div>
             </div>
         </div>
+        <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="myRightAlignedModal">
+               <div class="modal-dialog ">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-12 pl-0 pr-0">
+                              <div class="btn-part">
+                                 <button class="sg-submit-btn" id="designation-btn">Complete</button>
+                                 <button class="remove-btn" data-dismiss="modal"><img src="../../images/close-icon.svg"></button>
+                              </div>
+                           </div>
+                           <div class="col-12 pr-0">
+                              <div class="modal-title">
+                                 <h3>Grouping of Designation </h3>
+                                 <span>* Fields are mandatory</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <form>
+                           <a href="#" class="reset-btn">Reset</a>
+                           <div class="row"> 
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Designation *</label>
+                                    <input type="" name=""  class="form-control">
+                                 </div>
+                              </div>                                
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Designation Group  *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senior Manager</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Call centre</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                           <div class="modal-footer">
+                              <a href="#" class="save-btn">save</a>
+                              <a href="#" class="close-btn" data-dismiss="modal">Close</a>
+                           </div>
+                        </form>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
         <div class="footer-sec">
             <p>Powered by <a href="#">Salzzappo</a></p>

@@ -273,7 +273,7 @@
                     <div class="col-11">
                         <div class="sg-sub-block clearfix">
                             <h4 class="sg-section-sub-heading">Maintain default list of exams for License type </h4>
-                            <div class="">
+                            <div class="breadcrumb-inner">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
@@ -317,8 +317,8 @@
 
                         <div class="record-list">
                             <!-- Table -->
-                            <div class="variable-master-table">
-                                <div class="">
+                            <div class="variable-master-table" id="full-table">
+                                <div class="table-part">
                                     <table class="table table-default table-hover">
                                         <thead>
                                             <tr>
@@ -344,7 +344,7 @@
                                                 <td>Rules and Regulations for Financial Advisory Services</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Delete</button></li>
                                                     </ul> -->
@@ -353,8 +353,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck2">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                                     </div>
                                                 </td>
                                                 <td>06/01/2018</td>
@@ -363,7 +363,7 @@
                                                 <td>Rules and Regulations for Financial Advisory Services</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Delete</button></li>
                                                     </ul> -->
@@ -372,8 +372,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                                     </div>
                                                 </td>
                                                 <td>06/01/2018</td>
@@ -382,7 +382,7 @@
                                                 <td>Rules and Regulations for Financial Advisory Services</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <ul class="edit-part">
+                                                    <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Delete</button></li>
                                                     </ul>
@@ -391,8 +391,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                                     </div>
                                                 </td>
                                                 <td>06/01/2018</td>
@@ -401,7 +401,7 @@
                                                 <td>Rules and Regulations for Financial Advisory Services</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Delete</button></li>
                                                     </ul> -->
@@ -411,10 +411,6 @@
                                     </table>
                                 </div>
                             </div> 
-                            <!-- <div class="error-msg">
-                                <img src="../../images/no-found-img.svg" alt="no-found">
-                                <span>No Results Found</span>
-                            </div> -->
                             
                         </div>
                         
@@ -443,7 +439,7 @@
                                 </div>
                             </div>
                             <div class="close-btn-part">
-                                <button type="button" class="close-btn">Close</button>
+                                <button type="button" class="close-btn" data-toggle="modal" data-target="#myRightAlignedModal">Close</button>
                             </div>
                         </div>
 
@@ -451,6 +447,104 @@
                 </div>
             </div>
         </div>
+        <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="myRightAlignedModal">
+               <div class="modal-dialog " id="maintain-box">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-9 pr-0">
+                              <div class="modal-title">
+                                 <h3>Maintain default list of exams for License type </h3>
+                                 <span>* Fields are mandatory</span>
+                              </div>
+                           </div>
+                           <div class="col-3 pl-0 pr-0">
+                              <div class="btn-part">
+                                 <button class="remove-btn" data-dismiss="modal"><img src="../../images/close-icon.svg"></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <form>
+                           <a href="#" class="reset-btn">Reset</a>
+                           <div class="row">
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Start Date *</label>
+                                    <input type="" name=""  class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">End Date *</label>
+                                    <input type="" name=""  class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="radio-text required-mark">Mandatory  *  </label>
+                                    <div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="customRadioInline2">No</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="radio-text required-mark">Question  *  </label>
+                                    <div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions1" name="questions1" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions1">Rules and Regulations for Financial Advisory Services</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions2" name="questions2" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions2">Securities Products and Analysis</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions3" name="questions3" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions3">Collective Investment Schemes</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions4" name="questions4" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions4">Life Insurance and Investment-Linked Policies</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions5" name="questions5" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions5">Certified Financial Planner (CFP)</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions6" name="questions6" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions6">Chartered Financial Consultant (ChFC)</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="questions7" name="questions7" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions7">Associate Financial Consultant (AFC)</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer" id="maintain-footer">
+                              <a href="#" class="save-btn">save</a>
+                              <a href="#" class="close-btn" data-dismiss="modal">Close</a>
+                           </div>
+                        </form>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
         <div class="footer-sec">
             <p>Powered by <a href="#">Salzzappo</a></p>

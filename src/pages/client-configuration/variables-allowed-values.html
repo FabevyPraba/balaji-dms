@@ -277,7 +277,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
-                                    <li class="breadcrumb-item " aria-current="page">Master Data</li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Allowed values</li>
                                     </ol>
                                 </nav>
@@ -298,7 +298,7 @@
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
-                                    <h4 class="show-record">Showing 3 records</h4>
+                                    <h4 class="show-record">Showing 5 records</h4>
                                 </div>
                                 <div class="col-6">
                                     <div class="search-part">
@@ -311,8 +311,8 @@
 
                         <div class="record-list">
                             <!-- Table -->
-                            <div class="variable-master-table">
-                                <div class="">
+                            <div class="variable-master-table" id="full-table">
+                                <div class="table-part">
                                     <table class="table table-default table-hover">
                                         <thead>
                                             <tr>
@@ -337,17 +337,17 @@
                                                 <td>D</td>
                                                 <td>Channel-id</td>
                                                 <td>
-                                                    <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
-                                                    </ul> -->
+                                                    </ul>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck2">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                                     </div>
                                                 </td>
                                                 <td>LOB</td>
@@ -356,36 +356,16 @@
                                                 <td>Line of Business</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
-                                                    </div>
-                                                </td>
-                                                <td>AGENCY-MAS-ID</td>
-                                                <td>Agency master-id</td>
-                                                <td>D</td>
-                                                <td>Agency master-id</td>
-                                                <td>
-                                                    <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
-                                                        <li><button>Edit</button></li>
-                                                        <li><button>Delete</button></li>
-                                                        <li><button>Review</button></li>
                                                     </ul> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                                     </div>
                                                 </td>
                                                 <td>AGENCY-MAS-ID</td>
@@ -394,18 +374,16 @@
                                                 <td>Agency master-id</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
-                                                        <li><button>Delete</button></li>
-                                                        <li><button>Review</button></li>
                                                     </ul> -->
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                                     </div>
                                                 </td>
                                                 <td>AGENCY-MAS-ID</td>
@@ -414,9 +392,26 @@
                                                 <td>Agency master-id</td>
                                                 <td>
                                                     <a href="#" class="kebab"> </a>
-                                                    <!-- <ul class="edit-part">
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
                                                         <li><button>Edit</button></li>
-                                                        
+                                                    </ul> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck5">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck5"></label>
+                                                    </div>
+                                                </td>
+                                                <td>AGENCY-MAS-ID</td>
+                                                <td>Agency master-id</td>
+                                                <td>D</td>
+                                                <td>Agency master-id</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <!-- <ul class="edit-part" id="allowed-edit-part">
+                                                        <li><button>Edit</button></li>
                                                     </ul> -->
                                                 </td>
                                             </tr>

@@ -13,6 +13,16 @@ ul {
     padding: 0;
 }
 
+button{
+    &:focus{
+        outline: none !important;
+    }
+}
+
+input{
+    height: 45px !important;
+}
+
 .image {
     padding: $thumbnail-padding;
     background-color: $thumbnail-bg;
@@ -483,8 +493,10 @@ a:hover {
 .aside-menu {
     background: #f5f6f8;
     border-right: 1px solid #ebedf1;
+    position:relative;
+    z-index: 7;
     ul {
-        padding: 10px 0 50px;
+        padding: 10px 0 85px;
         list-style: none;
         li a {
             padding: 12px 15px;
@@ -513,11 +525,11 @@ a:hover {
         text-transform: capitalize;
         font-size: 13px;
         a {
-            color: #6d7f9d;
+            color: #3d557e;
         }
     }
     .breadcrumb-item.active {
-        color: #8d9ab1;
+        color: #7182a0 !important;
     }
 }
 
@@ -615,6 +627,7 @@ a:hover {
         }
         .btn-part {
             text-align: center;
+            float: right;
             .complete-btn {
                 padding: 6px 25px;
                 background: #6fbc78;
@@ -648,7 +661,8 @@ a:hover {
             padding: 8px 30px;
             border-radius: 25px;
             color: #fff;
-            font-size: 13px;
+            font-weight: 600;
+            font-size: 15px;
             background: #6fbc78;
             border: none;
             cursor: pointer;
@@ -670,7 +684,7 @@ a:hover {
     cursor: pointer;
     position: relative;
     display: inline-block;
-    background: #1c2b48;
+    background: #8695b1;
     width: 4px;
     height: 4px;
     border-radius: 50%;
@@ -681,7 +695,7 @@ a:hover {
     &:after {
         content: "";
         display: inline-block;
-        background: #1c2b48;
+        background: #8695b1;
         width: 4px;
         height: 4px;
         border-radius: 50%;
@@ -694,6 +708,13 @@ a:hover {
     &:after {
         top: 8px;
     }
+}
+.kebab.active-edit{
+    background: #1c2b48;
+    &:before,
+    &:after {
+      background: #1c2b48;  
+  }
 }
 
 .required-mark:after {
@@ -903,10 +924,22 @@ a:hover {
                 padding-top: 5px;
                 .sg-section-sub-heading {
                     float: left;
+                    font-size: 32px;
                 }
                 .breadcrumb {
-                    padding: 4px 15px;
+                    padding: 12px 15px;
+                    .breadcrumb-item{
+                        color: #3d557e;
+                        font-size: 14px;
+                        &:before{
+                            color: #b9c4d8;
+                        }
+                    }
                 }
+                nav{
+                    float: left;
+                }
+
             }
         }
         .complete-btn {
@@ -917,6 +950,9 @@ a:hover {
             background: #fff;
             box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
             border-radius: 5px;
+            min-height: 100vh;
+            position:relative;
+            overflow: hidden;
             .sg-sub-block,
             .aside-menu {
                 height: 100%;
@@ -933,7 +969,7 @@ a:hover {
                 }
             }
             .form-part {
-                padding: 30px 60px;
+                padding: 30px 60px 120px;
                 position: relative;
                 label {
                     font-size: 14px;
@@ -956,8 +992,13 @@ a:hover {
                 }
             }
             .data-assign-part {
-                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+                // box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
                 padding: 15px 0;
+                position:absolute;
+                left: 0;
+                bottom:0;
+                width: 100%;
                 a {
                     display: inline-block;
                 }
@@ -978,6 +1019,12 @@ a:hover {
                 }
             }
         }
+    }
+}
+
+.breadcrumb-inner{
+    .breadcrumb{
+        padding-left:0 !important;
     }
 }
 
@@ -1009,7 +1056,8 @@ a:hover {
 
 .sub-head {
     padding: 15px 0;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+    // box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     ul {
         li {
             float: left;
@@ -1144,8 +1192,8 @@ a:hover {
     color: #bebebe;
     border: 1px solid #a7a7a7;
     border-radius: 3px;
-    height: 35px;
-    padding: 6px 12px;
+    height: 45px;
+    padding: 12px;
     position: relative;
     &:after {
         content: "\f107";
@@ -1203,12 +1251,13 @@ a:hover {
 }
 
 .record-part {
-    padding: 30px 20px;
+    padding: 15px 20px;
     .show-record {
         font-size: 16px;
         font-weight: 600;
         color: #1c2b48;
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-left: 5px;
     }
     .search-part {
         text-align: right;
@@ -1260,12 +1309,19 @@ a:hover {
     padding: 4px 10px;
     outline: none;
     margin-right: 10px;
+    height: 35px !important;
+}
+
+.search-part{
+    .sg-submit-btn{
+        padding:7px 20px;
+    }
 }
 
 .form-group {
     label {
         color: #9a9a9a;
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
@@ -1290,6 +1346,7 @@ a:hover {
     .form-part {
         position: relative;
         padding: 20px 80px;
+        min-height: 120vh;
     }
     form {
         input {
@@ -1460,7 +1517,7 @@ a:hover {
         background: transparent;
         outline: none;
         color: #394e74;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         padding: 5px 50px 5px 30px;
         display: block;
@@ -1529,10 +1586,11 @@ a:hover {
         .modal-dialog {
             width: 70%;
             max-width: 70%;
-            height: auto;
-            padding: 20px 0;
+            min-height: 100vh;
+            padding: 30px 0px 30px 0;
             .modal-content {
                 padding: 0;
+                background: transparent;
             }
             .modal-head {
                 padding: 0 20px;
@@ -1540,6 +1598,7 @@ a:hover {
             .modal-body {
                 position: relative;
                 padding-bottom: 0;
+                min-height: 85vh;
                 .mandatory-text {
                     position: absolute;
                     right: 25px;
@@ -1559,7 +1618,7 @@ a:hover {
                         }
                     }
                     .aggregation-table {
-                        height: 100vh;
+                        height: 160vh;
                     }
                     #tab-item-1,
                     #tab-item-2,
@@ -1598,7 +1657,11 @@ a:hover {
                 .modal-footer {
                     margin: 0;
                     padding: 0;
-                    margin-top: 10px;
+                    position:absolute;
+                    left: 10px;
+                    bottom:30px;
+                    width: 100%;
+
                     .close-btn {
                         margin-bottom: 0;
                         padding: 7px 25px;
@@ -1614,8 +1677,6 @@ a:hover {
     border: none;
     outline: none;
     font-weight: 600;
-    float: right;
-    margin-right: 20px;
     &:focus {
         outline: none;
     }
@@ -1878,11 +1939,11 @@ a:hover {
 
 .edit-part {
     position: absolute;
-    bottom: -90px;
+    bottom: -95px;
     background: #fff;
     right: 25px;
-    margin-bottom: 20px;
     z-index: 3;
+    padding:5px 0;
 }
 
 .secondary-plan-list {
@@ -1890,6 +1951,7 @@ a:hover {
     padding: 20px 0 0px;
     position: relative;
     .list-table {
+        min-height: 100vh;
         tr {
             th {
                 padding: 10px;
@@ -2009,9 +2071,6 @@ a:hover {
         .close-btn-part {
             width: 50%;
         }
-        .client-configuration-footer {
-            margin-top: 50px;
-        }
     }
 }
 
@@ -2073,12 +2132,11 @@ a:hover {
 .pagination-part {
     padding:30px 0;
     position:relative;
-    margin-top: 50px;
     border-top: 1px solid #dee2e6;
     .close-btn-part{
         position:absolute;
         right: 20px;
-        bottom:20px;
+        bottom:15px;
     }
 }
 
@@ -2092,6 +2150,8 @@ a:hover {
                 background: #fdf7eb;
             }
             th {
+                font-size: 16px;
+                color: #9a9a9a;
                 border-bottom: 1px solid #a5aebf;
                 &:nth-child(1) {
                     width: 2%;
@@ -2112,7 +2172,7 @@ a:hover {
             }
             td {
                 color: rgba(0, 0, 0, 0.9);
-                font-size: 14px;
+                font-size: 15px;
                 &:last-child {
                     a {
                         float: right;
@@ -2124,6 +2184,10 @@ a:hover {
                 }
             }
         }
+    }
+
+    .table-part{
+        min-height: 100vh;
     }
 }
 
@@ -2147,11 +2211,11 @@ a:hover {
         }
         .sg-submit-btn{
             background:#6fbc78;
-            padding:8px 30px;
+            padding:6px 20px;
         }
     }
     form{
-        width: 85% !important;
+        width: 95% !important;
         padding:20px 20px 0 !important;
         .reset-btn{
             position:absolute;
@@ -2172,15 +2236,19 @@ a:hover {
     margin-top: 30px;
 }
 #allowed-value{
-    min-height: 60vh;
+    min-height: 92vh;
     width: 80%;
-    margin: auto;
+    margin:auto;
     form{
         input{
             &:focus{
                 background:#f2f2f2;
             }
         }
+    }
+    .edit-sec{
+        text-align: right;
+        padding-top:15px;
     }
 }
 
@@ -2195,28 +2263,29 @@ a:hover {
 
 .aggregation-services-model.production-services-form.variable-master-model.lob-modal{
     .modal-dialog{
-        width: 30% !important;
+        width: 500px !important;
+        background:#fff;
     }
     .sg-submit-btn{
         padding:8px 20px;
     }
     .remove-btn{
-        margin-right: 20px;
         margin-top: 10px;
-        margin-left: -30px;
     }
     .modal-title{
         h3{
-            line-height: 1.6;
+            line-height: 1.5;
             display: inline;
             margin-right: 0;
+            font-size: 22px;
         }
         .add-btn{
             padding:4px 15px;
-            font-size: 13px;
+            font-size: 14px;
         }
         span{
             margin-top: 5px;
+            font-size: 14px;
         }
     }
     .reset-btn{
@@ -2224,17 +2293,21 @@ a:hover {
         top: -18px;
     }
     .modal-dialog {
-        min-height: 100vh;
+        min-height: 112vh;
+        background:#fff;
     }
     .modal-footer{
-        margin-top: 220px !important;
+        padding-bottom:20px;
+        margin-top: 0px !important;
     }
     form{
         label{
-            padding-top:3px;
+            padding-top:0px;
         }
         .custom-control-label{
             color: #000;
+            margin-bottom: 10px;
+            font-size: 16px;
         }
     }
 }
@@ -2275,7 +2348,7 @@ a:hover {
 }
 
 .lob-master-body{
-    width: 60%;
+    max-width: 910px;
     margin: auto;
     .variable-master-table{
         table tr th:nth-child(4){
@@ -2408,6 +2481,40 @@ a:hover {
 
 #training-footer{
     margin-top: 130px !important;
+}
+
+#model-close-btn{
+    border:none;
+    padding:0;
+}
+
+#full-table{
+    table{
+        width: 100%;
+    }
+}
+
+#allowed-edit-part{
+    bottom:-30px;
+}
+
+#allowed-value{
+    .bg-color{
+        input{
+            background:#f2f2f2;
+        }
+    }
+}
+
+#maintain-box{
+    min-height: 170vh;
+    form{
+        min-height: 150vh;
+    }
+}
+
+#production-service-pagination{
+    bottom:12%;
 }
 
 /* Layout End */

@@ -277,7 +277,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
-                                    <li class="breadcrumb-item " aria-current="page">Master Data</li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Variable Master</li>
                                     </ol>
                                 </nav>
@@ -298,7 +298,7 @@
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
-                                    <h4 class="show-record">Showing 3 records</h4>
+                                    <h4 class="show-record">Showing 5 records</h4>
                                 </div>
                                 <div class="col-6">
                                     <div class="search-part">
@@ -311,8 +311,8 @@
 
                         <div class="record-list">
                             <!-- Table -->
-                            <div class="variable-master-table">
-                                <div class="">
+                            <div class="variable-master-table " id="full-table">
+                                <div class="table-part">
                                     <table class="table table-default table-hover">
                                         <thead>
                                             <tr>
@@ -348,8 +348,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck2">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                                     </div>
                                                 </td>
                                                 <td>LOB</td>
@@ -357,7 +357,7 @@
                                                 <td>D</td>
                                                 <td>Line of Business</td>
                                                 <td>
-                                                    <a href="#" class="kebab"> </a>
+                                                    <a href="#" class="kebab active-edit"> </a>
                                                     <ul class="edit-part">
                                                         <li><button>Edit</button></li>
                                                         <li><button>Delete</button></li>
@@ -368,8 +368,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                                     </div>
                                                 </td>
                                                 <td>AGENCY-MAS-ID</td>
@@ -388,8 +388,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                                     </div>
                                                 </td>
                                                 <td>AGENCY-MAS-ID</td>
@@ -408,8 +408,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
-                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck5">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck5"></label>
                                                     </div>
                                                 </td>
                                                 <td>AGENCY-MAS-ID</td>
@@ -428,46 +428,178 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="pagination-part clearfix ">
+                                    <div class="pagination">
+                                        <div class="">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination pagination-default">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="close-btn-part">
+                                        <button type="button" class="close-btn" data-toggle="modal" data-target="#myRightAlignedModal">Close</button>
+                                    </div>
+                                </div>
                             </div> 
-                            <!-- <div class="error-msg">
-                                <img src="../../images/no-found-img.svg" alt="no-found">
-                                <span>No Results Found</span>
-                            </div> -->
                             
                         </div>
                         
                     </div>
-                    <div class="col-12 p-0">
-                        <div class="pagination-part clearfix">
-                            <div class="pagination">
-                                <div class="">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination pagination-default">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Previous">
-                                                <span aria-hidden="true">&laquo;</span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" aria-label="Next">
-                                                <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="close-btn-part">
-                                <button type="button" class="close-btn">Close</button>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
+            <section class="aggregation-services-model production-services-form variable-master-model">
+             <div class="" id="modal">
+                <div class="modal fade partial-model-box" id="myRightAlignedModal">
+                   <div class="modal-dialog ">
+                      <div class="modal-content">
+                         <div class="modal-head">
+                            <div class="row">
+                               <div class="col-8">
+                                  <div class="modal-title">
+                                     <h3>Variable Master Maintenence</h3>
+                                     <a href="#" class="add-btn">Edit</a>
+                                     <span>* Fields are mandatory</span>
+                                  </div>
+                               </div>
+                               <div class="col-4">
+                                  <div class="btn-part">
+                                     <button class="sg-submit-btn">Complete</button>
+                                     <button class="remove-btn" data-dismiss="modal">X</button>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="modal-body">
+                            <form>
+                               <a href="#" class="reset-btn">Reset</a>
+                               <div class="row">
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Variable name *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Description *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Select *  </label>
+                                        <div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline1">Domain</label>
+                                           </div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline2">Temporary</label>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Screen Label *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Type *</label>
+                                        <div class="drop-down-box">
+                                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Alpha numeric</a>
+                                           <ul class="dropdown-menu">
+                                              <li class="dropdown-item">Alpha numeric</li>
+                                              <li class="dropdown-item">2</li>
+                                              <li class="dropdown-item">3</li>
+                                              <li class="dropdown-item">4</li>
+                                           </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Allowed Values *  </label>
+                                        <div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline3">Yes</label>
+                                           </div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline4">No</label>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Additional data *  </label>
+                                        <div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline5">Yes</label>
+                                           </div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline6">No</label>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Minimum Length *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Minimum Length *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Minimum value *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="validationDatabase">Maximum value *</label>
+                                        <input type="" name=""  class="form-control">
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="modal-footer">
+                                  <a href="#" class="save-btn">save</a>
+                                  <a href="#" class="close-btn" data-dismiss="modal">Close</a>
+                               </div>
+                            </form>
+                         </div>   
+                      </div>
+                   </div>
+                </div>
+             </div>
+            </section>
         </div>
 
         <div class="footer-sec">
