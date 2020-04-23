@@ -925,6 +925,7 @@ a:hover {
                 .sg-section-sub-heading {
                     float: left;
                     font-size: 32px;
+                    margin-right: 5px;
                 }
                 .breadcrumb {
                     padding: 12px 15px;
@@ -958,7 +959,8 @@ a:hover {
                 height: 100%;
             }
             .side-menu-title {
-                box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+                // box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+                border-bottom:1px solid rgba(0, 0, 0, 0.05);
                 padding: 15px 20px;
                 h3 {
                     font-size: 18px;
@@ -972,7 +974,8 @@ a:hover {
                 padding: 30px 60px 120px;
                 position: relative;
                 label {
-                    font-size: 14px;
+                    font-size: 16px;
+                    font-weight: 500;
                 }
                 input {
                     height: 35px;
@@ -999,6 +1002,8 @@ a:hover {
                 left: 0;
                 bottom:0;
                 width: 100%;
+                background:#fff;
+                z-index: 9;
                 a {
                     display: inline-block;
                 }
@@ -1072,7 +1077,7 @@ a:hover {
                 padding:0;
             }
             div {
-                font-size: 15px;
+                font-size: 16px;
                 font-weight: 500;
                 color: #9a9a9a;
                 padding-top:3px;
@@ -1212,7 +1217,7 @@ a:hover {
         text-decoration: none;
         color: #353535;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 14px;
     }
     .dropdown-menu {
         width: 100%;
@@ -1248,6 +1253,7 @@ a:hover {
 #round-form {
     margin: 0 auto;
     width: 70%;
+    padding:30px 20px 120px;
 }
 
 .record-part {

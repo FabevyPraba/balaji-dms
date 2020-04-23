@@ -9372,7 +9372,8 @@ a:hover {
       padding-top: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .sg-section-sub-heading {
         float: left;
-        font-size: 32px; }
+        font-size: 32px;
+        margin-right: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .breadcrumb {
         padding: 12px 15px; }
         .page-wrapper .main-content-wrapper .page-title .sg-sub-block .breadcrumb .breadcrumb-item {
@@ -9396,7 +9397,7 @@ a:hover {
       .page-wrapper .main-content-wrapper .main-content-body .aside-menu {
         height: 100%; }
       .page-wrapper .main-content-wrapper .main-content-body .side-menu-title {
-        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         padding: 15px 20px; }
         .page-wrapper .main-content-wrapper .main-content-body .side-menu-title h3 {
           font-size: 18px;
@@ -9408,7 +9409,8 @@ a:hover {
         padding: 30px 60px 120px;
         position: relative; }
         .page-wrapper .main-content-wrapper .main-content-body .form-part label {
-          font-size: 14px; }
+          font-size: 16px;
+          font-weight: 500; }
         .page-wrapper .main-content-wrapper .main-content-body .form-part input {
           height: 35px;
           border: 1px solid #cecece; }
@@ -9428,7 +9430,9 @@ a:hover {
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 100%; }
+        width: 100%;
+        background: #fff;
+        z-index: 9; }
         .page-wrapper .main-content-wrapper .main-content-body .data-assign-part a {
           display: inline-block; }
         .page-wrapper .main-content-wrapper .main-content-body .data-assign-part .save-btn {
@@ -9484,7 +9488,7 @@ a:hover {
       font-size: 13px;
       padding: 0; }
     .sub-head ul li div {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 500;
       color: #9a9a9a;
       padding-top: 3px;
@@ -9591,7 +9595,7 @@ a:hover {
     text-decoration: none;
     color: #353535;
     font-weight: 500;
-    font-size: 13px; }
+    font-size: 14px; }
   .drop-down-box .dropdown-menu {
     width: 100%;
     left: -1px !important;
@@ -9618,7 +9622,8 @@ a:hover {
 
 #round-form {
   margin: 0 auto;
-  width: 70%; }
+  width: 70%;
+  padding: 30px 20px 120px; }
 
 .record-part {
   padding: 15px 20px; }
