@@ -16,116 +16,56 @@ var siteMapData = {
         name: "Master Data",
         "sub-links": [
           {
-            name: "Variable Master 1",
+            name: "Variable Master",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 2",
+            name: "Allowed values",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 3",
+            name: "Product Master",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 4",
+            name: "LOB Master",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 5",
+            name: "Default list of questions for a Channel / Agency type",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 6",
+            name: "Default list of questions for a Channel / Agent type",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 7",
+            name: "Default list of exams for a License type",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 8",
+            name: "Default list of exams for a Designation",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 9",
+            name: "Default list of trainings for a License type",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 10",
+            name: "Default list of trainings for a Designation",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 11",
+            name: "Grouping of Designation-ids",
             link: "pages/termi-map.html",
           },
           {
-            name: "Variable Master 12",
+            name: "Business event Master",
             link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 13",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 14",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 15",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 16",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 17",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 18",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 19",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 20",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 21",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 22",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 23",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 24",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 25",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master 26",
-            link: "pages/termi-map.html",
-          },
-          {
-            name: "Variable Master End",
-            link: "pages/termi-map.html",
-          },
-        ],
-      },
-    ],
+          }
+        ]
+      }
+    ]
   },
   "channel-management": {
     title: "Channel Management",
@@ -141,7 +81,11 @@ var siteMapData = {
   },
   "secondary-compensation": {
     title: "Secondary Compensation",
-    "sub-menu":[]
+    "sub-menu":[{
+        name: "Secondary Compensation Plan Configuration",
+        link: "pages/client-cofig.html",
+        "sub-links": [],
+      }]
   },
   "campaigns-contest": {
     title: "Campaigns / Contest",

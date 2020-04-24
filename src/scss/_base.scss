@@ -200,9 +200,9 @@ a:hover {
     padding: 0 10px;
     border: none;
     min-width: 126px;
-    &:hover {
-        background-color: #6fbc78;
-        border: none;
+    &:hover, &:focus {
+        background-color: #6fbc78 !important;
+        box-shadow: none !important;
     }
 }
 
@@ -210,13 +210,33 @@ a:hover {
     color: #6fbc78;
     background-color: #fff;
     border: solid 2px #6fbc78;
-    &:hover {
-        color: #6fbc78;
-        border: solid 2px #6fbc78;
-        background-color: #fff;
+    &:hover, &:focus {
+        color: #6fbc78 !important;
+        border: solid 2px #6fbc78 !important;
+        background-color: #fff !important;
     }
 }
-
+.btn-icon-left{
+    padding-right: 30px;
+    i[class^="icon-"]{
+        padding-right: 8px;
+    }
+}
+.btn-icon-right{
+    padding-left: 30px;
+    i[class^="icon-"]{
+        padding-left: 8px;
+    }
+}
+.btn-link{
+    color: #6fbc78;
+    padding: 0;
+    &:hover{
+        box-shadow: none;
+        color: #6fbc78;
+        text-decoration: none;
+    }
+}
 .btn-success {}
 
 .btn-danger {}
@@ -513,6 +533,25 @@ a:hover {
             &.active {
                 background: #dee8df;
                 border-left: 5px solid #6fbc78;
+            }
+            &.inprogress:before,
+            &.completed:before,
+            &.unknown:before {
+                content: "";
+                display: inline-block;
+                background: #005bd6;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                position: relative;
+                top: 2px;
+                margin-right: 10px;
+            }
+            &.completed:before {
+                background: #6fbc78;
+            }
+            &.unknown:before {
+                background: transparent;
             }
         }
     }
@@ -861,12 +900,15 @@ a:hover {
 }
 
 
-/*
+
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: #fff;
-  border-color: #848484;
-  background-color: #ffffff;
+    background-color: #2b2b2b;
+    border-color: #8b8b8b;
 }
+.custom-control-input:focus ~ .custom-control-label::before{
+    box-shadow: none;
+}
+/*
 .custom-control-label::before {
   background-color: #fff;
   border: #adb5bd solid 1px;
@@ -955,7 +997,7 @@ a:hover {
             background: #fff;
             box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
             border-radius: 5px;
-            min-height: 100vh;
+            min-height: 73vh;
             position:relative;
             overflow: hidden;
             .sg-sub-block,
