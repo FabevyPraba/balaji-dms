@@ -674,6 +674,7 @@ a:hover {
         .btn-part {
             text-align: center;
             float: right;
+            margin-bottom: 15px;
             .complete-btn {
                 padding: 6px 25px;
                 background: #6fbc78;
@@ -2349,7 +2350,7 @@ a:hover {
         }
     }
     .reset-btn{
-        right: 85px;
+        right: 50px;
         top: -18px;
     }
     .modal-dialog {
@@ -2567,9 +2568,9 @@ a:hover {
 }
 
 #maintain-box{
-    min-height: 170vh;
+    min-height: 180vh;
     form{
-        min-height: 155vh;
+        min-height: 160vh;
     }
 }
 
