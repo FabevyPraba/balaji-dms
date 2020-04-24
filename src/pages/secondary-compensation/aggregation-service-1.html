@@ -294,7 +294,7 @@
             <div class="main-content-body">
                 <div class="sub-head clearfix">
                     <ul>
-                        <li><div class="back-btn"><a href="#"><</a></div></li>
+                        <li><a href="table-structure.html" class="back-page-btn"><</a></li>
                         <li class="m-0"><div>Compensation ID <span>SCOMP-002</span></div></li>
                         <li><div>Description <span>Long term seniority Allowance</span></div></li>
                         <li><div>Start Date <span>17/01/2017</span></div></li>
@@ -313,10 +313,10 @@
                                   <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
                                   <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
                                   <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html">Temporary variable</a></li>
+                                  <li><a href="temporary-variable.html" >Temporary variable</a></li>
                                   <li><a href="table-structure.html">Table structure</a></li>
                                   <li><a href="aggregation-service.html" class="active">Aggregation Service</a></li>
-                                  <li><a href="production-setvice.html">Production Service</a></li>
+                                  <li><a href="production-service.html">Production Service</a></li>
                                   <li><a href="compensation-flow.html">Compensation Flow</a></li>
                                 </ul>
                               </div>
@@ -324,13 +324,13 @@
                     </div>
                     <div class="col-9 p-0">
                         <div class="side-menu-title">
-                            <h3>Aggregation Services List</h3>
+                            <h3>Aggregation Services List </h3>
                         </div>
 
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
-                                    <h4 class="show-record">Showing 3 records</h4>
+                                    <h4 class="show-record">Showing 0 records</h4>
                                 </div>
                                 <div class="col-6">
                                     <div class="search-part">
@@ -341,104 +341,29 @@
                             </div>
                         </div>
 
-                        <div class="">
-                            <!-- Table -->
-                            <div id="aggregation-list">
-                                    <div class="">
-                                        <table class="table table-default table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Aggregation Service-id</th>
-                                                    <th>Description</th>
-                                                    <th>Input variable-id</th>
-                                                    <th>Description</th>
-                                                    <th>Output variable-id</th>
-                                                    <th>Description</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-checkbox invisible">
-                                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>AGG-POL-COUNT</td>
-                                                    <td>Policy Count</td>
-                                                    <td>POL-COUNT</td>
-                                                    <td>Policy Count</td>
-                                                    <td>TOT-POL-COUNT</td>
-                                                    <td>Total Policy Count</td>
-                                                    <td>
-                                                        <a href="#" class="kebab"> </a>
-                                                        <ul class="edit-part">
-                                                            <li><button>Edit</button></li>
-                                                            <li><button>Delete</button></li>
-                                                            <li><button>Review</button></li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-checkbox invisible">
-                                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>AGG-POL-COUNT</td>
-                                                    <td>Policy Count</td>
-                                                    <td>POL-COUNT</td>
-                                                    <td>Policy Count</td>
-                                                    <td>TOT-POL-COUNT</td>
-                                                    <td>Total Policy Count</td>
-                                                    <td>
-                                                        <a href="#" class="kebab"> </a>
-                                                        <!-- <ul class="edit-part">
-                                                            <li><button>Edit</button></li>
-                                                            <li><button>Delete</button></li>
-                                                            <li><button>Review</button></li>
-                                                        </ul> -->
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="custom-control custom-checkbox invisible">
-                                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
-                                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>AGG-POL-COUNT</td>
-                                                    <td>Policy Count</td>
-                                                    <td>POL-COUNT</td>
-                                                    <td>Policy Count</td>
-                                                    <td>TOT-POL-COUNT</td>
-                                                    <td>Total Policy Count</td>
-                                                    <td>
-                                                        <a href="#" class="kebab"> </a>
-                                                        <!-- <ul class="edit-part">
-                                                            <li><button>Edit</button></li>
-                                                            <li><button>Delete</button></li>
-                                                            <li><button>Review</button></li>
-                                                        </ul> -->
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- <div class="error-msg">
+                        <div class="record-list clearfix" id="aggregation-services-list">
+                            <div class="rocord-head clearfix">
+                                <ul>
+                                    <li><span>Aggregation Service-id</span></li>
+                                    <li><span>Description</span></li>
+                                    <li><span>Input variable-id</span></li>
+                                    <li><span>Description</span></li>
+                                    <li><span>Output variable-id</span></li>
+                                    <li><span>Description</span></li>
+                                </ul>
+                            </div>    
+                            <div class="error-msg">
                                 <img src="../../images/no-found-img.svg" alt="no-found">
                                 <span>No Results Found</span>
-                            </div> -->
-                            <!-- Pagination -->
-                            <div id="pagination">
-                                <div class="">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination pagination-default">
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="" id="pagination">
+                            <div class="sg-sub-block">
+                                <div class="" >
+                                    <nav aria-label="Page navigation example" >
+                                        <ul class="pagination pagination-default" id="production-service-pagination">
                                             <li class="page-item">
                                                 <a class="page-link" href="#" aria-label="Previous">
                                                 <span aria-hidden="true">&laquo;</span>
@@ -457,13 +382,12 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
                             <div class="save-btn">
-                                <a href="#"  class="sg-submit-btn">Prev</a>
-                                <a href="#"  class="sg-submit-btn">Next</a>
+                                <a href="table-structure.html"  class="sg-submit-btn">Prev</a>
+                                <a href="production-service.html"  class="sg-submit-btn">Next</a>
                             </div>
                             <div class="close-btn-part">
                                 <button type="button" class="close-btn">Close</button>

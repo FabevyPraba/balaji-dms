@@ -294,7 +294,7 @@
             <div class="main-content-body">
                 <div class="sub-head clearfix">
                     <ul>
-                        <li><div class="back-btn"><a href="#"><</a></div></li>
+                        <li><a href="table-structure.html" class="back-page-btn"><</a></li>
                         <li class="m-0"><div>Compensation ID <span>SCOMP-002</span></div></li>
                         <li><div>Description <span>Long term seniority Allowance</span></div></li>
                         <li><div>Start Date <span>17/01/2017</span></div></li>
@@ -313,10 +313,10 @@
                                   <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
                                   <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
                                   <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html" >Temporary variable</a></li>
+                                  <li><a href="temporary-variable.html">Temporary variable</a></li>
                                   <li><a href="table-structure.html">Table structure</a></li>
                                   <li><a href="aggregation-service.html" class="active">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
+                                  <li><a href="production-setvice.html">Production Service</a></li>
                                   <li><a href="compensation-flow.html">Compensation Flow</a></li>
                                 </ul>
                               </div>
@@ -324,46 +324,121 @@
                     </div>
                     <div class="col-9 p-0">
                         <div class="side-menu-title">
-                            <h3>Aggregation Services List </h3>
+                            <h3>Aggregation Services List</h3>
                         </div>
 
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
-                                    <h4 class="show-record">Showing 0 records</h4>
+                                    <h4 class="show-record">Showing 3 records</h4>
                                 </div>
                                 <div class="col-6">
                                     <div class="search-part">
                                         <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" class="sg-submit-btn">Add New</button>
+                                        <button type="button" class="sg-submit-btn" data-toggle="modal" data-target="#aggregation-1">Add New</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="record-list clearfix" id="aggregation-services-list">
-                            <div class="rocord-head clearfix">
-                                <ul>
-                                    <li><span>Aggregation Service-id</span></li>
-                                    <li><span>Description</span></li>
-                                    <li><span>Input variable-id</span></li>
-                                    <li><span>Description</span></li>
-                                    <li><span>Output variable-id</span></li>
-                                    <li><span>Description</span></li>
-                                </ul>
-                            </div>    
-                            <div class="error-msg">
+                        <div class="">
+                            <!-- Table -->
+                            <div id="aggregation-list">
+                                    <div class="">
+                                        <table class="table table-default table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Aggregation Service-id</th>
+                                                    <th>Description</th>
+                                                    <th>Input variable-id</th>
+                                                    <th>Description</th>
+                                                    <th>Output variable-id</th>
+                                                    <th>Description</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox invisible">
+                                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>AGG-POL-COUNT</td>
+                                                    <td>Policy Count</td>
+                                                    <td>POL-COUNT</td>
+                                                    <td>Policy Count</td>
+                                                    <td>TOT-POL-COUNT</td>
+                                                    <td>Total Policy Count</td>
+                                                    <td>
+                                                        <a href="#" class="kebab"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><button data-toggle="modal" data-target="#myRightAlignedModal">Edit</button></li>
+                                                            <li><button>Delete</button></li>
+                                                            <li><button>Review</button></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox invisible">
+                                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>AGG-POL-COUNT</td>
+                                                    <td>Policy Count</td>
+                                                    <td>POL-COUNT</td>
+                                                    <td>Policy Count</td>
+                                                    <td>TOT-POL-COUNT</td>
+                                                    <td>Total Policy Count</td>
+                                                    <td>
+                                                        <a href="#" class="kebab"> </a>
+                                                        <!-- <ul class="edit-part">
+                                                            <li><button>Edit</button></li>
+                                                            <li><button>Delete</button></li>
+                                                            <li><button>Review</button></li>
+                                                        </ul> -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox invisible">
+                                                            <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                            <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>AGG-POL-COUNT</td>
+                                                    <td>Policy Count</td>
+                                                    <td>POL-COUNT</td>
+                                                    <td>Policy Count</td>
+                                                    <td>TOT-POL-COUNT</td>
+                                                    <td>Total Policy Count</td>
+                                                    <td>
+                                                        <a href="#" class="kebab"> </a>
+                                                        <!-- <ul class="edit-part">
+                                                            <li><button>Edit</button></li>
+                                                            <li><button>Delete</button></li>
+                                                            <li><button>Review</button></li>
+                                                        </ul> -->
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- <div class="error-msg">
                                 <img src="../../images/no-found-img.svg" alt="no-found">
                                 <span>No Results Found</span>
-                            </div>
-                        </div>
-
-                        <!-- Pagination -->
-                        <div class="" id="pagination">
-                            <div class="sg-sub-block">
-                                <div class="" >
-                                    <nav aria-label="Page navigation example" >
-                                        <ul class="pagination pagination-default" id="production-service-pagination">
+                            </div> -->
+                            <!-- Pagination -->
+                            <div id="pagination">
+                                <div class="">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination pagination-default">
                                             <li class="page-item">
                                                 <a class="page-link" href="#" aria-label="Previous">
                                                 <span aria-hidden="true">&laquo;</span>
@@ -382,6 +457,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
@@ -397,6 +473,705 @@
                 </div>
             </div>
         </div>
+
+        <section class="aggregation-services-model">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="aggregation-1">
+               <div class="modal-dialog" id="maintain-box">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-8">
+                              <div><a href="#" class="add-btn">Edit</a></div>
+                           </div>
+                           <div class="col-4">
+                              <div class="btn-part">
+                                 <button class="remove-btn" data-dismiss="modal">X</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <!-- Tabs -->
+                        <div class="aggregation-tab">
+                           <div class="aggregation-table">
+                              <ul class="nav nav-tabs nav-tabs-default" id="myTab"  role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Aggregation Services Maintenance</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-2" role="tab" aria-controls="tab-item-2" aria-selected="false">Aggregation for Filter</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="default-tab-3" data-toggle="tab" href="#tab-item-3" role="tab" aria-controls="tab-item-3" aria-selected="false">Aggregation Level Filter</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="default-tab-4" data-toggle="tab" href="#tab-item-4" role="tab" aria-controls="tab-item-4" aria-selected="false">Aggregation Table Service</a>
+                                 </li>
+                              </ul>
+                              <div class="tab-content" id="myTabContent">
+                                 <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
+                                    <span class="mandatory-text">* Fields are mandatory</span>
+                                    <form >
+                                       <div class="row">
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation Service-id *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">AGG-FYC</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">AGG-FYC</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-12">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Description *</label>
+                                                <textarea rows="3"></textarea>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Input variable-id *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">BASIC-COMM</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">BASIC-COMM</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-12">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Description *</label>
+                                                <textarea rows="3"></textarea>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation From Date *</label>
+                                                <input type="" name=""  class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation to Date *</label>
+                                                <input type="" name=""  class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation Period basis *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Date of Reporting</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Date of Reporting</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation for *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">All agents in level ‘n’</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation for ‘n’ *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">2</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation Level *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">All agents in level ‘n’</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation Level ‘n’ *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">1</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">1</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="validationDatabase">Aggregation for output level *</label>
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">A value for each eligible agent</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">A value for each eligible agent</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="modal-footer">
+                                          <a href="#" class="save-btn">save</a>
+                                          <a href="#" class="save-btn">Prev</a>
+                                          <a href="#" class="save-btn">Next</a>
+                                          <a href="#" class="close-btn" data-dismiss="modal">close</a>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
+                                    <form class="aggregation-table">
+                                       <div class="row">
+                                          <div class="col-1 pr-0">
+                                          </div>
+                                          <div class="col-4 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agent-years-of-service</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Agent-years-of-service</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item"><=</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Select</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+
+                                          <div class="col-1 pl-0">
+                                             <div class="edit-sec">
+                                                <button><img src="../../images/add-icon.svg" alt="add-icon"></button>
+                                                <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-1 pr-0">
+                                          </div>
+                                          <div class="col-4 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agent-Hierarchy-Level-number</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Agent-Hierarchy-Level-number</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><=</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item"><=</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Select</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Select</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+
+                                          <div class="col-1 pl-0">
+                                             <div class="edit-sec">
+                                                <button><img src="../../images/add-icon.svg" alt="add-icon"></button>
+                                                <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="modal-footer modal-btn">
+                                          <a href="#" class="save-btn">save</a>
+                                          <a href="#" class="save-btn">Prev</a>
+                                          <a href="#" class="save-btn">Next</a>
+                                          <a href="#" class="close-btn" data-dismiss="modal">close</a>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
+                                    <form class="aggregation-table">
+                                       <div class="row">
+                                          <div class="col-1 pr-0">
+                                          </div>
+                                          <div class="col-3 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agent-Grade</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Agent-Grade</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><=</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item"><=</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Captive agent</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Captive agent</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+
+                                          <div class="col-2 pl-0">
+                                             <div class="edit-sec">
+                                                <button><img src="../../images/edit-icon.svg" alt="edit-icon"></button>
+                                                <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-1 pr-0">
+                                          </div>
+                                          <div class="col-3 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Agent-type</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Agent-type</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item"><</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senior</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Senior</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+
+                                          <div class="col-2 pl-0">
+                                             <div class="edit-sec">
+                                                <button><img src="../../images/edit-icon.svg" alt="edit-icon"></button>
+                                                <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="modal-footer modal-btn">
+                                          <a href="#" class="save-btn">save</a>
+                                          <a href="#" class="save-btn">Prev</a>
+                                          <a href="#" class="save-btn">Next</a>
+                                          <a href="#" class="close-btn" data-dismiss="modal">close</a>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
+                                    <form class="aggregation-table">
+                                       <div class="row">
+                                          <div class="col-1 pr-0">
+                                             <span>Step 1</span>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">RNEP Credit</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">RNEP Credit</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-5 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="edit-sec">
+                                                <button><img src="../../images/add-icon.svg" alt="add-icon"></button>
+                                                <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row">
+                                          <div class="col-1 pr-0">
+                                             <span>Step 2</span>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="form-group">
+                                                <div class="drop-down-box">
+                                                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">RNEP Credit</a>
+                                                   <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">RNEP Credit</li>
+                                                      <li class="dropdown-item">2</li>
+                                                      <li class="dropdown-item">3</li>
+                                                      <li class="dropdown-item">4</li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-5 pl-0">
+                                             <div class="form-group">
+                                                <input type="text" name="" class="form-control">
+                                             </div>
+                                          </div>
+                                          <div class="col-2 pl-0">
+                                             <div class="edit-sec">
+                                                <button><img src="../../images/add-icon.svg" alt="add-icon"></button>
+                                                <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="modal-footer modal-btn">
+                                          <a href="#" class="save-btn">save</a>
+                                          <a href="#" class="save-btn">Prev</a>
+                                          <a href="#" class="close-btn" data-dismiss="modal">close</a>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <section class="aggregation-services-model production-services-form">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="myRightAlignedModal">
+               <div class="modal-dialog" id="aggregation-box">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-8">
+                              <div class="modal-title">
+                                 <a href="#" class="add-btn">Edit</a>
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="btn-part">
+                                 <button class="remove-btn" data-dismiss="modal">X</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <form>
+                           <div class="row">
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Input variable-id *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">BASIC-COMM</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">BASIC-COMM</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Description *</label>
+                                    <textarea rows="3"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation From Date *</label>
+                                    <input type="text" name="" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation to Date *</label>
+                                    <input type="text" name="" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation Period basis *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Date of Reporting</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Date of Reporting</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation for *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">All agents in level ‘n’</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation for ‘n’ *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">2</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation Level *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">All agents in level ‘n’</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation Level ‘n’ *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">1</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">1</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Aggregation for output level *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">A value for each eligible agent</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">A value for each eligible agent</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Output variable-id *</label>
+                                    <div class="drop-down-box">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">FYC</a>
+                                       <ul class="dropdown-menu">
+                                          <li class="dropdown-item">FYC</li>
+                                          <li class="dropdown-item">2</li>
+                                          <li class="dropdown-item">3</li>
+                                          <li class="dropdown-item">4</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="validationDatabase">Description *</label>
+                                    <textarea rows="3"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+
+                     </div>  
+                     <div class="modal-footer modal-btn">
+                        <a href="#" class="save-btn">save</a>
+                        <a href="#" class="save-btn">Prev</a>
+                        <a href="#" class="save-btn">Next</a>
+                        <a href="#" class="close-btn" data-dismiss="modal">close</a>
+                     </div> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
         <div class="footer-sec">
             <p>Powered by <a href="#">Salzzappo</a></p>

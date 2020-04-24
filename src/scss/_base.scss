@@ -2519,12 +2519,33 @@ a:hover {
 #maintain-box{
     min-height: 170vh;
     form{
-        min-height: 150vh;
+        min-height: 155vh;
     }
 }
 
 #production-service-pagination{
     bottom:12%;
+}
+
+#table-structure-part{
+    margin-bottom: 120px;
+}
+
+#aggregation-box{
+    min-height: 165vh;
+}
+
+.back-page-btn{
+    display: inline-block;
+    background: #e7e9eb;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+    padding: 0;
+    margin-left: 15px;
 }
 
 /* Layout End */
