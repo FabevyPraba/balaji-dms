@@ -8906,6 +8906,9 @@ a:hover {
   .btn-secondary:focus {
     background-color: #6fbc78 !important; }
 
+.btn-primary {
+  color: #fff !important; }
+
 .btn-secondary {
   color: #6fbc78;
   background-color: #fff;
@@ -10103,8 +10106,6 @@ a:hover {
 
 .compensation-flow-form .add-step {
   margin-left: 10px; }
-  .compensation-flow-form .add-step button {
-    padding: 7px 20px; }
 
 .cancel-btn {
   background: transparent;
@@ -10398,7 +10399,7 @@ a:hover {
   .pagination-part .close-btn-part {
     position: absolute;
     right: 20px;
-    bottom: 15px; }
+    bottom: 8px; }
 
 .variable-master-table table {
   width: 95%;
