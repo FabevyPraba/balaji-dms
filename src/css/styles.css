@@ -5,6 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("//fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9537,17 +9538,17 @@ a:hover {
       margin: 11px 0; }
   .header-sec .header-nav ul {
     float: right;
-    padding-right: 20px; }
+    margin-bottom: 0; }
     .header-sec .header-nav ul li {
       float: left;
       position: relative; }
       .header-sec .header-nav ul li a {
         display: inline-block;
-        padding: 19px 5px;
+        padding: 23px 5px;
         margin-left: 10px; }
         .header-sec .header-nav ul li a i {
           color: #79859d;
-          font-size: 25px; }
+          font-size: 20px; }
   .header-sec .dropdown-toggle:after {
     cursor: pointer;
     margin: 0; }
