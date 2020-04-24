@@ -551,13 +551,31 @@
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
                             <div class="save-btn">
-                                <button type="button" class="sg-submit-btn">Save</button>
+                                <button type="button" class="sg-submit-btn" data-toggle="modal" data-target="#myCenterAlignedModal">Save</button>
                                 <a href="eligibility-rules.html"  class="sg-submit-btn">Next</a>
                             </div>
                             <div class="close-btn-part">
                                 <button type="button" class="close-btn" data-toggle="modal" data-target="#myCenterAlignedModal">Close</button>
                             </div>
                         </div>
+                        <section class="save-model-box">
+                            <div id="modal">
+                                <div class="modal fade" id="myCenterAlignedModal">
+                                    <div class="modal-dialog ">
+                                        <div class="modal-content">
+                                           <div class="modal-header">
+                                              <button  class="close-btn modal-btn" >Save</button>
+                                           </div>
+                                           <div class="modal-body">
+                                                 <p>Do you like to save the data entered?</p>
+                                                 <a href="#" class="yes-btn">Yes</a>
+                                                 <a href="#" type="button" class="no-btn" data-dismiss="modal">No</a>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

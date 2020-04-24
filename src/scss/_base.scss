@@ -1070,16 +1070,19 @@ a:hover {
     ul {
         li {
             float: left;
-            .back-btn {
-                background-color: #e7e9eb;
+            .back-page-btn{
+                display: inline-block;
+                background: #e7e9eb;
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 25px;
                 font-size: 13px;
-                padding:0;
+                padding: 0;
+                margin-left: 15px;
             }
+
             div {
                 font-size: 16px;
                 font-weight: 500;
@@ -2107,7 +2110,7 @@ a:hover {
     .modal-dialog{
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 35%;
         width: 400px;
         transform: translate(-50%, -50%) !important;
         .modal-content{
@@ -2119,6 +2122,10 @@ a:hover {
                 padding:8px 30px 9px;
             }
         }
+    }
+    .modal-btn{
+        border:none;
+        padding:0;
     }
 }
 
@@ -2535,17 +2542,5 @@ a:hover {
     min-height: 165vh;
 }
 
-.back-page-btn{
-    display: inline-block;
-    background: #e7e9eb;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 25px;
-    font-size: 13px;
-    padding: 0;
-    margin-left: 15px;
-}
 
 /* Layout End */
