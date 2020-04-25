@@ -618,15 +618,38 @@
                                     <div class="form-group">
                                         <label class="required-mark">Custom Select Box</label>
                                         <div class="drop-down-box custom-select-box">
-											<a class="dropdown-toggle form-control custom-select-toggle" data-toggle="dropdown" href="#">Agent(default)</a>
-											<ul class="dropdown-menu custom-select-options full-width">
-											  <li class="dropdown-item custom-option">Agent</li>
-											  <li class="dropdown-item custom-option">business head</li>
-											  <li class="dropdown-item custom-option">manager</li>
-											  <li class="dropdown-item custom-option">CEO</li>
-											</ul>
-										</div>
+                                            <a class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001 <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu custom-select-options">
+                                              <li class="dropdown-item custom-option">Agent</li>
+                                              <li class="dropdown-item custom-option">Business head</li>
+                                              <li class="dropdown-item custom-option">DB-003</li>
+                                              <li class="dropdown-item custom-option">DB-004</li>
+                                              <li class="dropdown-item custom-option">DB-005</li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                    <style>
+                                        .form-group .custom-select-box {
+                                            position: relative;
+                                            padding: 0 !important;
+                                        }
+                                        .form-group .custom-select-box:after{
+                                            display: none;
+                                        }
+                                        .form-group .custom-select-box .custom-select-toggle{
+                                            line-height: 44px;
+                                            padding: 0 15px;
+                                        }
+                                        .form-group .custom-select-box .custom-select-toggle:focus{
+                                            border: none;
+                                        }
+                                        .form-group .custom-select-box .custom-select-toggle i{
+                                            float: right;
+                                        }
+                                        .form-group .custom-select-box .custom-select-toggle i:before{
+                                            transform: rotate(90deg);
+                                        }
+                                    </style>
                                     <div class="form-group">
                                         <label for="" class="radio-text required-mark">Terminology Mapping</label>
                                         <div>
@@ -1150,8 +1173,9 @@
             </div>
         </div>
     </div>
-    <script src="../../js/jquery.js"></script>
-    <script src="../../js/bootstrap.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/app.js"></script>
     <script>
         window.addEventListener('load', function() {

@@ -4,64 +4,64 @@ var siteMapData = {
     "sub-menu": [
       {
         name: "Client Configuration",
-        link: "pages/client-cofig.html",
+        link: "/pages/client-configuration/index.html",
         "sub-links": [],
-      },
+      }, /*
       {
         name: "Terminology Mapping",
-        link: "pages/termi-map.html",
+        link: "/pages/client-configuration/",
         "sub-links": [],
-      },
+      }, */
       {
         name: "Master Data",
         "sub-links": [
           {
             name: "Variable Master",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/variable-master.html",
           },
           {
             name: "Allowed values",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/variables-allowed-values.html",
           },
           {
             name: "Product Master",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/variables-allowed-values.html",
           },
           {
             name: "LOB Master",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/lob-master.html",
           },
           {
             name: "Default list of questions for a Channel / Agency type",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-channels.html",
           },
           {
             name: "Default list of questions for a Channel / Agent type",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-channels-agent-type.html",
           },
           {
             name: "Default list of exams for a License type",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-license-types.html",
           },
           {
             name: "Default list of exams for a Designation",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-designations.html",
           },
           {
             name: "Default list of trainings for a License type",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-license-types.html",
           },
           {
             name: "Default list of trainings for a Designation",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-designations-training.html",
           },
           {
             name: "Grouping of Designation-ids",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-grouping-of-designation.html",
           },
           {
             name: "Business event Master",
-            link: "pages/termi-map.html",
+            link: "/pages/client-configuration/list-of-business-events.html",
           }
         ]
       }
@@ -83,7 +83,7 @@ var siteMapData = {
     title: "Secondary Compensation",
     "sub-menu":[{
         name: "Secondary Compensation Plan Configuration",
-        link: "pages/client-cofig.html",
+        link: "/pages/secondary-compensation/secondary-compensation-plan-list.html",
         "sub-links": [],
       }]
   },
