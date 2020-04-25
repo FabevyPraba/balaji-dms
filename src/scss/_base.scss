@@ -406,18 +406,28 @@ a:hover {
     }
     .nav-title {
         padding: 18px 15px;
+        position:relative;
         h3,
         a {
             color: #1c2b48;
             font-size: 18px;
             font-weight: 600;
         }
-        .back-btn {
-            margin-right: 20px;
-            font-weight: 500;
-            font-size: 14px;
-            position: relative;
-            top: -1px;
+        // .back-btn {
+        //     margin-right: 20px;
+        //     font-weight: 500;
+        //     font-size: 14px;
+        //     position: absolute;
+        //     left: 20px;
+        // }
+        a{
+            position: absolute;
+            left: 15px;
+            top: 20px;
+        }
+        h3{
+            padding-left: 35px;
+            padding-top: 6px;
         }
     }
     .nav-list ul li {
