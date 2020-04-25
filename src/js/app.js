@@ -195,12 +195,19 @@ $(document).ready(function () {
       theme: "minimal-dark",
     });
   });
-  $(".back-btn").click(function (e) {
+  $(".nav-title .icon-left-open").click(function (e) {
     e.preventDefault();
     $(".main-nav-list").hide();
     $(".main-menu").show();
     return false;
   });
+
+  $('.custom-control-input').click(function(){
+    var $this = $(this);
+    if($this.prop("checked") == true){
+        $this.closest('table').addClass('show-checkbox');
+    }
+});
 
   //Search in Main Navigation
   var typingTimer; //timer identifier
