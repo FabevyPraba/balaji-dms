@@ -985,7 +985,7 @@ a:hover {
                 padding-top: 5px;
                 .sg-section-sub-heading {
                     float: left;
-                    font-size: 32px;
+                    font-size: 28px;
                     margin-right: 5px;
                 }
                 .breadcrumb {
@@ -2018,7 +2018,7 @@ a:hover {
     padding: 20px 0 0px;
     position: relative;
     .list-table {
-        min-height: 100vh;
+        /* min-height: 100vh; */
         tr {
             th {
                 padding: 10px;

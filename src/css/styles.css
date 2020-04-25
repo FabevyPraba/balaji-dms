@@ -9516,7 +9516,7 @@ a:hover {
       padding-top: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .sg-section-sub-heading {
         float: left;
-        font-size: 32px;
+        font-size: 28px;
         margin-right: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .breadcrumb {
         padding: 12px 15px; }
@@ -10264,7 +10264,7 @@ a:hover {
   padding: 20px 0 0px;
   position: relative; }
   .secondary-plan-list .list-table {
-    min-height: 100vh; }
+    /* min-height: 100vh; */ }
     .secondary-plan-list .list-table tr th {
       padding: 10px;
       border-bottom: 1px solid #a5aebf; }
