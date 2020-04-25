@@ -2597,4 +2597,30 @@ a:hover {
 }
 
 
+/* ----- Drop-Down-Menu ------*/
+
+.form-group .custom-select-box {
+    position: relative;
+    padding: 0 !important;
+}
+.form-group .custom-select-box:after{
+    display: none;
+}
+.form-group .custom-select-box .custom-select-toggle{
+    line-height: 44px;
+    padding: 0 15px;
+}
+.form-group .custom-select-box .custom-select-toggle:focus{
+    border: none;
+}
+.form-group .custom-select-box .custom-select-toggle i{
+    float: right;
+}
+.form-group .custom-select-box .custom-select-toggle i:before{
+    transform: rotate(90deg);
+}
+
+
 /* Layout End */
+
+

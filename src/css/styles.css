@@ -10647,7 +10647,29 @@ a:hover {
 #aggregation-box {
   min-height: 165vh; }
 
+/* ----- Drop-Down-Menu ------*/
+.form-group .custom-select-box {
+  position: relative;
+  padding: 0 !important; }
+
+.form-group .custom-select-box:after {
+  display: none; }
+
+.form-group .custom-select-box .custom-select-toggle {
+  line-height: 44px;
+  padding: 0 15px; }
+
+.form-group .custom-select-box .custom-select-toggle:focus {
+  border: none; }
+
+.form-group .custom-select-box .custom-select-toggle i {
+  float: right; }
+
+.form-group .custom-select-box .custom-select-toggle i:before {
+  transform: rotate(90deg); }
+
 /* Layout End */
+/* ------  Style-Guide -------  */
 .sg-header {
   margin: 0; }
   .sg-header h1 {
@@ -10725,17 +10747,3 @@ a:hover {
 
 .sg-dark-color-box {
   background-color: #343a40; }
-
-.sg-submit-btn {
-  background: #6fbc78;
-  border-radius: 26px;
-  border: solid 1px #6fbc78;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  padding: 4px 20px;
-  text-transform: capitalize; }
-  .sg-submit-btn:focus {
-    outline: none; }
-  .sg-submit-btn:hover {
-    color: #fff; }

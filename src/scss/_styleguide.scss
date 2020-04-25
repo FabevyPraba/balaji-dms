@@ -1,3 +1,5 @@
+/* ------  Style-Guide -------  */
+
 .sg-header{
     margin: 0;
     h1{
@@ -97,22 +99,4 @@
 
 .sg-dark-color-box{
     background-color: $dark;
-}
-
-
-.sg-submit-btn{
-    background: #6fbc78;
-    border-radius: 26px;
-  border: solid 1px #6fbc78;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  padding:4px 20px;
-  text-transform: capitalize;
-  &:focus{
-    outline: none;
-  }
-  &:hover{
-    color: #fff;
-  }
 }
