@@ -10436,7 +10436,7 @@ a:hover {
         text-align: center; }
 
 .variable-master-table .table-part {
-  min-height: 100vh; }
+  /* min-height: 100vh; */ }
 
 .aggregation-services-model.production-services-form.variable-master-model {
   padding: 20px 20px 10px !important;
