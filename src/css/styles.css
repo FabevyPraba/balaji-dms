@@ -9137,8 +9137,8 @@ a:hover {
         display: none; }
       .app-info .app-list .drop-down-box .dropdown-toggle.rt-text {
         padding: 0 !important; }
-      .app-info .app-list .drop-down-box .dropdown-toggle.rt-text i {
-        margin-left: 5px; }
+      .app-info .app-list .drop-down-box .dropdown-toggle.rt-text i:before {
+        transform: rotate(90deg); }
       .app-info .app-list .drop-down-box .dropdown-menu {
         min-width: 75px !important;
         left: -5px !important;

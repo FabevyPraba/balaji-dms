@@ -513,7 +513,9 @@ a:hover {
                 padding: 0 !important;
             }
             .dropdown-toggle.rt-text i {
-                margin-left: 5px;
+                &:before{
+                        transform: rotate(90deg);
+                }
             }
             .dropdown-menu {
                 min-width: 75px !important;
