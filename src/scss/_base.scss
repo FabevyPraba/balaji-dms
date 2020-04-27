@@ -357,24 +357,24 @@ a:hover {
             }
         }
     }
-    .menu-list .menu-cont {
-        border-radius: 8px;
-        border: solid 3px transparent;
-        background-color: transparent;
-        text-align: center;
-        padding: 15px 10px;
-        transition: all 0.3s ease;
-        margin-bottom: 10px;
-        height: 100%;
-        &:hover {
-            border: solid 3px #c6d1e5;
-            background-color: #f2f4f8;
-        }
-        &:active {
-            border: solid 3px #1c2b48;
-            background-color: #f2f4f8;
-        }
+    .menu-list .menu-cont {        
         .menu-box {
+            border-radius: 8px;
+            border: solid 3px transparent;
+            background-color: transparent;
+            text-align: center;
+            padding: 15px 10px;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+            height: 100%;
+            &:hover {
+                border: solid 3px #c6d1e5;
+                background-color: #f2f4f8;
+            }
+            &:active {
+                border: solid 3px #1c2b48;
+                background-color: #f2f4f8;
+            }
             display: block;
             img {
                 width: 35px;
@@ -491,6 +491,8 @@ a:hover {
                     color: #bcc4d4;
                     font-size: 13px;
                     margin-bottom: 0;
+                    display: inline-block;
+                    min-width: 100px;
                 }
                 .rt-text {
                     color: #5d6f8d;
@@ -1190,7 +1192,7 @@ a:hover {
             float: left;
             width: 80px;
             height: 75px;
-            margin-right: 30px;
+            margin-right: 20px;
         }
         .logo {
             height: 75px;
@@ -2618,6 +2620,10 @@ a:hover {
 }
 .form-group .custom-select-box .custom-select-toggle i:before{
     transform: rotate(90deg);
+}
+
+.collapse-hide{
+    display: block;
 }
 
 

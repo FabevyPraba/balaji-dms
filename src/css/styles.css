@@ -9019,7 +9019,7 @@ a:hover {
     font-size: 13px; }
     .main-menu .search-menu .searh-box:focus {
       outline: none; }
-  .main-menu .menu-list .menu-cont {
+  .main-menu .menu-list .menu-cont .menu-box {
     border-radius: 8px;
     border: solid 3px transparent;
     background-color: transparent;
@@ -9027,26 +9027,25 @@ a:hover {
     padding: 15px 10px;
     transition: all 0.3s ease;
     margin-bottom: 10px;
-    height: 100%; }
-    .main-menu .menu-list .menu-cont:hover {
+    height: 100%;
+    display: block; }
+    .main-menu .menu-list .menu-cont .menu-box:hover {
       border: solid 3px #c6d1e5;
       background-color: #f2f4f8; }
-    .main-menu .menu-list .menu-cont:active {
+    .main-menu .menu-list .menu-cont .menu-box:active {
       border: solid 3px #1c2b48;
       background-color: #f2f4f8; }
-    .main-menu .menu-list .menu-cont .menu-box {
-      display: block; }
-      .main-menu .menu-list .menu-cont .menu-box img {
-        width: 35px;
-        margin-bottom: 10px; }
-      .main-menu .menu-list .menu-cont .menu-box span {
-        color: #1c2b48;
-        font-size: 14px;
-        display: block;
-        font-weight: 400; }
-    .main-menu .menu-list .menu-cont:active .menu-box span {
+    .main-menu .menu-list .menu-cont .menu-box img {
+      width: 35px;
+      margin-bottom: 10px; }
+    .main-menu .menu-list .menu-cont .menu-box span {
       color: #1c2b48;
-      font-weight: 600; }
+      font-size: 14px;
+      display: block;
+      font-weight: 400; }
+  .main-menu .menu-list .menu-cont:active .menu-box span {
+    color: #1c2b48;
+    font-weight: 600; }
 
 .main-nav-list {
   width: 600px;
@@ -9122,7 +9121,9 @@ a:hover {
         .app-info .app-list ul li .lt-text {
           color: #bcc4d4;
           font-size: 13px;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          display: inline-block;
+          min-width: 100px; }
         .app-info .app-list ul li .rt-text {
           color: #5d6f8d;
           font-size: 13px; }
@@ -9672,7 +9673,7 @@ a:hover {
     float: left;
     width: 80px;
     height: 75px;
-    margin-right: 30px; }
+    margin-right: 20px; }
   .header-sec .header-left .logo {
     height: 75px;
     width: 200px;
@@ -10667,6 +10668,9 @@ a:hover {
 
 .form-group .custom-select-box .custom-select-toggle i:before {
   transform: rotate(90deg); }
+
+.collapse-hide {
+  display: block; }
 
 /* Layout End */
 /* ------  Style-Guide -------  */

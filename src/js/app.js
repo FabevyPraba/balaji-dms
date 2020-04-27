@@ -41,7 +41,7 @@ var siteMapData = {
           },
           {
             name: "Default list of exams for a License type",
-            link: "/pages/client-configuration/list-of-license-types.html",
+            link: "/pages/client-configuration/maintain-default-list-of-exams.html",
           },
           {
             name: "Default list of exams for a Designation",
@@ -279,4 +279,15 @@ $(document).ready(function () {
 	  });
 
   }
+
+  // Drop-Down Collapse
+  $(document).click(function(event){  
+    if (!$(event.target).closest(".collapse").length) {
+      $("body").find(".collapse").removeClass("show");
+    }          
+  });
+
 });
+
+
+
