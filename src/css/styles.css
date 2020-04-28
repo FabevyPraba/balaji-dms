@@ -9490,6 +9490,9 @@ a:hover {
 #dropdownMenuLink {
   display: block; }
 
+.custom-control-input {
+  z-index: 2; }
+
 .text-avatar {
   display: inline-block;
   width: 38px;
