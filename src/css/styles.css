@@ -9084,7 +9084,7 @@ a:hover {
       background-color: #ecedef;
       color: #8e94a0; }
   .main-nav-list .nav-list ul li ul {
-    padding-left: 65px;
+    padding-left: 35px;
     padding-top: 10px;
     padding-bottom: 10px; }
     .main-nav-list .nav-list ul li ul li a {
@@ -9094,6 +9094,11 @@ a:hover {
       display: block;
       font-size: 14px;
       color: #1c2b48; }
+      .main-nav-list .nav-list ul li ul li a i {
+        font-size: 8px;
+        top: -2px;
+        position: relative;
+        margin-right: 6px; }
 
 .app-info {
   width: 230px;

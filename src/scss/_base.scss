@@ -448,7 +448,7 @@ a:hover {
             }
         }
         ul {
-            padding-left: 65px;
+            padding-left: 35px;
             padding-top: 10px;
             padding-bottom: 10px;
             li a {
@@ -458,6 +458,12 @@ a:hover {
                 display: block;
                 font-size: 14px;
                 color: #1c2b48;
+                i{
+                    font-size: 8px;
+                    top: -2px;
+                    position: relative;
+                    margin-right: 6px;
+                }
             }
         }
     }

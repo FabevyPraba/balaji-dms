@@ -173,7 +173,7 @@ $(document).ready(function () {
 
         menuItem["sub-links"].forEach(function (subLink, ind) {
           $subMenuList = $(
-            "<li><a href='" + subLink.link + "'>" + subLink.name + "</a></li>"
+            `<li><a href='${subLink.link}'><i class='icon-button_ico_rightarrow'></i>${subLink.name}</a></li>`
           );
           $subMenu.append($subMenuList);
         });
