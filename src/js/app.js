@@ -131,6 +131,12 @@ $(document).ready(function () {
     height: $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
   });
 
+  $('.row-action-wrapper').find('.active-edit').click(function(e){
+    e.preventDefault();
+    $('.edit-part').hide();
+    $(this).parent().find('.edit-part').show();
+  })
+
   //Set height for main section
   $('.main-content-body').css({
     height: $('.main-content-wrapper').outerHeight() - 80 - $('.main-content-header').outerHeight()
@@ -296,7 +302,11 @@ $(document).ready(function () {
   $(document).click(function(event){  
     if (!$(event.target).closest(".collapse").length) {
       $("body").find(".collapse").removeClass("show");
-    }          
+    }
+    console.log($(event.target).closest(".row-action-wrapper").length)
+    if (!$(event.target).closest(".row-action-wrapper").length) {
+      $('.edit-part').hide();
+    }
   });
 
 });
