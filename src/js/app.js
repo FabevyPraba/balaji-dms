@@ -129,7 +129,8 @@ $(document).ready(function () {
 
   //Set height for main section
   $('.main-content-body').outerHeight($('.main-content-wrapper').outerHeight()-60-$('.main-content-header').outerHeight());
-
+  //$('.main-content-body').mCustomScrollbar();
+  
   $(".dropdown-menu li").click(function () {
     var selText = $(this).text();
     $(this)

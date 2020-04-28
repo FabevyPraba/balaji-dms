@@ -9544,7 +9544,7 @@ a:hover {
       border-radius: 5px;
       min-height: 73vh;
       position: relative;
-      overflow: hidden; }
+      /* overflow: hidden; */ }
       .page-wrapper .main-content-wrapper .main-content-body .sg-sub-block,
       .page-wrapper .main-content-wrapper .main-content-body .aside-menu {
         height: 100%; }
@@ -9811,11 +9811,12 @@ a:hover {
 
 .pagination {
   justify-content: center;
-  position: absolute;
+  position: static;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
-  width: 100%; }
+  transform: translateX(0);
+  width: 100%;
+  margin: 0; }
 
 .search-box {
   border: 1px solid #cecece;
@@ -10420,13 +10421,18 @@ a:hover {
 
 /*  -----------  Configuration Management  ------- */
 .pagination-part {
-  padding: 30px 0;
-  position: relative;
-  border-top: 1px solid #dee2e6; }
+  padding: 20px 0;
+  position: absolute;
+  border-top: 1px solid #dee2e6;
+  bottom: 0;
+  width: 100%;
+  left: 0; }
   .pagination-part .close-btn-part {
-    position: absolute;
+    top: 12px;
     right: 20px;
-    bottom: 8px; }
+    position: absolute;
+    z-index: 10;
+    text-align: right; }
 
 .variable-master-table table {
   width: 95%;
