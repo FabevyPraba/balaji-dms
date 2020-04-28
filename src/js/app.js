@@ -127,9 +127,16 @@ var siteMapData = {
 
 $(document).ready(function () {
 
+  $('.main-content-wrapper').css({
+    height: $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
+  });
+
   //Set height for main section
-  $('.main-content-body').outerHeight($('.main-content-wrapper').outerHeight()-60-$('.main-content-header').outerHeight());
+  $('.main-content-body').css({
+    height: $('.main-content-wrapper').outerHeight() - 80 - $('.main-content-header').outerHeight()
+  });
   //$('.main-content-body').mCustomScrollbar();
+  
   
   $(".dropdown-menu li").click(function () {
     var selText = $(this).text();
