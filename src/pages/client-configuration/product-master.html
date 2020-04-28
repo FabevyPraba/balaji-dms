@@ -273,14 +273,13 @@
                 <div class="row">
                     <div class="col-10">
                         <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">Allowed values</h4>
+                            <h4 class="sg-section-sub-heading">Product Master</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
-                                    <li class="breadcrumb-item" aria-current="page"><a href="#">Master Data</a></li>
-                                    <li class="breadcrumb-item" aria-current="page"><a href="#">Allowed values</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Variables with Allowed values</li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Product Master</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -288,68 +287,298 @@
                     </div>
                     <div class="col-2">
                         <div class="complete-btn">
-                             <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i> Complete</button>
+                            <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i> Complete</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="main-content-body">
-                <div class="sub-head clearfix">
-                    <ul>
-                        <li><a href="variables-allowed-values.html" class="back-page-btn"><</a></li>
-                        <li class="m-0"><div>Variable-id <span>AGENCY-NAME</span></div></li>
-                        <li><div>Description <span>Agency type</span></div></li>
-                        <li><div>D/M <span>Domain</span></div></li>
-                        <li><div>Screen Label <span>Agency type</span></div></li>
-                    </ul>
-                </div>
                 <div class="row m-0">
                     <div class="col-12 p-0">
-                        <div class="form-part" id="allowed-value">
-                            <div class="" id="form">
-                                <form class="needs-validation" novalidate>
-                                    <div class="row">
-
-                                        <div class="col-5">
-                                            <div class="form-group">
-                                                <label for="">Allowed value </label>
-                                                <input type="text" name="" class="form-control">
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="form-group">
-                                                <label for="">Allowed value Description </label>
-                                                <input type="text" name="" class="form-control">
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="edit-sec">
-                                               <!-- <button><img src="../../images/edit-icon.svg" alt="edit-icon"></button> -->
-                                               <!-- <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button> -->
-                                               <button class="add-btn" id="add-icon"><img src="../../images/add-icon.svg" alt="add-icon"></button>
-                                            </div>
-                                        </div>
-
+                        <div class="record-part">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4 class="show-record">Showing 300 records</h4>
+                                </div>
+                                <div class="col-6">
+                                    <div class="search-part">
+                                        <input type="search" name="" placeholder="Search" class="search-box">
+                                        <button type="button" class="btn btn-primary btn-icon-left" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-button_ico_addnew"></i> Add New</button>
                                     </div>
-                                </form>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part allowed-value-btn clearfix">
-                            <div class="save-btn">
-                                <button type="button" data-target="#myCenterAlignedModal" data-toggle="modal" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                            </div>
-                            <div class="close-btn-part">
-                                <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="record-list">
+                            <!-- Table -->
+                            <div class="variable-master-table " id="full-table">
+                                <div class="table-part" id="product-master">
+                                    <table class="table table-default table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Product Code</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Effective Date</th>
+                                                <th>Product Version</th>
+                                                <th>Description</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible" data-toggle="modal" data-target="#deleteModal">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1" >
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>TERM</td>
+                                                <td>01/01/2018</td>
+                                                <td>14/01/2018</td>
+                                                <td>01/01/2018</td>
+                                                <td>V1</td>
+                                                <td>Term assurance</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><button>Edit</button></li>
+                                                        <li><button data-toggle="modal" data-target="#deleteModal">Delete</button></li>
+                                                        <li><button>Review</button></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>TERM</td>
+                                                <td>01/01/2018</td>
+                                                <td>14/01/2018</td>
+                                                <td>01/01/2018</td>
+                                                <td>V1</td>
+                                                <td>Term assurance</td>
+                                                <td>
+                                                    <a href="#" class="kebab"> </a>
+                                                    <!-- <ul class="edit-part">
+                                                        <li><button>Edit</button></li>
+                                                        <li><button>Delete</button></li>
+                                                        <li><button>Review</button></li>
+                                                    </ul> -->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="pagination-part clearfix ">
+                                    <div class="pagination">
+                                        <div class="">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination pagination-default">
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="close-btn-part">
+                                        <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                        </div>
+                        
                     </div>
                 </div>
             </div>
+            <section class="aggregation-services-model production-services-form variable-master-model">
+             <div class="" id="modal">
+                <div class="modal fade partial-model-box" id="myRightAlignedModal">
+                   <div class="modal-dialog" id="maintain-box">
+                      <div class="modal-content">
+                         <div class="modal-head">
+                            <div class="row">
+                               <div class="col-8">
+                                  <div class="modal-title">
+                                     <h3>Product Master Maintenence </h3>
+                                     <span>* Fields are mandatory</span>
+                                  </div>
+                               </div>
+                               <div class="col-4">
+                                  <div class="btn-part" id="product-btn-part">
+                                    <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i> Complete</button>
+                                     <button class="remove-btn icon-close"></button>
+                                     <button type="button" class="reset-btn btn btn-link btn-icon-left" id="product-reset"> <i class="icon-close"></i> Reset</button>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="modal-body">
+                            <form class="needs-validation" novalidate>
+                               
+                               <div class="row">
+                                  <div class="col-12">
+                                      <div class="row">
+                                          <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="" class="required-mark">Product Code</label>
+                                                <input type="" name=""  class="form-control" required="" placeholder="Enter Product Code">
+                                             </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="col-6">
+                                        <div class="form-group">
+                                        <label for="" class="required-mark">Effective Date</label>
+                                        <input type="" name=""  class="form-control" required="" placeholder="Enter Effective Date">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Product version</label>
+                                        <input type="" placeholder="Enter Product version" name=""  class="form-control" required="">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Start Date</label>
+                                        <input type="" name=""  class="form-control" placeholder="Enter Start Date" required="">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">End Date</label>
+                                        <input type="" name="" placeholder="Enter End Date"  class="form-control" required="">
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">LOB</label>
+                                        <div class="drop-down-box custom-select-box">
+                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Endowment <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu">
+                                              <li class="dropdown-item">Endowment</li>
+                                              <li class="dropdown-item">2</li>              
+                                              <li class="dropdown-item">3</li>              
+                                              <li class="dropdown-item">4</li>              
+                                            </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Billing Frequency</label>
+                                        <div class="drop-down-box custom-select-box">
+                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Monthly <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu">
+                                              <li class="dropdown-item">Monthly</li>
+                                              <li class="dropdown-item">2</li>              
+                                              <li class="dropdown-item">3</li>              
+                                              <li class="dropdown-item">4</li>              
+                                            </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Pay Commission   </label>
+                                        <div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline3">Yes</label>
+                                           </div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline4">No</label>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Product Category</label>
+                                        <div class="drop-down-box custom-select-box">
+                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Endowment <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu">
+                                              <li class="dropdown-item">Endowment</li>
+                                              <li class="dropdown-item">2</li>              
+                                              <li class="dropdown-item">3</li>              
+                                              <li class="dropdown-item">4</li>              
+                                            </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Product Type</label>
+                                        <div class="drop-down-box custom-select-box">
+                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Risk <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu">
+                                              <li class="dropdown-item">Risk</li>
+                                              <li class="dropdown-item">2</li>              
+                                              <li class="dropdown-item">3</li>              
+                                              <li class="dropdown-item">4</li>              
+                                            </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Product Description</label>
+                                        <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="modal-footer">
+                                  <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+
+                                <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                               </div>
+                            </form>
+                         </div>   
+                      </div>
+                   </div>
+                </div>
+             </div>
+            </section>
+            <section class="save-model-box">
+                <div id="modal">
+                   <div class="modal fade" id="deleteModal">
+                       <div class="modal-dialog ">
+                          <div class="modal-content">
+                             <div class="modal-header">
+                                <button type="button" class="btn btn-link btn-icon-left" data-dismiss="modal">  Delete</button>
+                             </div>
+                             <div class="modal-body">
+                                   <p>Are you sure to delete the  1 record(s) selected ?</p>
+                             </div>
+                             <div class="modal-ftr">
+                                <button data-dismiss="modal" type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> No </button>
+                                <button type="button" class="btn btn-primary btn-icon-left"> <i class="icon-tick"></i> Yes</button>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <div class="footer-sec">

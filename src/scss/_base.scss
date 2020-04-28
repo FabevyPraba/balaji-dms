@@ -1001,7 +1001,7 @@ a:hover {
                     margin-right: 5px;
                 }
                 .breadcrumb {
-                    padding: 12px 15px;
+                    padding: 8px 15px;
                     .breadcrumb-item{
                         color: #3d557e;
                         font-size: 14px;
@@ -1151,12 +1151,11 @@ a:hover {
                 padding: 0;
                 margin-left: 15px;
             }
-
             div {
                 font-size: 16px;
                 font-weight: 500;
                 color: #9a9a9a;
-                padding-top:3px;
+                padding-top:2px;
                 text-transform: capitalize;
                 margin-left: 20px;
                 span {
@@ -1395,8 +1394,32 @@ a:hover {
 }
 
 .search-part{
-    .sg-submit-btn{
-        padding:7px 20px;
+    .search-box{
+        position:relative;
+    }
+    // #search-img{
+    //     position:absolute;
+    //     right: 0;
+    //     top: 0;
+    // }
+}
+
+#deleteModal{
+    .modal-header{
+        button{
+            color: #394e74;
+        }
+    }
+    .modal-ftr{
+        text-align: right;
+        padding-bottom:5px;
+    }
+    .modal-body{
+        padding-top:20px;
+        padding-bottom:20px;
+        p{
+            color: #394e74;
+        }
     }
 }
 
@@ -1417,6 +1440,12 @@ a:hover {
     text-align: center;
     line-height: 30px;
     font-size: 13px;
+}
+
+.sub-head{
+    .back-btn{
+        padding-top:0;
+    }
 }
 
 #myTab {
@@ -2641,6 +2670,49 @@ a:hover {
     margin: auto;
 }
 
+#product-reset{
+    position:relative;
+    right: -50px;
+}
+
+#product-btn-part{
+    margin-bottom: 0;
+}
+
+
+#product-master{
+    table{
+        tr{
+            th{
+                &:nth-child(2){
+                    width: 12%;
+                }
+                &:nth-child(3){
+                    width: 12%;
+                }
+                &:nth-child(4){
+                    width: 12%;
+                    text-align: left;
+                }
+                &:nth-child(5){
+                    width: 12%;
+                }
+                &:nth-child(6){
+                    width: 15%;
+                    text-align: center;
+                }
+            }
+            td{
+                &:nth-child(4){
+                    text-align: left;
+                } 
+               &:nth-child(6){
+                text-align: center;
+                } 
+            }
+        }
+    }
+}
 
 /* Layout End */
 
