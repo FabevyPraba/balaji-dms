@@ -475,24 +475,24 @@
                         </div>
                      </div>
                      <div class="modal-body">
-                        <form>
+                        <form class="needs-validation" novalidate>
                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row">
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Start Date *</label>
-                                    <input type="" name=""  class="form-control">
+                                    <label for="" class="required-mark">Start Date</label>
+                                    <input type="" name=""  class="form-control" required="">
                                  </div>
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">End Date *</label>
-                                    <input type="" name=""  class="form-control">
+                                    <label for="" >End Date</label>
+                                    <input type="" name=""  class="form-control" required="">
                                  </div>
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="" class="radio-text required-mark">Mandatory  *  </label>
+                                    <label for="" class="radio-text required-mark">Mandatory</label>
                                     <div>
                                        <div class="custom-control custom-radio custom-control-inline">
                                           <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
@@ -507,7 +507,7 @@
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="" class="radio-text required-mark">Question  *  </label>
+                                    <label for="" class="radio-text required-mark">Question  </label>
                                     <div>
                                        <div class="custom-control custom-radio custom-control-inline">
                                           <input type="radio" id="questions1" name="questions1" class="custom-control-input" required>
@@ -546,7 +546,7 @@
                               </div>
                            </div>
                            <div class="modal-footer" id="maintain-footer">
-                             <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                             <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                               <button type="button"data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                            </div>
                         </form>

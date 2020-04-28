@@ -304,7 +304,7 @@
                                 <div class="col-6">
                                     <div class="search-part">
                                         <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</button>
+                                        <button type="button" data-toggle="modal" data-target="#myRightAlignedModal" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</button>
                                     </div>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                                                 <td>
                                                     <a href="#" class="kebab active-edit"> </a>
                                                     <ul class="edit-part">
-                                                        <li><button data-toggle="modal" data-target="#myRightAlignedModal">Edit</button></li>
+                                                        <li><button >Edit</button></li>
                                                         <li><button>Delete</button></li>
                                                         <li><button>Review</button></li>
                                                     </ul>
@@ -485,24 +485,24 @@
                             </div>
                          </div>
                          <div class="modal-body">
-                            <form>
+                            <form class="needs-validation" novalidate>
                                <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                                <div class="row">
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Variable name *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="" class="required-mark">Variable name</label>
+                                        <input type="" name=""  class="form-control" required="">
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Description *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="" class="required-mark">Description</label>
+                                        <input type="" name=""  class="form-control" required="">
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Select *  </label>
+                                        <label for="" class="radio-text required-mark">Select   </label>
                                         <div>
                                            <div class="custom-control custom-radio custom-control-inline">
                                               <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
@@ -517,13 +517,13 @@
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Screen Label *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="" class="required-mark">Screen Label</label>
+                                        <input type="" name=""  class="form-control" required="">
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Type *</label>
+                                        <label for="" class="required-mark">Type</label>
                                         <div class="drop-down-box custom-select-box">
                                             <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Alpha numeric <i class="icon-right-open"></i></a>
                                             <ul class="dropdown-menu">
@@ -537,7 +537,7 @@
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Allowed Values *  </label>
+                                        <label for="" class="radio-text required-mark">Allowed Values   </label>
                                         <div>
                                            <div class="custom-control custom-radio custom-control-inline">
                                               <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
@@ -552,7 +552,7 @@
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Additional data *  </label>
+                                        <label for="" class="radio-text required-mark">Additional data  </label>
                                         <div>
                                            <div class="custom-control custom-radio custom-control-inline">
                                               <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
@@ -567,31 +567,31 @@
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Minimum Length *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="">Minimum Length</label>
+                                        <input type="text" name=""  class="form-control" required="">
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Minimum Length *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="">Minimum Length</label>
+                                        <input type="text" name=""  class="form-control" required="">
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Minimum value *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="">Minimum value</label>
+                                        <input type="text" name=""  class="form-control" required="">
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="validationDatabase">Maximum value *</label>
-                                        <input type="" name=""  class="form-control">
+                                        <label for="">Maximum value</label>
+                                        <input type="text" name=""  class="form-control">
                                      </div>
                                   </div>
                                </div>
                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                  <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
 
                                 <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                                </div>

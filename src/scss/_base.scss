@@ -806,6 +806,7 @@ a:hover {
     color: #e50000;
     z-index: 1;
     font-size: 1rem;
+    text-transform: capitalize;
 }
 
 .form-group {
@@ -2137,7 +2138,7 @@ a:hover {
         }
     }
     #client-configuration-tab-1 {
-        padding: 20px 0 0;
+        padding: 20px 0 90px;
         .custom-control-label {
             color: #000;
             padding-top: 3px;
@@ -2632,6 +2633,11 @@ a:hover {
 
 .collapse-hide{
     display: block;
+}
+
+#tab-item-2 #table-form{
+    width: 85%;
+    margin: auto;
 }
 
 

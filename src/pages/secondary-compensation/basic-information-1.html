@@ -302,52 +302,52 @@
                         <li><div><a href="#" class="add-btn">Review</a></div></li>
                     </ul>
                 </div>
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <div class="sg-sub-block">
-                            <div class="aside-menu">
-                                <ul>
-                                  <li><a class="active" href="basic-information.html">Basic Information</a></li>
-                                  <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
-                                  <li><a href="payment-rules.html">Payment Rules</a></li>
-                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
-                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
-                                  <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html">Temporary variable</a></li>
-                                  <li><a href="table-structure.html">Table structure</a></li>
-                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
-                                  <li><a href="compensation-flow.html">Compensation Flow</a></li>
-                                </ul>
-                              </div>
+                <form class="needs-validation" novalidate>
+                    <div class="row m-0">
+                        <div class="col-3 p-0">
+                            <div class="sg-sub-block">
+                                <div class="aside-menu">
+                                    <ul>
+                                      <li><a class="active inprogress" href="basic-information.html">Basic Information</a></li>
+                                      <li><a class="unknown" href="eligibility-rules.html">Eligibility Rules</a></li>
+                                      <li><a class="completed" href="payment-rules.html">Payment Rules</a></li>
+                                      <li><a class="unknown" href="agent-change-rules.html">Agent Change Rules</a></li>
+                                      <li><a class="inprogress" href="fractional-period-rules.html">Fractional Period Rules</a></li>
+                                      <li><a class="completed" href="rounding-rules.html">Rounding Rules</a></li>
+                                      <li><a class="unknown" href="temporary-variable.html">Temporary variable</a></li>
+                                      <li><a class="unknown" href="table-structure.html">Table structure</a></li>
+                                      <li><a class="inprogress" href="aggregation-service.html">Aggregation Service</a></li>
+                                      <li><a class="completed" href="production-service.html">Production Service</a></li>
+                                      <li><a class="inprogress" href="compensation-flow.html">Compensation Flow</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-9 p-0">
-                        <div class="side-menu-title">
-                            <h3>Basic Information</h3>
-                        </div>
-                        <div class="form-part">
-                            <div class="" id="form">
-                                <form class="needs-validation" novalidate>
-                                  <a href="#" class="reset-btn">Reset</a>
+                        <div class="col-9 p-0">
+                            <div class="side-menu-title">
+                                <h3>Basic Information</h3>
+                            </div>
+                            <div class="form-part">
+                                <div class="" id="form">
+                                    <a href="#" class="reset-btn">Reset</a>
                                     <div class="row">  
                                         <div class="col-4">
                                              <div class="form-group">
-                                                <label for="">Compensation ID *</label>
+                                                <label for="" class="required-mark">Compensation ID </label>
                                                 <input type="text" class="form-control" id="id-1" required>
                                                 <div class="invalid-feedback">Enter Compensation ID</div>
                                             </div>
                                         </div>
                                         <div class="col-8">
                                              <div class="form-group">
-                                                <label for="">Description *</label>
+                                                <label for="" class="required-mark">Description </label>
                                                 <input type="text" class="form-control" id="id-1" required>
                                                 <div class="invalid-feedback">Enter Description</div>
                                             </div>
                                         </div>
                                         <div class="col-4">
                                              <div class="form-group">
-                                                <label for="">Start Date *</label>
+                                                <label for="" class="required-mark">Start Date</label>
                                                 <input type="text" class="form-control" id="id-1" required>
                                                 <div class="invalid-feedback">Enter Start Date</div>
                                             </div>
@@ -356,12 +356,12 @@
                                              <div class="form-group">
                                                 <label for="">End Date </label>
                                                 <input type="text" class="form-control" id="id-1" required>
-                                                <div class="invalid-feedback">Enter End Date</div>
+                                                <!-- <div class="invalid-feedback">Enter End Date</div> -->
                                             </div>
                                         </div>
                                         <div class="col-4">  
                                             <div class="form-group">
-                                                <label for="">Status </label>
+                                                <label for="" class="required-mark">Status </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Pending <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -375,7 +375,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Compensation Type *</label> 
+                                                <label for="" class="required-mark">Compensation Type </label> 
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Seniority Allowance <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -389,7 +389,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Trigger *</label>
+                                                <label for="" class="required-mark">Trigger </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Time <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -403,7 +403,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Event Level *</label> 
+                                                <label for="">Event Level </label> 
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select Event Level <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -417,7 +417,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Event  *</label>  
+                                                <label for="">Event </label>  
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select Eventl <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -431,7 +431,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Calculation Frequency *</label>
+                                                <label for="">Calculation Frequency </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Monthly <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -445,7 +445,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Channel *</label>
+                                                <label for="" class="required-mark">Channel</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Tied Agents <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -459,7 +459,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Output Level *</label>
+                                                <label for="">Output Level </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">A value for each eligible agent <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -473,7 +473,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Campaign  *</label>
+                                                <label for="">Campaign  </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select Campaign <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -501,7 +501,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Reward Type *</label>
+                                                <label for="">Reward Type</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select Reward Type <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -530,7 +530,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group">
-                                                <label for="">Output Type *</label>
+                                                <label for="">Output Type</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Credit <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -544,43 +544,40 @@
                                         </div>
 
                                     </div>
-                                </form>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part clearfix">
-                            <div class="save-btn">
-                                <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7" data-toggle="modal" data-target="#myCenterAlignedModal"></i>Save</button>
-                                <a type="button" href="eligibility-rules.html"  class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                            </div>
-                            <div class="close-btn-part">
-                                <button type="button" class="btn btn-primary btn-icon-left" data-toggle="modal" data-target="#myCenterAlignedModal"> <i class="icon-close"></i> Close</button>
+                                </div>        
                             </div>
                         </div>
-                    </div>
-                    <section class="save-model-box">
-                      <div id="modal">
-                        <div class="">
-                             <!-- Modal -->
-                             <div class="modal fade" id="myCenterAlignedModal">
-                                 <div class="modal-dialog ">
-                                    <div class="modal-content">
-                                       <div class="modal-header">
-                                          <button  class="close-btn" >Save</button>
-                                       </div>
-                                       <div class="modal-body">
-                                             <p>Do you like to save the data entered?</p>
-                                             <a href="#" class="yes-btn">Yes</a>
-                                             <a href="#" type="button" class="no-btn" data-dismiss="modal">No</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
+                        <div class="col-12 p-0">
+                            <div class="data-assign-part clearfix">
+                                <div class="save-btn">
+                                    <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                    <a href="eligibility-rules.html"  type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                </div>
+                                <div class="close-btn-part">
+                                    <button type="button" class="btn btn-secondary btn-icon-left" > <i class="icon-close"></i> Close</button>
+                                </div>
+                            </div> 
                         </div>
-                      </div>
-                    </section>
-                </div>
+                        <section class="save-model-box">
+                            <div id="modal">
+                               <div class="modal fade" id="myCenterAlignedModal">
+                                   <div class="modal-dialog ">
+                                      <div class="modal-content">
+                                         <div class="modal-header">
+                                             <button type="button" class="btn btn-link btn-icon-left" data-dismiss="modal">  Delete</button>
+                                         </div>
+                                         <div class="modal-body">
+                                               <p>Are you sure to delete the selected record?</p>
+                                               <button type="button" class="btn btn-primary btn-icon-left"> <i class="icon-tick"></i> Yes</button>
+                                               <button type="button" class="btn btn-primary btn-icon-left" data-dismiss="modal"> <i class="icon-close"></i> No</button>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </form>
             </div>
         </div>
 

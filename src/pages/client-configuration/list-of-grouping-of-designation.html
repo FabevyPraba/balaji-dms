@@ -352,7 +352,7 @@
                                                 <td>
                                                     <a href="#" class="kebab active-edit"> </a>
                                                     <ul class="edit-part" id="allowed-edit-part">
-                                                        <li><button>Edit</button></li>
+                                                        <li><button data-toggle="modal" data-target="#myRightAlignedModal">Edit</button></li>
                                                         <li><button>Review</button></li>
                                                     </ul>
                                                 </td>
@@ -422,7 +422,7 @@
                                 </div>
                             </div>
                             <div class="close-btn-part">
-                                <button type="button" data-toggle="modal" data-target="#myRightAlignedModal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                <button type="button"  class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                             </div>
                         </div>
 
@@ -454,18 +454,18 @@
                         </div>
                      </div>
                      <div class="modal-body">
-                        <form>
+                        <form class="needs-validation" novalidate>
                            <button type="button" class=" reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row"> 
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Designation *</label>
-                                    <input type="" name=""  class="form-control">
+                                    <label for="">Designation</label>
+                                    <input type="" name=""  class="form-control" required="">
                                  </div>
                               </div>                                
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Designation Group  *</label>
+                                    <label for="" class="required-mark">Designation Group </label>
                                     <div class="drop-down-box">
                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senior Manager</a>
                                        <ul class="dropdown-menu">
@@ -480,7 +480,7 @@
                               
                            </div>
                            <div class="modal-footer">
-                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                              <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                               <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                            </div>
                         </form>

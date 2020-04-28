@@ -335,7 +335,7 @@
                                 <div class="col-6">
                                     <div class="search-part">
                                         <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</button>
+                                        <button type="button" class="btn btn-primary btn-icon-left" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-button_ico_addnew"></i> Add New</button>
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +371,7 @@
                                 <a  href="table-structure.html"  type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
                             </div>
                             <div class="close-btn-part">
-                                <button type="button" class="btn btn-secondary btn-icon-left" data-toggle="modal" data-target="#myRightAlignedModal"> <i class="icon-close"></i> Close</button>
+                                <button type="button" class="btn btn-secondary btn-icon-left" > <i class="icon-close"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -394,29 +394,30 @@
                            </div>
                            <div class="col-4">
                               <div class="btn-part">
-                                 <button class="remove-btn" data-dismiss="modal">X</button>
+                                 <button class="remove-btn" data-dismiss="modal"><i class="icon-close"></i></button>
                               </div>
                            </div>
                         </div>
                      </div>
                      <div class="modal-body">
-                        <form>
+                        <form class="needs-validation" novalidate>
                            <div class="row">
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Variable Name *</label>
-                                    <input type="" name=""  class="form-control">
+                                    <label for="" class="required-mark">Variable Name</label>
+                                    <input type="text" name=""  class="form-control" required="">
+                                    <div class="invalid-feedback">Enter valid Variable Name.</div>
                                  </div>
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Description *</label>
-                                    <textarea rows="3" class="form-control"></textarea>
+                                    <label for="" class="required-mark" >Description</label>
+                                    <textarea rows="3" class="form-control" required=""></textarea>
                                  </div>
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Type of Variable *</label>
+                                    <label for="" class="required-mark">Type of Variable</label>
                                     <div class="drop-down-box custom-select-box">
                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Numeric<i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
@@ -445,20 +446,22 @@
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Minimum Value *</label>
-                                    <input type="" name=""  class="form-control">
+                                    <label for="">Minimum Value</label>
+                                    <input type="text" name=""  class="form-control" required="">
+                                    <div class="invalid-feedback">Enter Valid Minimum Value.</div>
                                  </div>
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="validationDatabase">Maximum Value *</label>
-                                    <input type="" name=""  class="form-control">
+                                    <label for="">Maximum Value</label>
+                                    <input type="text" name=""  class="form-control" required="">
+                                    <div class="invalid-feedback">Enter Valid Minimum Value.</div>
                                  </div>
                               </div>
                            </div>
 
                            <div class="modal-footer">
-                               <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                               <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                               <button data-dismiss="modal" type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Cancel</button>
                            </div>
                         </form>
