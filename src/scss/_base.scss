@@ -991,6 +991,7 @@ a:hover {
     background-color: #e7e9eb;
     .main-content-wrapper {
         padding: 20px;
+        height: calc(100vh - 35px - 82px);
         .page-title {
             .sg-sub-block {
                 padding-top: 5px;
@@ -2275,7 +2276,7 @@ a:hover {
 
 
 .aggregation-services-model.production-services-form.variable-master-model{
-    padding: 20px 20px 10px !important;
+    padding: 0 20px !important;
     position:relative;
     .modal {
         .modal-title{
