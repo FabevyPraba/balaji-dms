@@ -10728,6 +10728,26 @@ a:hover {
 #product-master table tr td:nth-child(6) {
   text-align: center; }
 
+.agency-title {
+  color: #1c2b48;
+  font-size: 20px;
+  font-weight: 600; }
+
+.reset-sec {
+  text-align: right;
+  margin-right: 20px; }
+  .reset-sec span {
+    color: #a1acbf;
+    font-size: 14px; }
+  .reset-sec button {
+    font-size: 16px;
+    color: #6fbc78;
+    font-weight: 500;
+    margin-left: 15px; }
+    .reset-sec button i {
+      font-size: 12px;
+      padding-right: 0 !important; }
+
 /* Layout End */
 /* ------  Style-Guide -------  */
 .sg-header {

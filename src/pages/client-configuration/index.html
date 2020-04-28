@@ -293,7 +293,7 @@
 
             <div class="main-content-body">
                 <!-- Tabs -->
-                <div id="tab" class="client-configuration-tab">
+                <!-- <div id="tab" class="client-configuration-tab">
                     <div class="">
                         <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
                             <li class="nav-item">
@@ -313,7 +313,6 @@
                                                 <div class="form-group">
                                                    <label for="" class="required-mark">Name of the client </label>
                                                    <input type="text" name=""  class="form-control" required="" placeholder="Enter Client Name">
-                                                   <!-- <div class="invalid-feedback">Enter valid email-id.</div> -->
                                                 </div>
                                             </div>
                                             <div class="col-3">
@@ -512,9 +511,398 @@
                                 </form>    
                             </div>
 
-                            <div class="tab-pane " id="client-configuration-tab-" role="tabpanel" aria-labelledby="default-tab-2">
+                            <div class="tab-pane fade" id="client-configuration-tab-2" role="tabpanel" aria-labelledby="default-tab-2">=
                             </div>
 
+                        </div>
+                    </div>
+                </div> -->
+                <div id="tab" class="client-configuration-tab">
+                    <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Basic Configuration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-3" role="tab" aria-controls="tab-item-3" aria-selected="false">Agency / Agent Codes Configuration</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1" >
+                            <div id="client-configuration-tab-1">
+                                <form class="needs-validation" novalidate>
+                                        <div class="client-configuration-form" >
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Name of the client </label>
+                                                       <input type="text" name=""  class="form-control" required="" placeholder="Enter Client Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Industry </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Insurance <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Insurance</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Home Country </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Indonesia <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Indonesia</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Home Currency </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Home Currency <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Home Currency</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Currency Symbol </label>
+                                                       <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                    </div> 
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Maximum digits before decimal for numbers </label>
+                                                       <input type="text" name=""  class="form-control" required="" placeholder="Enter max digits before decimal">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Number of digits for cents </label>
+                                                       <input type="text" name=""  class="form-control" required="" placeholder="Enter No of digits">
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Date format </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Date format <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Date format</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Number format </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Comma and decimal point <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Comma and decimal point</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Language for Screen Labels </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">English <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">English</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                       <label for="" class="required-mark">Data entry language for name and address </label>
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">English <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">English</li>
+                                                              <li class="dropdown-item">2</li>              
+                                                              <li class="dropdown-item">3</li>              
+                                                              <li class="dropdown-item">4</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="required-mark" class="radio-text required-mark">Terminology Mapping  </label>
+                                                        <div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="customRadioInline2">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="required-mark" class="radio-text required-mark">Basic Commission Calculation  </label>
+                                                        <div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="customRadioInline3">Internal</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
+                                                                <label class="custom-control-label" for="customRadioInline4">External</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="required-mark" class="radio-text required-mark">Over-riding Commission Calculation  </label>
+                                                            <div>
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
+                                                                    <label class="custom-control-label" for="customRadioInline5">Internal</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
+                                                                    <label class="custom-control-label" for="customRadioInline6">External</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="valid-feedback">
+                                                                <p>Selection required</p>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-assign-part clearfix client-configuration-footer">
+                                            <div class="save-btn">
+                                                <button type="submit" data-target="#myCenterAlignedModal" data-toggle="modal" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                            </div>
+
+                                            <div class="close-btn-part">
+                                                <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                            </div>
+                                        </div>
+                                        <section class="save-model-box">
+                                            <div id="modal">
+                                               <div class="modal fade" id="myCenterAlignedModal">
+                                                   <div class="modal-dialog ">
+                                                      <div class="modal-content">
+                                                         <div class="modal-header">
+                                                            <button type="button" class="btn btn-link btn-icon-left" data-dismiss="modal">  Close</button>
+                                                         </div>
+                                                         <div class="modal-body">
+                                                               <p>Do you want to save the data before exit?</p>
+                                                               <button type="button" class="btn btn-primary btn-icon-left"> <i class="icon-tick"></i> Yes</button>
+                                                               <button data-dismiss="modal" type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> No </button>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </form> 
+                            </div>        
+                        </div>
+                        <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-2">
+                            <div id="client-configuration-tab-1">
+                                <form>
+                                    <div class="reset-sec">
+                                        <span>* Fields are mandatory</span>
+                                        <button type="button" class="btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
+                                    </div>
+                                    <div class="client-configuration-form">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                            <label for="" class="required-mark" class="radio-text required-mark">Agency Code  </label>
+                                                            <div>
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
+                                                                    <label class="custom-control-label" for="customRadioInline5">User entered</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
+                                                                    <label class="custom-control-label" for="customRadioInline6">System Generated</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                            <label for="" class="required-mark" class="radio-text required-mark">Agency Code  </label>
+                                                            <div>
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
+                                                                    <label class="custom-control-label" for="customRadioInline5">User entered</label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio custom-control-inline">
+                                                                    <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
+                                                                    <label class="custom-control-label" for="customRadioInline6">System Generated</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h3 class="agency-title">Agency Master </h3>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Number of digits </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Starting number  </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Prefix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Prefix">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Suffix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Suffix">
+                                                        </div> 
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h3 class="agency-title">Agency id </h3>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Number of digits </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Starting number  </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Prefix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Prefix">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Suffix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Suffix">
+                                                        </div> 
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h3 class="agency-title">Agent Master </h3>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Number of digits </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Starting number  </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Prefix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Prefix">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Suffix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Suffix">
+                                                        </div> 
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h3 class="agency-title">Agent id </h3>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Number of digits </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Starting number  </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Prefix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Prefix">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="form-group">
+                                                           <label for="" class="required-mark">Suffix </label>
+                                                           <input type="text" name=""  class="form-control" required="" placeholder="Enter Suffix">
+                                                        </div> 
+                                                    </div>
+
+                                                </div>
+                                            </div>        
+                                        </div>
+                                    </div>    
+                                </form>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -531,13 +919,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
-    <style>
-        .tab-content > .tab-pane{
-            display: block !important;
-        }
-        .fade:not(.show) {
-            opacity: 1 !important;
-        }
-    </style>
+
 </body>
 </html>
