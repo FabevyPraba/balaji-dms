@@ -25,7 +25,7 @@ var siteMapData = {
           },
           {
             name: "Product Master",
-            link: "/pages/client-configuration/variables-allowed-values.html",
+            link: "/pages/client-configuration/product-master.html",
           },
           {
             name: "LOB Master",
