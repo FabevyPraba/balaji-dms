@@ -512,11 +512,11 @@
                               <div class="tab-content" id="myTabContent">
                                  <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
                                     <span class="mandatory-text">* Fields are mandatory</span>
-                                    <form >
+                                    <form class="needs-validation" novalidate>
                                        <div class="row">
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation Service-id *</label>
+                                                <label for="" class="required-mark">Aggregation Service-id</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">AGG-FYC <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -532,7 +532,7 @@
                                        <div class="row">
                                           <div class="col-12">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Description *</label>
+                                                <label for="">Description</label>
                                                 <textarea rows="3"></textarea>
                                              </div>
                                           </div>
@@ -540,7 +540,7 @@
                                        <div class="row">
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Input variable-id *</label>
+                                                <label for="" class="required-mark">Input variable-id</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">BASIC-COMM <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -556,7 +556,7 @@
                                        <div class="row">
                                           <div class="col-12">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Description *</label>
+                                                <label for="" >Description</label>
                                                 <textarea rows="3"></textarea>
                                              </div>
                                           </div>
@@ -564,22 +564,22 @@
                                        <div class="row">
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation From Date *</label>
-                                                <input type="" name=""  class="form-control">
+                                                <label for="" class="required-mark">Aggregation From Date </label>
+                                                <input type="text" name=""  class="form-control" required="">
                                              </div>
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation to Date *</label>
-                                                <input type="" name=""  class="form-control">
+                                                <label for="" class="required-mark">Aggregation to Date</label>
+                                                <input type="text" name=""  class="form-control" required="">
                                              </div>
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation Period basis *</label>
-                                                <div class="drop-down-box custom-select-box">
+                                                <label for="" class="required-mark">Aggregation Period basis</label>
+                                                <div class="drop-down-box custom-select-box" >
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Date of Reporting <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
+                                                    <ul class="dropdown-menu" required="">
                                                       <li class="dropdown-item">Date of Reporting</li>
                                                       <li class="dropdown-item">2</li>              
                                                       <li class="dropdown-item">3</li>              
@@ -590,7 +590,7 @@
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation for *</label>
+                                                <label for="" class="required-mark">Aggregation for</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’ <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -604,7 +604,7 @@
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation for ‘n’ *</label>
+                                                <label for="">Aggregation for ‘n’ </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">2 <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -618,7 +618,7 @@
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation Level *</label>
+                                                <label for="" class="required-mark">Aggregation Level </label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’ <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -632,7 +632,7 @@
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation Level ‘n’ *</label>
+                                                <label for="">Aggregation Level ‘n’</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">1 <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -646,7 +646,7 @@
                                           </div>
                                           <div class="col-6">
                                              <div class="form-group">
-                                                <label for="validationDatabase">Aggregation for output level *</label>
+                                                <label for="" class="required-mark">Aggregation for output level</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">A value for each eligible agent <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -660,7 +660,7 @@
                                           </div>
                                        </div>
                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                          <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                                           <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
                                           <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
                                           <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
@@ -702,7 +702,7 @@
                                              <div class="form-group">
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
+                                                    <ul class="dropdown-menu" >
                                                       <li class="dropdown-item">Select</li>
                                                       <li class="dropdown-item">2</li>              
                                                       <li class="dropdown-item">3</li>              

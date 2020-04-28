@@ -9366,7 +9366,8 @@ a:hover {
   padding: 7px 12px 4px;
   color: #e50000;
   z-index: 1;
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-transform: capitalize; }
 
 .form-group {
   position: relative; }
@@ -10346,7 +10347,7 @@ a:hover {
       border: solid 1px #e50000;
       box-shadow: none; }
   .client-configuration-tab #client-configuration-tab-1 {
-    padding: 20px 0 0; }
+    padding: 20px 0 90px; }
     .client-configuration-tab #client-configuration-tab-1 .custom-control-label {
       color: #000;
       padding-top: 3px; }
@@ -10671,6 +10672,10 @@ a:hover {
 
 .collapse-hide {
   display: block; }
+
+#tab-item-2 #table-form {
+  width: 85%;
+  margin: auto; }
 
 /* Layout End */
 /* ------  Style-Guide -------  */

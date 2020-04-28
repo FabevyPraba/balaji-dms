@@ -302,38 +302,37 @@
                         <li><div><a href="#" class="add-btn">Edit</a></div></li>
                     </ul>
                 </div>
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <div class="sg-sub-block">
-                            <div class="aside-menu">
-                                <ul>
-                                  <li><a  href="basic-information.html">Basic Information</a></li>
-                                  <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
-                                  <li><a href="payment-rules.html">Payment Rules</a></li>
-                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
-                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
-                                  <li><a href="rounding-rules.html" class="active">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html">Temporary variable</a></li>
-                                  <li><a href="table-structure.html">Table structure</a></li>
-                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
-                                  <li><a href="compensation-flow.html">Compensation Flow</a></li>
-                                </ul>
-                              </div>
+                <form class="needs-validation" novalidate>
+                    <div class="row m-0">
+                        <div class="col-3 p-0">
+                            <div class="sg-sub-block">
+                                <div class="aside-menu">
+                                    <ul>
+                                      <li><a  href="basic-information.html">Basic Information</a></li>
+                                      <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
+                                      <li><a href="payment-rules.html">Payment Rules</a></li>
+                                      <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
+                                      <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
+                                      <li><a href="rounding-rules.html" class="active">Rounding Rules</a></li>
+                                      <li><a href="temporary-variable.html">Temporary variable</a></li>
+                                      <li><a href="table-structure.html">Table structure</a></li>
+                                      <li><a href="aggregation-service.html">Aggregation Service</a></li>
+                                      <li><a href="production-service.html">Production Service</a></li>
+                                      <li><a href="compensation-flow.html">Compensation Flow</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-9 p-0">
-                        <div class="side-menu-title">
-                            <h3>Rounding Rules</h3>
-                        </div>
-                        <div class="form-part" id="round-form">
-                            <div class="" id="form">
-                                <form class="needs-validation" novalidate>
+                        <div class="col-9 p-0">
+                            <div class="side-menu-title">
+                                <h3>Rounding Rules</h3>
+                            </div>
+                            <div class="form-part" id="round-form">
+                                <div class="" id="form">
                                     <div class="row">
-
                                         <div class="col-6">
                                             <div class="form-group">
-                                                <label for="validationDatabase">Nearest unit of rounding for the dollar *</label>
+                                                <label for="validationDatabase" class="required-mark">Nearest unit of rounding for the dollar</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">1<i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -348,7 +347,7 @@
                                         </div>
                                         <div class="col-6">
                                             <div class="form-group">
-                                                <label for="validationDatabase">Nearest unit of rounding for the cents *</label>
+                                                <label for="validationDatabase" class="required-mark">Nearest unit of rounding for the cents</label>
                                                 <div class="drop-down-box custom-select-box">
                                                     <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">1<i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
@@ -363,23 +362,23 @@
                                         </div>
 
                                     </div>
-                                </form>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part clearfix">
-                            <div class="save-btn">
-                                <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                <a href="fractional-period-rules.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                <a href="temporary-variable.html" type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                            </div>
-                            <div class="close-btn-part">
-                                <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                </div>        
                             </div>
                         </div>
+                        <div class="col-12 p-0">
+                            <div class="data-assign-part clearfix">
+                                <div class="save-btn">
+                                    <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                    <a href="fractional-period-rules.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                    <a href="temporary-variable.html" type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                </div>
+                                <div class="close-btn-part">
+                                    <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </form>    
             </div>
         </div>
 

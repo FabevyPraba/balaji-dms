@@ -141,12 +141,12 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
-                                        <form class="form-part">
+                                        <form class="needs-validation form-part" novalidate>
                                             <span class="reset-btn">Reset</span>
                                             <div class="row">
                                                 <div class="col-4">
                                                     <div class="form-group">
-                                                        <label for="">Table ID *</label>
+                                                        <label for="" class="required-mark">Table ID </label>
                                                         <input type="text" class="form-control" id="id-1" required>
                                                         <div class="invalid-feedback">Enter Table ID</div>
                                                     </div>
@@ -155,7 +155,7 @@
                                             <div class="row">
                                                 <div class="col-8">
                                                     <div class="form-group">
-                                                        <label for="">Description *</label>
+                                                        <label for="" class="required-mark">Description</label>
                                                         <textarea rows="3" ></textarea>
                                                     </div>
                                                 </div>
@@ -163,7 +163,7 @@
                                             <div class="row">
                                                 <div class="col-4">
                                                     <div class="form-group">
-                                                        <label for="validationDatabase">Table Type</label>
+                                                        <label for="" class="required-mark">Table Type</label>
                                                         <div class="drop-down-box custom-select-box">
                                                             <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Compensation table<i class="icon-right-open"></i></a>
                                                             <ul class="dropdown-menu">
@@ -177,7 +177,7 @@
                                                 </div>    
                                                     <div class="col-4">
                                                         <div class="form-group">
-                                                            <label for="validationDatabase">Table Nature</label>
+                                                            <label for="" class="required-mark">Table Nature</label>
                                                             <div class="drop-down-box custom-select-box">
                                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Simple banded<i class="icon-right-open"></i></a>
                                                                 <ul class="dropdown-menu">
@@ -191,7 +191,7 @@
                                                     </div>    
                                                     <div class="col-4">
                                                         <div class="form-group">
-                                                            <label for="">Date of Creation *</label>
+                                                            <label for="">Date of Creation </label>
                                                             <input type="text" class="form-control" id="id-1" required>
                                                             <div class="invalid-feedback">Enter Date of Creation</div>
                                                         </div>
@@ -205,14 +205,14 @@
                                                     </div>
                                                     <div class="col-4">
                                                         <div class="form-group">
-                                                            <label for="">No.of Columns *</label>
+                                                            <label for="" class="required-mark">No.of Columns</label>
                                                             <input type="text" class="form-control" id="id-1" required>
                                                             <div class="invalid-feedback">Enter No.of Columns   </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-4">
                                                         <div class="form-group">
-                                                            <label for="validationDatabase">Output Variable ID</label>
+                                                            <label for="" class="required-mark">Output Variable ID</label>
                                                             <div class="drop-down-box custom-select-box">
                                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP-CREDIT<i class="icon-right-open"></i></a>
                                                                 <ul class="dropdown-menu">
@@ -235,12 +235,12 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                <button type="button" class="btn btn-primary btn-icon-left"> <i class="icon-asset-7"></i> Submit</button>
+                                                <button type="submit" class="btn btn-primary btn-icon-left"> <i class="icon-asset-7"></i> Submit</button>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                        <form>
+                                        <form id="table-form">
                                             <div class="row">
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">

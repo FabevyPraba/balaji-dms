@@ -306,21 +306,19 @@
                         <div class="tab-content" id="tab-item-1">
 
                             <div class="tab-pane fade show active" id="client-configuration-tab-1" role="tabpanel" aria-labelledby="default-tab-1">
-                                <form action="#">
+                                <form class="needs-validation" novalidate>
                                     <div class="client-configuration-form" >
                                         <div class="row">
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Name of the client *</label>
-                                                   <input type="text" name=""  class="form-control">
-                                                   <div class="valid-feedback">
-                                                        <p>Name field should not include numerics</p>
-                                                    </div>
+                                                   <label for="" class="required-mark">Name of the client </label>
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter Client Name">
+                                                   <!-- <div class="invalid-feedback">Enter valid email-id.</div> -->
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Industry *</label>
+                                                   <label for="" class="required-mark">Industry </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Insurance <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -334,7 +332,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Home Country *</label>
+                                                   <label for="" class="required-mark">Home Country </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Indonesia <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -348,7 +346,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Home Currency *</label>
+                                                   <label for="" class="required-mark">Home Currency </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Home Currency <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -362,25 +360,25 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Currency Symbol *</label>
-                                                   <input type="text" name=""  class="form-control">
+                                                   <label for="" class="required-mark">Currency Symbol </label>
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="">
+                                                </div> 
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="" class="required-mark">Maximum digits before decimal for numbers </label>
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter max digits before decimal">
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Maximum digits before decimal for numbers *</label>
-                                                   <input type="text" name=""  class="form-control">
+                                                   <label for="" class="required-mark">Number of digits for cents </label>
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter No of digits">
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Number of digits for cents *</label>
-                                                   <input type="text" name=""  class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="form-group">
-                                                   <label for="validationDatabase">Date format *</label>
+                                                   <label for="" class="required-mark">Date format </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Date format <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -394,7 +392,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Number format *</label>
+                                                   <label for="" class="required-mark">Number format </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Comma and decimal point <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -408,7 +406,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Language for Screen Labels *</label>
+                                                   <label for="" class="required-mark">Language for Screen Labels </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">English <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -422,7 +420,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="validationDatabase">Data entry language for name and address *</label>
+                                                   <label for="" class="required-mark">Data entry language for name and address </label>
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">English <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
@@ -436,7 +434,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                    <label for="" class="radio-text required-mark">Terminology Mapping  </label>
+                                                    <label for="" class="required-mark" class="radio-text required-mark">Terminology Mapping  </label>
                                                     <div>
                                                         <div class="custom-control custom-radio custom-control-inline">
                                                             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
@@ -451,7 +449,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                    <label for="" class="radio-text required-mark">Basic Commission Calculation  </label>
+                                                    <label for="" class="required-mark" class="radio-text required-mark">Basic Commission Calculation  </label>
                                                     <div>
                                                         <div class="custom-control custom-radio custom-control-inline">
                                                             <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
@@ -466,7 +464,7 @@
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                    <label for="" class="radio-text required-mark">Over-riding Commission Calculation  </label>
+                                                    <label for="" class="required-mark" class="radio-text required-mark">Over-riding Commission Calculation  </label>
                                                         <div>
                                                             <div class="custom-control custom-radio custom-control-inline">
                                                                 <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
@@ -486,7 +484,7 @@
                                     </div>
                                     <div class="data-assign-part clearfix client-configuration-footer">
                                         <div class="save-btn">
-                                            <button type="button" data-target="#myCenterAlignedModal" data-toggle="modal" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                            <button type="submit" data-target="#myCenterAlignedModal" data-toggle="modal" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                                         </div>
 
                                         <div class="close-btn-part">
