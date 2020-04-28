@@ -9518,7 +9518,8 @@ a:hover {
 .page-wrapper {
   background-color: #e7e9eb; }
   .page-wrapper .main-content-wrapper {
-    padding: 20px; }
+    padding: 20px;
+    height: calc(100vh - 35px - 82px); }
     .page-wrapper .main-content-wrapper .page-title .sg-sub-block {
       padding-top: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .sg-section-sub-heading {
@@ -10462,7 +10463,7 @@ a:hover {
   /* min-height: 100vh; */ }
 
 .aggregation-services-model.production-services-form.variable-master-model {
-  padding: 20px 20px 10px !important;
+  padding: 0 20px !important;
   position: relative; }
   .aggregation-services-model.production-services-form.variable-master-model .modal .modal-title span {
     display: block;
