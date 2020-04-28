@@ -300,6 +300,7 @@ a:hover {
         overflow: hidden;
         .dropdown-item {
             padding: 0;
+            
             a {
                 display: block;
                 border-bottom: solid 1px #ccc;
@@ -320,6 +321,10 @@ a:hover {
             }
             &:last-child a {
                 border-bottom: none;
+            }
+            &:focus, &:active{
+                background-color: #f8f9fa;
+                outline: none;
             }
         }
     }
@@ -343,6 +348,7 @@ a:hover {
             .clock-icon {
                 margin-left: 15px;
                 width: 24px;
+                cursor: pointer;
             }
         }
         .searh-box {
@@ -447,14 +453,17 @@ a:hover {
                 color: #8e94a0;
             }
         }
+        a:link:hover{
+            background-color: #ecedef;
+        }
         ul {
-            padding-left: 35px;
+            padding-left: 0;
             padding-top: 10px;
             padding-bottom: 10px;
             li a {
                 position: relative;
                 padding: 8px 0;
-                padding-left: 25px;
+                padding-left: 55px;
                 display: block;
                 font-size: 14px;
                 color: #1c2b48;
@@ -464,6 +473,7 @@ a:hover {
                     position: relative;
                     margin-right: 6px;
                 }
+                
             }
         }
     }
@@ -1249,6 +1259,10 @@ a:hover {
 
 #account-info {
     padding: 8px !important;
+    will-change: unset !important;
+    transform: none !important;
+    left: auto !important;
+    right: 0px !important;
     .dropdown-menu{
         min-width: 230px;
         li{

@@ -127,6 +127,95 @@ var siteMapData = {
 
 $(document).ready(function () {
 
+  // Update Local Storage
+  if (typeof(Storage) !== "undefined") {
+    
+    //Variables
+    var pageURL,
+        recentPages,
+        firstLevelData,
+        pageInfo;
+
+    //Get local data
+    recentPages = JSON.parse(localStorage.getItem("recentPages") || "[]");
+    console.log(recentPages);
+
+    //Get file name
+    pageURL = window.location.pathname;
+
+    //Find page data
+	  for (const firstLevelKey in siteMapData) {
+      firstLevelData = siteMapData[firstLevelKey];
+      firstLevelData['sub-menu'].forEach(function(secondLevelData){
+        if(secondLevelData['sub-links'].length){
+          //Loop Sublink
+          secondLevelData['sub-links'].forEach(function(thirdLevelData){
+            if(thirdLevelData['link'] == pageURL ){
+              pageInfo = thirdLevelData;
+            }
+          });
+        }else{
+          if(secondLevelData['link'] == pageURL){
+            pageInfo = secondLevelData;
+          }
+        }
+      });
+    }
+    
+    //console.log(pageInfo);
+
+    //Remove if available in local storage
+    recentPages.forEach(function(recentPage, index){
+      if(recentPage!== null && recentPage.link == pageURL)
+        recentPages.splice(index, 1);
+    });
+
+    //Push to top
+    recentPages.unshift(pageInfo);
+
+    localStorage.setItem("recentPages", JSON.stringify(recentPages));
+
+  }
+
+  $('.clock-icon').click(function(e){
+    e.preventDefault();
+    var $resultLists = $("<ul/>"),
+    recentPages = JSON.parse(localStorage.getItem("recentPages") || "[]");
+
+    // Update Title
+    $('.nav-title').find('h3').text('Recently Viewed');
+    
+    // Form Result
+	  recentPages.forEach(function (resultItem, index) {
+      $resultList = $(
+        "<li><a href='" +
+        resultItem.link +
+        "' class='map-txt'>" +
+        resultItem.name +
+        "</a></li>"
+      );
+      $resultLists.append($resultList);
+	  });
+    console.log($resultLists);
+
+    $('.nav-list').html('');
+    $('.nav-list').append($resultLists);
+
+    // Hide Main menu
+    // Show Sub menu    
+    $(".main-nav-list").show();
+    $(".main-menu").hide();
+
+    $(".nav-list").mCustomScrollbar({
+      setHeight:
+        $(window).outerHeight() - 80 -
+        $(".nav-title").outerHeight() -
+        $(".header-sec").outerHeight(),
+      theme: "minimal-dark",
+    });
+
+  });
+
   $('.main-content-wrapper').css({
     height: $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
   });
@@ -150,6 +239,18 @@ $(document).ready(function () {
       .parents(".drop-down-box")
       .find(".dropdown-toggle")
       .html(selText + ' <i class="fas fa-angle-down"></i>');
+  });
+
+  function resetMainNavigation(){
+    $(".main-nav-list").hide();
+    $(".main-menu").show();
+    $('.searh-box').val('');
+    $('.menu-list').find('.d-none').removeClass('d-none');
+  }
+
+  $('#main-navigation').on('show.bs.collapse', function () {
+    console.log("yes");
+    resetMainNavigation();
   });
 
   //Main Navigation
@@ -235,7 +336,7 @@ $(document).ready(function () {
   //on keyup, start the countdown
   $searchInput.on("keyup", function () {
 	  clearTimeout(typingTimer);
-    typingTimer = setTimeout(doneTyping, doneTypingInterval);
+    typingTimer = setTimeout(doneSearchTyping, doneTypingInterval);
   });
 
   //on keydown, clear the countdown
@@ -244,11 +345,15 @@ $(document).ready(function () {
   });
 
   //user is "finished typing," do something
-  function doneTyping() {
+  function doneSearchTyping() {
 	  var searchKeyword = $searchInput.val(),
 		  firstLevelData, $resultList,
-		  resultArray = [];
-
+      resultArray = [];
+    
+      if(searchKeyword == ""){
+        resetMainNavigation();
+        return false;
+      }
     // Plot main menu 
       //Hide all 'menu-cont' parent
     $('.menu-cont').each(function(){
@@ -287,11 +392,7 @@ $(document).ready(function () {
 	  var $resultLists = $("<ul/>");
 	  resultArray.forEach(function (resultItem, index) {
 		$resultList = $(
-		  "<li><a href='" +
-		  resultItem.link +
-			"' class='map-txt'>" +
-			resultItem.name +
-			"</a></li>"
+		  "<li><a href='" + resultItem.link + "' class='map-txt'>" + resultItem.name + "</a></li>"
 		);
 		$resultLists.append($resultList);
 	  });
