@@ -9526,7 +9526,7 @@ a:hover {
         font-size: 28px;
         margin-right: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .breadcrumb {
-        padding: 12px 15px; }
+        padding: 8px 15px; }
         .page-wrapper .main-content-wrapper .page-title .sg-sub-block .breadcrumb .breadcrumb-item {
           color: #3d557e;
           font-size: 14px; }
@@ -9644,7 +9644,7 @@ a:hover {
       font-size: 16px;
       font-weight: 500;
       color: #9a9a9a;
-      padding-top: 3px;
+      padding-top: 5px;
       text-transform: capitalize;
       margin-left: 20px; }
       .sub-head ul li div span {
@@ -9827,8 +9827,21 @@ a:hover {
   margin-right: 10px;
   height: 35px !important; }
 
-.search-part .sg-submit-btn {
-  padding: 7px 20px; }
+.search-part .search-box {
+  position: relative; }
+
+#deleteModal .modal-header button {
+  color: #394e74; }
+
+#deleteModal .modal-ftr {
+  text-align: right;
+  padding-bottom: 5px; }
+
+#deleteModal .modal-body {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  #deleteModal .modal-body p {
+    color: #394e74; }
 
 .form-group label {
   color: #9a9a9a;
@@ -9844,6 +9857,9 @@ a:hover {
   text-align: center;
   line-height: 30px;
   font-size: 13px; }
+
+.sub-head .back-btn {
+  padding-top: 0; }
 
 #myTab {
   margin-top: 20px;
@@ -10681,6 +10697,36 @@ a:hover {
 #tab-item-2 #table-form {
   width: 85%;
   margin: auto; }
+
+#product-reset {
+  position: relative;
+  right: -50px; }
+
+#product-btn-part {
+  margin-bottom: 0; }
+
+#product-master table tr th:nth-child(2) {
+  width: 12%; }
+
+#product-master table tr th:nth-child(3) {
+  width: 12%; }
+
+#product-master table tr th:nth-child(4) {
+  width: 12%;
+  text-align: left; }
+
+#product-master table tr th:nth-child(5) {
+  width: 12%; }
+
+#product-master table tr th:nth-child(6) {
+  width: 15%;
+  text-align: center; }
+
+#product-master table tr td:nth-child(4) {
+  text-align: left; }
+
+#product-master table tr td:nth-child(6) {
+  text-align: center; }
 
 /* Layout End */
 /* ------  Style-Guide -------  */
