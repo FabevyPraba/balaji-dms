@@ -9987,15 +9987,19 @@ a:hover {
 .row-action-cell {
   padding: 0 !important; }
   .row-action-cell .row-action-wrapper {
-    position: relative; }
+    position: relative;
+    float: right;
+    margin: 10px 25px 0 0px;
+    height: 28px;
+    padding: 0 5px; }
   .row-action-cell .edit-part {
     display: none;
     border-radius: 5px;
     box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.16);
     position: absolute;
-    top: 45px;
+    top: 15px;
     background: #fff;
-    right: 14px;
+    right: 24px;
     z-index: 3;
     padding: 5px 0;
     margin: 0;
@@ -10285,12 +10289,6 @@ a:hover {
 
 .table tbody tr td:last-child {
   position: relative; }
-
-.kebab {
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  margin-top: 0 !important; }
 
 .secondary-plan-list {
   background: #fff;

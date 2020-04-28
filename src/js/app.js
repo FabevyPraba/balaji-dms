@@ -131,10 +131,10 @@ $(document).ready(function () {
     height: $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
   });
 
-  $('.row-action-wrapper').find('.active-edit').click(function(e){
+  $('.row-action-wrapper').click(function(e){
     e.preventDefault();
     $('.edit-part').hide();
-    $(this).parent().find('.edit-part').show();
+    $(this).find('.edit-part').show();
   })
 
   //Set height for main section
