@@ -10792,6 +10792,9 @@ a:hover {
 #reset-btn-rt {
   margin-right: 40px; }
 
+.reset-btn i {
+  font-size: 14px; }
+
 .picker__box .picker__nav--prev {
   left: 260px;
   width: 10px;
