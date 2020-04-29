@@ -187,16 +187,18 @@ $(document).ready(function () {
     
     // Form Result
 	  recentPages.forEach(function (resultItem, index) {
-      $resultList = $(
-        "<li><a href='" +
-        resultItem.link +
-        "' class='map-txt'>" +
-        resultItem.name +
-        "</a></li>"
-      );
-      $resultLists.append($resultList);
+      if(typeof resultItem === 'object' && resultItem !== null){
+        
+        $resultList = $(
+          "<li><a href='" +
+          resultItem.link +
+          "' class='map-txt'>" +
+          resultItem.name +
+          "</a></li>"
+        );
+        $resultLists.append($resultList);
+      }
 	  });
-    console.log($resultLists);
 
     $('.nav-list').html('');
     $('.nav-list').append($resultLists);
@@ -220,6 +222,7 @@ $(document).ready(function () {
     height: $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
   });
 
+
   $('.row-action-wrapper').click(function(e){
     e.preventDefault();
     $('.edit-part').hide();
@@ -230,6 +233,7 @@ $(document).ready(function () {
   $('.main-content-body').css({
     height: $('.main-content-wrapper').outerHeight() - 80 - $('.main-content-header').outerHeight()
   });
+  
   //$('.main-content-body').mCustomScrollbar();
   
   
@@ -238,7 +242,18 @@ $(document).ready(function () {
     $(this)
       .parents(".drop-down-box")
       .find(".dropdown-toggle")
-      .html(selText + ' <i class="fas fa-angle-down"></i>');
+      .html(selText + ' <i class="icon-right-open"></i>');
+
+    $(this).siblings('.selected').removeClass('selected');
+    $(this).addClass('selected');
+  });
+
+  $(window).on('shown.bs.modal', function() { 
+    var $modalEle = $(".partial-model-box.show"),
+        modalBodyHeight =  $(window).outerHeight() - 50 - $modalEle.find('.modal-head').outerHeight();
+    
+    $modalEle.find('.modal-body').css('height', modalBodyHeight);
+
   });
 
   function resetMainNavigation(){
