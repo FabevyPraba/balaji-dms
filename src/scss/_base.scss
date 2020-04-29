@@ -2782,6 +2782,21 @@ a:hover {
     font-weight: 600;
 }
 
+button.btn.btn-outline-secondary.border-left-0{
+    border-radius:0;
+    outline: none;
+    .gj-icon{
+            left: 50%;
+    transform: translateX(-50%);
+    }
+    &:focus{
+        outline: none !important;
+    }
+}
+.gj-datepicker-bootstrap [role=right-icon] button:hover{
+    box-shadow:none;
+}
+
 
 
 /* Layout End */

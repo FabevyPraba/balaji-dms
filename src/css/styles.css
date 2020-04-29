@@ -10784,6 +10784,18 @@ a:hover {
   font-size: 20px;
   font-weight: 600; }
 
+button.btn.btn-outline-secondary.border-left-0 {
+  border-radius: 0;
+  outline: none; }
+  button.btn.btn-outline-secondary.border-left-0 .gj-icon {
+    left: 50%;
+    transform: translateX(-50%); }
+  button.btn.btn-outline-secondary.border-left-0:focus {
+    outline: none !important; }
+
+.gj-datepicker-bootstrap [role=right-icon] button:hover {
+  box-shadow: none; }
+
 /* Layout End */
 /* ------  Style-Guide -------  */
 .sg-header {
