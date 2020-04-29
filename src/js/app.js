@@ -428,3 +428,8 @@ window.addEventListener('load', function() {
         }, false);
     });
 }, false);
+
+// Reset-Form
+$(".reset-btn").click(function(){
+    $(".needs-validation").trigger("reset");
+});

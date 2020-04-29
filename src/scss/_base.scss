@@ -2385,6 +2385,9 @@ a:hover {
             background:#6fbc78;
             padding:6px 20px;
         }
+        .modal-head{
+            margin-bottom: 20px;
+        }
     }
     form{
         width: 95% !important;
@@ -2392,7 +2395,7 @@ a:hover {
         .reset-btn{
             position:absolute;
             right: 50px;
-            top: 20px;
+            top: -15px;
             font-size: 16px;
             font-weight: 500;
             color: #6fbc78;
@@ -2463,6 +2466,10 @@ a:hover {
     .reset-btn{
         right: 50px;
         top: -18px;
+        i{
+            font-size: 14px;
+            padding:0;
+        }
     }
     .modal-dialog {
         min-height: 112vh;
@@ -2782,21 +2789,86 @@ a:hover {
     font-weight: 600;
 }
 
-button.btn.btn-outline-secondary.border-left-0{
-    border-radius:0;
-    outline: none;
-    .gj-icon{
-            left: 50%;
-    transform: translateX(-50%);
-    }
-    &:focus{
-        outline: none !important;
-    }
-}
-.gj-datepicker-bootstrap [role=right-icon] button:hover{
-    box-shadow:none;
+#reset-btn-rt{
+    margin-right: 40px;
 }
 
+
+// Date-Picker
+.picker__box .picker__nav--prev{
+        left: 260px;
+        width: 10px;
+        height: 20px;
+    }
+    .picker__nav--prev, .picker__nav--next{
+            top: 1px;
+    width: 30px !important;
+    height: 30px !important;
+    background: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 13px;
+    padding:0 !important;
+    color: #fff;
+    box-shadow: 0 2px 5px #ddd;
+    }
+    .picker__select--month.browser-default{
+        position: absolute;
+        left: 0;
+    }
+    .picker__select--year.browser-default{
+        margin-left: 50px;
+    }
+    .picker__nav--next{
+        right: 10px;
+    }
+    .picker__box{
+        display: block;
+        position: relative;
+        width: 380px;
+    margin: 0 auto;
+    }
+    .picker__day--infocus{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 0 !important;
+        line-height: 50px !important;
+    }
+    .picker__footer{
+        display: flex;
+    }
+    button.btn-flat.picker__today.waves-effect {
+        flex: 2;
+        text-align: left;
+    }
+    .picker__nav--prev:before{
+            margin-top: 9px;
+    margin-left: 9px;
+    }
+    .picker__nav--next:before{
+            margin-top: 9px;
+    margin-left: 12px;
+    }
+    .picker__table{
+        margin-top: 10px;
+    }
+    .picker--opened .picker__holder{
+        background: transparent;
+    }
+    .picker__box{
+        border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+  border: none;
+  // margin: initial;
+    }
+    .picker__frame{
+        // margin: initial;
+    }
+    .picker__weekday-display{
+        display: inline-block;
+    }
 
 
 /* Layout End */
