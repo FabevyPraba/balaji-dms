@@ -373,6 +373,7 @@ a:hover {
             transition: all 0.3s ease;
             margin-bottom: 10px;
             height: 100%;
+            min-height: 130px;
             &:hover {
                 border: solid 3px #c6d1e5;
                 background-color: #f2f4f8;
@@ -2730,12 +2731,14 @@ a:hover {
 }
 
 #product-reset{
-    position:relative;
-    right: -50px;
+    position: absolute;
+    right: 0;
+    bottom: -35px;
 }
 
 #product-btn-part{
     margin-bottom: 0;
+    position: relative;
 }
 
 

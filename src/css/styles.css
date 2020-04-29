@@ -9032,6 +9032,7 @@ a:hover {
     transition: all 0.3s ease;
     margin-bottom: 10px;
     height: 100%;
+    min-height: 130px;
     display: block; }
     .main-menu .menu-list .menu-cont .menu-box:hover {
       border: solid 3px #c6d1e5;
@@ -10747,11 +10748,13 @@ a:hover {
   margin: auto; }
 
 #product-reset {
-  position: relative;
-  right: -50px; }
+  position: absolute;
+  right: 0;
+  bottom: -35px; }
 
 #product-btn-part {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  position: relative; }
 
 #product-master table tr th:nth-child(2) {
   width: 12%; }
