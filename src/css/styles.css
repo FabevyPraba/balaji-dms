@@ -10859,6 +10859,15 @@ a:hover {
       color: #e50000;
       font-size: 14px; }
 
+.bootstrap-datetimepicker-widget.bottom:before {
+  display: none; }
+
+.bootstrap-datetimepicker-widget.bottom:after {
+  display: none; }
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom {
+  width: 267px; }
+
 /* Layout End */
 /* ------  Style-Guide -------  */
 .sg-header {

@@ -2874,6 +2874,21 @@ a:hover {
     }
 }
 
+// Date-Picker
+
+.bootstrap-datetimepicker-widget.bottom:before{
+    display: none;
+}
+.bootstrap-datetimepicker-widget.bottom:after{
+    display: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom{
+    width: 267px;
+}
+.bootstrap-datetimepicker-widget thead tr:first-child th.prev{
+    
+}
+
 /* Layout End */
 
 
