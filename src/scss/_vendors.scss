@@ -1479,6 +1479,10 @@ Calendar
   padding: 12px;
 }
 
+.datepicker-panel > ul > li{
+    font-size: 15px;
+}
+
 .datepicker-panel > ul > li:hover{
   background: #6fbc78;
   color: #fff;
@@ -1522,6 +1526,10 @@ Calendar
   background: #6fbc78;
   color: #fff;
 }
+.datepicker-panel > ul > li.current-year:hover{
+    background:transparent;
+    color: #1c2b48;
+}
 
 .datepicker-panel > ul.year-part{
   margin-bottom: 5px;
@@ -1556,6 +1564,68 @@ li.current-year {
 
 .month-part li{
   width: 60px !important;
+}
+li.picked{
+    color: #1c2b48 !important;
+}
+li.picked:hover{
+    color: #fff !important;
+}
+.datepicker-panel > ul > li.picked{
+    color: #1c2b48;
+}
+.datepicker-panel > ul > li.picked:hover{
+color: #fff;
+}
+
+.month-part li{
+    border-radius: 50%;
+    height: 60px !important;
+    line-height: 60px !important;
+}
+
+li.highlighted.picked{
+    background:#6fbc78 !important;
+    color: #fff !important;
+}
+
+.daily-date li.picked{
+    background:#6fbc78 !important;
+    color: #fff !important;
+}
+
+.month-part li.highlighted{
+    background:#6fbc78 !important;
+    color: #fff !important;
+}
+
+.month-part li.picked{
+    background:#6fbc78 !important;
+    color: #fff !important;
+}
+
+.year-part .current-year{
+    cursor: pointer !important;
+}
+
+.year-sec li{
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    background:#6fbc78 ;
+    border-radius:50%;
+}
+.year-sec li.highlighted{
+    background:#6fbc78 !important;
+    color: #fff !important;
+}
+.year-sec li.picked{
+    background:#6fbc78 !important;
+    color: #fff !important;
+}
+.daily-date  li.highlighted{
+    background:#6fbc78 !important;
+    color: #fff !important;
 }
 
 
