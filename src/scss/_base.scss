@@ -1051,7 +1051,7 @@ a:hover {
             border-radius: 5px;
             /* min-height: 73vh; */
             position:relative;
-            padding-bottom: 103px;
+            padding-bottom: 75px;
             /* overflow: hidden; */
             .sg-sub-block,
             .aside-menu {
@@ -1099,7 +1099,7 @@ a:hover {
                 padding: 15px 0;
                 position:absolute;
                 left: 0;
-                bottom:0;
+                // bottom:0;
                 width: 100%;
                 background:#fff;
                 z-index: 9;
@@ -1845,25 +1845,24 @@ a:hover {
 }
 
 .edit-sec {
-    padding-top: 8px;
+    padding-top: 25px;
     button {
         padding: 0;
-        background: transparent;
+        background:transparent;
         border: none;
         outline: none;
         font-weight: 600;
-        margin-left: 15px;
-        img {
-            width: 15px;
-        }
         &:focus {
             outline: none;
         }
     }
-    .delete-btn {
-        img {
-            width: 10px;
+    .add-btn{
+            color: #1c2b48;
+            font-size: 16px;
         }
+    .delete-btn {
+        color: #8796b2;
+        font-size: 16px;
     }
 }
 
@@ -2874,6 +2873,60 @@ a:hover {
         }
     }
 }
+
+#variable-model{
+    min-height: 130vh;
+    form{
+        width: 95%;
+    }
+    .modal-footer{
+        bottom:-220px;
+    }
+}
+
+#aggregation-modal{
+    min-height: 130vh;
+    form{
+        min-height: 150vh;
+    }
+    .modal-footer{
+        bottom:-500px;
+    }
+}
+
+#production-modal{
+    min-height: 170vh;
+    .modal-footer{
+        bottom:-450px;
+    }
+}
+
+#compensation-flow-drop-down{
+    width: 500px;
+}
+
+#compensation-flow-drop-down-1{
+    width: 250px;
+}
+
+.aggregation-table{
+    span{
+        padding-top:30px;
+        display: inline-block;
+    }
+}
+
+.btn-part{
+    .remove-btn{
+        font-size: 13px;
+    }
+}
+
+#table-sub-btn{
+    margin-top: 30px;
+}
+
+
 
 // Date-Picker
 

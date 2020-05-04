@@ -295,41 +295,41 @@
             <div class="main-content-body">
                 <div class="sub-head clearfix">
                     <ul>
-                        <li><a href="basic-information.html" class="back-page-btn"><</a></li>
-                        <li class="m-0"><div>Compensation ID <span>SCOMP-002</span></div></li>
-                        <li><div>Description <span>Long term seniority Allowance</span></div></li>
-                        <li><div>Start Date <span>17/01/2017</span></div></li>
-                        <li><div>Status <button class="pend-btn">Pending</button></div></li>
+                        <li><a href="secondary-compensation-plan-list.html" class="back-page-btn"><i class="icon-left-open"></i></a></li>
+                        <li class="m-0"><div >Compensation ID <span class="txt-1">SCOMP-002</span></div></li>
+                        <li><div >Description <span class="txt-2">Long term seniority Allowance</span></div></li>
+                        <li><div >Start Date <span class="txt-3">17/01/2017</span></div></li>
+                        <li><div>Status <span class="txt-4 pend-btn">Pending</span></div></li>
                         <li><div><a href="#" class="add-btn">Edit</a></div></li>
                     </ul>
                 </div>
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <div class="sg-sub-block">
-                            <div class="aside-menu">
-                                <ul>
-                                  <li><a  href="basic-information.html">Basic Information</a></li>
-                                  <li><a href="eligibility-rules.html" class="active">Eligibility Rules</a></li>
-                                  <li><a href="payment-rules.html">Payment Rules</a></li>
-                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
-                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
-                                  <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html" >Temporary variable</a></li>
-                                  <li><a href="table-structure.html">Table structure</a></li>
-                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
-                                  <li><a href="compensation-flow.html">Compensation Flow</a></li>
-                                </ul>
-                              </div>
+                <form class="needs-validation" novalidate>
+                    <div class="row m-0">
+                        <div class="col-3 p-0">
+                            <div class="sg-sub-block">
+                                <div class="aside-menu">
+                                    <ul>
+                                      <li><a  href="basic-information.html">Basic Information</a></li>
+                                      <li><a href="eligibility-rules.html" class="active">Eligibility Rules</a></li>
+                                      <li><a href="payment-rules.html">Payment Rules</a></li>
+                                      <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
+                                      <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
+                                      <li><a href="rounding-rules.html">Rounding Rules</a></li>
+                                      <li><a href="temporary-variable.html" >Temporary variable</a></li>
+                                      <li><a href="table-structure.html">Table structure</a></li>
+                                      <li><a href="aggregation-service.html">Aggregation Service</a></li>
+                                      <li><a href="production-service.html">Production Service</a></li>
+                                      <li><a href="compensation-flow.html">Compensation Flow</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-9 p-0">
-                        <div class="side-menu-title">
-                            <h3>Eligibility Rules and Conditions</h3>
-                        </div>
+                        <div class="col-9 p-0">
+                            <div class="side-menu-title">
+                                <h3>Eligibility Rules and Conditions</h3>
+                            </div>
 
-                        <div class="eligibility-rules-form">
-                            <form>
+                            <div class="eligibility-rules-form">
                                 <div class="row">
                                     <div class="col-4">
                                         <div class="form-group">
@@ -338,9 +338,13 @@
                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Reporting Hierarchy <i class="icon-right-open"></i></a>
                                                 <ul class="dropdown-menu">
                                                   <li class="dropdown-item">Reporting Hierarchy</li>
-                                                  <li class="dropdown-item">2</li>              
-                                                  <li class="dropdown-item">3</li>              
-                                                  <li class="dropdown-item">4</li>              
+                                                  <li class="dropdown-item">Physical Hierarchy</li>              
+                                                  <li class="dropdown-item">Location / Geographical Hierarchy</li>              
+                                                  <li class="dropdown-item">Recruiting Hierarchy</li>              
+                                                  <li class="dropdown-item">Hierarchy specific to a compensation plan</li>              
+                                                  <li class="dropdown-item">Lead Generators Hierarchy</li>              
+                                                  <li class="dropdown-item">Over-riding Commission hierarchy</li>              
+                                                  <li class="dropdown-item">Split Commission hierarchy</li>              
                                                 </ul>
                                             </div> 
                                         </div>
@@ -352,9 +356,7 @@
                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Current Hierarchy <i class="icon-right-open"></i></a>
                                                 <ul class="dropdown-menu">
                                                   <li class="dropdown-item">Current Hierarchy</li>
-                                                  <li class="dropdown-item">2</li>              
-                                                  <li class="dropdown-item">3</li>              
-                                                  <li class="dropdown-item">4</li>              
+                                                  <li class="dropdown-item">Mother Hierarchy</li>                           
                                                 </ul>
                                             </div> 
                                         </div>
@@ -363,12 +365,13 @@
                                         <div class="form-group">
                                            <label for="validationDatabase">Eligible Agent *</label>
                                            <div class="drop-down-box custom-select-box">
-                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Only the commissionable agent associat… <i class="icon-right-open"></i></a>
+                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents belonging to level n<i class="icon-right-open"></i></a>
                                                 <ul class="dropdown-menu">
-                                                  <li class="dropdown-item">Only the commissionable agent associat…</li>
-                                                  <li class="dropdown-item">2</li>              
-                                                  <li class="dropdown-item">3</li>              
-                                                  <li class="dropdown-item">4</li>              
+                                                  <li class="dropdown-item">Only the commissionable agent associated with policy</li>
+                                                  <li class="dropdown-item">Commissionable agent associated with policy + All agents n levels above policy agent</li>              
+                                                  <li class="dropdown-item">All agents n levels above policy Commissionable agent</li>              
+                                                  <li class="dropdown-item">All agents belonging to level n</li>              
+                                                  <li class="dropdown-item">All agents belonging to level n & above</li>              
                                                 </ul>
                                             </div> 
                                         </div>
@@ -388,85 +391,102 @@
                                                 </div>
                                         </div>
                                     </div>
-                                </div>    
-                            </form>
-                        </div>
-
-                        <div class="eligibility-conditions">
-                            <div class="conditions-title">
-                                <h3>Conditions</h3>
+                                </div> 
                             </div>
-                            <div class="conditions-list">
-                                <div class="row">
-                                    <div class="col-1 pl-0"></div>
-                                    <div class="col-3 pl-0">
-                                        <div class="form-group">
-                                           <div class="drop-down-box custom-select-box">
-                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
-                                                <ul class="dropdown-menu">
-                                                  <li class="dropdown-item">Agent-years-of-service</li>
-                                                  <li class="dropdown-item">2</li>              
-                                                  <li class="dropdown-item">3</li>              
-                                                  <li class="dropdown-item">4</li>              
-                                                </ul>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="col-2 pl-0">
-                                        <div class="form-group">
-                                           <div class="drop-down-box custom-select-box">
-                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">>= <i class="icon-right-open"></i></a>
-                                                <ul class="dropdown-menu">
-                                                  <li class="dropdown-item">>=</li>
-                                                  <li class="dropdown-item">2</li>              
-                                                  <li class="dropdown-item">3</li>              
-                                                  <li class="dropdown-item">4</li>              
-                                                </ul>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="col-3 pl-0">
-                                        <div class="form-group">
-                                           <div class="drop-down-box custom-select-box">
-                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"> <i class="icon-right-open"></i></a>
-                                                <ul class="dropdown-menu">
-                                                  <li class="dropdown-item"></li>
-                                                  <li class="dropdown-item">2</li>              
-                                                  <li class="dropdown-item">3</li>              
-                                                  <li class="dropdown-item">4</li>              
-                                                </ul>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="col-2 pl-0">
-                                        <div class="form-group">
-                                            <input type="text" name="" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-1 pl-0">
-                                        <div class="edit-sec">
-                                           <button><img src="../../images/add-icon.svg" alt="add-icon"></button>
-                                           <button class="delete-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></button>
-                                        </div>
-                                    </div>
 
-                                 </div>
+                            <div class="eligibility-conditions">
+                                <div class="conditions-title">
+                                    <h3>Conditions</h3>
+                                </div>
+                                <div class="conditions-list">
+                                    <div class="row">
+                                        <div class="col-1 pl-0"></div>
+                                        <div class="col-3 pl-0">
+                                            <div class="form-group">
+                                               <div class="drop-down-box custom-select-box">
+                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Agent-years-of-service</li>
+                                                      <li class="dropdown-item">Date of appointment of agent </li>              
+                                                      <li class="dropdown-item">Policy year</li>              
+                                                      <li class="dropdown-item">Premium type</li>              
+                                                      <li class="dropdown-item">Policy type</li>              
+                                                      <li class="dropdown-item">Product Version</li>              
+                                                      <li class="dropdown-item">Location code</li>              
+                                                      <li class="dropdown-item">Billing frequency</li>              
+                                                      <li class="dropdown-item">Premium received date</li>              
+                                                      <li class="dropdown-item">Premium instalment number</li>              
+                                                      <li class="dropdown-item">Business event</li>              
+                                                      <li class="dropdown-item">Agency year</li>              
+                                                      <li class="dropdown-item">Eligibility Date</li>              
+                                                      <li class="dropdown-item">Temporary</li>              
+                                                      <li class="dropdown-item">From Day</li>              
+                                                      <li class="dropdown-item">To Day</li>              
+                                                      <li class="dropdown-item">To Month</li>              
+                                                      <li class="dropdown-item">Accumulation Start Date</li>              
+                                                      <li class="dropdown-item">Accumulation End Date</li>              
+                                                      <li class="dropdown-item">Maximum sum insured</li>              
+                                                    </ul>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pl-0">
+                                            <div class="form-group">
+                                               <div class="drop-down-box custom-select-box">
+                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">>= <i class="icon-right-open"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">>=</li>
+                                                      <li class="dropdown-item">=</li>              
+                                                      <li class="dropdown-item">< ></li>              
+                                                      <li class="dropdown-item"><</li>              
+                                                      <li class="dropdown-item"><=</li>              
+                                                    </ul>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pl-0">
+                                            <div class="form-group">
+                                               <div class="drop-down-box custom-select-box">
+                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"> <i class="icon-right-open"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item"></li>
+                                                      <li class="dropdown-item">2</li>              
+                                                      <li class="dropdown-item">3</li>              
+                                                      <li class="dropdown-item">4</li>              
+                                                    </ul>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pl-0">
+                                            <div class="form-group">
+                                                <input type="text" name="" class="form-control" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-2 pl-0">
+                                            <div class="edit-sec">
+                                               <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
+                                               <button class="delete-btn"><i class="icon-grid_bin"></i></button>
+                                            </div>
+                                        </div>
+
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0">
+                            <div class="data-assign-part clearfix">
+                                <div class="save-btn">
+                                    <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                    <a  href="basic-information.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                    <a  href="payment-rules.html" type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                </div>
+                                <div class="close-btn-part">
+                                    <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part clearfix">
-                            <div class="save-btn">
-                                <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                <a  href="basic-information.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                <a  href="payment-rules.html" type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                            </div>
-                            <div class="close-btn-part">
-                                <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>    
             </div>
         </div>
 

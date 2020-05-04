@@ -295,11 +295,11 @@
             <div class="main-content-body">
                 <div class="sub-head clearfix">
                     <ul>
-                        <li><a href="temporary-variable.html" class="back-page-btn"><</a></li>
-                        <li class="m-0"><div>Compensation ID <span>SCOMP-002</span></div></li>
-                        <li><div>Description <span>Long term seniority Allowance</span></div></li>
-                        <li><div>Start Date <span>17/01/2017</span></div></li>
-                        <li><div>Status <button class="pend-btn">Pending</button></div></li>
+                        <li><a href="secondary-compensation-plan-list.html" class="back-page-btn"><i class="icon-left-open"></i></a></li>
+                        <li class="m-0"><div >Compensation ID <span class="txt-1">SCOMP-002</span></div></li>
+                        <li><div >Description <span class="txt-2">Long term seniority Allowance</span></div></li>
+                        <li><div >Start Date <span class="txt-3">17/01/2017</span></div></li>
+                        <li><div>Status <span class="txt-4 pend-btn">Pending</span></div></li>
                         <li><div><a href="#" class="add-btn">Edit</a></div></li>
                     </ul>
                 </div>
@@ -369,9 +369,7 @@
                                                             <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Compensation table<i class="icon-right-open"></i></a>
                                                             <ul class="dropdown-menu">
                                                               <li class="dropdown-item">Compensation table</li>
-                                                              <li class="dropdown-item">2</li>              
-                                                              <li class="dropdown-item">3</li>              
-                                                              <li class="dropdown-item">4</li>              
+                                                              <li class="dropdown-item">Eligibility table</li>              
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -383,9 +381,8 @@
                                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Simple banded<i class="icon-right-open"></i></a>
                                                                 <ul class="dropdown-menu">
                                                                   <li class="dropdown-item">Simple banded</li>
-                                                                  <li class="dropdown-item">2</li>              
-                                                                  <li class="dropdown-item">3</li>              
-                                                                  <li class="dropdown-item">4</li>              
+                                                                  <li class="dropdown-item">Ratchet banded</li>              
+                                                                  <li class="dropdown-item">Not applicable</li>          
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -418,9 +415,15 @@
                                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP-CREDIT<i class="icon-right-open"></i></a>
                                                                 <ul class="dropdown-menu">
                                                                   <li class="dropdown-item">RNEP-CREDIT</li>
-                                                                  <li class="dropdown-item">2</li>              
-                                                                  <li class="dropdown-item">3</li>              
-                                                                  <li class="dropdown-item">4</li>              
+                                                                  <li class="dropdown-item">Agency year</li>              
+                                                                  <li class="dropdown-item">Eligibility Date</li>              
+                                                                  <li class="dropdown-item">Temporary</li>              
+                                                                  <li class="dropdown-item">From Day</li>              
+                                                                  <li class="dropdown-item">To Day</li>              
+                                                                  <li class="dropdown-item">To Month</li>              
+                                                                  <li class="dropdown-item">Accumulation Start Date</li>              
+                                                                  <li class="dropdown-item">Accumulation End Date</li>              
+                                                                  <li class="dropdown-item">Maximum sum insured</li>              
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -436,7 +439,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                <button type="submit" class="btn btn-primary btn-icon-left"> <i class="icon-asset-7"></i> Submit</button>
+                                                <button type="submit" class="btn btn-primary btn-icon-left" id="table-sub-btn"> <i class="icon-asset-7"></i> Submit</button>
                                             </div>
                                         </form>
                                     </div>
@@ -479,11 +482,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
-                                                    <ul class="btn-part">
-                                                        <li><a href="#" class="del-btn"><img src="../../images/delete-icon.svg" alt="delete-icon"></a></li>
-                                                        <li><a href="#" class="add-tb-btn"><img src="../../images/add-icon.svg" alt="add-icon"></a></li>
-                                                    </ul>
+                                                    <div class="edit-sec">
+                                                       <button class="delete-btn"><i class="icon-grid_bin"></i></button>
+                                                       <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
+                                                    </div>
                                                 </div>
+
                                             </div>
                                         </form>
                                     </div>
