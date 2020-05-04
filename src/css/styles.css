@@ -11320,6 +11320,9 @@ a:hover {
 #eligibility-rules-edit {
   padding-top: 30px; }
 
+#table-structure-edit {
+  padding-top: 85px; }
+
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }
 
