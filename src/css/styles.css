@@ -11317,6 +11317,9 @@ a:hover {
 #table-sub-btn {
   margin-top: 30px; }
 
+#eligibility-rules-edit {
+  padding-top: 30px; }
+
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }
 
