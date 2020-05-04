@@ -1016,7 +1016,7 @@ a:hover {
     background-color: #e7e9eb;
     .main-content-wrapper {
         padding: 20px;
-        height: calc(100vh - 35px - 82px);
+        /* height: calc(100vh - 35px - 82px); */
         .page-title {
             .sg-sub-block {
                 padding-top: 5px;
@@ -1051,6 +1051,7 @@ a:hover {
             border-radius: 5px;
             /* min-height: 73vh; */
             position:relative;
+            padding-bottom: 103px;
             /* overflow: hidden; */
             .sg-sub-block,
             .aside-menu {
@@ -2890,5 +2891,3 @@ a:hover {
 }
 
 /* Layout End */
-
-

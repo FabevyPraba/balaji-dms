@@ -219,7 +219,7 @@ $(document).ready(function () {
   });
 
   $('.main-content-wrapper').css({
-    height: $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
+    'min-height': $(window).outerHeight() - $('.header-sec').outerHeight() - $('.footer-sec').outerHeight()
   });
 
 
@@ -231,7 +231,7 @@ $(document).ready(function () {
 
   //Set height for main section
   $('.main-content-body').css({
-    height: $('.main-content-wrapper').outerHeight() - 80 - $('.main-content-header').outerHeight()
+    'min-height': $('.main-content-wrapper').outerHeight() - 80 - $('.main-content-header').outerHeight()
   });
   
   //$('.main-content-body').mCustomScrollbar();

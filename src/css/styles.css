@@ -9960,7 +9960,7 @@ a:hover {
   background-color: #e7e9eb; }
   .page-wrapper .main-content-wrapper {
     padding: 20px;
-    height: calc(100vh - 35px - 82px); }
+    /* height: calc(100vh - 35px - 82px); */ }
     .page-wrapper .main-content-wrapper .page-title .sg-sub-block {
       padding-top: 5px; }
       .page-wrapper .main-content-wrapper .page-title .sg-sub-block .sg-section-sub-heading {
@@ -9985,6 +9985,7 @@ a:hover {
       border-radius: 5px;
       /* min-height: 73vh; */
       position: relative;
+      padding-bottom: 103px;
       /* overflow: hidden; */ }
       .page-wrapper .main-content-wrapper .main-content-body .sg-sub-block,
       .page-wrapper .main-content-wrapper .main-content-body .aside-menu {
