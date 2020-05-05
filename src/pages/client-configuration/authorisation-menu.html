@@ -268,17 +268,19 @@
             </div>
         </div>
 
+
         <div class="main-content-wrapper">
             <div class="page-title main-content-header">
                 <div class="row">
                     <div class="col-10">
                         <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">Secondary Compensation Plan Maintenance</h4>
+                            <h4 class="sg-section-sub-heading">Authorisation for Screen</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Secondary Compensation</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Secondary Compensation Plan Configuration</li>
+                                    <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Authorisation for Screen</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -293,219 +295,213 @@
             </div>
 
             <div class="main-content-body">
-                <div class="sub-head clearfix">
-                    <ul>
-                        <li><a href="secondary-compensation-plan-list.html" class="back-page-btn"><i class="icon-left-open"></i></a></li>
-                        <li class="m-0"><div >Compensation ID <span class="txt-1">SCOMP-002</span></div></li>
-                        <li><div >Description <span class="txt-2">Long term seniority Allowance</span></div></li>
-                        <li><div >Start Date <span class="txt-3">17/01/2017</span></div></li>
-                        <li><div>Status <span class="txt-4 pend-btn">Pending</span></div></li>
-                        <li><div><a href="#" class="add-btn">Edit</a></div></li>
-                    </ul>
+                <div class="authorisation-menu-role">
+                    <span class="lt-text">Select Role</span>
+                     <div class="drop-down-box custom-select-box d-inline-block">
+                        <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">Manager  <i class="icon-right-open" id="drop-icon"></i></span>
+                        <ul class="dropdown-menu custom-select-options">
+                            <li class="dropdown-item custom-option">Manager </li>
+                            <li class="dropdown-item custom-option">Manager</li>
+                            <li class="dropdown-item custom-option">Manager</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <div class="sg-sub-block">
-                            <div class="aside-menu">
-                                <ul>
-                                  <li><a  href="basic-information.html">Basic Information</a></li>
-                                  <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
-                                  <li><a href="payment-rules.html">Payment Rules</a></li>
-                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
-                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
-                                  <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html">Temporary variable</a></li>
-                                  <li><a href="table-structure.html">Table structure</a></li>
-                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
-                                  <li><a href="compensation-flow.html" class="active">Compensation Flow</a></li>
-                                </ul>
-                              </div>
+                <div class="record-list">
+                    <!-- Table -->
+                    <div class="variable-master-table " id="full-table">
+                        <div class="table-part">
+                            <table class="table table-default table-hover" id="authorisation-menu-table">
+                                <thead>
+                                    <tr>
+                                        <th>Screen-id</th>
+                                        <th>Menu</th>
+                                        <th>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01.01</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.01</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.02</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.01</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.02</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.03</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.04</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.05</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.06</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.07</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.08</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.09</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.03.10</td>
+                                        <td>Client Configuration</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-9 p-0">
-                        <div class="side-menu-title">
-                            <h3>Compensation Flow</h3>
-                        </div>
-
-                        <div class="compensation-flow-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-5">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="validationDatabase">Setup Type *</label>
-                                               <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                         <li class="dropdown-item">Select</li>
-                                                         <li class="dropdown-item">Built-in-function</li>              
-                                                         <li class="dropdown-item">Formula Builder</li>              
-                                                         <li class="dropdown-item">Domain variable as at date</li>   
-                                                         <li class="dropdown-item">Java method</li>   
-                                                         <li class="dropdown-item">Table Service </li>   
-                                                         <li class="dropdown-item">Aggregation Service</li>
-                                                         <li class="dropdown-item">Production Service</li>              
-                                                    </ul>
-                                                </div>
-                                           </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="validationDatabase">Setup Value *</label>
-                                               <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Select</li>
-                                                      <li class="dropdown-item">2</li>              
-                                                      <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li>              
-                                                    </ul>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col-7">
-                                        <div class="form-group">
-                                           <label for="validationDatabase">Details *</label>
-                                           <textarea rows="3" class="msg-box"></textarea>
-                                        </div>
-                                    </div>   
-                                    <div class="col-7">
-                                        <div class="add-step">
-                                            <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New Step</button>
-                                        </div>
-                                    </div>
+                        <div class="pagination-part clearfix ">
+                            <div class="pagination">
+                                <div class="">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination pagination-default">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
-                            </form>
-                        </div>
-
-                        <div class="compensation-flow-list">
-                          <form class="aggregation-table">
-                            <div class="row" id="new-row">
-                               <div class="col-1 pr-0">
-                                  <span>Step 1</span>
-                               </div>
-                               <div class="col-3 pl-0">
-                                  <div class="form-group">
-                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Formula Builder <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu" id="compensation-flow-drop-down-1">
-                                          <li class="dropdown-item">Formula Builder</li>
-                                          <li class="dropdown-item">Built-in-function</li>              
-                                          <li class="dropdown-item">Domain variable as at date</li>              
-                                          <li class="dropdown-item">Java method</li>              
-                                          <li class="dropdown-item">Table Service </li>              
-                                          <li class="dropdown-item">Aggregation Service</li>              
-                                            <li class="dropdown-item">Production Service</li>              
-                                        </ul>
-                                    </div>
-                                 </div>
-                               </div>
-                               <div class="col-2 pl-0">
-                                  <div class="form-group">
-                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Convert DD,MM,YYYY to date <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu" id="compensation-flow-drop-down">
-                                          <li class="dropdown-item">Convert DD,MM,YYYY to date</li>
-                                          <li class="dropdown-item">Minimum</li>              
-                                          <li class="dropdown-item">Maximum</li>              
-                                          <li class="dropdown-item">Average</li>              
-                                          <li class="dropdown-item">Difference in no.of days between two dates</li>              
-                                          <li class="dropdown-item">Difference in no.of months between two dates</li>              
-                                          <li class="dropdown-item">Difference in no.of years between two dates</li>              
-                                          <li class="dropdown-item">Difference in no.of years, no.of months and no.of days between two dates</li>              
-                                          <li class="dropdown-item">Sub string</li>              
-                                          <li class="dropdown-item">Concatenate strings</li>              
-                                          <li class="dropdown-item">Return number of full frequencies and fractional no.of days </li>              
-                                        </ul>
-                                    </div>
-                                 </div>
-                               </div>
-                               <div class="col-4 pl-0">
-                                  <div class="form-group">
-                                     <input type="text" name="" class="form-control">
-                                  </div>
-                               </div>
-                               <div class="col-2 pl-0">
-                                  <div class="edit-sec" >
-                                       <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                    </div>
-                               </div>
-                            </div>
-                            <div class="row" id="new-row">
-                               <div class="col-1 pr-0">
-                                  <span>Step 2</span>
-                               </div>
-                               <div class="col-3 pl-0">
-                                  <div class="form-group">
-                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Formula Builder <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu">
-                                          <li class="dropdown-item">Formula Builder</li>
-                                          <li class="dropdown-item">Built-in-function</li>              
-                                          <li class="dropdown-item">Domain variable as at date</li>              
-                                          <li class="dropdown-item">Java method</li>              
-                                          <li class="dropdown-item">Table Service </li>              
-                                          <li class="dropdown-item">Aggregation Service</li>              
-                                            <li class="dropdown-item">Production Service</li>              
-                                        </ul>
-                                    </div>
-                                 </div>
-                               </div>
-                               <div class="col-2 pl-0">
-                                  <div class="form-group">
-                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Convert DD,MM,YYYY to date <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu" id="compensation-flow-drop-down">
-                                          <li class="dropdown-item">Convert DD,MM,YYYY to date</li>
-                                          <li class="dropdown-item">Minimum</li>              
-                                          <li class="dropdown-item">Maximum</li>              
-                                          <li class="dropdown-item">Average</li>              
-                                          <li class="dropdown-item">Difference in no.of days between two dates</li>              
-                                          <li class="dropdown-item">Difference in no.of months between two dates</li>              
-                                          <li class="dropdown-item">Difference in no.of years between two dates</li>              
-                                          <li class="dropdown-item">Difference in no.of years, no.of months and no.of days between two dates</li>              
-                                          <li class="dropdown-item">Sub string</li>              
-                                          <li class="dropdown-item">Concatenate strings</li>              
-                                          <li class="dropdown-item">Return number of full frequencies and fractional no.of days </li>              
-                                        </ul>
-                                    </div>
-                                 </div>
-                               </div>
-                               <div class="col-4 pl-0">
-                                  <div class="form-group">
-                                     <input type="text" name="" class="form-control">
-                                  </div>
-                               </div>
-                               <div class="col-2 pl-0">
-                                    <div class="edit-sec" >
-                                       <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                    </div>
-                               </div>
-                            </div>
-                            <div id="append-new-row"></div>
-                         </form>
-                        </div>
-                      
-                    </div>
-
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part clearfix">
-                            <div class="save-btn">
-                                <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                <a href="production-service.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
                             </div>
                             <div class="close-btn-part">
+                                <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                                 <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    
                 </div>
             </div>
-        </div>
     </section>
     <div class="footer-sec">
         <p>Powered by <a href="#">Salzzappo</a></p>
@@ -516,15 +512,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("body").on("click", "#add" , function(){
-                $("#new-row").clone().appendTo("#append-new-row");
-            });
-            $("body").on("click", "#delete", function() {
-                $("#new-row").last().remove();
-            });
-        });
-    </script>
 </body>
 </html>

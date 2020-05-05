@@ -9986,6 +9986,7 @@ a:hover {
       /* min-height: 73vh; */
       position: relative;
       padding-bottom: 75px;
+      margin-bottom: 10px;
       /* overflow: hidden; */ }
       .page-wrapper .main-content-wrapper .main-content-body .sg-sub-block,
       .page-wrapper .main-content-wrapper .main-content-body .aside-menu {
@@ -11220,6 +11221,85 @@ a:hover {
 #product-master table tr td:nth-child(6) {
   text-align: center; }
 
+#authorisation-screen-table tr {
+  width: 90%; }
+  #authorisation-screen-table tr th:nth-child(1) {
+    width: 10%;
+    padding-left: 60px; }
+  #authorisation-screen-table tr th:nth-child(2) {
+    width: 10%; }
+  #authorisation-screen-table tr th:nth-child(3) {
+    width: 2%;
+    text-align: center; }
+  #authorisation-screen-table tr th:nth-child(4) {
+    width: 2%;
+    text-align: center; }
+  #authorisation-screen-table tr th:nth-child(5) {
+    width: 2%;
+    text-align: center; }
+  #authorisation-screen-table tr th:nth-child(6) {
+    width: 2%;
+    text-align: center; }
+  #authorisation-screen-table tr th:nth-child(7) {
+    width: 2%;
+    text-align: center; }
+  #authorisation-screen-table tr th:nth-child(8) {
+    width: 20%; }
+  #authorisation-screen-table tr td:nth-child(1) {
+    padding-left: 60px; }
+  #authorisation-screen-table tr td:nth-child(3) {
+    text-align: center; }
+  #authorisation-screen-table tr td:nth-child(4) {
+    text-align: center; }
+  #authorisation-screen-table tr td:nth-child(5) {
+    text-align: center; }
+  #authorisation-screen-table tr td:nth-child(6) {
+    text-align: center; }
+  #authorisation-screen-table tr td:nth-child(7) {
+    text-align: center; }
+
+#authorisation-menu-table tr th:nth-child(1) {
+  width: 23%;
+  padding-left: 60px; }
+
+#authorisation-menu-table tr th:nth-child(2) {
+  width: 25%; }
+
+#authorisation-menu-table tr th:nth-child(3) {
+  width: 2%; }
+
+#authorisation-menu-table tr th:nth-child(4) {
+  width: 50%; }
+
+#authorisation-menu-table tr td:nth-child(1) {
+  padding-left: 60px; }
+
+.authorisation-menu-role {
+  padding: 15px 0 15px 60px;
+  width: 600px; }
+  .authorisation-menu-role span {
+    color: #9a9a9a;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 30px; }
+  .authorisation-menu-role .drop-down-box {
+    padding: 0;
+    position: relative;
+    width: 75%; }
+    .authorisation-menu-role .drop-down-box span {
+      padding-right: 0;
+      display: block;
+      cursor: pointer;
+      padding: 12px; }
+    .authorisation-menu-role .drop-down-box:after {
+      display: none; }
+    .authorisation-menu-role .drop-down-box #drop-icon {
+      position: absolute;
+      right: 15px;
+      top: 11px; }
+      .authorisation-menu-role .drop-down-box #drop-icon:before {
+        transform: rotate(90deg); }
+
 .agency-title {
   color: #1c2b48;
   font-size: 20px;
@@ -11329,6 +11409,26 @@ a:hover {
 
 #client-ftr {
   bottom: 0; }
+
+.business-part {
+  padding: 70px 150px 0px;
+  position: relative; }
+  .business-part #business-reset {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-weight: 500; }
+    .business-part #business-reset i {
+      font-size: 13px; }
+
+#variable-box {
+  min-height: 130vh; }
+  #variable-box .modal-footer {
+    bottom: auto; }
+
+#allowed-value #allowed-add-btn {
+  padding-top: 70px;
+  text-align: center; }
 
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }

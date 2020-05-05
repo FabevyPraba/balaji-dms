@@ -1052,6 +1052,7 @@ a:hover {
             /* min-height: 73vh; */
             position:relative;
             padding-bottom: 75px;
+            margin-bottom: 10px;
             /* overflow: hidden; */
             .sg-sub-block,
             .aside-menu {
@@ -2796,6 +2797,123 @@ a:hover {
     }
 }
 
+#authorisation-screen-table{
+    tr{
+        width: 90%;
+        th{
+            &:nth-child(1){
+                width: 10%;
+                    padding-left: 60px;
+            }
+            &:nth-child(2){
+                width: 10%;
+            }
+            &:nth-child(3){
+                width: 2%;
+                text-align: center;
+            }
+            &:nth-child(4){
+                width: 2%;
+                text-align: center;
+            }
+            &:nth-child(5){
+                width: 2%;
+                text-align: center;
+            }
+            &:nth-child(6){
+                width: 2%;
+                text-align: center;
+            }
+            &:nth-child(7){
+                width: 2%;
+                text-align: center;
+            }
+            &:nth-child(8){
+                width: 20%;
+            }
+        }
+        td{
+            &:nth-child(1){
+                    padding-left: 60px;
+            }
+            &:nth-child(3){
+                text-align: center;
+            }
+            &:nth-child(4){
+                text-align: center;
+            }
+            &:nth-child(5){
+                text-align: center;
+            }
+            &:nth-child(6){
+                text-align: center;
+            }
+            &:nth-child(7){
+                text-align: center;
+            }
+        }
+    }
+}
+
+#authorisation-menu-table{
+    tr{
+        th{
+            &:nth-child(1){
+                width: 23%;
+                    padding-left: 60px;
+            }
+            &:nth-child(2){
+                width: 25%;
+            }
+            &:nth-child(3){
+                width: 2%;
+            }
+            &:nth-child(4){
+                width: 50%;
+            }
+        }
+        td{
+            &:nth-child(1){
+                    padding-left: 60px;
+            }
+        }
+    }
+}
+
+
+.authorisation-menu-role{
+    padding: 15px 0 15px 60px;
+    width: 600px;
+    span{
+        color: #9a9a9a;
+        font-size: 16px;
+  font-weight: 500;
+  padding-right:30px;
+    }
+    .drop-down-box{
+        padding:0;
+        position:relative;
+        width: 75%;
+        span{
+            padding-right:0;
+            display: block;
+            cursor: pointer;
+            padding:12px;
+        }
+        &:after{
+            display: none;
+        }
+        #drop-icon{
+            position:absolute;
+            right: 15px;
+            top: 11px;
+            &:before{
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
 .agency-title{
     color: #1c2b48;
     font-size: 20px;
@@ -2941,6 +3059,35 @@ a:hover {
 
 #client-ftr{
     bottom:0;
+}
+
+.business-part{
+    padding:70px 150px 0px;
+    position:relative;
+    #business-reset{
+        i{
+            font-size: 13px;
+        }
+        position:absolute;
+        right: 30px;
+        top: 20px;
+        font-weight: 500;
+    }
+}
+
+#variable-box{
+    min-height: 130vh;
+    .modal-footer{
+        bottom:auto;
+    }
+}
+
+
+#allowed-value{
+    #allowed-add-btn{
+        padding-top:70px;
+        text-align: center;
+    }
 }
 
 
