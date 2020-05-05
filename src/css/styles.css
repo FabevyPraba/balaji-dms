@@ -10573,13 +10573,14 @@ a:hover {
 
 .edit-sec {
   padding-top: 25px; }
-  .edit-sec button {
+  .edit-sec i {
     padding: 0;
     background: transparent;
     border: none;
     outline: none;
-    font-weight: 600; }
-    .edit-sec button:focus {
+    font-weight: 600;
+    cursor: pointer; }
+    .edit-sec i:focus {
       outline: none; }
   .edit-sec .add-btn {
     color: #1c2b48;
@@ -10816,7 +10817,7 @@ a:hover {
   padding: 0 15px; }
 
 .client-configuration-tab .client-configuration-form {
-  padding: 20px 25px 0; }
+  padding: 20px 25px 30px; }
   .client-configuration-tab .client-configuration-form input:focus {
     border: solid 1px #e50000;
     box-shadow: none; }
@@ -10850,7 +10851,7 @@ a:hover {
         font-size: 12px;
         padding-right: 0 !important; }
   .client-configuration-tab #client-configuration-tab-2 .client-configuration-form {
-    padding: 20px 50px 0; }
+    padding: 20px 50px 50px; }
   .client-configuration-tab #client-configuration-tab-2 .client-configuration-footer .save-btn {
     width: 50%; }
   .client-configuration-tab #client-configuration-tab-2 .client-configuration-footer .close-btn-part {
@@ -11322,6 +11323,12 @@ a:hover {
 
 #table-structure-edit {
   padding-top: 85px; }
+
+#new-row-1 span {
+  padding-top: 30px; }
+
+#client-ftr {
+  bottom: 0; }
 
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }

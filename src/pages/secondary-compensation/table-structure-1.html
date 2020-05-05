@@ -444,51 +444,53 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                        <form id="table-form">
-                                            <div class="row">
+                                        <form id="table-form" action="#">
+                                            <div class="row" id="table-row">
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 1 value *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <input type="text" class="form-control" id="id-1" >
                                                         <div class="invalid-feedback">Enter Variable 1 Value </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 2 From Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <input type="text" class="form-control" id="id-1" >
                                                         <div class="invalid-feedback">Enter Table ID</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 2 To Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <input type="text" class="form-control" id="id-1" >
                                                         <div class="invalid-feedback">Enter Variable 2 Value</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 3 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <input type="text" class="form-control" id="id-1" >
                                                         <div class="invalid-feedback">Enter Variable 3 Value</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 4 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
+                                                        <input type="text" class="form-control" id="id-1" >
                                                         <div class="invalid-feedback">Enter Variable 4 Value</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="edit-sec" id="table-structure-edit">
-                                                       <button class="delete-btn"><i class="icon-grid_bin"></i></button>
-                                                       <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
+                                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                       <i class="add-btn icon-button_ico_addnew"  id="add"></i>
                                                     </div>
                                                 </div>
 
                                             </div>
+
+                                            <div id="append-new-row"></div>
                                         </form>
                                     </div>
                                 </div>
@@ -521,5 +523,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("body").on("click", "#add" , function(){
+                $("#table-row").clone().appendTo("#append-new-row");
+            });
+            $("body").on("click", "#delete", function() {
+                $("#table-row").last().remove();
+            });
+        });
+    </script>
 </body>
 </html>

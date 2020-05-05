@@ -681,7 +681,7 @@
                                  </div>
                                  <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
                                     <form class="aggregation-table">
-                                       <div class="row">
+                                       <div class="row" id="new-row">
                                           <div class="col-1 pr-0">
                                           </div>
                                           <div class="col-3 pl-0">
@@ -730,67 +730,14 @@
                                           </div>
 
                                           <div class="col-2 pl-0">
-                                             <div class="edit-sec">
-                                               <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
-                                               <button class="delete-btn"><i class="icon-grid_bin"></i></button>
+                                             <div class="edit-sec" id="eligibility-rules-edit">
+                                               <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                               <i class="icon-grid_bin delete-btn" id="delete"></i>
                                             </div>
                                           </div>
                                        </div>
-                                       <div class="row">
-                                          <div class="col-1 pr-0">
-                                          </div>
-                                          <div class="col-3 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Hierarchy-Level-number <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Agent-Hierarchy-Level-number</li>
-                                                      <li class="dropdown-item">2</li>              
-                                                      <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item"><=</li>
-                                                      <li class="dropdown-item">2</li>              
-                                                      <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Select</li>
-                                                      <li class="dropdown-item">2</li>              
-                                                      <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control">
-                                             </div>
-                                          </div>
 
-                                          <div class="col-2 pl-0">
-                                             <div class="edit-sec">
-                                               <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
-                                               <button class="delete-btn"><i class="icon-grid_bin"></i></button>
-                                            </div>
-                                          </div>
-                                       </div>
+                                       <div id="append-new-row"></div>
                                        <div class="modal-footer modal-btn">
                                           <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                                           <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
@@ -801,7 +748,7 @@
                                  </div>
                                  <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
                                     <form class="aggregation-table">
-                                       <div class="row">
+                                       <div class="row" id="new-row">
                                           <div class="col-1 pr-0">
                                           </div>
                                           <div class="col-3 pl-0">
@@ -851,8 +798,7 @@
 
                                           <div class="col-2 pl-0">
                                              <div class="edit-sec">
-                                                <button class="add-btn"><i class="icon-pencil-edit"></i></button>
-                                                <button class="delete-btn"><i class="icon-grid_bin"></i></button>
+                                                <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
                                              </div>
                                           </div>
                                        </div>
@@ -906,8 +852,7 @@
 
                                           <div class="col-2 pl-0">
                                              <div class="edit-sec">
-                                                <button class="add-btn"><i class="icon-pencil-edit"></i></button>
-                                                <button class="delete-btn"><i class="icon-grid_bin"></i></button>
+                                                <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
                                              </div>
                                           </div>
                                        </div>
@@ -921,7 +866,7 @@
                                  </div>
                                  <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
                                     <form class="aggregation-table">
-                                       <div class="row">
+                                       <div class="row" id="new-row-1">
                                           <div class="col-1 pr-0">
                                              <span>Step 1</span>
                                           </div>
@@ -949,13 +894,13 @@
                                              </div>
                                           </div>
                                           <div class="col-2 pl-0">
-                                              <div class="edit-sec">
-                                               <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
-                                               <button class="delete-btn"><i class="icon-grid_bin"></i></button>
-                                            </div>
+                                              <div class="edit-sec" >
+                                                    <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                                    <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                </div>
                                           </div>
                                        </div>
-                                       <div class="row">
+                                       <div class="row" id="new-row-1">
                                           <div class="col-1 pr-0">
                                              <span>Step 2</span>
                                           </div>
@@ -983,12 +928,13 @@
                                              </div>
                                           </div>
                                           <div class="col-2 pl-0">
-                                             <div class="edit-sec">
-                                               <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
-                                               <button class="delete-btn"><i class="icon-grid_bin"></i></button>
+                                             <div class="edit-sec" >
+                                               <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                               <i class="icon-grid_bin delete-btn" id="delete"></i>
                                             </div>
                                           </div>
                                        </div>
+                                       <div id="append-new-row-1"></div>
                                        <div class="modal-footer modal-btn">
                                           <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                                           <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
@@ -1196,5 +1142,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("body").on("click", "#add" , function(){
+                $("#new-row").clone().appendTo("#append-new-row");
+            });
+            $("body").on("click", "#delete", function() {
+                $("#new-row").last().remove();
+            });
+            $("body").on("click", "#add" , function(){
+                $("#new-row").clone().appendTo("#append-new-row-1");
+            });
+            $("body").on("click", "#delete", function() {
+                $("#new-row-1").last().remove();
+            });
+        });
+    </script>
 </body>
 </html>

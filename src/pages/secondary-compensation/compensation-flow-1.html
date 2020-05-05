@@ -382,7 +382,7 @@
 
                         <div class="compensation-flow-list">
                           <form class="aggregation-table">
-                            <div class="row">
+                            <div class="row" id="new-row">
                                <div class="col-1 pr-0">
                                   <span>Step 1</span>
                                </div>
@@ -428,13 +428,13 @@
                                   </div>
                                </div>
                                <div class="col-2 pl-0">
-                                  <div class="edit-sec">
-                                           <button class="add-btn"><i class="icon-grid_edit"></i></button>
-                                           <button class="delete-btn"><i class="icon-grid_bin"></i></button>
-                                        </div>
+                                  <div class="edit-sec" >
+                                       <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                    </div>
                                </div>
                             </div>
-                            <div class="row">
+                            <div class="row" id="new-row">
                                <div class="col-1 pr-0">
                                   <span>Step 2</span>
                                </div>
@@ -480,21 +480,18 @@
                                   </div>
                                </div>
                                <div class="col-2 pl-0">
-                                  <div class="edit-sec">
-                                               <button class="add-btn"><i class="icon-grid_edit"></i></button>
-                                               <button class="delete-btn"><i class="icon-grid_bin"></i></button>
-                                            </div>
+                                    <div class="edit-sec" >
+                                       <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                    </div>
                                </div>
                             </div>
+                            <div id="append-new-row"></div>
                          </form>
                         </div>
-
-                        <!-- <div class="no-condition-msg">
-                            <img src="../../images/no-condition.svg" alt="no-condition">
-                            <label>No conditions added</label>
-                        </div> -->
-                        
+                      
                     </div>
+
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
                             <div class="save-btn">
@@ -520,5 +517,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("body").on("click", "#add" , function(){
+                $("#new-row").clone().appendTo("#append-new-row");
+            });
+            $("body").on("click", "#delete", function() {
+                $("#new-row").last().remove();
+            });
+        });
+    </script>
 </body>
 </html>
