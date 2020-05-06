@@ -1990,6 +1990,7 @@ a:hover {
         textarea {
             width: 100%;
             resize: none;
+                border: 1px solid #8b8b8b
             &:focus {
                 background: #f2f2f2;
                 border: 1px solid rgba(0, 0, 0, 0.9);
@@ -3090,6 +3091,48 @@ a:hover {
     }
 }
 
+#tenant-model{
+    .modal-dialog {
+        width: 50% !important;
+    }
+}
+
+
+#help-master{
+    tr{
+        th{
+            &:nth-child(1){
+                width: 2%;
+            }
+            &:nth-child(2){
+                width: 10%;
+            }
+            &:nth-child(3){
+                width: 15%;
+            }
+            &:nth-child(4){
+                width: 20%;
+                text-align: left;
+            }
+            &:nth-child(5){
+                width: 30%;
+            }
+        }
+        td{
+
+            &:nth-child(4){
+                text-align: left;
+            }
+        }
+    }
+}
+
+#list-exam-model{
+    min-height: 120vh;
+    .modal-footer{
+        bottom:-120px;
+    }
+}
 
 // Date-Picker
 

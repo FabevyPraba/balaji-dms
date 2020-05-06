@@ -10678,8 +10678,9 @@ a:hover {
     color: #9a9a9a; }
   .production-services-form form textarea {
     width: 100%;
-    resize: none; }
-    .production-services-form form textarea:focus {
+    resize: none;
+    border: 1px solid #8b8b8b .production-services-form form textarea; }
+    .production-services-form form textarea :focus {
       background: #f2f2f2;
       border: 1px solid rgba(0, 0, 0, 0.9); }
   .production-services-form form input {
@@ -11429,6 +11430,33 @@ a:hover {
 #allowed-value #allowed-add-btn {
   padding-top: 70px;
   text-align: center; }
+
+#tenant-model .modal-dialog {
+  width: 50% !important; }
+
+#help-master tr th:nth-child(1) {
+  width: 2%; }
+
+#help-master tr th:nth-child(2) {
+  width: 10%; }
+
+#help-master tr th:nth-child(3) {
+  width: 15%; }
+
+#help-master tr th:nth-child(4) {
+  width: 20%;
+  text-align: left; }
+
+#help-master tr th:nth-child(5) {
+  width: 30%; }
+
+#help-master tr td:nth-child(4) {
+  text-align: left; }
+
+#list-exam-model {
+  min-height: 120vh; }
+  #list-exam-model .modal-footer {
+    bottom: -120px; }
 
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }
