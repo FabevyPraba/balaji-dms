@@ -2732,7 +2732,9 @@ a:hover {
 .form-group .custom-select-box .custom-select-toggle{
     line-height: 44px;
     padding: 0 15px;
+    overflow: hidden;
 }
+
 .form-group .custom-select-box .custom-select-toggle:focus{
     border: none;
 }
@@ -3132,6 +3134,10 @@ a:hover {
     .modal-footer{
         bottom:-120px;
     }
+}
+
+#sec-pagination{
+    border:none;
 }
 
 // Date-Picker

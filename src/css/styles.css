@@ -11172,7 +11172,8 @@ a:hover {
 
 .form-group .custom-select-box .custom-select-toggle {
   line-height: 44px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  overflow: hidden; }
 
 .form-group .custom-select-box .custom-select-toggle:focus {
   border: none; }
@@ -11457,6 +11458,9 @@ a:hover {
   min-height: 120vh; }
   #list-exam-model .modal-footer {
     bottom: -120px; }
+
+#sec-pagination {
+  border: none; }
 
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }
