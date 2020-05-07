@@ -382,7 +382,7 @@
 
                         <div class="compensation-flow-list">
                           <form class="aggregation-table">
-                            <div class="row" id="new-row">
+                            <div class="row new-row">
                                <div class="col-1 pr-0">
                                   <span>Step 1</span>
                                </div>
@@ -429,12 +429,12 @@
                                </div>
                                <div class="col-2 pl-0">
                                   <div class="edit-sec" >
-                                       <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                       <i class="icon-button_ico_addnew add-btn add-row"></i>
+                                       <i class="icon-grid_bin delete-btn delete-row"></i>
                                     </div>
                                </div>
                             </div>
-                            <div class="row" id="new-row">
+                            <div class="row new-row">
                                <div class="col-1 pr-0">
                                   <span>Step 2</span>
                                </div>
@@ -481,12 +481,11 @@
                                </div>
                                <div class="col-2 pl-0">
                                     <div class="edit-sec" >
-                                       <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                       <i class="icon-button_ico_addnew add-btn add-row"></i>
+                                       <i class="icon-grid_bin delete-btn delete-row"></i>
                                     </div>
                                </div>
                             </div>
-                            <div id="append-new-row"></div>
                          </form>
                         </div>
                       
@@ -523,6 +522,23 @@
             });
             $("body").on("click", "#delete", function() {
                 $("#new-row").last().remove();
+            });
+            $("body").on("click", ".add-row" , function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $row = $this.closest('.new-row'),
+                    $rowClone = $row.clone();
+                $rowClone.insertAfter($row);
+            });
+            $("body").on("click", ".delete-row", function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    $row = $this.closest('.new-row');
+                
+                console.log($row.is(':last-child'));
+                if($row.parent().children().length >= 2){
+                    $this.closest('.new-row').remove();
+                }
             });
         });
     </script>

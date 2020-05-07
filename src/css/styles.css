@@ -10001,7 +10001,7 @@ a:hover {
           color: #1c2b48;
           text-transform: capitalize; }
       .page-wrapper .main-content-wrapper .main-content-body .form-part {
-        padding: 30px 60px 120px;
+        padding: 30px 60px 60px;
         position: relative; }
         .page-wrapper .main-content-wrapper .main-content-body .form-part label {
           font-size: 16px;
@@ -10318,8 +10318,7 @@ a:hover {
 
 #myTabContent .form-part {
   position: relative;
-  padding: 20px 80px;
-  min-height: 120vh; }
+  padding: 20px 80px; }
 
 #myTabContent form input {
   height: 35px; }
@@ -10511,8 +10510,7 @@ a:hover {
     padding: 0 20px; }
   .aggregation-services-model .modal .modal-dialog .modal-body {
     position: relative;
-    padding-bottom: 0;
-    height: calc(100vh - 150px); }
+    padding-bottom: 0; }
     .aggregation-services-model .modal .modal-dialog .modal-body .mandatory-text {
       position: absolute;
       right: 25px;
@@ -10746,8 +10744,7 @@ a:hover {
 
 .secondary-plan-list {
   background: #fff;
-  padding: 20px 0 0px;
-  position: relative; }
+  padding: 20px 0 0px; }
   .secondary-plan-list .list-table {
     /* min-height: 100vh; */ }
     .secondary-plan-list .list-table tr th {
@@ -10764,21 +10761,19 @@ a:hover {
         width: 15%; }
       .secondary-plan-list .list-table tr th:nth-child(5) {
         width: 12%; }
-  .secondary-plan-list #pagination {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%); }
   .secondary-plan-list .close-part {
-    position: absolute;
-    right: 20px;
-    bottom: 30px; }
+    float: right;
+    margin-top: -33px;
+    margin-right: 20px; }
     .secondary-plan-list .close-part button {
       padding: 5px 20px; }
   .secondary-plan-list .list-footer {
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
-    padding: 50px 0;
-    margin-top: 80px; }
+    padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
 
 .pending-btn {
   border-radius: 5px;
@@ -11178,14 +11173,18 @@ a:hover {
 
 .form-group .custom-select-box .custom-select-toggle {
   line-height: 44px;
-  padding: 0 15px;
-  overflow: hidden; }
+  padding: 0 25px 0 15px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis; }
 
 .form-group .custom-select-box .custom-select-toggle:focus {
   border: none; }
 
 .form-group .custom-select-box .custom-select-toggle i {
-  float: right; }
+  position: absolute;
+  top: 0;
+  right: 8px; }
 
 .form-group .custom-select-box .custom-select-toggle i:before {
   transform: rotate(90deg); }
@@ -11371,12 +11370,8 @@ a:hover {
       color: #e50000;
       font-size: 14px; }
 
-#variable-model {
-  min-height: 130vh; }
-  #variable-model form {
-    width: 95%; }
-  #variable-model .modal-footer {
-    bottom: -220px; }
+#variable-model form {
+  width: 95%; }
 
 #aggregation-modal {
   min-height: 130vh; }
@@ -11402,9 +11397,6 @@ a:hover {
 
 #eligibility-rules-edit {
   padding-top: 30px; }
-
-#table-structure-edit {
-  padding-top: 85px; }
 
 #new-row-1 span {
   padding-top: 30px; }

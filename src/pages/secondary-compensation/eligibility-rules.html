@@ -514,8 +514,7 @@
                     $row = $this.closest('.new-row');
                 
                 console.log($row.is(':last-child'));
-                if($row.is(':last-child')){
-                }else{
+                if($row.parent().children().length >= 2){
                     $this.closest('.new-row').remove();
                 }
             });

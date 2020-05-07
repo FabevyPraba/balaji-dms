@@ -449,83 +449,64 @@
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 1 value *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 1 Value </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 2 From Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Table ID</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 2 To Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 2 Value</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 3 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 3 Value</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
                                                         <label for="">Variable 4 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 4 Value</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="edit-sec" id="table-structure-edit">
-                                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                                       <i class="add-btn icon-button_ico_addnew"  id="add"></i>
                                                     </div>
                                                 </div>
 
                                             </div>
 
-                                            <div class="row" id="table-row">
+                                            <div class="row new-row">
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
+                                                        <input type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
+                                                        <input type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
+                                                        <input type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
+                                                        <input type="text" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
-                                                    <div class="edit-sec" id="table-structure-edit">
-                                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                                       <i class="add-btn icon-button_ico_addnew"  id="add"></i>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control">
                                                     </div>
                                                 </div>
-
+                                                <div class="col-2 pl-0">
+                                                    <div class="edit-sec" class="table-structure-edit">
+                                                       <i class="icon-grid_bin delete-btn delete-row"></i>
+                                                       <i class="add-btn icon-button_ico_addnew add-row"></i>
+                                                    </div>
+                                                </div>
                                             </div>
-
-                                            <div id="append-new-row"></div>
                                         </form>
                                     </div>
                                 </div>
@@ -559,13 +540,22 @@
     <script src="../../js/app.js"></script>
     <script>
         $(document).ready(function() {
-            $("#table-row").hide();
-            $("body").on("click", "#add" , function(){
-                $("#table-row").clone().appendTo("#append-new-row");
-                $("#table-row").show();
+            $("body").on("click", ".add-row" , function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $row = $this.closest('.new-row'),
+                    $rowClone = $row.clone();
+                $rowClone.insertAfter($row);
             });
-            $("body").on("click", "#delete", function() {
-                $("#table-row").last().remove();
+            $("body").on("click", ".delete-row", function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    $row = $this.closest('.new-row');
+                
+                console.log($row.is(':last-child'));
+                if($row.parent().children('.new-row').length >= 2){
+                    $this.closest('.new-row').remove();
+                }
             });
         });
     </script>
