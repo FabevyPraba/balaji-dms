@@ -297,7 +297,7 @@
                             <div class="col-6">
                                 <div class="search-part">
                                     <input type="search" name="" placeholder="Search" class="search-box">
-                                    <button type="button"  class="btn btn-primary ">Add New</button>
+                                    <a href="./index.html"  class="btn btn-primary ">Add New</a>
                                 </div>
                             </div>
                         </div>
@@ -333,7 +333,7 @@
                                         <div class="row-action-wrapper">
                                             <a href="#" class="kebab active-edit"> </a>
                                             <ul class="edit-part">
-                                                <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                <li><a href="/pages/secondary-compensation/"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                 <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                             </ul>
@@ -356,7 +356,7 @@
                                         <div class="row-action-wrapper">
                                             <a href="#" class="kebab active-edit"> </a>
                                             <ul class="edit-part">
-                                                <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                <li><a href="/pages/secondary-compensation/"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                 <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                             </ul>
@@ -379,7 +379,7 @@
                                         <div class="row-action-wrapper">
                                             <a href="#" class="kebab active-edit"> </a>
                                             <ul class="edit-part">
-                                                <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                <li><a href="/pages/secondary-compensation/"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                 <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                             </ul>
@@ -402,7 +402,7 @@
                                         <div class="row-action-wrapper">
                                             <a href="#" class="kebab active-edit"> </a>
                                             <ul class="edit-part">
-                                                <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                <li><a href="/pages/secondary-compensation/"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                 <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                             </ul>
@@ -425,7 +425,7 @@
                                         <div class="row-action-wrapper">
                                             <a href="#" class="kebab active-edit"> </a>
                                             <ul class="edit-part">
-                                                <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                <li><a href="/pages/secondary-compensation/"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                 <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                 <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                             </ul>
@@ -476,8 +476,9 @@
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
     <script>
-        $('tbody tr').click(function(){
-            window.location = 'https://dms.xfactory.design/pages/secondary-compensation/';
+        $('tbody td').click(function(){
+            if(!($(this).is(':last-child') || $(this).is(':last-child')))
+                window.location = 'https://dms.xfactory.design/pages/secondary-compensation/';
         });
     </script>
 </body>

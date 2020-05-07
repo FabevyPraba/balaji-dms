@@ -399,7 +399,7 @@
                                     <h3>Conditions</h3>
                                 </div>
                                 <div class="conditions-list">
-                                    <div class="row" id="new-row">
+                                    <div class="row new-row">
                                         <div class="col-1 pl-0"></div>
                                         <div class="col-3 pl-0">
                                             <div class="form-group">
@@ -452,7 +452,7 @@
                                                       <li class="dropdown-item"></li>
                                                       <li class="dropdown-item">2</li>              
                                                       <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li>              
+                                                      <li class="dropdown-item">4</li>
                                                     </ul>
                                                 </div> 
                                             </div>
@@ -464,15 +464,12 @@
                                         </div>
                                         <div class="col-2 pl-0">
                                             <div class="edit-sec" id="eligibility-rules-edit">
-                                               <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                               <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                               <i class="icon-button_ico_addnew add-btn add-row"></i>
+                                               <i class="icon-grid_bin delete-btn delete-row"></i>
                                             </div>
                                         </div>
 
                                     </div>
-
-                                    <div id="append-new-row"></div>
-
                                 </div>
                             </div>
                         </div>
@@ -504,11 +501,23 @@
     <script src="../../js/app.js"></script>
     <script>
         $(document).ready(function() {
-            $("body").on("click", "#add" , function(){
-                $("#new-row").clone().appendTo("#append-new-row");
+            $("body").on("click", ".add-row" , function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $row = $this.closest('.new-row'),
+                    $rowClone = $row.clone();
+                $rowClone.insertAfter($row);
             });
-            $("body").on("click", "#delete", function() {
-                $("#new-row").last().remove();
+            $("body").on("click", ".delete-row", function(e) {
+                e.preventDefault();
+                var $this = $(this),
+                    $row = $this.closest('.new-row');
+                
+                console.log($row.is(':last-child'));
+                if($row.is(':last-child')){
+                }else{
+                    $this.closest('.new-row').remove();
+                }
             });
         });
     </script>
