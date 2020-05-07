@@ -16,7 +16,7 @@
 <body>
 
     <section class="page-wrapper">
-       <div class="header-sec">
+        <div class="header-sec">
             <div class="container-fluid m-0">
                 <div class="row m-">
                     <div class="col-7 p-0">
@@ -268,17 +268,19 @@
             </div>
         </div>
 
+
         <div class="main-content-wrapper">
             <div class="page-title main-content-header">
                 <div class="row">
                     <div class="col-10">
                         <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">Secondary Compensation Plan Maintenance</h4>
+                            <h4 class="sg-section-sub-heading">Web Services Master</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Secondary Compensation</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Secondary Compensation Plan Configuration</li>
+                                    <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Web Services Master</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -293,259 +295,210 @@
             </div>
 
             <div class="main-content-body">
-                <div class="sub-head clearfix">
-                    <ul>
-                        <li><a href="secondary-compensation-plan-list.html" class="back-page-btn"><i class="icon-left-open"></i></a></li>
-                        <li class="m-0"><div >Compensation ID <span class="txt-1">SCOMP-002</span></div></li>
-                        <li><div >Description <span class="txt-2">Long term seniority Allowance</span></div></li>
-                        <li><div >Start Date <span class="txt-3">17/01/2017</span></div></li>
-                        <li><div>Status <span class="txt-4 pend-btn">Pending</span></div></li>
-                        <li><div><a href="#" class="add-btn">Edit</a></div></li>
-                    </ul>
-                </div>
-                <div class="row m-0">
-                    <div class="col-3 p-0">
-                        <div class="sg-sub-block">
-                            <div class="aside-menu">
-                                <ul>
-                                  <li><a  href="basic-information.html">Basic Information</a></li>
-                                  <li><a href="eligibility-rules.html" >Eligibility Rules</a></li>
-                                  <li><a href="payment-rules.html">Payment Rules</a></li>
-                                  <li><a href="agent-change-rules.html">Agent Change Rules</a></li>
-                                  <li><a href="fractional-period-rules.html">Fractional Period Rules</a></li>
-                                  <li><a href="rounding-rules.html">Rounding Rules</a></li>
-                                  <li><a href="temporary-variable.html" >Temporary variable</a></li>
-                                  <li><a href="table-structure.html" class="active">Table structure</a></li>
-                                  <li><a href="aggregation-service.html">Aggregation Service</a></li>
-                                  <li><a href="production-service.html">Production Service</a></li>
-                                  <li><a href="compensation-flow.html">Compensation Flow</a></li>
-                                </ul>
-                              </div>
+                <div class="record-part">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="show-record">Showing 3 records</h4>
                         </div>
-                    </div>
-                    <div class="col-9 p-0">
-                        <div class="side-menu-title">
-                            <h3>Table Structures List </h3>
-                        </div>
-
-                        <!-- Tabs -->
-                        <div id="tab">
-                            <div class="">
-                                <ul class="nav nav-tabs nav-tabs-default" id="myTab" role="tablist">
-                                    <li><span class="back-btn" id="basic-back"><</span></li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="default-tab-1" data-toggle="tab" href="#tab-item-1" role="tab" aria-controls="tab-item-1" aria-selected="true">Basic Configuration</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="default-tab-2" data-toggle="tab" href="#tab-item-2" role="tab" aria-controls="tab-item-2" aria-selected="false">Table Data</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
-                                        <form class="needs-validation form-part" novalidate>
-                                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="form-group">
-                                                        <label for="" class="required-mark">Table ID </label>
-                                                        <input type="text" placeholder="Enter Table ID " class="form-control" id="id-1" required>
-                                                        <div class="invalid-feedback">Enter Table ID</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <div class="form-group">
-                                                        <label for="" class="required-mark">Description</label>
-                                                        <textarea rows="3" placeholder="Enter Description" ></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="form-group">
-                                                        <label for="" class="required-mark">Table Type</label>
-                                                        <div class="drop-down-box custom-select-box">
-                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Compensation table<i class="icon-right-open"></i></a>
-                                                            <ul class="dropdown-menu">
-                                                              <li class="dropdown-item">Compensation table</li>
-                                                              <li class="dropdown-item">Eligibility table</li>              
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>    
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label for="" class="required-mark">Table Nature</label>
-                                                            <div class="drop-down-box custom-select-box">
-                                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Simple banded<i class="icon-right-open"></i></a>
-                                                                <ul class="dropdown-menu">
-                                                                  <li class="dropdown-item">Simple banded</li>
-                                                                  <li class="dropdown-item">Ratchet banded</li>              
-                                                                  <li class="dropdown-item">Not applicable</li>          
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>    
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label for="">Date of Creation </label>
-                                                            <input type="text" class="form-control" placeholder="Enter Date of Creation" id="id-1" required>
-                                                            <div class="invalid-feedback">Enter Date of Creation</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label for="" class="required-mark">Date of Termination </label>
-                                                            <input type="text" class="form-control" placeholder="Enter Date of Termination" id="id-1" required>
-                                                            <div class="invalid-feedback">Enter Date of Termination</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label for="" class="required-mark">No.of Columns</label>
-                                                            <input type="text" class="form-control" placeholder="Enter No.of Columns" id="id-1" required>
-                                                            <div class="invalid-feedback">Enter No.of Columns   </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label for="" class="required-mark">Output Variable ID</label>
-                                                            <div class="drop-down-box custom-select-box">
-                                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP-CREDIT<i class="icon-right-open"></i></a>
-                                                                <ul class="dropdown-menu">
-                                                                  <li class="dropdown-item">RNEP-CREDIT</li>
-                                                                  <li class="dropdown-item">Agency year</li>              
-                                                                  <li class="dropdown-item">Eligibility Date</li>              
-                                                                  <li class="dropdown-item">Temporary</li>              
-                                                                  <li class="dropdown-item">From Day</li>              
-                                                                  <li class="dropdown-item">To Day</li>              
-                                                                  <li class="dropdown-item">To Month</li>              
-                                                                  <li class="dropdown-item">Accumulation Start Date</li>              
-                                                                  <li class="dropdown-item">Accumulation End Date</li>              
-                                                                  <li class="dropdown-item">Maximum sum insured</li>              
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    <div class="form-group">
-                                                        <label for="">Description *</label>
-                                                        <textarea rows="3" placeholder="Enter Description"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <button type="submit" class="btn btn-primary btn-icon-left" id="table-sub-btn"> <i class="icon-asset-7"></i> Submit</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                        <form id="table-form" action="#">
-                                            <div class="row">
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <label for="">Variable 1 value *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 1 Value </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <label for="">Variable 2 From Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Table ID</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <label for="">Variable 2 To Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 2 Value</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <label for="">Variable 3 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 3 Value</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <label for="">Variable 4 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                        <div class="invalid-feedback">Enter Variable 4 Value</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="edit-sec" id="table-structure-edit">
-                                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                                       <i class="add-btn icon-button_ico_addnew"  id="add"></i>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="row" id="table-row">
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" id="id-1" >
-                                                    </div>
-                                                </div>
-                                                <div class="col-2 pl-0">
-                                                    <div class="edit-sec" id="table-structure-edit">
-                                                       <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                                       <i class="add-btn icon-button_ico_addnew"  id="add"></i>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div id="append-new-row"></div>
-                                        </form>
-                                    </div>
-                                </div>
+                        <div class="col-6">
+                            <div class="search-part">
+                                <input type="search" name="" placeholder="Search" class="search-box">
+                                <button type="button" data-toggle="modal" data-target="#myRightAlignedModal" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</button>
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <div class="col-12 p-0">
-                        <div class="data-assign-part clearfix">
-                            <div class="save-btn">
-                                <a  href="temporary-variable.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                <a  href="aggregation-service.html" type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                </div>
+
+                <div class="record-list">
+                    <!-- Table -->
+                    <div class="variable-master-table " id="full-table">
+                        <div class="table-part">
+                            <table class="table table-default table-hover" id="web-services">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Web Services id</th>
+                                        <th> Description</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                            </div>
+                                        </td>
+                                        <td>WS-0001</td>
+                                        <td>Web service to return the business date</td>
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck2">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
+                                            </div>
+                                        </td>
+                                        <td>WS-0002</td>
+                                        <td> Web service to return the valid menus for a client based on client’s industry and region</td>
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
+                                            </div>
+                                        </td>
+                                        <td>WS-0003</td>
+                                        <td>Web service to Check if a role is authorised to a menu and action</td>
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                    <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-part clearfix ">
+                            <div class="pagination">
+                                <div class="">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination pagination-default">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                             <div class="close-btn-part">
                                 <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    
                 </div>
             </div>
+            <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="myRightAlignedModal">
+               <div class="modal-dialog ">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-12 pl-0 pr-0">
+                              <div class="btn-part">
+                                 <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i> Complete</button>
+                                 <button class="remove-btn" data-dismiss="modal"><i class="icon-close"></i></button>
+                              </div>
+                           </div>
+                           <div class="col-12 pr-0">
+                              <div class="modal-title">
+                                 <h3>Web Services Maintenence</h3> 
+                                 <span>* Fields are mandatory</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <form class="needs-validation" novalidate>
+                           <button type="button" class="btn btn-link btn-icon-left reset-btn"> <i class="icon-close"></i> Reset</button>
+                           <div class="row">                                 
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Web Services-id </label>
+                                    <input type="text" name="" placeholder="Web Services-id" class="form-control" required="">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Description *</label>
+                                    <input type="text" name="" placeholder="Enter Effective Date" class="form-control" required="">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                               <div class="form-group">
+                                    <label for="" class="required-mark">Component</label>
+                                    <div class="drop-down-box custom-select-box">
+                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Common to all components <i class="icon-right-open"></i></a>
+                                        <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Common to all components</li>                     
+                                        </ul>
+                                    </div>
+                                 </div>
+                           </div>
+                           <div class="col-12">
+                               <div class="form-group">
+                                    <label for="" class="required-mark">Industry</label>
+                                    <div class="drop-down-box custom-select-box">
+                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Common to all industries <i class="icon-right-open"></i></a>
+                                        <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Common to all industries</li>                     
+                                        </ul>
+                                    </div>
+                                 </div>
+                           </div>
+                           <div class="col-12">
+                               <div class="form-group">
+                                    <label for="" class="required-mark">Region</label>
+                                    <div class="drop-down-box custom-select-box">
+                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Common to all region <i class="icon-right-open"></i></a>
+                                        <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Common to all region</li>                     
+                                        </ul>
+                                    </div>
+                                 </div>
+                           </div>
+                           </div>
+
+                           <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                              <button type="button"  data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                           </div>
+                        </form>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
         </div>
     </section>
     <div class="footer-sec">
@@ -557,17 +510,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#table-row").hide();
-            $("body").on("click", "#add" , function(){
-                $("#table-row").clone().appendTo("#append-new-row");
-                $("#table-row").show();
-            });
-            $("body").on("click", "#delete", function() {
-                $("#table-row").last().remove();
-            });
-        });
-    </script>
 </body>
 </html>

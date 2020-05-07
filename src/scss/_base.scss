@@ -1880,6 +1880,12 @@ a:hover {
         input {
             width: 100%;
         }
+        textarea{
+            height: 140px;
+        }
+    }
+    .form-group{
+        justify-content: flex-start;
     }
     .add-step {
         margin-left: 10px;
@@ -2455,6 +2461,7 @@ a:hover {
     .modal-dialog{
         width: 500px !important;
         background:#fff;
+        padding-left:15px;
     }
     .sg-submit-btn{
         padding:8px 20px;
@@ -3023,13 +3030,13 @@ a:hover {
     }
 }
 
-#compensation-flow-drop-down{
-    width: 500px;
-}
+// #compensation-flow-drop-down{
+//     width: 500px;
+// }
 
-#compensation-flow-drop-down-1{
-    width: 250px;
-}
+// #compensation-flow-drop-down-1{
+//     width: 250px;
+// }
 
 .aggregation-table{
     span{
@@ -3138,6 +3145,69 @@ a:hover {
 
 #sec-pagination{
     border:none;
+}
+
+#web-services{
+    tr{
+        th{
+            &:nth-child(1){
+                width: 2%;
+            }
+            &:nth-child(2){
+                width: 15%;
+            }
+            &:nth-child(3){
+                width: 60%;
+            }
+            &:nth-child(4){
+                width: 20%;
+            }
+        }
+    }
+}
+
+#code-master{
+    tr{
+        th{
+            &:nth-child(1){
+                width: 2%;
+            }
+            &:nth-child(2){
+                width: 10%;
+            }
+            &:nth-child(3){
+                width: 8%;
+            }
+            &:nth-child(4){
+                width: 30%;
+                text-align: left;
+            }
+        }
+        td{
+           &:nth-child(4){
+                text-align: left;
+            } 
+        }
+    }
+}
+
+#msg-save-btn{
+    margin-right: 15px;
+    display: inline-block;
+}
+
+#msg-edit-part{
+    button{
+        background:transparent;
+        border:none;
+        color: #8695b1;
+        font-size: 14px;
+    }
+}
+
+.invalid-feedback{
+    position:static;
+    box-shadow:none;
 }
 
 // Date-Picker

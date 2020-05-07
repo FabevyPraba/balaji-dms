@@ -10599,6 +10599,11 @@ a:hover {
     display: block; }
   .compensation-flow-form form input {
     width: 100%; }
+  .compensation-flow-form form textarea {
+    height: 140px; }
+
+.compensation-flow-form .form-group {
+  justify-content: flex-start; }
 
 .compensation-flow-form .add-step {
   margin-left: 10px; }
@@ -10998,7 +11003,8 @@ a:hover {
 
 .aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-dialog {
   width: 500px !important;
-  background: #fff; }
+  background: #fff;
+  padding-left: 15px; }
 
 .aggregation-services-model.production-services-form.variable-master-model.lob-modal .sg-submit-btn {
   padding: 8px 20px; }
@@ -11384,12 +11390,6 @@ a:hover {
   #production-modal .modal-footer {
     bottom: -450px; }
 
-#compensation-flow-drop-down {
-  width: 500px; }
-
-#compensation-flow-drop-down-1 {
-  width: 250px; }
-
 .aggregation-table span {
   padding-top: 30px;
   display: inline-block; }
@@ -11461,6 +11461,48 @@ a:hover {
 
 #sec-pagination {
   border: none; }
+
+#web-services tr th:nth-child(1) {
+  width: 2%; }
+
+#web-services tr th:nth-child(2) {
+  width: 15%; }
+
+#web-services tr th:nth-child(3) {
+  width: 60%; }
+
+#web-services tr th:nth-child(4) {
+  width: 20%; }
+
+#code-master tr th:nth-child(1) {
+  width: 2%; }
+
+#code-master tr th:nth-child(2) {
+  width: 10%; }
+
+#code-master tr th:nth-child(3) {
+  width: 8%; }
+
+#code-master tr th:nth-child(4) {
+  width: 30%;
+  text-align: left; }
+
+#code-master tr td:nth-child(4) {
+  text-align: left; }
+
+#msg-save-btn {
+  margin-right: 15px;
+  display: inline-block; }
+
+#msg-edit-part button {
+  background: transparent;
+  border: none;
+  color: #8695b1;
+  font-size: 14px; }
+
+.invalid-feedback {
+  position: static;
+  box-shadow: none; }
 
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }
