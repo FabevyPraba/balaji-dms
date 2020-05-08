@@ -298,7 +298,7 @@
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
-                                    <h4 class="show-record">Showing 300 records</h4>
+                                    <h4 class="show-record">Showing 13 records</h4>
                                 </div>
                                 <div class="col-6">
                                     <div class="search-part">
@@ -313,7 +313,7 @@
                             <!-- Table -->
                             <div class="variable-master-table" id="full-table">
                                 <div class="table-part">
-                                    <table class="table table-default table-hover">
+                                    <table class="table table-default table-hover" id="lob-master">
                                         <thead>
                                             <tr>
                                                 <th></th>
@@ -331,14 +331,14 @@
                                                         <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
                                                     </div>
                                                 </td>
-                                                <td>CHANNEL-ID</td>
-                                                <td>Channel-id</td>
-                                                <td>Channel-id</td>
+                                                <td>TERMLIFE</td>
+                                                <td>Term Life</td>
+                                                <td>Life insurance Only</td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                                         </ul>
@@ -352,14 +352,14 @@
                                                         <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                                     </div>
                                                 </td>
-                                                <td>CHANNEL-ID</td>
-                                                <td>Channel-id</td>
-                                                <td>Channel-id</td>
+                                                <td>ENDOWMNT</td>
+                                                <td>Endowment</td>
+                                                <td>Life insurance Only</td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit" ></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                                         </ul>
@@ -373,14 +373,14 @@
                                                         <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                                     </div>
                                                 </td>
-                                                <td>CHANNEL-ID</td>
-                                                <td>Channel-id</td>
-                                                <td>Channel-id</td>
+                                                <td>UNITLNKD</td>
+                                                <td>Unit Linked</td>
+                                                <td>Life insurance Only</td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                                         </ul>
@@ -394,14 +394,203 @@
                                                         <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                                     </div>
                                                 </td>
-                                                <td>CHANNEL-ID</td>
-                                                <td>Channel-id</td>
-                                                <td>Channel-id</td>
+                                                <td>HEALTH</td>
+                                                <td>Health</td>
+                                                <td>Accident and Health</td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>ACCIDENT</td>
+                                                <td>Accident</td>
+                                                <td>Accident and Health</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>DISABLTY</td>
+                                                <td>Disability</td>
+                                                <td>Life insurance Only</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>CRDTLIFE</td>
+                                                <td>Credit Life</td>
+                                                <td>Life insurance Only</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>PENSION</td>
+                                                <td>Pension</td>
+                                                <td>Life insurance Only</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>ANNUITY</td>
+                                                <td>Annuity</td>
+                                                <td>Life insurance Only</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>TRAVEL</td>
+                                                <td>Travel</td>
+                                                <td>General insurance only</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>FIRE</td>
+                                                <td>Fire</td>
+                                                <td>Fire and Casualty</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>MOTOR</td>
+                                                <td>Motor</td>
+                                                <td>Limited Lines Automobile</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="#"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>MARIN </td>
+                                                <td>Marine </td>
+                                                <td>General insurance only</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                             <li><a href="#"><i class="icon-rating"></i> Review</a></li>
                                                         </ul>
@@ -482,14 +671,17 @@
                               </div>
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="" class="required-mark">Type </label>
+                                    <label for="" class="required-mark">License type </label>
                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Alpha numeric <i class="icon-right-open"></i></a>
+                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Fire and Casualty <i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
-                                          <li class="dropdown-item">Alpha numeric</li>
-                                          <li class="dropdown-item">2</li>              
-                                          <li class="dropdown-item">3</li>              
-                                          <li class="dropdown-item">4</li>              
+                                          <li class="dropdown-item">Fire and Casualty</li>
+                                          <li class="dropdown-item">Limited Lines Automobile</li>              
+                                          <li class="dropdown-item">Personal Lines</li>              
+                                          <li class="dropdown-item">Accident and Health</li>              
+                                          <li class="dropdown-item">Life insurance Only</li>              
+                                          <li class="dropdown-item">General insurance only</li>              
+                                          <li class="dropdown-item">Composite insurer</li>              
                                         </ul>
                                     </div>
                                  </div>

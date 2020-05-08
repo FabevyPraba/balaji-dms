@@ -2346,13 +2346,13 @@ a:hover {
                     width: 2%;
                 }
                 &:nth-child(2) {
-                    width: 15%;
+                    width: 10%;
                 }
                 &:nth-child(3) {
-                    width: 20%;
+                    width: 15%;
                 }
                 &:nth-child(4) {
-                    width: 20%;
+                    width: 15%;
                     text-align: center;
                 }
                 &:nth-child(5) {
@@ -2545,7 +2545,7 @@ a:hover {
 }
 
 .lob-master-body{
-    max-width: 910px;
+    max-width: 1000px;
     margin: auto;
     .variable-master-table{
         table tr th:nth-child(4){
@@ -2565,13 +2565,13 @@ a:hover {
             tr{
                 th{
                     &:nth-child(2){
-                        width: 15%;
+                        width: 12%;
                     }
                     &:nth-child(3){
-                        width: 20%;
+                        width: 18%;
                     }
                     &:nth-child(4){
-                        width: 15%;
+                        width: 13%;
                         text-align: left;
                     }
                     &:nth-child(5){
@@ -2802,8 +2802,20 @@ a:hover {
 
 #product-reset{
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: -35px;
+    i{
+        font-size: 12px;
+        padding-right:0;
+    }
+}
+
+.show-checkbox .custom-control{
+    display: none;
+}
+
+.custom-control{
+    display: none;
 }
 
 #product-btn-part{
@@ -2817,14 +2829,14 @@ a:hover {
         tr{
             th{
                 &:nth-child(2){
-                    width: 12%;
+                    width: 10%;
                 }
                 &:nth-child(3){
-                    width: 12%;
+                    width: 8%;
                 }
                 &:nth-child(4){
-                    width: 12%;
-                    text-align: left;
+                    width: 13%;
+                    text-align: center;
                 }
                 &:nth-child(5){
                     width: 12%;
@@ -2836,7 +2848,7 @@ a:hover {
             }
             td{
                 &:nth-child(4){
-                    text-align: left;
+                    text-align: center;
                 } 
                &:nth-child(6){
                 text-align: center;
@@ -2844,6 +2856,36 @@ a:hover {
             }
         }
     }
+}
+
+#lob-master{
+    tr{
+        th{
+            &:nth-child(2){
+                width: 8%;
+            }
+            &:nth-child(3){
+                width: 12%;
+            }
+            &:nth-child(4){
+                width: 13%;
+            }
+        }
+    }
+}
+
+#business-table{
+    tr{
+        th{
+            &:nth-child(2){
+                width: 15%;
+            }
+        }
+    }
+}
+
+#product-txt{
+    display: inline;
 }
 
 #authorisation-screen-table{
@@ -3241,6 +3283,11 @@ a:hover {
 .invalid-feedback{
     position:static;
     box-shadow:none;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid{
+    background:none;
+    border-color:#8b8b8b;
 }
 
 // Date-Picker
