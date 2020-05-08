@@ -2716,10 +2716,49 @@ a:hover {
 
 #table-structure-part{
     margin-bottom: 120px;
+    i{
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    table{
+        tr{
+            th{
+                padding:12px 0;
+                font-size: 18px;
+                &:nth-child(1){
+                    width: 10% ;
+                }
+                &:nth-child(2){
+                    width: 20%;
+                }
+                &:nth-child(3){
+                    width: 20%;
+                }
+                &:nth-child(4){
+                    width: 50%;
+                }
+            }
+            td{
+                font-size: 16px;
+                padding:12px 0;
+                &:nth-child(4){
+                    text-align: right;
+                    color: #8695b1;
+                }
+
+            }
+        }
+    }
 }
 
 #aggregation-box{
     min-height: 165vh;
+}
+
+.table-structure-edit{
+    i{
+        margin-left: 15px;
+    }
 }
 
 
