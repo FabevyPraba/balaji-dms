@@ -1,19 +1,46 @@
 var siteMapData = {
+  "application-management": {
+    title: "Application Management",
+    iconPath: "/images/menu-icon-0.svg",
+    "sub-menu": [
+      {
+        name: "Code Master",
+        link: "/pages/client-configuration/code-master.html",
+        "sub-links": [],
+      },
+      {
+        name: "Tenant Master",
+        link: "/pages/client-configuration/tenant-master.html",
+        "sub-links": [],
+      },
+      {
+        name: "Menu master",
+        link: "/pages/client-configuration/menu-master.html",
+        "sub-links": [],
+      },
+      {
+        name: "Screen Master",
+        link: "/pages/client-configuration/screen-master.html",
+        "sub-links": [],
+      },
+      {
+        name: "Web Services Master",
+        link: "/pages/client-configuration/web-services.html",
+        "sub-links": [],
+      }
+    ]
+  },
   "configuration-management": {
     title: "Configuration Management",
+    iconPath: "/images/menu-icon-1.svg",
     "sub-menu": [
       {
         name: "Client Configuration",
         link: "/pages/client-configuration/index.html",
         "sub-links": [],
-      }, /*
+      },
       {
         name: "Terminology Mapping",
-        link: "/pages/client-configuration/",
-        "sub-links": [],
-      }, */
-      {
-        name: "Master Data",
         "sub-links": [
           {
             name: "Variable Master",
@@ -22,6 +49,26 @@ var siteMapData = {
           {
             name: "Allowed values",
             link: "/pages/client-configuration/variables-allowed-values.html",
+          },
+          {
+            name: "Message master",
+            link: "/pages/client-configuration/message-master.html",
+          },
+          {
+            name: "Help text",
+            link: "/pages/client-configuration/help-text-master.html",
+          },
+          {
+            name: "Authorisation for Menu",
+            link: "/pages/client-configuration/authorisation-menu.html",
+          },
+          {
+            name: "Authorisation for Screen",
+            link: "/pages/client-configuration/authorisation-screen.html",
+          },
+          {
+            name: "Business Date",
+            link: "/pages/client-configuration/business-date.html",
           },
           {
             name: "Product Master",
@@ -69,18 +116,22 @@ var siteMapData = {
   },
   "channel-management": {
     title: "Channel Management",
+    iconPath: "/images/menu-icon-2.svg",
     "sub-menu":[]
   },
   "movements": {
     title: "Movements",
+    iconPath: "/images/menu-icon-3.svg",
     "sub-menu":[]
   },
   "primary-compensation": {
     title: "Primary Compensation",
+    iconPath: "/images/menu-icon-4.svg",
     "sub-menu":[]
   },
   "secondary-compensation": {
     title: "Secondary Compensation",
+    iconPath: "/images/menu-icon-5.svg",
     "sub-menu":[{
         name: "Secondary Compensation Plan Configuration",
         link: "/pages/secondary-compensation/secondary-compensation-plan-list.html",
@@ -89,43 +140,93 @@ var siteMapData = {
   },
   "campaigns-contest": {
     title: "Campaigns / Contest",
+    iconPath: "/images/menu-icon-6.svg",
     "sub-menu":[]
   },
   "business-process-management": {
     title: "Business Process Management",
+    iconPath: "/images/menu-icon-7.svg",
     "sub-menu":[]
   },
   "document-management": {
     title: "Document Management",
+    iconPath: "/images/menu-icon-8.svg",
     "sub-menu":[]
   },
   "performance-management": {
     title: "Performance Management",
+    iconPath: "/images/menu-icon-9.svg",
     "sub-menu":[]
   },
   "file-upload": {
     title: "File Upload",
+    iconPath: "/images/menu-icon-10.svg",
     "sub-menu":[]
   },
   "file-download": {
     title: "File Download",
+    iconPath: "/images/menu-icon-11.svg",
     "sub-menu":[]
   },
   "batch-jobs": {
     title: "Batch Jobs",
+    iconPath: "/images/menu-icon-12.svg",
     "sub-menu":[]
   },
   "user-management": {
     title: "User Management",
+    iconPath: "/images/menu-icon-13.svg",
     "sub-menu":[]
   },
   "ai-based-analytics": {
     title: "AI based Analytics",
+    iconPath: "/images/menu-icon-14.svg",
     "sub-menu":[]
   }
 };
 
 $(document).ready(function () {
+
+  //Update Navigation
+  var colSzie = "col-4", menuWrapperClass = "menu-cont", linkClass = "menu-box",
+      $rowEle, $colEle, $wrapperEle, $imgEle, $txtEle, $linkEle;
+
+      $rowEle = $('<div class="row"></div>');
+      
+      //loop starts
+      for (const firstLevelKey in siteMapData) {
+        
+        console.log(firstLevelKey);
+        $colEle = $('<div></div>');
+        $colEle.addClass(colSzie);
+
+        $wrapperEle = $('<div></div>');
+        $wrapperEle.addClass(menuWrapperClass)
+
+        $linkEle = $('<a href="#"></a>');
+        $linkEle.attr('data-target', firstLevelKey);
+        $linkEle.addClass(linkClass);
+
+        $imgEle = $('<img alt="menu-icon">');
+        $imgEle.attr('src', siteMapData[firstLevelKey].iconPath);
+
+        $txtEle = $('<span></span>');
+        $txtEle.text(siteMapData[firstLevelKey].title);
+
+        $linkEle.append($imgEle);
+        $linkEle.append($txtEle);
+
+        $wrapperEle.append($linkEle);
+
+        $colEle.append($wrapperEle);
+
+        $rowEle.append($colEle);
+
+      }
+      //loop ends
+
+      $(".menu-list").html("");
+      $(".menu-list").append($rowEle);
 
   // Update Local Storage
   if (typeof(Storage) !== "undefined") {
