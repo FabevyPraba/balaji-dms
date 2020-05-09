@@ -399,13 +399,24 @@ $(document).ready(function () {
     $navList.html("");
 
     menuItems.forEach(function (menuItem, index) {
-      $list = $(
-        "<li><a href='" +
-          menuItem.link +
-          "' class='map-txt'>" +
-          menuItem.name +
-          "</a></li>"
-      );
+      
+      if(menuItem.link === undefined){
+        $list = $(
+          "<li><a class='data-txt'>" +
+            menuItem.name +
+            "</a></li>"
+        );
+      }else{
+        $list = $(
+          "<li><a href='" +
+            menuItem.link +
+            "' class='map-txt'>" +
+            menuItem.name +
+            "</a></li>"
+        );
+      }
+
+      
 
       if (menuItem["sub-links"].length) {
         $list.find("a").removeClass("map-txt").addClass("data-txt");
@@ -435,6 +446,7 @@ $(document).ready(function () {
       theme: "minimal-dark",
     });
   });
+
   $(".nav-title .icon-left-open").click(function (e) {
     e.preventDefault();
     $(".main-nav-list").hide();
