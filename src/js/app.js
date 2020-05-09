@@ -80,7 +80,7 @@ var siteMapData = {
           },
           {
             name: "Default list of questions for a Channel / Agency type",
-            link: "/pages/client-configuration/list-of-channels.html",
+            link: "/pages/client-configuration/list-of-channels-agency-type.html",
           },
           {
             name: "Default list of questions for a Channel / Agent type",
@@ -565,3 +565,24 @@ window.addEventListener('load', function() {
 $(".reset-btn").click(function(){
     $(".needs-validation").trigger("reset");
 });
+
+
+
+// Date-picker
+
+$(function() {
+      var $startDate = $('.start-date');
+      var $endDate = $('.end-date');
+
+      $startDate.datepicker({
+        autoHide: true,
+      });
+      $endDate.datepicker({
+        autoHide: true,
+        startDate: $startDate.datepicker('getDate'),
+      });
+
+      $startDate.on('change', function () {
+        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+      });
+    });

@@ -359,10 +359,10 @@
                                             </div>
                                         </td>
                                         <td>TERM</td>
-                                        <td>01/01/2018</td>
-                                        <td>14/01/2018</td>
-                                        <td>01/01/2018</td>
-                                        <td>V1</td>
+                                        <td>15/02/2018</td>
+                                        <td>-</td>
+                                        <td>15/02/2018</td>
+                                        <td>V2</td>
                                         <td>Term assurance</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
@@ -418,7 +418,8 @@
                                <div class="col-8">
                                   <div class="modal-title">
                                      <h3>Product Master Maintenence </h3>
-                                     <span>* Fields are mandatory</span>
+                                     <span id="product-txt">* Fields are
+                                     mandatory</span>
                                   </div>
                                </div>
                                <div class="col-4">
@@ -460,13 +461,13 @@
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Start Date</label>
-                                        <input type="" name=""  class="form-control" placeholder="Enter Start Date" required="">
+                                        <input type="text" placeholder="Enter Start date" aria-label="First name" class="form-control start-date " required="" >
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
-                                        <label for="" class="required-mark">End Date</label>
-                                        <input type="" name="" placeholder="Enter End Date"  class="form-control" required="">
+                                        <label for="" >End Date</label>
+                                        <input type="text" placeholder="Enter End date" aria-label="First name" class="form-control start-date " required="" >
                                      </div>
                                   </div>
                                   <div class="col-6">
@@ -550,24 +551,32 @@
                                         </div>
                                      </div>
                                   </div>
-                                  <div class="col-6">
-                                     <div class="form-group">
-                                        <label for="" class="required-mark">Product Type</label>
-                                        <div class="drop-down-box custom-select-box">
-                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Risk <i class="icon-right-open"></i></a>
-                                            <ul class="dropdown-menu">
-                                              <li class="dropdown-item">Risk</li>
-                                              <li class="dropdown-item">Savings</li>              
-                                              <li class="dropdown-item">Risk + Savings (Both)</li>                      
-                                            </ul>
-                                        </div>
+                                  <div class="col-12">
+                                     <div class="row">
+                                         <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="" class="required-mark">Product Type</label>
+                                                <div class="drop-down-box custom-select-box">
+                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Risk <i class="icon-right-open"></i></a>
+                                                    <ul class="dropdown-menu">
+                                                      <li class="dropdown-item">Risk</li>
+                                                      <li class="dropdown-item">Savings</li>              
+                                                      <li class="dropdown-item">Risk + Savings (Both)</li>                      
+                                                    </ul>
+                                                </div>
+                                             </div>
+                                         </div>
                                      </div>
                                   </div>
-                                  <div class="col-6">
-                                     <div class="form-group">
-                                        <label for="" class="required-mark">Product Description</label>
-                                        <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
-                                     </div>
+                                  <div class="col-12">
+                                    <div class="row">
+                                         <div class="col-6">
+                                             <div class="form-group">
+                                                <label for="" class="required-mark">Product Description</label>
+                                                <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
+                                             </div>
+                                          </div>
+                                       </div>      
                                   </div>
                                </div>
                                <div class="modal-footer">
@@ -612,6 +621,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../../js/datepicker.js"></script>
     <script src="../../js/app.js"></script>
+    <script>
+    $(function() {
+      var $startDate = $('.start-date');
+      var $endDate = $('.end-date');
+
+      $startDate.datepicker({
+        autoHide: true,
+      });
+      $endDate.datepicker({
+        autoHide: true,
+        startDate: $startDate.datepicker('getDate'),
+      });
+
+      $startDate.on('change', function () {
+        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+      });
+    });
+  </script>
 </body>
 </html>
