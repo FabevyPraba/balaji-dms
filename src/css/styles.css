@@ -11428,12 +11428,12 @@ div#variable-model {
   width: 95%; }
 
 #aggregation-modal {
-  min-height: 100vh;
+  min-height: 110vh;
   width: 55%; }
   #aggregation-modal form {
-    min-height: 100vh; }
+    min-height: 110vh; }
   #aggregation-modal .modal-footer {
-    bottom: -100px; }
+    bottom: -250px; }
 
 #production-modal {
   min-height: 110vh;
