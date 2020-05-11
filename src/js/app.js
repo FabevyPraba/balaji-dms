@@ -344,7 +344,8 @@ $(document).ready(function () {
   
   $("body").on("click", ".dropdown-menu li", function(e) {
   
-    var selText = $(this).text();
+    var selText = $(this).text(),
+        selValue = $(this).data('value');
     $(this)
       .parents(".drop-down-box")
       .find(".dropdown-toggle")
@@ -352,6 +353,7 @@ $(document).ready(function () {
 
     $(this).siblings('.selected').removeClass('selected');
     $(this).addClass('selected');
+    $(this).closest('.custom-select-box').find('input[type="hidden"]').val(selValue);
   });
 
   $(window).on('shown.bs.modal', function() { 
@@ -570,19 +572,19 @@ $(".reset-btn").click(function(){
 
 // Date-picker
 
-$(function() {
-      var $startDate = $('.start-date');
-      var $endDate = $('.end-date');
+// $(function() {
+//       var $startDate = $('.start-date');
+//       var $endDate = $('.end-date');
 
-      $startDate.datepicker({
-        autoHide: true,
-      });
-      $endDate.datepicker({
-        autoHide: true,
-        startDate: $startDate.datepicker('getDate'),
-      });
+//       $startDate.datepicker({
+//         autoHide: true,
+//       });
+//       $endDate.datepicker({
+//         autoHide: true,
+//         startDate: $startDate.datepicker('getDate'),
+//       });
 
-      $startDate.on('change', function () {
-        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-      });
-    });
+//       $startDate.on('change', function () {
+//         $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+//       });
+//     });

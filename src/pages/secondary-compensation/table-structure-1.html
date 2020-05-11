@@ -208,11 +208,11 @@
                                                  <div class="drop-down-box custom-select-box d-inline-block">
                                                     <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="icon-right-open"></i></span>
                                                     <ul class="dropdown-menu custom-select-options">
-                                                      <li class="dropdown-item custom-option">DB-001</li>
-                                                      <li class="dropdown-item custom-option">DB-002</li>
-                                                      <li class="dropdown-item custom-option">DB-003</li>
-                                                      <li class="dropdown-item custom-option">DB-004</li>
-                                                      <li class="dropdown-item custom-option">DB-005</li>
+                                                      <li class="dropdown-item custom-option" data-value="DB-001">DB-001</li>
+                                                      <li class="dropdown-item custom-option" data-value="DB-002">DB-002</li>
+                                                      <li class="dropdown-item custom-option" data-value="DB-003">DB-003</li>
+                                                      <li class="dropdown-item custom-option" data-value="DB-004">DB-004</li>
+                                                      <li class="dropdown-item custom-option" data-value="DB-005">DB-005</li>
                                                     </ul>
                                                 </div>
                                               </li>
@@ -221,9 +221,9 @@
                                                  <div class="drop-down-box custom-select-box d-inline-block">
                                                     <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">English  <i class="icon-right-open"></i></span>
                                                     <ul class="dropdown-menu custom-select-options">
-                                                        <li class="dropdown-item custom-option">English</li>
-                                                        <li class="dropdown-item custom-option">Chinese</li>
-                                                        <li class="dropdown-item custom-option">Bahasa</li>
+                                                        <li class="dropdown-item custom-option" data-value="ENG">English</li>
+                                                        <li class="dropdown-item custom-option" data-value="CHI">Chinese</li>
+                                                        <li class="dropdown-item custom-option" data-value="BAHA">Bahasa</li>
                                                     </ul>
                                                 </div>
                                               </li>
@@ -450,16 +450,49 @@
                                                     <th></th>
                                                 </tr>
                                                 <tr>
-                                                    <td>T-PREM-TYPE</td>
+                                                    <td>
+                                                        <div class="data-view">T-PREM-TYPE</div>
+                                                        <div class="data-edit d-none">
+                                                            <div class="drop-down-box custom-select-box d-inline-block">
+                                                                <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="icon-right-open"></i></span>
+                                                                <ul class="dropdown-menu custom-select-options">
+                                                                  <li class="dropdown-item custom-option" data-value="DB-001">DB-001</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-002">DB-002</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-003">DB-003</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-004">DB-004</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-005">DB-005</li>
+                                                                </ul>
+                                                                <input type="hidden" name="">
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                     <td>Premium type</td>
-                                                    <td>Discrete</td>
+                                                    <td>
+                                                        <div class="data-view">Discrete</div>
+                                                        <div class="data-edit d-none">
+                                                            <div class="drop-down-box custom-select-box d-inline-block">
+                                                                <span class="dropdown-toggle custom-select-toggle rt-text" data-toggle="dropdown" href="#">DB-001  <i class="icon-right-open"></i></span>
+                                                                <ul class="dropdown-menu custom-select-options">
+                                                                  <li class="dropdown-item custom-option" data-value="DB-001">DB-001</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-002">DB-002</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-003">DB-003</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-004">DB-004</li>
+                                                                  <li class="dropdown-item custom-option" data-value="DB-005">DB-005</li>
+                                                                </ul>
+                                                                <input type="hidden" name="">
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                     <td>
                                                         <div class=" table-structure-edit">
-                                                            <i class="icon-pencil-edit edit-table"></i>
+                                                            <a href="#" class="table-inline-accept d-none"><i class="icon-tick"></i></a>
+                                                            <a href="#" class="table-inline-drop d-none"><i class="icon-button_ico_close"></i></a>
+                                                            <a href="#" class="table-inline-edit"><i class="icon-pencil-edit"></i></a>
+                                                            <a href="#" class="table-inline-delete"><i class="icon-bin"></i></a>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <!--<tr>
                                                     <td>T-POL-YEAR</td>
                                                     <td>Policy year</td>
                                                     <td>Range</td>
@@ -488,7 +521,7 @@
                                                             <i class="icon-pencil-edit edit-table"></i>
                                                         </div>
                                                     </td>
-                                                </tr>
+                                                </tr>-->
                                             </table>
                                         </div>
                                     </div>
@@ -606,6 +639,85 @@
                 if($row.parent().children('.new-row').length >= 2){
                     $this.closest('.new-row').remove();
                 }
+            });
+            $("body").on("click", ".edit-table" , function(e){
+                e.preventDefault();
+                var $this = $(this);
+            });
+            $('.table-inline-edit').click(function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $tr = $this.closest('tr'),
+                    $accept = $tr.find('.table-inline-accept'),
+                    $drop = $tr.find('.table-inline-drop'),
+                    $dataEditElements = $tr.find('.data-edit'),
+                    $dataViewElements = $tr.find('.data-view');
+
+                //Toggle View
+                $drop.removeClass('d-none');
+                $accept.removeClass('d-none');
+                $this.addClass('d-none');
+                $dataEditElements.removeClass('d-none');
+                $dataViewElements.addClass('d-none');
+
+            });
+            $('.table-inline-accept').click(function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $tr = $this.closest('tr'),
+                    $edit = $tr.find('.table-inline-edit'),
+                    $drop = $tr.find('.table-inline-drop'),
+                    $dataEditElements = $tr.find('.data-edit'),
+                    $dataViewElements = $tr.find('.data-view');
+                    
+                    console.log($dataEditElements.length);
+
+                //Update Text
+                $dataEditElements.each(function(){
+                    var $inputElement = $(this),
+                        value = $inputElement.find('input[type="hidden"]').val(),
+                        $viewElement = $inputElement.closest('td').find('.data-view');
+                    
+                    console.log($dataEditElements.length);
+
+                    $viewElement.text(value);
+                    $viewElement.data('value', value);
+                });
+
+                //Toggle View
+                $edit.removeClass('d-none');
+                $drop.addClass('d-none');
+                $this.addClass('d-none');
+                $dataEditElements.addClass('d-none');
+                $dataViewElements.removeClass('d-none');
+
+            });
+            $('.table-inline-drop').click(function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $tr = $this.closest('tr'),
+                    $edit = $tr.find('.table-inline-edit'),
+                    $accept = $tr.find('.table-inline-accept'),
+                    $dataEditElements = $tr.find('.data-edit'),
+                    $dataViewElements = $tr.find('.data-view');
+
+                //Reset Select Text
+                $dataViewElements.each(function(){
+                    var $viewElement = $(this),
+                        value = $viewElement.data('value'),
+                        $inputElement = $viewElement.closest('td').find('.data-edit');
+                    
+                    console.log($inputElement);
+                    
+                    $inputElement.find('li[data-value="'+value+'"]').trigger('click');
+                });
+
+                //Toggle View
+                $edit.removeClass('d-none');
+                $accept.addClass('d-none');
+                $this.addClass('d-none');
+                $dataEditElements.addClass('d-none');
+                $dataViewElements.removeClass('d-none');
             });
         });
     </script>
