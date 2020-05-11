@@ -1127,10 +1127,8 @@ a:hover {
     }
 }
 
-.breadcrumb-inner{
-    .breadcrumb{
-        padding-left:0 !important;
-    }
+div#variable-model{
+    width: 25%;
 }
 
 .close-btn {
@@ -1778,9 +1776,6 @@ a:hover {
                             }
                         }
                     }
-                    .aggregation-table {
-                        height: 160vh;
-                    }
                     #tab-item-1,
                     #tab-item-2,
                     #tab-item-3,
@@ -1936,6 +1931,11 @@ a:hover {
     .cancel-btn {
         padding: 5px 20px;
     }
+}
+
+.dropdown-scroll{
+    height: 200px;
+    overflow-y: scroll;
 }
 
 .msg-box {
@@ -2703,6 +2703,13 @@ a:hover {
     }
 }
 
+#edit-sr-part{
+    padding-top:30px;
+    i{
+        margin-left: 10px;
+    }
+}
+
 #maintain-box{
     /* min-height: 180vh; */
     form{
@@ -2814,7 +2821,7 @@ a:hover {
     display: none;
 }
 
-.custom-control{
+.custom-control.custom-checkbox.invisible{
     display: none;
 }
 
@@ -3093,19 +3100,21 @@ a:hover {
 }
 
 #aggregation-modal{
-    min-height: 130vh;
+    min-height: 100vh;
+    width: 55%;
     form{
-        min-height: 150vh;
+        min-height: 100vh;
     }
     .modal-footer{
-        bottom:-500px;
+        bottom:-100px;
     }
 }
 
 #production-modal{
-    min-height: 170vh;
+    min-height: 110vh;
+    width: 50%;
     .modal-footer{
-        bottom:-450px;
+        bottom:-60px;
     }
 }
 
@@ -3134,9 +3143,6 @@ a:hover {
     margin-top: 30px;
 }
 
-#eligibility-rules-edit{
-    padding-top:30px;
-}
 
 #new-row-1 span{
     padding-top:30px;

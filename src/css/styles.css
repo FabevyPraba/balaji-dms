@@ -10042,8 +10042,8 @@ a:hover {
           float: none;
           width: 100%; }
 
-.breadcrumb-inner .breadcrumb {
-  padding-left: 0 !important; }
+div#variable-model {
+  width: 25%; }
 
 .close-btn {
   background: transparent;
@@ -10524,8 +10524,6 @@ a:hover {
         padding: 0; }
         .aggregation-services-model .modal .modal-dialog .modal-body .aggregation-tab #myTab .nav-item .nav-link {
           font-size: 13px; }
-    .aggregation-services-model .modal .modal-dialog .modal-body .aggregation-tab .aggregation-table {
-      height: 160vh; }
     .aggregation-services-model .modal .modal-dialog .modal-body .aggregation-tab #tab-item-1,
     .aggregation-services-model .modal .modal-dialog .modal-body .aggregation-tab #tab-item-2,
     .aggregation-services-model .modal .modal-dialog .modal-body .aggregation-tab #tab-item-3,
@@ -10643,6 +10641,10 @@ a:hover {
     border: 1px solid #8b8b8b; }
   .compensation-flow-list .cancel-btn {
     padding: 5px 20px; }
+
+.dropdown-scroll {
+  height: 200px;
+  overflow-y: scroll; }
 
 .msg-box {
   border: 1px solid #8b8b8b;
@@ -11149,6 +11151,11 @@ a:hover {
 #allowed-value .bg-color input {
   background: #f2f2f2; }
 
+#edit-sr-part {
+  padding-top: 30px; }
+  #edit-sr-part i {
+    margin-left: 10px; }
+
 #maintain-box {
   /* min-height: 180vh; */ }
   #maintain-box form {
@@ -11230,7 +11237,7 @@ a:hover {
 .show-checkbox .custom-control {
   display: none; }
 
-.custom-control {
+.custom-control.custom-checkbox.invisible {
   display: none; }
 
 #product-btn-part {
@@ -11421,16 +11428,18 @@ a:hover {
   width: 95%; }
 
 #aggregation-modal {
-  min-height: 130vh; }
+  min-height: 100vh;
+  width: 55%; }
   #aggregation-modal form {
-    min-height: 150vh; }
+    min-height: 100vh; }
   #aggregation-modal .modal-footer {
-    bottom: -500px; }
+    bottom: -100px; }
 
 #production-modal {
-  min-height: 170vh; }
+  min-height: 110vh;
+  width: 50%; }
   #production-modal .modal-footer {
-    bottom: -450px; }
+    bottom: -60px; }
 
 .aggregation-table span {
   padding-top: 30px;
@@ -11441,9 +11450,6 @@ a:hover {
 
 #table-sub-btn {
   margin-top: 30px; }
-
-#eligibility-rules-edit {
-  padding-top: 30px; }
 
 #new-row-1 span {
   padding-top: 30px; }

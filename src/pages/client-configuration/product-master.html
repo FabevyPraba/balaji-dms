@@ -435,16 +435,18 @@
                             <form class="needs-validation" novalidate>
                                
                                <div class="row">
-                                  <div class="col-12">
-                                      <div class="row">
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Product Code</label>
-                                                <input type="" name=""  class="form-control" required="" placeholder="Enter Product Code">
-                                             </div>
-                                          </div>
-                                      </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Product Code</label>
+                                        <input type="" name=""  class="form-control" required="" placeholder="Enter Product Code">
+                                     </div>
                                   </div>
+                                  <div class="col-6">
+                                         <div class="form-group">
+                                            <label for="" class="required-mark">Product Description</label>
+                                            <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
+                                         </div>
+                                      </div>
 
                                   <div class="col-6">
                                         <div class="form-group">
@@ -509,20 +511,19 @@
                                      </div>
                                   </div>
                                   <div class="col-6">
-                                     <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Pay Commission   </label>
-                                        <div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline3">Yes</label>
-                                           </div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline4">No</label>
-                                           </div>
-                                        </div>
+                                         <div class="form-group">
+                                            <label for="" class="required-mark">Product Type</label>
+                                            <div class="drop-down-box custom-select-box">
+                                                <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Risk <i class="icon-right-open"></i></a>
+                                                <ul class="dropdown-menu">
+                                                  <li class="dropdown-item">Risk</li>
+                                                  <li class="dropdown-item">Savings</li>              
+                                                  <li class="dropdown-item">Risk + Savings (Both)</li>                      
+                                                </ul>
+                                            </div>
+                                         </div>
                                      </div>
-                                  </div>
+                                  
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Product Category</label>
@@ -551,32 +552,20 @@
                                         </div>
                                      </div>
                                   </div>
-                                  <div class="col-12">
-                                     <div class="row">
-                                         <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Product Type</label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Risk <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Risk</li>
-                                                      <li class="dropdown-item">Savings</li>              
-                                                      <li class="dropdown-item">Risk + Savings (Both)</li>                      
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                         </div>
+                                  <div class="col-6">
+                                     <div class="form-group">
+                                        <label for="" class="radio-text required-mark">Pay Commission   </label>
+                                        <div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline3">Yes</label>
+                                           </div>
+                                           <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
+                                              <label class="custom-control-label" for="customRadioInline4">No</label>
+                                           </div>
+                                        </div>
                                      </div>
-                                  </div>
-                                  <div class="col-12">
-                                    <div class="row">
-                                         <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Product Description</label>
-                                                <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
-                                             </div>
-                                          </div>
-                                       </div>      
                                   </div>
                                </div>
                                <div class="modal-footer">
