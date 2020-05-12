@@ -11576,6 +11576,13 @@ div#variable-model {
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom {
   width: 267px; }
 
+.date-part {
+  position: relative; }
+  .date-part i {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
 /* Layout End */
 /* ------  Style-Guide -------  */
 .sg-header {
