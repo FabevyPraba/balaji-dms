@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <section class="page-wrapper">
+    <section class="page-wrapper content light" id="content-md" >
         <div class="header-sec">
             <div class="container-fluid m-0">
                 <div class="row m-">
@@ -348,14 +348,17 @@
                                         <div class="col-4">
                                              <div class="form-group">
                                                 <label for="" class="required-mark">Start Date</label>
-                                                <input type="text" placeholder="Enter Start Date" class="form-control" id="id-1" required>
+                                                <div class="date-part">
+                                                    <input type="text" placeholder="Enter Start Date" class="form-control  start-date" id="id-1" required >
+                                                    <!-- <i class="icon-clock" id="date-icon"></i> -->
+                                                </div>
                                                 <div class="invalid-feedback">Enter Start Date</div>
                                             </div>
                                         </div>
                                         <div class="col-4">
                                              <div class="form-group">
                                                 <label for="">End Date </label>
-                                                <input type="text" placeholder="Enter End Date" class="form-control" id="id-1" required>
+                                                <input type="text" placeholder="Enter End Date" class="form-control end-date" id="id-1" required>
                                                 <!-- <div class="invalid-feedback">Enter End Date</div> -->
                                             </div>
                                         </div>
@@ -418,7 +421,7 @@
                                             <div class="form-group">
                                                 <label for="">Event </label>  
                                                 <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select Eventl <i class="icon-right-open"></i></a>
+                                                    <a class="dropdown-toggle custom-select-toggle dropdown-scroll" data-toggle="dropdown" href="#">Select Eventl <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu dropdown-scroll">
                                                       <li class="dropdown-item">Select Eventl</li>
                                                       <li class="dropdown-item">First year Premium</li>              
@@ -586,24 +589,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/datepicker.js"></script>
+    <script src="../../js/datepicker.js"></script>
     <script src="../../js/app.js"></script>
-    <script>
-    $(function() {
-      var $startDate = $('.start-date');
-      var $endDate = $('.end-date');
-
-      $startDate.datepicker({
-        autoHide: true,
-      });
-      $endDate.datepicker({
-        autoHide: true,
-        startDate: $startDate.datepicker('getDate'),
-      });
-
-      $startDate.on('change', function () {
-        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-      });
-    });
-  </script>
 </body>
 </html>

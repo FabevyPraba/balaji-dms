@@ -5,27 +5,27 @@ var siteMapData = {
     "sub-menu": [
       {
         name: "Code Master",
-        link: "/pages/client-configuration/code-master.html",
+        link: "/pages/application-management/code-master.html",
         "sub-links": [],
       },
       {
         name: "Tenant Master",
-        link: "/pages/client-configuration/tenant-master.html",
+        link: "/pages/application-management/tenant-master.html",
         "sub-links": [],
       },
       {
         name: "Menu master",
-        link: "/pages/client-configuration/menu-master.html",
+        link: "/pages/application-management/menu-master.html",
         "sub-links": [],
       },
       {
         name: "Screen Master",
-        link: "/pages/client-configuration/screen-master.html",
+        link: "/pages/application-management/screen-master.html",
         "sub-links": [],
       },
       {
         name: "Web Services Master",
-        link: "/pages/client-configuration/web-services.html",
+        link: "/pages/application-management/web-services.html",
         "sub-links": [],
       }
     ]
@@ -88,7 +88,7 @@ var siteMapData = {
           },
           {
             name: "Default list of exams for a License type",
-            link: "/pages/client-configuration/maintain-default-list-of-exams.html",
+            link: "/pages/client-configuration/list-of-license-types.html",
           },
           {
             name: "Default list of exams for a Designation",
@@ -96,7 +96,7 @@ var siteMapData = {
           },
           {
             name: "Default list of trainings for a License type",
-            link: "/pages/client-configuration/list-of-license-types.html",
+            link: "/pages/client-configuration/maintain-default-list-training-of-license-types.html",
           },
           {
             name: "Default list of trainings for a Designation",
@@ -572,19 +572,19 @@ $(".reset-btn").click(function(){
 
 // Date-picker
 
-// $(function() {
-//       var $startDate = $('.start-date');
-//       var $endDate = $('.end-date');
+$(function() {
+      var $startDate = $('.start-date');
+      var $endDate = $('.end-date');
 
-//       $startDate.datepicker({
-//         autoHide: true,
-//       });
-//       $endDate.datepicker({
-//         autoHide: true,
-//         startDate: $startDate.datepicker('getDate'),
-//       });
+      $startDate.datepicker({
+        autoHide: true,
+      });
+      $endDate.datepicker({
+        autoHide: true,
+        startDate: $startDate.datepicker('getDate'),
+      });
 
-//       $startDate.on('change', function () {
-//         $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-//       });
-//     });
+      $startDate.on('change', function () {
+        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+      });
+    });
