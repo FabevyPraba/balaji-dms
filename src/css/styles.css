@@ -11500,11 +11500,6 @@ div#variable-model {
     .business-part #business-reset i {
       font-size: 13px; }
 
-#variable-box {
-  min-height: 130vh; }
-  #variable-box .modal-footer {
-    bottom: auto; }
-
 #allowed-value #allowed-add-btn {
   padding-top: 70px;
   text-align: center; }

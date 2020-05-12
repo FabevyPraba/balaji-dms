@@ -40,7 +40,7 @@ var siteMapData = {
         "sub-links": [],
       },
       {
-        name: "Terminology Mapping",
+        name: "Master Data",
         "sub-links": [
           {
             name: "Variable Master",
