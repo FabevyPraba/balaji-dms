@@ -11157,12 +11157,33 @@ div#variable-model {
     margin-left: 10px; }
 
 #maintain-box {
-  /* min-height: 180vh; */ }
-  #maintain-box form {
-    /* min-height: 160vh; */ }
+  min-height: 110vh; }
+  #maintain-box #maintain-footer {
+    bottom: -100px; }
+
+#agent-table tr th:nth-child(2) {
+  width: 10%; }
+
+#agent-table tr th:nth-child(3) {
+  width: 30%; }
+
+#agent-table tr th:nth-child(4) {
+  width: 10%; }
+
+#agent-table tr th:nth-child(5) {
+  width: 15%; }
 
 #production-service-pagination {
   bottom: 12%; }
+
+.drop-down-box:after {
+  display: none; }
+
+.dropdown-toggle i {
+  right: 10px;
+  position: absolute; }
+  .dropdown-toggle i:before {
+    transform: rotate(90deg); }
 
 #table-structure-part {
   margin-bottom: 120px; }
@@ -11282,10 +11303,10 @@ div#variable-model {
   width: 8%; }
 
 #lob-master tr th:nth-child(3) {
-  width: 12%; }
+  width: 13%; }
 
 #lob-master tr th:nth-child(4) {
-  width: 13%; }
+  width: 15%; }
 
 #business-table tr th:nth-child(2) {
   width: 15%; }
@@ -11487,6 +11508,9 @@ div#variable-model {
 #allowed-value #allowed-add-btn {
   padding-top: 70px;
   text-align: center; }
+  #allowed-value #allowed-add-btn i {
+    margin-left: 10px;
+    font-size: 18px; }
 
 #tenant-model .modal-dialog {
   width: 50% !important; }

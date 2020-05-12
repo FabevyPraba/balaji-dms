@@ -88,7 +88,7 @@ var siteMapData = {
           },
           {
             name: "Default list of exams for a License type",
-            link: "/pages/client-configuration/maintain-default-list-of-exams.html",
+            link: "/pages/client-configuration/list-of-license-types.html",
           },
           {
             name: "Default list of exams for a Designation",
@@ -96,7 +96,7 @@ var siteMapData = {
           },
           {
             name: "Default list of trainings for a License type",
-            link: "/pages/client-configuration/list-of-license-types.html",
+            link: "/pages/client-configuration/maintain-default-list-training-of-license-types.html",
           },
           {
             name: "Default list of trainings for a Designation",
