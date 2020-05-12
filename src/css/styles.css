@@ -11564,6 +11564,9 @@ div#variable-model {
   background: none;
   border-color: #8b8b8b; }
 
+#web-sr-ftr {
+  bottom: 0px; }
+
 .bootstrap-datetimepicker-widget.bottom:before {
   display: none; }
 

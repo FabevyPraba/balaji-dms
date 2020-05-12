@@ -5,27 +5,27 @@ var siteMapData = {
     "sub-menu": [
       {
         name: "Code Master",
-        link: "/pages/client-configuration/code-master.html",
+        link: "/pages/application-management/code-master.html",
         "sub-links": [],
       },
       {
         name: "Tenant Master",
-        link: "/pages/client-configuration/tenant-master.html",
+        link: "/pages/application-management/tenant-master.html",
         "sub-links": [],
       },
       {
         name: "Menu master",
-        link: "/pages/client-configuration/menu-master.html",
+        link: "/pages/application-management/menu-master.html",
         "sub-links": [],
       },
       {
         name: "Screen Master",
-        link: "/pages/client-configuration/screen-master.html",
+        link: "/pages/application-management/screen-master.html",
         "sub-links": [],
       },
       {
         name: "Web Services Master",
-        link: "/pages/client-configuration/web-services.html",
+        link: "/pages/application-management/web-services.html",
         "sub-links": [],
       }
     ]
