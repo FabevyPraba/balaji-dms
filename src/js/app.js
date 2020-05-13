@@ -40,6 +40,11 @@ var siteMapData = {
         "sub-links": [],
       },
       {
+        name: "Terminology Mapping",
+        link: "/pages/client-configuration/terminology-mapping.html",
+        "sub-links": [],
+      },
+      {
         name: "Master Data",
         "sub-links": [
           {
@@ -309,13 +314,14 @@ $(document).ready(function () {
     $(".main-nav-list").show();
     $(".main-menu").hide();
 
-    $(".nav-list").mCustomScrollbar({
-      setHeight:
-        $(window).outerHeight() - 80 -
-        $(".nav-title").outerHeight() -
-        $(".header-sec").outerHeight(),
-      theme: "minimal-dark",
-    });
+    $(".nav-list").css('height', )
+    // $(".nav-list").mCustomScrollbar({
+    //   setHeight:
+    //     $(window).outerHeight() - 80 -
+    //     $(".nav-title").outerHeight() -
+    //     $(".header-sec").outerHeight(),
+    //   theme: "minimal-dark",
+    // });
 
   });
 
@@ -440,13 +446,13 @@ $(document).ready(function () {
     $(".main-nav-list").show();
     $(".main-menu").hide();
 
-    $(".nav-list").mCustomScrollbar({
-      setHeight:
-        $(window).outerHeight() -
-        $(".nav-title").outerHeight() -
-        $(".header-sec").outerHeight(),
-      theme: "minimal-dark",
-    });
+    // $(".nav-list").mCustomScrollbar({
+    //   setHeight:
+    //     $(window).outerHeight() -
+    //     $(".nav-title").outerHeight() -
+    //     $(".header-sec").outerHeight(),
+    //   theme: "minimal-dark",
+    // });
   });
 
   $(".nav-title .icon-left-open").click(function (e) {
