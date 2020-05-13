@@ -462,12 +462,13 @@ $(document).ready(function () {
     return false;
   });
 
-  $('.custom-control-input').click(function(){
-    var $this = $(this);
-    if($this.prop("checked") == true){
-        $this.closest('table').addClass('show-checkbox');
-    }
-});
+  // Enable All Checkbox on click
+  // $('.custom-control-input').click(function(){
+  //   var $this = $(this);
+  //   if($this.prop("checked") == true){
+  //       $this.closest('table').addClass('show-checkbox');
+  //   }
+  // });
 
   //Search in Main Navigation
   var typingTimer; //timer identifier
@@ -578,19 +579,19 @@ $(".reset-btn").click(function(){
 
 // Date-picker
 
-$(function() {
-      var $startDate = $('.start-date');
-      var $endDate = $('.end-date');
+// $(function() {
+//       var $startDate = $('.start-date');
+//       var $endDate = $('.end-date');
 
-      $startDate.datepicker({
-        autoHide: true,
-      });
-      $endDate.datepicker({
-        autoHide: true,
-        startDate: $startDate.datepicker('getDate'),
-      });
+//       $startDate.datepicker({
+//         autoHide: true,
+//       });
+//       $endDate.datepicker({
+//         autoHide: true,
+//         startDate: $startDate.datepicker('getDate'),
+//       });
 
-      $startDate.on('change', function () {
-        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-      });
-    });
+//       $startDate.on('change', function () {
+//         $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+//       });
+// });

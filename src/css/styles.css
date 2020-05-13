@@ -11156,11 +11156,6 @@ div#variable-model {
   #edit-sr-part i {
     margin-left: 10px; }
 
-#maintain-box {
-  min-height: 110vh; }
-  #maintain-box #maintain-footer {
-    bottom: -100px; }
-
 #agent-table tr th:nth-child(2) {
   width: 10%; }
 
@@ -11529,11 +11524,6 @@ div#variable-model {
 #help-master tr td:nth-child(4) {
   text-align: left; }
 
-#list-exam-model {
-  min-height: 120vh; }
-  #list-exam-model .modal-footer {
-    bottom: -120px; }
-
 #sec-pagination {
   border: none; }
 
@@ -11743,6 +11733,9 @@ span.fa.fa-clock-o {
   text-align: center; }
 
 /* Layout End */
+.nav-list {
+  min-height: 600px; }
+
 /* ------  Style-Guide -------  */
 .sg-header {
   margin: 0; }
