@@ -578,19 +578,19 @@ $(".reset-btn").click(function(){
 
 // Date-picker
 
-$(function() {
-      var $startDate = $('.start-date');
-      var $endDate = $('.end-date');
+// $(function() {
+//       var $startDate = $('.start-date');
+//       var $endDate = $('.end-date');
 
-      $startDate.datepicker({
-        autoHide: true,
-      });
-      $endDate.datepicker({
-        autoHide: true,
-        startDate: $startDate.datepicker('getDate'),
-      });
+//       $startDate.datepicker({
+//         autoHide: true,
+//       });
+//       $endDate.datepicker({
+//         autoHide: true,
+//         startDate: $startDate.datepicker('getDate'),
+//       });
 
-      $startDate.on('change', function () {
-        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-      });
-    });
+//       $startDate.on('change', function () {
+//         $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
+//       });
+// });

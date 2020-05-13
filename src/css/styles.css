@@ -11660,6 +11660,9 @@ div#variable-model {
     top: 0; }
 
 /* Layout End */
+.nav-list {
+  min-height: 600px; }
+
 /* ------  Style-Guide -------  */
 .sg-header {
   margin: 0; }
