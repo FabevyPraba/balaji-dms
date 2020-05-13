@@ -11156,6 +11156,11 @@ div#variable-model {
   #edit-sr-part i {
     margin-left: 10px; }
 
+#maintain-box {
+  min-height: 110vh; }
+  #maintain-box #maintain-footer {
+    bottom: -100px; }
+
 #agent-table tr th:nth-child(2) {
   width: 10%; }
 
@@ -11179,6 +11184,9 @@ div#variable-model {
   position: absolute; }
   .dropdown-toggle i:before {
     transform: rotate(90deg); }
+
+#down-arrow:before {
+  transform: rotate(-90deg); }
 
 #table-structure-part {
   margin-bottom: 120px; }
