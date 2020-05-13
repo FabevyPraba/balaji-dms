@@ -3351,6 +3351,83 @@ div#variable-model{
     bottom:0px;
 }
 
+.edit-map{
+    padding-right:20px;
+    padding-top:0;
+    a{
+        margin-top:0 !important;
+        margin-left: 30px;
+        color: #394e74;
+        font-size: 18px;
+    }
+    li{
+        float: left;
+    }
+}
+
+#map-pagination{
+    left: 0;
+    justify-content: flex-start;
+    padding-left:30px;
+}
+
+#down-list{
+    color: #394e74;
+}
+
+#down-list i{
+    &:before{
+            transform: rotate(90deg);
+    }
+}
+
+#map-ftr p{
+    display: inline-block;
+    color: #a1acbf;
+    margin-right: 20px;
+}
+
+#map-table{
+    tr{
+        th{
+            &:nth-child(1){
+                width: 2%;
+            }
+            &:nth-child(2){
+                width:25%;
+            }
+            &:nth-child(3){
+                width: 20%;    
+            }
+            &:nth-child(4){
+                width: 10%;
+                text-align: center;
+            }
+            &:nth-child(5){
+                width: 20%;
+                text-align: center;
+            }
+
+        }
+        td{
+            &:nth-child(1){
+                width: 2%;
+            }
+            &:nth-child(2){
+                width:35%;
+            }
+            &:nth-child(3){
+                width: 40%;
+            }
+            &:nth-child(4){
+                width:40%;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
 // Date-Picker
 
 .bootstrap-datetimepicker-widget.bottom:before{
