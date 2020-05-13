@@ -337,7 +337,7 @@
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -356,7 +356,7 @@
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
                                                         </ul>
                                                     </div>
@@ -426,12 +426,14 @@
                                  <div class="form-group">
                                     <label for="" class="required-mark">Tenant-id</label>
                                     <input type="text" name=""  placeholder="LOB" class="form-control" required="">
+                                    <div class="invalid-feedback">Enter Tenant-id</div>
                                  </div>
                               </div>
                               <div class="col-6">
                                  <div class="form-group">
                                     <label for="" class="required-mark"> Description </label>
-                                    <input type="text" name="" placeholder="LOB Description" class="form-control" required="">
+                                    <input type="text" name="" placeholder="Enter  Description" class="form-control" required="">
+                                    <div class="invalid-feedback">Enter Description</div>
                                  </div>
                               </div>
                               <div class="col-6">
@@ -440,7 +442,12 @@
                                     <div class="drop-down-box custom-select-box">
                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">South East Asia <i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
-                                          <li class="dropdown-item">South East Asia</li>              
+                                          <li class="dropdown-item">Common to all region</li>                     
+                                          <li class="dropdown-item">South East Asia</li>                     
+                                          <li class="dropdown-item">Australia</li>                     
+                                          <li class="dropdown-item">North Asia</li>                     
+                                          <li class="dropdown-item">United States of America</li>                     
+                                          <li class="dropdown-item">United Arab Emirates</li>              
                                         </ul>
                                     </div>
                                  </div>
@@ -451,7 +458,10 @@
                                     <div class="drop-down-box custom-select-box">
                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Insurance <i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
-                                          <li class="dropdown-item">Insurance</li>              
+                                          <li class="dropdown-item">Insurance</li>
+                                          <li class="dropdown-item">Banking</li>
+                                          <li class="dropdown-item">Securities</li>
+                                          <li class="dropdown-item">Common to all industries</li>              
                                         </ul>
                                     </div>
                                  </div>
@@ -508,6 +518,10 @@
                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Language <i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
                                           <li class="dropdown-item">Language</li>              
+                                          <li class="dropdown-item">English</li>              
+                                          <li class="dropdown-item">Arabic</li>              
+                                          <li class="dropdown-item">Bahasa</li>              
+                                          <li class="dropdown-item">Chinesa</li>              
                                         </ul>
                                     </div>
                                  </div>
