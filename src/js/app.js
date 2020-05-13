@@ -462,12 +462,13 @@ $(document).ready(function () {
     return false;
   });
 
-  $('.custom-control-input').click(function(){
-    var $this = $(this);
-    if($this.prop("checked") == true){
-        $this.closest('table').addClass('show-checkbox');
-    }
-});
+  // Enable All Checkbox on click
+  // $('.custom-control-input').click(function(){
+  //   var $this = $(this);
+  //   if($this.prop("checked") == true){
+  //       $this.closest('table').addClass('show-checkbox');
+  //   }
+  // });
 
   //Search in Main Navigation
   var typingTimer; //timer identifier
