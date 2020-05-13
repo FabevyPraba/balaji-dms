@@ -440,45 +440,65 @@
                                      <div class="form-group">
                                         <label for="" class="required-mark">Product Code</label>
                                         <input type="" name=""  class="form-control" required="" placeholder="Enter Product Code">
+                                        <div class="invalid-feedback">Enter Global Business Date</div>
                                      </div>
                                   </div>
                                   <div class="col-6">
                                          <div class="form-group">
                                             <label for="" class="required-mark">Product Description</label>
                                             <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
+                                            <div class="invalid-feedback">Product Description</div>
                                          </div>
                                       </div>
 
                                   <div class="col-6">
                                         <div class="form-group">
                                         <label for="" class="required-mark">Effective Date</label>
-                                        <input type="" name=""  class="form-control" required="" placeholder="Enter Effective Date">
+                                        <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Effective Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="invalid-feedback">Enter Effective Date</div>
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Product version</label>
                                         <input type="" placeholder="Enter Product version" name=""  class="form-control" required="">
+                                        <div class="invalid-feedback">Enter Product version</div>
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Start Date</label>
-                                        <input type="text" placeholder="Enter Start date" aria-label="First name" class="form-control start-date " required="" >
+                                        <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Start Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                        </div>
+
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" >End Date</label>
-                                        <input type="text" placeholder="Enter End date" aria-label="First name" class="form-control start-date " required="" >
+                                        <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter End Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                        </div>
                                      </div>
                                   </div>
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">LOB</label>
                                         <div class="drop-down-box custom-select-box">
-                                            <a class="dropdown-toggle custom-select-toggle dropdown-scroll" data-toggle="dropdown" href="#">Endowment <i class="icon-right-open"></i></a>
-                                            <ul class="dropdown-menu">
+                                            <a class="dropdown-toggle custom-select-toggle " data-toggle="dropdown" href="#">Endowment <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu dropdown-scroll">
                                               <li class="dropdown-item">Term Life</li>
                                               <li class="dropdown-item">Endowment</li>              
                                               <li class="dropdown-item">Unit Linked</li>              
@@ -528,9 +548,9 @@
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Product Category</label>
-                                        <div class="drop-down-box custom-select-box">
-                                            <a class="dropdown-toggle custom-select-toggle dropdown-scroll" data-toggle="dropdown" href="#">Endowment <i class="icon-right-open"></i></a>
-                                            <ul class="dropdown-menu">
+                                        <div class="drop-down-box custom-select-box ">
+                                            <a class="dropdown-toggle custom-select-toggle  " data-toggle="dropdown" href="#">Endowment <i class="icon-right-open"></i></a>
+                                            <ul class="dropdown-menu dropdown-scroll">
                                               <li class="dropdown-item">Term Life</li>
                                               <li class="dropdown-item">Endowment</li>              
                                               <li class="dropdown-item">Whole Life</li>              
@@ -612,24 +632,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/datepicker.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="../../js/app.js"></script>
+
+
     <script>
-    $(function() {
-      var $startDate = $('.start-date');
-      var $endDate = $('.end-date');
+        $(function () {
+            // init
+            $('#datetimepicker1').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker2').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker3').datetimepicker({
+                    format: 'L'
+            });
+            
+        });
+    </script>
 
-      $startDate.datepicker({
-        autoHide: true,
-      });
-      $endDate.datepicker({
-        autoHide: true,
-        startDate: $startDate.datepicker('getDate'),
-      });
-
-      $startDate.on('change', function () {
-        $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-      });
-    });
-  </script>
 </body>
 </html>

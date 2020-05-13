@@ -11643,21 +11643,104 @@ div#variable-model {
   width: 40%;
   text-align: center; }
 
-.bootstrap-datetimepicker-widget.bottom:before {
-  display: none; }
-
-.bootstrap-datetimepicker-widget.bottom:after {
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before {
   display: none; }
 
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom {
-  width: 267px; }
+  width: 100%;
+  height: 320px; }
 
-.date-part {
-  position: relative; }
-  .date-part i {
-    position: absolute;
-    right: 0;
-    top: 0; }
+.bootstrap-datetimepicker-widget table td.active.today:before {
+  display: none; }
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  display: none; }
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+  background: #6fbc78;
+  color: #fff; }
+
+.bootstrap-datetimepicker-widget table td.today:before {
+  display: none; }
+
+.bootstrap-datetimepicker-widget table th {
+  border: none;
+  font-weight: 500;
+  font-size: 16px; }
+
+.bootstrap-datetimepicker-widget table td.day {
+  border-radius: 0;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: none; }
+
+.bootstrap-datetimepicker-widget table td span.active {
+  background: #6fbc78;
+  color: #fff; }
+
+.bootstrap-datetimepicker-widget table td span {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  line-height: 85px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px; }
+
+.bootstrap-datetimepicker-widget table th {
+  height: 30px;
+  line-height: 30px;
+  border-radius: 0; }
+
+.bootstrap-datetimepicker-widget table td span.old {
+  background: #6fbc78;
+  color: #fff; }
+
+.prev {
+  position: relative;
+  width: 30px !important;
+  height: 30px !important;
+  /*display: inline-block;*/ }
+
+span.fa.fa-chevron-left:after {
+  content: '<';
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  color: #000;
+  font-size: 20px; }
+
+.next {
+  position: relative;
+  width: 30px !important;
+  height: 30px !important;
+  /*display: inline-block;*/ }
+
+span.fa.fa-chevron-right:after {
+  content: '>';
+  font-weight: 500;
+  position: absolute;
+  right: 18px;
+  top: 5px;
+  color: #000;
+  font-size: 20px; }
+
+span.fa.fa-clock-o {
+  display: none; }
+
+.input-group-text {
+  height: 45px;
+  background: transparent; }
+
+.datetimepicker-input {
+  font-size: 16px !important; }
+
+.bootstrap-datetimepicker-widget table th {
+  text-align: center; }
 
 /* Layout End */
 /* ------  Style-Guide -------  */
