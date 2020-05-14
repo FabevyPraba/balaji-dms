@@ -2711,9 +2711,9 @@ div#variable-model{
 }
 
 #maintain-box{
-    //min-height: 110vh;
+    min-height: 110vh;
     #maintain-footer{
-        //bottom:-100px;
+        bottom:-100px;
     }
 }
 
@@ -2752,6 +2752,12 @@ div#variable-model{
             transform: rotate(90deg);
         }
     }
+}
+
+#down-arrow{
+   &:before{
+            transform: rotate(-90deg);
+        } 
 }
 
 #table-structure-part{
