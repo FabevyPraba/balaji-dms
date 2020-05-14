@@ -10410,6 +10410,7 @@ div#variable-model {
     .variables-list-table table tr:hover {
       background: #fdf7eb; }
     .variables-list-table table tr th {
+      position: relative;
       border-bottom: 1px solid #a5aebf; }
       .variables-list-table table tr th:nth-child(1) {
         width: 5%; }
@@ -11575,6 +11576,15 @@ div#variable-model {
 
 .invalid-feedback {
   position: static; }
+
+#authorisation-search {
+  padding: 15px 0;
+  float: right;
+  padding-right: 20px; }
+  #authorisation-search input {
+    width: 300px;
+    font-size: 14px;
+    height: 45px !important; }
 
 .was-validated .form-control:valid, .form-control.is-valid {
   background: none;
