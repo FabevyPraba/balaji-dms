@@ -11566,8 +11566,7 @@ div#variable-model {
   font-size: 14px; }
 
 .invalid-feedback {
-  position: static;
-  box-shadow: none; }
+  position: static; }
 
 .was-validated .form-control:valid, .form-control.is-valid {
   background: none;
