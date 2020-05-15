@@ -736,6 +736,7 @@ a:hover {
         border: none;
         text-align: left;
         display: block;
+        visibility: hidden;
         .save-btn {
             display: inline-block;
             padding: 8px 30px;
@@ -2225,7 +2226,7 @@ div#variable-model{
         }
     }
     #client-configuration-tab-1 {
-        padding: 20px 0 90px;
+        padding: 20px 0 0px;
         .custom-control-label {
             color: #000;
             padding-top: 3px;
@@ -3574,4 +3575,31 @@ span.fa.fa-clock-o{
 /* Layout End */
 .nav-list {
     min-height: 600px;
+}
+
+.table-default tr th:after {
+    content: "";
+    background: url(../images/ico_sorting.png);
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: -10px;
+    cursor: pointer;
+}
+.table-default tr th.no-filter:after,
+.table-default tr th:first-child:after,
+.table-default tr th:last-child:after {
+    display: none;
+}
+.table-default tr th.has-filter:after{
+    display: inline-block !important;
+}
+.was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before {
+    background-color: #2b2b2b;
+    border-color: #8b8b8b;
+}
+.was-validated .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before {
+    border-color: #8b8b8b;
 }

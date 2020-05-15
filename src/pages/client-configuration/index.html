@@ -311,42 +311,50 @@
                                             <div class="col-3">
                                                 <div class="form-group">
                                                    <label for="" class="required-mark">Name of the client </label>
-                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter Client Name">
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter Client Name" value="PT Asuransi Alpha Romeo">
                                                    <div class="invalid-feedback">Enter Name of the client</div>
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="" class="required-mark">Industry </label>
-                                                    <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Insurance <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                          <li class="dropdown-item">Insurance</li>
-                                                          <li class="dropdown-item">Banking</li>               
-                                                        </ul>
-                                                    </div>
+                                                   <label for="">Industry</label>
+                                                   <input type="text" name=""  class="form-control" placeholder="Enter Industry" disabled value="Insurance">
+                                                   <div class="invalid-feedback">This field is required</div>
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
-                                                   <label for="" class="required-mark">Home Country </label>
-                                                    <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Indonesia <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                          <li class="dropdown-item">Singapore</li>
-                                                          <li class="dropdown-item">Malaysia</li>              
-                                                          <li class="dropdown-item">Indonesia</li>              
-                                                          <li class="dropdown-item">Thailand</li>              
-                                                          <li class="dropdown-item">India</li>              
-                                                        </ul>
-                                                    </div>
+                                                   <label for="" class="required-mark">Region</label>
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter Region" disabled value="South East Asia">
+                                                   <div class="invalid-feedback">This field is required</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="" class="required-mark">Channel Management</label>
+                                                   <input type="text" name=""  class="form-control" required="" disabled placeholder="Enter Channel Management" value="Yes">
+                                                   <div class="invalid-feedback">This field is required</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="" class="required-mark">Compensation Management</label>
+                                                   <input type="text" name=""  class="form-control" required="" disabled placeholder="Enter Compensation Management" value="Yes">
+                                                   <div class="invalid-feedback">This field is required</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                   <label for="" class="required-mark">Performance Management</label>
+                                                   <input type="text" name=""  class="form-control" required="" disabled placeholder="Enter Performance Management" value="Yes">
+                                                   <div class="invalid-feedback">This field is required</div>
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
                                                    <label for="" class="required-mark">Home Currency </label>
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Home Currency <i class="icon-right-open"></i></a>
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Indonesian Rupiah <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
                                                           <li class="dropdown-item">Singapore Dollar</li>
                                                           <li class="dropdown-item">United States of America Dollar</li>               
@@ -368,14 +376,14 @@
                                             <div class="col-3">
                                                 <div class="form-group">
                                                    <label for="" class="required-mark">Maximum digits before decimal for numbers </label>
-                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter max digits before decimal">
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter max digits before decimal" value="12">
                                                    <div class="invalid-feedback">Enter Maximum digits before decimal for numbers</div>
                                                 </div>
                                             </div>
                                             <div class="col-3">
                                                 <div class="form-group">
                                                    <label for="" class="required-mark">Number of digits for cents </label>
-                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter No of digits">
+                                                   <input type="text" name=""  class="form-control" required="" placeholder="Enter No of digits" value="2">
                                                    <div class="invalid-feedback">Enter Number of digits for cents</div>
                                                 </div>
                                             </div>
@@ -383,7 +391,7 @@
                                                 <div class="form-group">
                                                    <label for="" class="required-mark">Date format </label>
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Date format <i class="icon-right-open"></i></a>
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">DD/MM/YY <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
                                                           <li class="dropdown-item">DD/MM/YY</li>              
                                                           <li class="dropdown-item">MM/DD/YY</li>                 
@@ -440,7 +448,7 @@
                                                             <label class="custom-control-label" for="customRadioInline1">Yes</label>
                                                         </div>
                                                         <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required checked="checked">
                                                             <label class="custom-control-label" for="customRadioInline2">No</label>
                                                         </div>
                                                     </div>
@@ -451,7 +459,7 @@
                                                     <label for="" class="required-mark" class="radio-text required-mark">Basic Commission Calculation  </label>
                                                     <div>
                                                         <div class="custom-control custom-radio custom-control-inline">
-                                                            <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
+                                                            <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required checked="checked">
                                                             <label class="custom-control-label" for="customRadioInline3">Internal</label>
                                                         </div>
                                                         <div class="custom-control custom-radio custom-control-inline">
@@ -477,6 +485,60 @@
                                                         <div class="valid-feedback">
                                                             <p>Selection required</p>
                                                         </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label for="" class="required-mark" class="radio-text required-mark">Workflow</label>
+                                                    <div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="workflow-internal" name="workflow" class="custom-control-input" required checked="checked">
+                                                            <label class="custom-control-label" for="workflow-internal">Internal</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="workflow-external" name="workflow" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="workflow-external">External</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="valid-feedback">
+                                                        <p>Selection required</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label for="" class="required-mark" class="radio-text required-mark">Document Management System</label>
+                                                    <div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="document-management-system-internal" name="document-management-system" class="custom-control-input" required checked="checked">
+                                                            <label class="custom-control-label" for="document-management-system-internal">Internal</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="document-management-system-external" name="document-management-system" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="document-management-system-external">External</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="valid-feedback">
+                                                        <p>Selection required</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label for="" class="required-mark" class="radio-text required-mark">Business Analytics</label>
+                                                    <div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="business-analytics-internal" name="business-analytics" class="custom-control-input" required checked="checked">
+                                                            <label class="custom-control-label" for="business-analytics-internal">Internal</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="business-analytics-external" name="business-analytics" class="custom-control-input" required>
+                                                            <label class="custom-control-label" for="business-analytics-external">External</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="valid-feedback">
+                                                        <p>Selection required</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -721,13 +783,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
-  <script src="../../js/perfect-scrollbar.js"></script>
+    <script src="../../js/perfect-scrollbar.js"></script>
     <script src="../../js/app.js"></script>
-    
+    <style>
+        .client-configuration-form{
+            overflow: auto;
+            height: 630px;
+        }
+    </style>
     <script>
-    new PerfectScrollbar('.main-content-body');
-
-  </script>
+        (function($){
+				
+            $(".client-configuration-form").mCustomScrollbar({
+                theme:"minimal-dark"
+            });
+				
+		})(jQuery);
+    </script>
 
 </body>
 </html>

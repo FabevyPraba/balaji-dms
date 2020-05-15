@@ -35,15 +35,20 @@ var siteMapData = {
     iconPath: "/images/menu-icon-1.svg",
     "sub-menu": [
       {
+        name: "Partition Master",
+        link: "/pages/client-configuration/partition-master.html",
+        "sub-links": [],
+      },
+      {
         name: "Client Configuration",
         link: "/pages/client-configuration/index.html",
         "sub-links": [],
       },
-      {
-        name: "Terminology Mapping",
-        link: "/pages/client-configuration/terminology-mapping.html",
-        "sub-links": [],
-      },
+      // {
+      //   name: "Terminology Mapping",
+      //   link: "/pages/client-configuration/terminology-mapping.html",
+      //   "sub-links": [],
+      // },
       {
         name: "Master Data",
         "sub-links": [
@@ -367,7 +372,7 @@ $(document).ready(function () {
         modalBodyHeight =  $(window).outerHeight() - 50 - $modalEle.find('.modal-head').outerHeight();
     
     $modalEle.find('.modal-body').css('height', modalBodyHeight);
-
+    $modalEle.find('.modal-footer').css('visibility', 'visible');
   });
 
   function resetMainNavigation(){

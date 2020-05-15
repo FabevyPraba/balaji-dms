@@ -11,7 +11,7 @@
 <body>
 
 	<!-- content -->
-	<div id="content-md" class="content light">
+	<div id="content-md" class="content">
 		<h2>"minimal-dark"</h2>
 		<hr />
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
@@ -39,18 +39,19 @@
 
 
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	
 	<!-- custom scrollbar plugin -->
-	<script src="jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js
+	"></script>
 	
 	<script>
 		(function($){
 			$(window).on("load",function(){
 				
-				$.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
-				$.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default
-				$("#content-md").mCustomScrollbar({theme:"minimal-dark"});
+				$("#content-md").mCustomScrollbar({
+					theme:"minimal-dark"
+				});
 				
 			});
 		})(jQuery);
