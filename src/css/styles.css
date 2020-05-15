@@ -11773,6 +11773,10 @@ span.fa.fa-clock-o {
   float: left;
   width: 70px; }
 
+#bottom-ftr {
+  bottom: auto;
+  margin-top: 50px; }
+
 .form-checking {
   height: auto !important; }
 
