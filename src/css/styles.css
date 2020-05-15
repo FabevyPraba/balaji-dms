@@ -11769,8 +11769,15 @@ span.fa.fa-clock-o {
 .input-group-append {
   cursor: pointer; }
 
+.form-check-part {
+  float: left;
+  width: 70px; }
+
 .form-checking {
-  margin-right: 30px; }
+  height: auto !important; }
+
+.form-check-txt {
+  margin-right: 60px; }
 
 #defaultCheck1 {
   height: auto !important; }
