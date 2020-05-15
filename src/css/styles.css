@@ -11763,6 +11763,14 @@ span.fa.fa-clock-o {
 .input-group-text {
   height: 45px;
   background: transparent; }
+  .input-group-text img {
+    cursor: pointer; }
+
+.input-group-append {
+  cursor: pointer; }
+
+#defaultCheck1 {
+  height: auto !important; }
 
 .datetimepicker-input {
   font-size: 16px !important; }
