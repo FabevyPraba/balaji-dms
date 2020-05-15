@@ -274,12 +274,13 @@
                 <div class="row">
                     <div class="col-10">
                         <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">Tenant Master</h4>
+                            <h4 class="sg-section-sub-heading">List of  License types</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Application Management</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Tenant Master</li>
+                                    <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
+                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Default list of trainings for a License type</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -293,7 +294,7 @@
                 </div>
             </div>
 
-            <div class="main-content-body lob-master-body">
+            <div class="main-content-body lob-master-body list-of-license">
                         <div class="record-part">
                             <div class="row">
                                 <div class="col-6">
@@ -302,7 +303,7 @@
                                 <div class="col-6">
                                     <div class="search-part">
                                         <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" data-toggle="modal" data-target="#myRightAlignedModal" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</button>
+                                        <button type="button" class="btn btn-primary btn-icon-left" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-button_ico_addnew"></i> Add New</button>
                                     </div>
                                 </div>
                             </div>
@@ -316,13 +317,13 @@
                                         <thead>
                                             <tr>
                                                 <th></th>
-                                                <th>Tenant ID</th>
-                                                <th> Description</th>
+                                                <th>License type</th>
+                                                <th>License type Description</th>
+                                                <th>Effective Date</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            
                                             <tr>
                                                 <td>
                                                     <div class="custom-control custom-checkbox invisible">
@@ -330,14 +331,16 @@
                                                         <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
                                                     </div>
                                                 </td>
-                                                <td>TN-001</td>
-                                                <td>ABC Corporation</td>
+                                                <td>FIRE</td>
+                                                <td>Fire and Casualty</td>
+                                                <td>01/01/2016</td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
                                                         </ul>
                                                     </div>
                                                 </td>
@@ -349,22 +352,134 @@
                                                         <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                                     </div>
                                                 </td>
-                                                <td>TN-002</td>
-                                                <td>XYZ Corporation</td>
+                                                <td>LLA</td>
+                                                <td>Limited Lines Automobile</td>
+                                                <td>01/01/2016</td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
                                                         <ul class="edit-part">
-                                                            <li><a href="#" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
                                                         </ul>
                                                     </div>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck3">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
+                                                    </div>
+                                                </td>
+                                                <td>PL</td>
+                                                <td>Personal Lines</td>
+                                                <td>01/01/2016</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>ACHL</td>
+                                                <td>Accident and Health</td>
+                                                <td>01/01/2016</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>LIFE</td>
+                                                <td>Life insurance Only</td>
+                                                <td>01/01/2016</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a  href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>GENI</td>
+                                                <td>General insurance only</td>
+                                                <td>01/01/2016</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox invisible">
+                                                        <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                        <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                                    </div>
+                                                </td>
+                                                <td>COMP </td>
+                                                <td>Composite insurer</td>
+                                                <td>01/01/2016</td>
+                                                <td class="row-action-cell">
+                                                    <div class="row-action-wrapper">
+                                                        <a href="#" class="kebab active-edit"> </a>
+                                                        <ul class="edit-part">
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                            <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                            <li><a href="maintain-default-list-training-of-license-types.html"><i class="icon-rating"></i> Review</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div> 
+                            <!-- <div class="error-msg">
+                                <img src="../../images/no-found-img.svg" alt="no-found">
+                                <span>No Results Found</span>
+                            </div> -->
                             
                         </div>
                         <div class="pagination-part clearfix">
@@ -390,145 +505,82 @@
                                 </div>
                             </div>
                             <div class="close-btn-part">
-                                <button type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                <button type="button"  class="btn btn-secondary btn-icon-left"> <i class="icon-close" ></i> Close</button>
                             </div>
                         </div>
             </div>
         </div>
-        <section class="aggregation-services-model production-services-form variable-master-model lob-modal" id="tenant-model">
+
+        <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
          <div class="" id="modal">
             <div class="modal fade partial-model-box" id="myRightAlignedModal">
-               <div class="modal-dialog ">
+               <div class="modal-dialog " >
                   <div class="modal-content">
                      <div class="modal-head">
                         <div class="row">
-                           <div class="col-6 pr-0">
-                              <div class="modal-title">
-                                 <h3>Tenant Maintenence</h3>
-                                 <a href="#" class="add-btn">Edit</a>
-                                 <span>* Fields are mandatory</span>
+                           <div class="col-12 pl-0 ">
+                              <div class="btn-part">
+                                 <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i> Complete</button>
+                                 <button class="remove-btn" data-dismiss="modal"><i class="icon-close"></i></button>
                               </div>
                            </div>
-                           <div class="col-6 pl-0 pr-0">
-                              <div class="btn-part">
-                                <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i> Complete</button>
-                                 <button class="remove-btn" data-dismiss="modal"><i class="icon-close"></i></button>
+                           <div class="col-12">
+                              <div class="modal-title">
+                                 <h3>Add License type <br>for default list of exams </h3>
+                                 <a href="#" class="add-btn">Edit</a>
+                                 <span>* Fields are mandatory</span>
                               </div>
                            </div>
                         </div>
                      </div>
                      <div class="modal-body">
                         <form class="needs-validation" novalidate>
-                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
-                           <div class="row">
-                              <div class="col-6">
+                           <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
+                           <div class="row">                                 
+                              <div class="col-12">
                                  <div class="form-group">
-                                    <label for="" class="required-mark">Tenant-id</label>
-                                    <input type="text" name=""  placeholder="LOB" class="form-control" required="">
-                                    <div class="invalid-feedback">Enter Tenant-id</div>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="form-group">
-                                    <label for="" class="required-mark"> Description </label>
-                                    <input type="text" name="" placeholder="Enter  Description" class="form-control" required="">
-                                    <div class="invalid-feedback">Enter Description</div>
-                                 </div>
-                              </div>
-                              <div class="col-6">
-                                 <div class="form-group">
-                                    <label for="" class="required-mark">Region </label>
+                                    <label for="" class="required-mark">License type </label>
                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">South East Asia <i class="icon-right-open"></i></a>
+                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Rules and Regulations for Financial Advisory Services<i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
-                                          <li class="dropdown-item">Common to all region</li>                     
-                                          <li class="dropdown-item">South East Asia</li>                     
-                                          <li class="dropdown-item">Australia</li>                     
-                                          <li class="dropdown-item">North Asia</li>                     
-                                          <li class="dropdown-item">United States of America</li>                     
-                                          <li class="dropdown-item">United Arab Emirates</li>              
+                                          <li class="dropdown-item">Rules and Regulations for Financial Advisory Services</li>
+                                          <li class="dropdown-item">Securities Products and Analysis</li>
+                                          <li class="dropdown-item">Collective Investment Schemes</li>
+                                          <li class="dropdown-item">Life Insurance and Investment-Linked Policies</li>
+                                          <li class="dropdown-item">Certified Financial Planner (CFP)</li>
+                                          <li class="dropdown-item">Chartered Financial Consultant (ChFC)</li>
+                                          <li class="dropdown-item">Associate Financial Consultant (AFC)</li>
                                         </ul>
                                     </div>
                                  </div>
                               </div>
-                              <div class="col-6">
-                                 <div class="form-group">
-                                    <label for="" class="required-mark">Industry </label>
+                              <div class="col-12">
+                                 <div class="form-group">   
+                                    <label for="" class="required-mark">License type description </label>
                                     <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Insurance <i class="icon-right-open"></i></a>
+                                        <a class="dropdown-toggle custom-select-toggle disabled" data-toggle="dropdown" href="#">Retail Broker <i class="icon-right-open"></i></a>
                                         <ul class="dropdown-menu">
-                                          <li class="dropdown-item">Insurance</li>
-                                          <li class="dropdown-item">Banking</li>
-                                          <li class="dropdown-item">Securities</li>
-                                          <li class="dropdown-item">Common to all industries</li>              
+                                          <li class="dropdown-item">Retail Broker</li>              
                                         </ul>
                                     </div>
                                  </div>
-                            </div>     
-                                 <div class="col-6">
-                                     <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Channel Management  </label>
-                                        <div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline1">Yes</label>
-                                           </div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline2">No</label>
-                                           </div>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="col-6">
-                                     <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Compensation Management  </label>
-                                        <div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline3" name="customRadioInline3" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline3">Yes</label>
-                                           </div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline4" name="customRadioInline3" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline4">No</label>
-                                           </div>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="col-6">
-                                     <div class="form-group">
-                                        <label for="" class="radio-text required-mark">Performance Management </label>
-                                        <div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline5" name="customRadioInline5" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline5">Yes</label>
-                                           </div>
-                                           <div class="custom-control custom-radio custom-control-inline">
-                                              <input type="radio" id="customRadioInline6" name="customRadioInline5" class="custom-control-input" required>
-                                              <label class="custom-control-label" for="customRadioInline6">No</label>
-                                           </div>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="col-6">
+                              </div>
+                              <div class="col-12">
                                  <div class="form-group">
-                                    <label for="" class="required-mark">Default Language </label>
-                                    <div class="drop-down-box custom-select-box">
-                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Language <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu">
-                                          <li class="dropdown-item">Language</li>              
-                                          <li class="dropdown-item">English</li>              
-                                          <li class="dropdown-item">Arabic</li>              
-                                          <li class="dropdown-item">Bahasa</li>              
-                                          <li class="dropdown-item">Chinesa</li>              
-                                        </ul>
-                                    </div>
+                                    <label for="" class="required-mark">Effective Date </label>
+                                    <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Effective Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="invalid-feedback">Enter Effective Date</div>
                                  </div>
                               </div>
                            </div>
                            <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                            <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                              <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                            </div>
                         </form>
                      </div>   
@@ -546,6 +598,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" type="text/javascript" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="../../js/app.js"></script>
+
+
+    <script>
+        $(function () {
+            // init
+            $('#datetimepicker1').datetimepicker({
+                    format: 'L'
+            });
+            
+        });
+    </script>
 </body>
 </html>

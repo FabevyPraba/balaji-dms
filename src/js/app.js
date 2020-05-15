@@ -106,7 +106,7 @@ var siteMapData = {
           },
           {
             name: "Default list of trainings for a License type",
-            link: "/pages/client-configuration/maintain-default-list-training-of-license-types.html",
+            link: "/pages/client-configuration/list-of-trainings-license-types.html",
           },
           {
             name: "Default list of trainings for a Designation",

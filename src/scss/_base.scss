@@ -1651,23 +1651,6 @@ div#variable-model{
     }
 }
 
-// .table-part{
-//     .table{
-//         tr{
-//             th{
-//                 position:relative;
-//                 &:after{
-//                     content: "\9969";
-//                     position:absolute;
-//                     right: 0;
-//                     top: 0;
-//                     color: #9a9a9a;
-//                     font-size: 14px;
-//                 }
-//             }
-//         }
-//     }
-// }
 .row-action-cell{
     padding: 0 !important;
     .row-action-wrapper {
@@ -2533,6 +2516,11 @@ div#variable-model{
     margin-top: 20px !important;
 }
 
+#agent-footer{
+    position:absolute;
+    bottom:0;
+}
+
 
 .allowed-value-form{
     width: 100%;
@@ -2628,7 +2616,7 @@ div#variable-model{
                         text-align: left;
                     }
                     &:nth-child(5){
-                        width: 40%;
+                        width: 41%;
                     }
                 }
                 td{
@@ -2744,7 +2732,7 @@ div#variable-model{
                 width: 10%;
             }
             &:nth-child(3){
-                width: 30%;
+                width: 15%;
             }
             &:nth-child(4){
                 width: 10%;
@@ -3349,6 +3337,28 @@ div#variable-model{
     }
 }
 
+#partition-table{
+    tr{
+        th{
+            &:nth-child(2){
+                width: 12%;
+            }
+            &:nth-child(3){
+                width: 18%;
+            }
+            &:nth-child(4){
+                width: 23%;
+            }
+            &:nth-child(5){
+                width: 18%;
+            }
+            &:nth-child(10){
+                width: 15%;
+            }
+        }
+    }
+}
+
 #msg-save-btn{
     margin-right: 15px;
     display: inline-block;
@@ -3500,6 +3510,7 @@ div#variable-model{
     line-height: 35px;
     text-align: center;
     border: none;
+    cursor: pointer;
 }
 
 .bootstrap-datetimepicker-widget table td span.active{

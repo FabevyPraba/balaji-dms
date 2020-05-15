@@ -274,13 +274,12 @@
                 <div class="row">
                     <div class="col-10">
                         <div class="sg-sub-block clearfix">
-                            <h4 class="sg-section-sub-heading">LOB Master</h4>
+                            <h4 class="sg-section-sub-heading">Partition Master</h4>
                             <div class="">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Configuration Management</a></li>
-                                    <li class="breadcrumb-item " aria-current="page"><a href="#">Master Data</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">LOB Master</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Partition Master</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -313,12 +312,15 @@
                             <!-- Table -->
                             <div class="variable-master-table" id="full-table">
                                 <div class="table-part">
-                                    <table class="table table-default table-hover">
+                                    <table class="table table-default table-hover" id="partition-table">
                                         <thead>
                                             <tr>
                                                 <th></th>
                                                 <th>Partition</th>
                                                 <th>Description</th>
+                                                <th>Transaction status</th>
+                                                <th>Final status Date</th>
+                                                <th>Inforce flag </th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -332,6 +334,9 @@
                                                 </td>
                                                 <td>PAR-001</td>
                                                 <td>Life Business</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
@@ -352,6 +357,9 @@
                                                 </td>
                                                 <td>PAR-002</td>
                                                 <td>Non Life Business</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
@@ -372,6 +380,9 @@
                                                 </td>
                                                 <td>PAR-003</td>
                                                 <td>Group Business</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td class="row-action-cell">
                                                     <div class="row-action-wrapper">
                                                         <a href="#" class="kebab active-edit"> </a>
@@ -452,7 +463,7 @@
                               <div class="col-12">
                                  <div class="form-group">
                                     <label for="" class="required-mark">Description </label>
-                                    <input type="text" name="" placeholder="Enter Effective Date" class="form-control" required="">
+                                    <input type="text" name="" placeholder="Enter Enter Description" class="form-control" required="">
                                  </div>
                               </div>
                            </div>
