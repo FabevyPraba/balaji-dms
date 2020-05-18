@@ -707,20 +707,43 @@
                                         <div class="invalid-feedback">Enter Global Business Date</div>
                                      </div>
                                   </div>
-                                  <div class="col-6">
+                                    <div class="col-6">
                                          <div class="form-group">
                                             <label for="" class="required-mark">Product Description</label>
                                             <input type="text" name="" placeholder="Product Description"  class="form-control" required="">
                                             <div class="invalid-feedback">Product Description</div>
                                          </div>
-                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                           <label for=""> Transaction status </label>
+                                           <input type="text" name=""  class="form-control " placeholder="Enter  Transaction status" disabled>
+                                        </div> 
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="" >Final status Date</label>
+                                            <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
+                                                <input type="text" class="form-control  datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Start Date" disabled />
+                                                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                           <label for="">  Inforce flag  </label>
+                                           <input type="text" name=""  class="form-control " placeholder="Enter  Inforce flag " disabled>
+                                        </div> 
+                                    </div>
 
                                   <div class="col-6">
                                         <div class="form-group">
                                         <label for="" class="required-mark">Effective Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Effective Date" />
-                                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                        <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Effective Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                             </div>
                                         </div>
@@ -737,9 +760,9 @@
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Start Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Start Date" />
-                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                        <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter Start Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                             </div>
                                         </div>
@@ -749,9 +772,9 @@
                                   <div class="col-6">
                                      <div class="form-group">
                                         <label for="" >End Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter End Date" />
-                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                        <div class="input-group input-group-lg date" id="datetimepicker4" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Enter End Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                             </div>
                                         </div>
@@ -911,6 +934,9 @@
                     format: 'L'
             });
             $('#datetimepicker3').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker4').datetimepicker({
                     format: 'L'
             });
             

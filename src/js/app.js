@@ -69,11 +69,11 @@ var siteMapData = {
             link: "/pages/client-configuration/help-text-master.html",
           },
           {
-            name: "Authorisation for Menu",
+            name: "Menu Authorisation",
             link: "/pages/client-configuration/authorisation-menu.html",
           },
           {
-            name: "Authorisation for Screen",
+            name: "Screen Authorisation",
             link: "/pages/client-configuration/authorisation-screen.html",
           },
           {

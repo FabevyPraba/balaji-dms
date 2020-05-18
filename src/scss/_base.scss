@@ -3179,14 +3179,6 @@ div#variable-model{
     }
 }
 
-// #compensation-flow-drop-down{
-//     width: 500px;
-// }
-
-// #compensation-flow-drop-down-1{
-//     width: 250px;
-// }
-
 .aggregation-table{
     span{
         padding-top:30px;
@@ -3357,6 +3349,57 @@ div#variable-model{
             }
         }
     }
+}
+
+#allowed-values-table{
+    tr{
+        th{
+            &:nth-child(2){
+                width: 12%;
+            }
+            &:nth-child(3){
+                width: 12%;
+            }
+            &:nth-child(4){
+                width: 30%;
+            }
+        }
+    }
+}
+
+#agency-type-table{
+    tr{
+        th{
+            &:nth-child(2){
+                width: 5%;
+            }
+            &:nth-child(3){
+                width: 8%;
+                text-align: center;
+            }
+            &:nth-child(4){
+                width: 30%;
+            }
+            &:nth-child(5){
+                width: 8%;
+                text-align: center;
+            }
+        }
+        td{
+           &:nth-child(3){
+                text-align: center;
+            }
+            &:nth-child(5){
+                width: 8%;
+                text-align: center;
+            } 
+        }
+    }
+}
+
+#ftr-modal{
+    position:absolute;
+    bottom:0;
 }
 
 #msg-save-btn{

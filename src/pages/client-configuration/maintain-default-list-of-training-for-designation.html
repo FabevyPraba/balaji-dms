@@ -454,6 +454,12 @@
                         <form class="needs-validation" novalidate>
                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row">
+                            <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Designation </label>
+                                    <input type="text" name=""  placeholder="Enter Designation" class="form-control" disabled="">
+                                 </div>
+                              </div>
                               <div class="col-12">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Start Date</label>
@@ -477,6 +483,24 @@
                                         </div>
                                      </div>
                                   </div>
+                                  <div class="col-12">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Effective Date</label>
+                                        <div class="input-group input-group-lg date" id="datetimepicker4" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Enter Effective Date" />
+                                                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback">Enter Effective Date</div>
+                                     </div>
+                                  </div>
+                                  <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Training </label>
+                                    <input type="text" name=""  placeholder="Enter Training" class="form-control" >
+                                 </div>
+                              </div>
                               <div class="col-12">
                                  <div class="form-group">
                                     <label for="" class="radio-text required-mark" >Mandatory </label>
@@ -547,6 +571,9 @@
                     format: 'L'
             });
             $('#datetimepicker3').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker4').datetimepicker({
                     format: 'L'
             });
             

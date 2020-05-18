@@ -577,6 +577,7 @@
                                         <div class="invalid-feedback">Enter Effective Date</div>
                                  </div>
                               </div>
+                              
                            </div>
                            <div class="modal-footer">
                               <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
@@ -607,6 +608,12 @@
         $(function () {
             // init
             $('#datetimepicker1').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker2').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker3').datetimepicker({
                     format: 'L'
             });
             

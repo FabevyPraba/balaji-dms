@@ -344,7 +344,7 @@
                                                         <ul class="edit-part">
                                                             <li><a  href="maintain-default-agency-type.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                            <li><a href="maintain-default-agency-type.html"><i class="icon-rating"></i> Review</a></li>
+                                                            
                                                         </ul>
                                                     </div>
                                                 </td>
@@ -367,7 +367,7 @@
                                                         <ul class="edit-part">
                                                             <li><a href="maintain-default-agency-type.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                            <li><a href="maintain-default-agency-type.html"><i class="icon-rating"></i> Review</a></li>
+                                                            
                                                         </ul>
                                                     </div>
                                                 </td>
@@ -390,7 +390,7 @@
                                                         <ul class="edit-part">
                                                             <li><a href="maintain-default-agency-type.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                            <li><a href="maintain-default-agency-type.html"><i class="icon-rating"></i> Review</a></li>
+                                                            
                                                         </ul>
                                                     </div>
                                                 </td>
@@ -413,7 +413,7 @@
                                                         <ul class="edit-part">
                                                             <li><a  href="maintain-default-agency-type.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                            <li><a href="maintain-default-agency-type.html"><i class="icon-rating"></i> Review</a></li>
+                                                            
                                                         </ul>
                                                     </div>
                                                 </td>
@@ -436,7 +436,7 @@
                                                         <ul class="edit-part">
                                                             <li><a href="maintain-default-agency-type.html"><i class="icon-pencil-edit"></i> Edit</a></li>
                                                             <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                            <li><a href="maintain-default-agency-type.html"><i class="icon-rating"></i> Review</a></li>
+                                                            
                                                         </ul>
                                                     </div>
                                                 </td>
@@ -497,7 +497,7 @@
                         </div>
                      </div>
                      <div class="modal-body">
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation" novalidate action="#">
                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row">                                 
                               <div class="col-12">
@@ -505,7 +505,7 @@
                                     <label for="" class="required-mark">Channel </label>
                                     <div class="drop-down-box custom-select-box">
                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Call centre <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu dropdown-scroll">
                                           <li class="dropdown-item">Call centre</li>
                                           <li class="dropdown-item">Tied Agents</li>              
                                           <li class="dropdown-item">Tele Marketing</li>              
@@ -531,7 +531,7 @@
                                     <label for="" class="required-mark">Agency type</label>
                                     <div class="drop-down-box custom-select-box">
                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Retail Broker <i class="icon-right-open"></i></a>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu dropdown-scroll">
                                           <li class="dropdown-item">Retail Broker</li>
                                           <li class="dropdown-item">Commercial Broker</li>              
                                           <li class="dropdown-item">Commercial Bank</li>              
@@ -551,12 +551,63 @@
                                             <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                             </div>
-                                        </div>
-                                        <div class="invalid-feedback">Enter Effective Date</div>
+                                    </div>
+                                    <div class="invalid-feedback">Enter Effective Date</div>
                                  </div>
                               </div>
-                           </div>
-                           <div class="modal-footer">
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Start Date</label>
+                                    <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Effective Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                    </div>
+                                    <div class="invalid-feedback">Enter Start Date</div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" >End Date</label>
+                                    <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter Effective Date" />
+                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="invalid-feedback">Enter End Date</div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Question-id</label>
+                                    <input type="text" name=""  placeholder="Enter Question-id" class="form-control" >
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="">Question</label>
+                                    <input type="text" name=""  placeholder="Enter Question" class="form-control" disabled="">
+                                 </div>
+                              </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="" class="required-mark" class="radio-text required-mark">Mandatory  </label>
+                                        <div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                                <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required checked="checked">
+                                                <label class="custom-control-label" for="customRadioInline2">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                           <div class="modal-footer" id="ftr-modal">
                               <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
                               <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                            </div>
@@ -585,6 +636,12 @@
         $(function () {
             // init
             $('#datetimepicker1').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker2').datetimepicker({
+                    format: 'L'
+            });
+            $('#datetimepicker3').datetimepicker({
                     format: 'L'
             });
             

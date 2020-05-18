@@ -320,14 +320,14 @@
                     <!-- Table -->
                     <div class="variable-master-table" id="full-table">
                         <div class="table-part">
-                            <table class="table table-default table-hover">
+                            <table class="table table-default table-hover" id="agency-type-table">
                                 <thead>
                                     <tr>
                                         <th></th>
                                         <th>Start Date</th>
                                         <th>End Date</th>
-                                        <th>Mandatory</th>
                                         <th>Question</th>
+                                        <th>Mandatory</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -341,8 +341,8 @@
                                         </td>
                                         <td>06/01/2018</td>
                                         <td>-</td>
-                                        <td>Yes</td>
                                         <td>Have you entered into an agency agreement or agreements over the last 12 months with any other insurer</td>
+                                        <td>Yes</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -362,8 +362,8 @@
                                         </td>
                                         <td>07/03/2018</td>
                                         <td>-</td>
-                                        <td>Yes</td>
                                         <td>Have you ever been terminated by any other insurer</td>
+                                        <td>Yes</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -383,8 +383,8 @@
                                         </td>
                                         <td>01/01/2019</td>
                                         <td>-</td>
-                                        <td>Yes</td>
                                         <td>Have you been transacting insurance business with any insurer other than the ones you represent</td>
+                                        <td>Yes</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -404,8 +404,9 @@
                                         </td>
                                         <td>06/01/2018</td>
                                         <td>07/03/2019</td>
-                                        <td>No</td>
                                         <td>Have you entered into a Tripartite Agreement with any other insurer</td>
+                                        <td>No</td>
+                                        
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -425,8 +426,8 @@
                                         </td>
                                         <td>06/01/2018</td>
                                         <td>-</td>
-                                        <td>No</td>
                                         <td>Have you been or are you unable to fulfil any of your financial obligations, whether in home country or elsewhere ?</td>
+                                        <td>No</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -446,29 +447,9 @@
                                         </td>
                                         <td>06/01/2018</td>
                                         <td>-</td>
-                                        <td>No</td>
                                         <td>Have you entered into a compromise or a scheme of arrangement with creditors</td>
-                                        <td class="row-action-cell">
-                                            <div class="row-action-wrapper">
-                                                <a href="#" class="kebab active-edit"> </a>
-                                                <ul class="edit-part">
-                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
-                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="custom-control custom-checkbox invisible">
-                                                <input type="checkbox" class="custom-control-input" id="customRowCheck4">
-                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
-                                            </div>
-                                        </td>
-                                        <td>06/01/2018</td>
-                                        <td>-</td>
                                         <td>No</td>
-                                        <td>Have you been or are you subject to any judgment debt against you in home country or elsewhere ?</td>
+                                        
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -488,8 +469,31 @@
                                         </td>
                                         <td>06/01/2018</td>
                                         <td>-</td>
-                                        <td>Yes</td>
+                                        <td>Have you been or are you subject to any judgment debt against you in home country or elsewhere ?</td>
+                                        <td>No</td>
+                                        
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                            </div>
+                                        </td>
+                                        <td>06/01/2018</td>
+                                        <td>-</td>
                                         <td>Is your company the subject of a winding up petition or in the course of being wound-up in home country or elsewhere ?</td>
+                                        <td>Yes</td>
+                                        
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -542,7 +546,7 @@
                         <div class="row">
                            <div class="col-9 pr-0">
                               <div class="modal-title">
-                                 <h3>Add Channel / Agency type for default list of questions </h3>
+                                 <h3> Maintenance of Default questions for Channel / Agency type </h3>
                                  <a href="#" class="add-btn">Edit</a>
                                  <span>* Fields are mandatory</span>
                               </div>

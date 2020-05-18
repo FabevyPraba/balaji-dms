@@ -537,6 +537,24 @@
                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row">
                               <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="">License type</label>
+                                    <input type="text" name=""  placeholder="Enter License type" class="form-control" disabled="">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Effective Date</label>
+                                    <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Effective Date" disabled="" />
+                                            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                            </div>
+                                    </div>
+                                    <div class="invalid-feedback">Enter Effective Date</div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
                                      <div class="form-group">
                                         <label for="" class="required-mark">Start Date</label>
                                         <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
@@ -559,9 +577,15 @@
                                         </div>
                                      </div>
                                   </div>
+                                   <div class="col-12">
+                                     <div class="form-group">
+                                        <label for="" class="required-mark">Exam</label>
+                                        <input type="text" name=""  placeholder="Enter License type" class="form-control" >
+                                     </div>
+                                   </div>  
                               <div class="col-12">
                                  <div class="form-group">
-                                    <label for="" class="radio-text required-mark">Mandatory  *  </label>
+                                    <label for="" class="radio-text required-mark">Mandatory   </label>
                                     <div>
                                        <div class="custom-control custom-radio custom-control-inline">
                                           <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
@@ -574,7 +598,7 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="col-12">
+                              <!-- <div class="col-12">
                                  <div class="form-group">
                                     <label for="" class="radio-text required-mark">Question  *  </label>
                                     <div>
@@ -608,7 +632,7 @@
                                        </div>
                                     </div>
                                  </div>
-                              </div>
+                              </div> -->
                            </div>
                            <div class="modal-footer" id="maintain-footer">
                             <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>

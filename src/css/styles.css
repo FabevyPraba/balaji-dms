@@ -11584,6 +11584,40 @@ div#variable-model {
 #partition-table tr th:nth-child(10) {
   width: 15%; }
 
+#allowed-values-table tr th:nth-child(2) {
+  width: 12%; }
+
+#allowed-values-table tr th:nth-child(3) {
+  width: 12%; }
+
+#allowed-values-table tr th:nth-child(4) {
+  width: 30%; }
+
+#agency-type-table tr th:nth-child(2) {
+  width: 5%; }
+
+#agency-type-table tr th:nth-child(3) {
+  width: 8%;
+  text-align: center; }
+
+#agency-type-table tr th:nth-child(4) {
+  width: 30%; }
+
+#agency-type-table tr th:nth-child(5) {
+  width: 8%;
+  text-align: center; }
+
+#agency-type-table tr td:nth-child(3) {
+  text-align: center; }
+
+#agency-type-table tr td:nth-child(5) {
+  width: 8%;
+  text-align: center; }
+
+#ftr-modal {
+  position: absolute;
+  bottom: 0; }
+
 #msg-save-btn {
   margin-right: 15px;
   display: inline-block; }
