@@ -369,12 +369,27 @@ $(document).ready(function () {
 
   $(window).on('shown.bs.modal', function() { 
     var $modalEle = $(".partial-model-box.show"),
-        modalBodyHeight =  $(window).outerHeight() - 50 - $modalEle.find('.modal-head').outerHeight();
+        modalBodyHeight =  $(window).outerHeight() - 50 - $modalEle.find('.modal-head').outerHeight(),
+        $formElementsRow = $modalEle.find('.modal-body').find('.row'),
+        $footerWrapper = $modalEle.find('.modal-footer'),
+        $formElementsWrapper = $("<div class='modal-form-wrapper' style='padding: 0 20px 30px 4px;'></div>");
     
     $modalEle.find('.modal-body').css('height', modalBodyHeight);
-    $modalEle.find('.modal-footer').css('visibility', 'visible');
+    $footerWrapper.css('visibility', 'visible');
+
+    //Update scollbar
+    if(($formElementsRow.outerHeight() + $footerWrapper.outerHeight()) > modalBodyHeight -40 && $modalEle.find('.modal-form-wrapper').length <= 0){
+      console.log("Apply Scrollbar");
+      $formElementsWrapper.insertAfter($formElementsRow);
+      $formElementsWrapper.append($formElementsRow);
+      $formElementsWrapper.css('height', modalBodyHeight - $footerWrapper.outerHeight() - 40);
+      $formElementsWrapper.mCustomScrollbar({
+         theme:"minimal-dark"
+      });
+    }
   });
 
+  
   function resetMainNavigation(){
     $(".main-nav-list").hide();
     $(".main-menu").show();
