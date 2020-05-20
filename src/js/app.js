@@ -378,8 +378,7 @@ $(document).ready(function () {
     $footerWrapper.css('visibility', 'visible');
 
     //Update scollbar
-    if(($formElementsRow.outerHeight() + $footerWrapper.outerHeight()) > modalBodyHeight -40 && $modalEle.find('.modal-form-wrapper').length <= 0){
-      console.log("Apply Scrollbar");
+    if($modalEle.find('.modal-form-wrapper').length <= 0){
       $formElementsWrapper.insertAfter($formElementsRow);
       $formElementsWrapper.append($formElementsRow);
       $formElementsWrapper.css('height', modalBodyHeight - $footerWrapper.outerHeight() - 40);
