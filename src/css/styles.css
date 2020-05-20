@@ -11826,6 +11826,10 @@ span.fa.fa-clock-o {
 .bootstrap-datetimepicker-widget table th {
   text-align: center; }
 
+#designation-ftr {
+  position: absolute;
+  bottom: 20px; }
+
 /* Layout End */
 .nav-list {
   min-height: 600px; }
