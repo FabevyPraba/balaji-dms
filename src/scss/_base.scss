@@ -1708,22 +1708,22 @@ div#variable-model{
                     width: 2%;
                 }
                 &:nth-child(2) {
-                    width: 21%;
+                    width: 13%;
                 }
                 &:nth-child(3) {
-                    width: 12%;
+                    width: 11%;
                 }
                 &:nth-child(4) {
-                    width: 15%;
+                    width: 10%;
                 }
                 &:nth-child(5) {
                     width: 11%;
                 }
                 &:nth-child(6) {
-                    width: 16%;
+                    width: 12%;
                 }
                 &:nth-child(7) {
-                    width: 16%;
+                    width: 14%;
                 }
                 &:nth-child(8) {
                     width: 3%;
@@ -1997,7 +1997,7 @@ div#variable-model{
         textarea {
             width: 100%;
             resize: none;
-                border: 1px solid #8b8b8b
+                border: 1px solid #cfcfcf !important;
             &:focus {
                 background: #f2f2f2;
                 border: 1px solid rgba(0, 0, 0, 0.9);
