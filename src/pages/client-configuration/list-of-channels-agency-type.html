@@ -546,7 +546,7 @@
                               <div class="col-12">
                                  <div class="form-group">
                                     <label for="" class="required-mark">Effective Date</label>
-                                    <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
+                                    <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest" >
                                             <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Effective Date" required="" />
                                             <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
@@ -556,57 +556,6 @@
                                     
                                  </div>
                               </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <label for="" class="required-mark">Start Date</label>
-                                    <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Effective Date" required="" />
-                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                                                 <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                            </div>
-                                            <div class="invalid-feedback">Enter Start Date</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <label for="" >End Date</label>
-                                    <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter Effective Date" />
-                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                            </div>
-                                        </div>
-                                 </div>
-                              </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <label for="" class="required-mark">Question-id</label>
-                                    <input type="text" name=""  placeholder="Enter Question-id" class="form-control" required="">
-                                    <div class="invalid-feedback">Enter Question-id</div>
-                                 </div>
-                              </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <label for="">Question</label>
-                                    <input type="text" name=""  placeholder="Enter Question" class="form-control" disabled="">
-                                 </div>
-                              </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="" class="required-mark" class="radio-text required-mark">Mandatory  </label>
-                                        <div>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
-                                                <label class="custom-control-label" for="customRadioInline1">Yes</label>
-                                            </div>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required checked="checked">
-                                                <label class="custom-control-label" for="customRadioInline2">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div> 
                            <div class="modal-footer" id="ftr-modal">
                               <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
@@ -637,12 +586,6 @@
         $(function () {
             // init
             $('#datetimepicker1').datetimepicker({
-                    format: 'L'
-            });
-            $('#datetimepicker2').datetimepicker({
-                    format: 'L'
-            });
-            $('#datetimepicker3').datetimepicker({
                     format: 'L'
             });
             

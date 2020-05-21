@@ -11179,6 +11179,15 @@ div#variable-model {
 #agent-table tr th:nth-child(5) {
   width: 15%; }
 
+#license-table-part tr th:nth-child(2) {
+  width: 5%; }
+
+#license-table-part tr th:nth-child(3) {
+  width: 15%; }
+
+#license-table-part tr th:nth-child(4) {
+  width: 25%; }
+
 #production-service-pagination {
   bottom: 12%; }
 

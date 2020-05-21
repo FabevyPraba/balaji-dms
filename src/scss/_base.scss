@@ -2744,6 +2744,22 @@ div#variable-model{
     }
 }
 
+#license-table-part{
+    tr{
+        th{
+            &:nth-child(2){
+                width: 5%;
+            }
+            &:nth-child(3){
+                width: 15%;
+            }
+            &:nth-child(4){
+                width: 25%;
+            }
+        }
+    }
+}
+
 #production-service-pagination{
     bottom:12%;
 }
