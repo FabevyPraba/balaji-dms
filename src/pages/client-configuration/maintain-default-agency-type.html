@@ -324,9 +324,7 @@
                                 <thead>
                                     <tr>
                                         <th></th>
-                                        <th>Start Date</th>
-                                        <th>End Date</th>
-                                        <th>Question</th>
+                                        <th>Questions</th>
                                         <th>Mandatory</th>
                                         <th></th>
                                     </tr>
@@ -339,8 +337,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
                                             </div>
                                         </td>
-                                        <td>06/01/2018</td>
-                                        <td>-</td>
                                         <td>Have you entered into an agency agreement or agreements over the last 12 months with any other insurer</td>
                                         <td>Yes</td>
                                         <td class="row-action-cell">
@@ -360,8 +356,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck2"></label>
                                             </div>
                                         </td>
-                                        <td>07/03/2018</td>
-                                        <td>-</td>
                                         <td>Have you ever been terminated by any other insurer</td>
                                         <td>Yes</td>
                                         <td class="row-action-cell">
@@ -381,8 +375,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                             </div>
                                         </td>
-                                        <td>01/01/2019</td>
-                                        <td>-</td>
                                         <td>Have you been transacting insurance business with any insurer other than the ones you represent</td>
                                         <td>Yes</td>
                                         <td class="row-action-cell">
@@ -402,8 +394,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                             </div>
                                         </td>
-                                        <td>06/01/2018</td>
-                                        <td>07/03/2019</td>
                                         <td>Have you entered into a Tripartite Agreement with any other insurer</td>
                                         <td>No</td>
                                         
@@ -424,8 +414,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                             </div>
                                         </td>
-                                        <td>06/01/2018</td>
-                                        <td>-</td>
                                         <td>Have you been or are you unable to fulfil any of your financial obligations, whether in home country or elsewhere ?</td>
                                         <td>No</td>
                                         <td class="row-action-cell">
@@ -445,8 +433,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                             </div>
                                         </td>
-                                        <td>06/01/2018</td>
-                                        <td>-</td>
                                         <td>Have you entered into a compromise or a scheme of arrangement with creditors</td>
                                         <td>No</td>
                                         
@@ -467,8 +453,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                             </div>
                                         </td>
-                                        <td>06/01/2018</td>
-                                        <td>-</td>
                                         <td>Have you been or are you subject to any judgment debt against you in home country or elsewhere ?</td>
                                         <td>No</td>
                                         
@@ -489,8 +473,6 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                             </div>
                                         </td>
-                                        <td>06/01/2018</td>
-                                        <td>-</td>
                                         <td>Is your company the subject of a winding up petition or in the course of being wound-up in home country or elsewhere ?</td>
                                         <td>Yes</td>
                                         
@@ -539,8 +521,8 @@
         </div>
         <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
          <div class="" id="modal">
-            <div class="modal fade partial-model-box" id="myRightAlignedModal">
-               <div class="modal-dialog " id="maintain-box">
+            <div class="modal fade partial-model-box"  id="myRightAlignedModal">
+               <div class="modal-dialog" id="maintain-modal">
                   <div class="modal-content">
                      <div class="modal-head">
                         <div class="row">
@@ -563,29 +545,44 @@
                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row">
                               <div class="col-12">
-                                     <div class="form-group">
-                                        <label for="" class="required-mark">Start Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Start Date" required="" />
-                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                            </div>
-                                            <div class="invalid-feedback">Enter Start Date</div>
+                                 <div class="form-group">
+                                    <label for="" class="radio-text required-mark">Question  </label>
+                                    <div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck1" required>
+                                            <label class="custom-control-label" for="customCheck1">Have you entered into an agency agreement or agreements over the last 12 months with any other insurer?</label>
                                         </div>
-
-                                     </div>
-                                  </div>
-                                  <div class="col-12">
-                                     <div class="form-group">
-                                        <label for="" >End Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter End Date" />
-                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                            </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck2" required>
+                                            <label class="custom-control-label" for="customCheck2">Have you ever been terminated by any other insurer?</label>
                                         </div>
-                                     </div>
-                                  </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck3" required>
+                                            <label class="custom-control-label" for="customCheck3">Have you been transacting insurance business with any insurer other than the ones you represent?</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck4" required>
+                                            <label class="custom-control-label" for="customCheck4">Have you entered into a Tripartite Agreement with any other insurer?</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck5" required>
+                                            <label class="custom-control-label" for="customCheck5">Have you been or are you unable to fulfil any of your financial obligations, whether in home country or elsewhere ?</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck6" required>
+                                            <label class="custom-control-label" for="customCheck6">Have you entered into a compromise or a scheme of arrangement with creditors?</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck7" required>
+                                            <label class="custom-control-label" for="customCheck7">Have you been or are you subject to any judgment debt against you in home country  or elsewhere ?</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" name="check-box-group" class="custom-control-input" id="customCheck8" required>
+                                            <label class="custom-control-label" for="customCheck8">Is your company the subject of a winding up petition  or in the course of being wound-up in home country or  elsewhere?</label>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
                               <div class="col-12">
                                  <div class="form-group">
                                     <label for="" class="radio-text required-mark">Mandatory   </label>
@@ -597,45 +594,6 @@
                                        <div class="custom-control custom-radio custom-control-inline">
                                           <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
                                           <label class="custom-control-label" for="customRadioInline2">No</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <label for="" class="radio-text required-mark">Question  </label>
-                                    <div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions1" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions1">Have you entered into an agency agreement or agreements over the last 12 months with any other insurer?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions2" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions2">Have you ever been terminated by any other insurer?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions3" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions3">Have you been transacting insurance business with any insurer other than the ones you represent?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions4" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions4">Have you entered into a Tripartite Agreement with any other insurer?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions5" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions5">Have you been or are you unable to fulfil any of your financial obligations, whether in home country or elsewhere ?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions6" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions6">Have you entered into a compromise or a scheme of arrangement with creditors?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions7" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions7">Have you been or are you subject to any judgment debt against you in home country  or elsewhere ?</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions8" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions8">Is your company the subject of a winding up petition  or in the course of being wound-up in home country or  elsewhere?</label>
                                        </div>
                                     </div>
                                  </div>

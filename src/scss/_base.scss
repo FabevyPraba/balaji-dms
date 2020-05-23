@@ -2470,7 +2470,7 @@ div#variable-model{
     }
     .modal-title{
         h3{
-            line-height: 1.5;
+            line-height: 1.9;
             display: inline;
             margin-right: 0;
             font-size: 22px;
@@ -2480,7 +2480,7 @@ div#variable-model{
             font-size: 14px;
         }
         span{
-            margin-top: 5px;
+            margin-top: 10px;
             font-size: 14px;
         }
     }
@@ -2748,10 +2748,10 @@ div#variable-model{
     tr{
         th{
             &:nth-child(2){
-                width: 5%;
+                width: 15%;
             }
             &:nth-child(3){
-                width: 15%;
+                width: 5%;
             }
             &:nth-child(4){
                 width: 25%;
@@ -3035,25 +3035,38 @@ div#variable-model{
         th{
             &:nth-child(1){
                 width: 23%;
-                    padding-left: 60px;
+                padding-left: 60px;
             }
             &:nth-child(2){
                 width: 25%;
             }
             &:nth-child(3){
-                width: 2%;
+                width: 20%;
+                text-align: center;
             }
             &:nth-child(4){
-                width: 50%;
+                width: 40%;
+                text-align: left;
             }
         }
         td{
             &:nth-child(1){
                     padding-left: 60px;
             }
+            &:nth-child(3){
+                text-align: center;
+            }
+            &:nth-child(4){
+                text-align: left;
+            }
         }
     }
 }
+
+#select_all{
+    margin-right: 10px;
+}
+
 
 
 .authorisation-menu-role{
@@ -3387,28 +3400,20 @@ div#variable-model{
     tr{
         th{
             &:nth-child(2){
-                width: 5%;
+                width: 30%;
             }
             &:nth-child(3){
-                width: 8%;
+                width: 10%;
                 text-align: center;
             }
             &:nth-child(4){
-                width: 30%;
-            }
-            &:nth-child(5){
-                width: 8%;
-                text-align: center;
+                width: 15%;
             }
         }
         td{
            &:nth-child(3){
                 text-align: center;
             }
-            &:nth-child(5){
-                width: 8%;
-                text-align: center;
-            } 
         }
     }
 }
@@ -3705,4 +3710,14 @@ span.fa.fa-clock-o{
 }
 .was-validated .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before {
     border-color: #8b8b8b;
+}
+
+#maintain-modal{
+    width: 50% !important;
+    min-height: 100vh;
+}
+
+#maintain-modal-box{
+    width: 30% !important;
+    min-height: 100vh;
 }

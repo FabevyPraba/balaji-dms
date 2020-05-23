@@ -324,8 +324,8 @@
                                 <thead>
                                     <tr>
                                         <th></th>
+                                        <th>Exams</th>
                                         <th>Mandatory</th>
-                                        <th>Exam</th>
                                         <th></th>
                                     </tr>
                                 </thead>
@@ -337,8 +337,8 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
                                             </div>
                                         </td>
-                                        <td>Yes</td>
                                         <td>Rules and Regulations for Financial Advisory Services</td>
+                                        <td>Yes</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -356,8 +356,8 @@
                                                 <label class="custom-control-label custom-control-labe1-speical-1" for="customRowCheck2"></label>
                                             </div>
                                         </td>
+                                        <td>Securities Products and Analysis</td>
                                         <td>Yes</td>
-                                        <td>Rules and Regulations for Financial Advisory Services</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -375,8 +375,8 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck3"></label>
                                             </div>
                                         </td>
+                                        <td>Collective Investment Schemes</td>
                                         <td>Yes</td>
-                                        <td>Rules and Regulations for Financial Advisory Services</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -394,8 +394,65 @@
                                                 <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
                                             </div>
                                         </td>
-                                        <td>Yes</td>
-                                        <td>Rules and Regulations for Financial Advisory Services</td>
+                                        <td>Life Insurance and Investment Linked Policies</td>
+                                        <td>No</td>
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                            </div>
+                                        </td>
+                                        <td>Certified Financial Planner(CFP)</td>
+                                        <td>No</td>
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                            </div>
+                                        </td>
+                                        <td>Chartered Financial Consultant(ChFC)</td>
+                                        <td>No</td>
+                                        <td class="row-action-cell">
+                                            <div class="row-action-wrapper">
+                                                <a href="#" class="kebab active-edit"> </a>
+                                                <ul class="edit-part">
+                                                    <li><a data-toggle="modal" data-target="#myRightAlignedModal" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                    <li><a href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="custom-control custom-checkbox invisible">
+                                                <input type="checkbox" class="custom-control-input" id="customRowCheck4">
+                                                <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck4"></label>
+                                            </div>
+                                        </td>
+                                        <td>Associate Financial Consultant(AFC)</td>
+                                        <td>No</td>
                                         <td class="row-action-cell">
                                             <div class="row-action-wrapper">
                                                 <a href="#" class="kebab active-edit"> </a>
@@ -443,7 +500,7 @@
         <section class="aggregation-services-model production-services-form variable-master-model lob-modal">
          <div class="" id="modal">
             <div class="modal fade partial-model-box" id="myRightAlignedModal">
-               <div class="modal-dialog" id="list-exam-model">
+               <div class="modal-dialog" id="maintain-modal-box">
                   <div class="modal-content">
                      <div class="modal-head">
                         <div class="row">
@@ -465,30 +522,42 @@
                         <form class="needs-validation" novalidate>
                            <button type="button" class="reset-btn btn btn-link btn-icon-left"> <i class="icon-close"></i> Reset</button>
                            <div class="row">
+                              
                               <div class="col-12">
-                                     <div class="form-group">
-                                        <label for="" class="required-mark">Start Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Start Date" required="" />
-                                            <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                            </div>
-                                            <div class="invalid-feedback">Enter Start Date</div>
-                                        </div>
-
-                                     </div>
-                                  </div>
-                                  <div class="col-12">
-                                     <div class="form-group">
-                                        <label for="" >End Date</label>
-                                        <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter End Date" />
-                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                            </div>
-                                        </div>
-                                     </div>
-                                  </div>
+                                 <div class="form-group">
+                                    <label for="" class="radio-text required-mark">Exam  </label>
+                                    <div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions1" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions1">Rules and Regulations for Financial Advisory Services</label>
+                                       </div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions2" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions2">Securities Products and Analysis</label>
+                                       </div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions3" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions3">Collective Investment Schemes</label>
+                                       </div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions4" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions4">Life Insurance and Investment-Linked Policies</label>
+                                       </div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions5" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions5">Certified Financial Planner (CFP)</label>
+                                       </div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions6" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions6">Chartered Financial Consultant (ChFC)</label>
+                                       </div>
+                                       <div class="custom-control custom-checkbox custom-control-inline">
+                                          <input type="checkbox" id="questions7" name="questions" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="questions7">Associate Financial Consultant (AFC)</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                               <div class="col-12">
                                  <div class="form-group">
                                     <label for="" class="radio-text required-mark">Mandatory    </label>
@@ -500,41 +569,6 @@
                                        <div class="custom-control custom-radio custom-control-inline">
                                           <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
                                           <label class="custom-control-label" for="customRadioInline2">No</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-12">
-                                 <div class="form-group">
-                                    <label for="" class="radio-text required-mark">Question  </label>
-                                    <div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions1" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions1">Rules and Regulations for Financial Advisory Services</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions2" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions2">Securities Products and Analysis</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions3" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions3">Collective Investment Schemes</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions4" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions4">Life Insurance and Investment-Linked Policies</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions5" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions5">Certified Financial Planner (CFP)</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions6" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions6">Chartered Financial Consultant (ChFC)</label>
-                                       </div>
-                                       <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="questions7" name="questions" class="custom-control-input" required>
-                                          <label class="custom-control-label" for="questions7">Associate Financial Consultant (AFC)</label>
                                        </div>
                                     </div>
                                  </div>
