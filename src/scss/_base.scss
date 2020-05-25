@@ -2117,48 +2117,9 @@ div#variable-model{
     }
 }
 
-.table {
-    tbody {
-        tr {
-            td {
-                &:last-child {
-                    position: relative;
-                }
-            }
-        }
-    }
-}
-
 .secondary-plan-list {
     background: #fff;
     padding: 20px 0 0px;
-    .list-table {
-        /* min-height: 100vh; */
-        tr {
-            th {
-                padding: 10px;
-                border-bottom: 1px solid #a5aebf;
-                &:nth-child(1) {
-                    width: 3%;
-                    padding: 0;
-                }
-                &:nth-child(2) {
-                    width: 15%;
-                }
-                &:nth-child(3) {
-                    width: 22%;
-                }
-                &:nth-child(4) {
-                    width: 15%;
-                }
-                &:nth-child(5) {
-                    width: 12%;
-                }
-            }
-        }
-    }
-    #pagination {
-    }
     .close-part {
         float: right;
         margin-top: -33px;
@@ -2299,8 +2260,7 @@ div#variable-model{
     }
     .dropdown-menu {
         padding-right: 0 !important;
-        top: -3px !important;
-        .dropdown-item {}
+        top: -3px !important;   
     }
 }
 
@@ -2472,7 +2432,6 @@ div#variable-model{
         }
     }
     .modal-dialog {
-        /* min-height: 112vh; */
         background:#fff;
     }
     .modal-footer{
@@ -2534,122 +2493,7 @@ div#variable-model{
 .lob-master-body{
     max-width: 1000px;
     margin: auto;
-    .variable-master-table{
-        table tr th:nth-child(4){
-            text-align: left;
-            width: 30%;
-        } 
-        table tr td:nth-child(4){
-            text-align: left;
-        }
-    }
 }
-
-.list-channel-sec{
-    .variable-master-table{
-        table{
-            width: 100%;
-            tr{
-                th{
-                    &:nth-child(2){
-                        width: 12%;
-                    }
-                    &:nth-child(3){
-                        width: 18%;
-                    }
-                    &:nth-child(4){
-                        width: 13%;
-                        text-align: left;
-                    }
-                    &:nth-child(5){
-                        width: 18%;
-                    }
-                    &:nth-child(6){
-                        width: 15%;
-                    }
-                }
-                td{
-                   &:nth-child(4){
-                        text-align: left;
-                    } 
-                }
-            }
-        }
-    }
-}
-
-.maintain-default-sec{
-    .variable-master-table{
-        table{
-            width: 100%;
-            tr{
-                th{
-                    &:nth-child(2){
-                        width: 10%;
-                    }
-                    &:nth-child(3){
-                        width: 10%;
-                    }
-                    &:nth-child(4){
-                        width: 10%;
-                        text-align: left;
-                    }
-                    &:nth-child(5){
-                        width: 41%;
-                    }
-                }
-                td{
-                   &:nth-child(4){
-                        text-align: left;
-                    } 
-                }
-            }
-        }
-    }
-}
-
-.list-of-license{
-    .variable-master-table{
-        table{
-            width: 100%;
-            tr{
-                th{
-                    &:nth-child(2){
-                        width: 15%;
-                    }
-                    &:nth-child(3){
-                        width: 30%;
-                    }
-                    &:nth-child(4){
-                        width: 20%;
-                        text-align: left;
-                    }
-                }
-                td{
-                   &:nth-child(4){
-                        text-align: left;
-                    } 
-                }
-            }
-        }
-    }
-}
-
-.business-event{
-    .variable-master-table{
-        table{
-            width: 100%;
-            tr{
-                th{
-                    &:nth-child(3){
-                        width: 35%;
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 #designation-btn{
     margin-left: 180px;
@@ -2704,40 +2548,6 @@ div#variable-model{
     }
 }
 
-#agent-table{
-    tr{
-        th{
-            &:nth-child(2){
-                width: 10%;
-            }
-            &:nth-child(3){
-                width: 15%;
-            }
-            &:nth-child(4){
-                width: 10%;
-            }
-            &:nth-child(5){
-                width: 15%;
-            }
-        }
-    }
-}
-
-#license-table-part{
-    tr{
-        th{
-            &:nth-child(2){
-                width: 15%;
-            }
-            &:nth-child(3){
-                width: 5%;
-            }
-            &:nth-child(4){
-                width: 25%;
-            }
-        }
-    }
-}
 
 #production-service-pagination{
     bottom:12%;
@@ -2773,38 +2583,6 @@ div#variable-model{
     .drop-down-box:after{
         display: none;
     }
-    table{
-        tr{
-            &:nth-child(1){
-                border-bottom:1px solid #e7e9eb;
-            }
-            th{
-                padding:12px 0;
-                font-size: 18px;
-                &:nth-child(1){
-                    width: 10% ;
-                }
-                &:nth-child(2){
-                    width: 20%;
-                }
-                &:nth-child(3){
-                    width: 20%;
-                }
-                &:nth-child(4){
-                    width: 50%;
-                }
-            }
-            td{
-                font-size: 16px;
-                padding:12px 0;
-                &:nth-child(4){
-                    text-align: right;
-                    color: #8695b1;
-                }
-
-            }
-        }
-    }
     .drop-down-box{
         padding:8px 10px;
         cursor: pointer;
@@ -2823,8 +2601,6 @@ div#variable-model{
         margin-left: 15px;
     }
 }
-
-
 /* ----- Drop-Down-Menu ------*/
 
 .form-group .custom-select-box {
@@ -2954,8 +2730,6 @@ div#variable-model{
     margin-right: 10px;
 }
 
-
-
 .authorisation-menu-role{
     padding: 15px 0 15px 60px;
     width: 600px;
@@ -3072,8 +2846,6 @@ div#variable-model{
     form{
         width: 95%;
     }
-    .modal-footer{
-    }
 }
 
 #aggregation-modal{
@@ -3135,14 +2907,6 @@ div#variable-model{
     }
 }
 
-#variable-box{
-    // min-height: 130vh;
-    .modal-footer{
-        // bottom:auto;
-    }
-}
-
-
 #allowed-value{
     #allowed-add-btn{
         padding-top:70px;
@@ -3160,33 +2924,12 @@ div#variable-model{
     }
 }
 
-
-#list-exam-model{
-    //min-height: 120vh;
-    .modal-footer{
-        //bottom:-120px;
-    }
-}
-
 #sec-pagination{
     border:none;
 }
 
-
 #agency-type-table{
     tr{
-        th{
-            &:nth-child(2){
-                width: 30%;
-            }
-            &:nth-child(3){
-                width: 10%;
-                text-align: center;
-            }
-            &:nth-child(4){
-                width: 15%;
-            }
-        }
         td{
            &:nth-child(3){
                 text-align: center;
@@ -3278,44 +3021,17 @@ div#variable-model{
 #map-table{
     tr{
         th{
-            &:nth-child(1){
-                width: 2%;
-            }
-            &:nth-child(2){
-                width:25%;
-            }
-            &:nth-child(3){
-                width: 20%;    
-            }
             &:nth-child(4){
-                width: 10%;
                 text-align: center;
             }
-            &:nth-child(5){
-                width: 20%;
-                text-align: center;
-            }
-
         }
         td{
-            &:nth-child(1){
-                width: 2%;
-            }
-            &:nth-child(2){
-                width:35%;
-            }
-            &:nth-child(3){
-                width: 40%;
-            }
             &:nth-child(4){
-                width:40%;
                 text-align: center;
             }
-
         }
     }
 }
-
 // Date-Picker
 
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before{
@@ -3380,7 +3096,6 @@ div#variable-model{
     position: relative;
     width: 30px !important;
     height: 30px !important;
-    /*display: inline-block;*/
 }
 span.fa.fa-chevron-left:after{
     content: '<';
@@ -3412,7 +3127,6 @@ span.fa.fa-clock-o{
 .input-group-text{
     height: 45px;
     background:transparent;
-    // border-left:none;
     img{
         cursor: pointer;
     }
@@ -3453,9 +3167,6 @@ span.fa.fa-clock-o{
     position:absolute;
     bottom:20px;
 }
-
-
-
 
 /* Layout End */
 .nav-list {
