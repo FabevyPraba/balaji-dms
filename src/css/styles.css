@@ -11197,8 +11197,18 @@ div#variable-model {
       padding-right: 0; }
 
 .lob-master-body {
-  max-width: 1000px;
+  max-width: 1150px;
   margin: auto; }
+
+.edit-sec {
+  padding-top: 30px; }
+  .edit-sec .add-btn {
+    background: transparent;
+    color: #8695b1;
+    font-size: 16px; }
+  .edit-sec .delete-btn {
+    color: #8695b1;
+    font-size: 16px; }
 
 #designation-btn {
   margin-left: 180px;
@@ -11462,9 +11472,6 @@ div#variable-model {
 .aggregation-table span {
   padding-top: 30px;
   display: inline-block; }
-
-.btn-part .remove-btn {
-  font-size: 13px; }
 
 #table-sub-btn {
   margin-top: 30px; }
@@ -11730,6 +11737,12 @@ span.fa.fa-clock-o {
 #maintain-modal-box {
   width: 30% !important;
   min-height: 100vh; }
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #1c2b48;
+  font-size: 18px; }
 
 /* ------  Style-Guide -------  */
 .sg-header {

@@ -24,8 +24,6 @@ input{
     height: 45px !important;
 }
 
-
-
 .image {
     padding: $thumbnail-padding;
     background-color: $thumbnail-bg;
@@ -627,13 +625,6 @@ a:hover {
             font-size: 18px;
             font-weight: 600;
         }
-        // .back-btn {
-        //     margin-right: 20px;
-        //     font-weight: 500;
-        //     font-size: 14px;
-        //     position: absolute;
-        //     left: 20px;
-        // }
         a{
             position: absolute;
             left: 15px;
@@ -1152,8 +1143,6 @@ a:hover {
     }
 }
 
-
-
 .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #2b2b2b;
     border-color: #8b8b8b;
@@ -1161,7 +1150,6 @@ a:hover {
 .custom-control-input:focus ~ .custom-control-label::before{
     box-shadow: none;
 }
-
 
 //Miscellaneous
 #dropdownMenuLink {
@@ -1185,9 +1173,7 @@ a:hover {
     cursor: pointer;
 }
 
-
 /* Components End */
-
 
 /* Layout Start */
 
@@ -1548,7 +1534,6 @@ div#variable-model{
     }
 }
 
-
 #round-form {
     margin: 0 auto;
     width: 70%;
@@ -1642,7 +1627,6 @@ div#variable-model{
         }
     }
 }
-
 
 #myTab {
     margin-top: 20px;
@@ -2304,7 +2288,6 @@ div#variable-model{
     padding-top:22px;
 }
 
-
 /*  -----------  Configuration Management  ------- */
 
 .pagination-part {
@@ -2491,8 +2474,21 @@ div#variable-model{
 }
 
 .lob-master-body{
-    max-width: 1000px;
+    max-width: 1150px;
     margin: auto;
+}
+
+.edit-sec{
+    padding-top:30px;
+    .add-btn{
+        background:transparent;
+        color: #8695b1;
+        font-size: 16px
+    }
+    .delete-btn{
+        color: #8695b1;
+        font-size: 16px;
+    }
 }
 
 #designation-btn{
@@ -2547,7 +2543,6 @@ div#variable-model{
         bottom:-100px;
     }
 }
-
 
 #production-service-pagination{
     bottom:12%;
@@ -2781,7 +2776,6 @@ div#variable-model{
     }
 }
 
-
 // Error-Message
 
 .error-msg-part{
@@ -2874,16 +2868,9 @@ div#variable-model{
     }
 }
 
-.btn-part{
-    .remove-btn{
-        font-size: 13px;
-    }
-}
-
 #table-sub-btn{
     margin-top: 30px;
 }
-
 
 #new-row-1 span{
     padding-top:30px;
@@ -3208,4 +3195,10 @@ span.fa.fa-clock-o{
 #maintain-modal-box{
     width: 30% !important;
     min-height: 100vh;
+}
+.remove-btn{
+    background:transparent;
+    border:none;
+    color: #1c2b48;
+    font-size: 18px;
 }
