@@ -24,6 +24,10 @@ input{
     height: 45px !important;
 }
 
+textarea{
+    padding: 10px !important;
+}
+
 .image {
     padding: $thumbnail-padding;
     background-color: $thumbnail-bg;
@@ -2588,7 +2592,14 @@ div#variable-model{
 }
 
 #aggregation-box{
-    min-height: 165vh;
+    min-height: 105vh;
+    width: 50%;
+}
+
+#aggregation-box {
+    form{
+        width: 100%;
+    }
 }
 
 .table-structure-edit{
@@ -2846,18 +2857,22 @@ div#variable-model{
     min-height: 110vh;
     width: 55%;
     form{
-        min-height: 110vh;
+        min-height: 100vh;
+        width: 100%;
     }
     .modal-footer{
-        bottom:-250px;
+        bottom:-100px;
     }
 }
 
 #production-modal{
-    min-height: 110vh;
-    width: 50%;
+    min-height: 105vh;
+    width: 45%;
+    form{
+        width: 100%;
+    }
     .modal-footer{
-        bottom:-60px;
+        bottom:0px;
     }
 }
 

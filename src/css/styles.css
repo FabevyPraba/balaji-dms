@@ -9193,6 +9193,9 @@ button:focus {
 input {
   height: 45px !important; }
 
+textarea {
+  padding: 10px !important; }
+
 .image {
   padding: 0.25rem;
   background-color: #fff;
@@ -11277,7 +11280,11 @@ div#variable-model {
     margin-left: 10px; }
 
 #aggregation-box {
-  min-height: 165vh; }
+  min-height: 105vh;
+  width: 50%; }
+
+#aggregation-box form {
+  width: 100%; }
 
 .table-structure-edit i {
   margin-left: 15px; }
@@ -11459,15 +11466,18 @@ div#variable-model {
   min-height: 110vh;
   width: 55%; }
   #aggregation-modal form {
-    min-height: 110vh; }
+    min-height: 100vh;
+    width: 100%; }
   #aggregation-modal .modal-footer {
-    bottom: -250px; }
+    bottom: -100px; }
 
 #production-modal {
-  min-height: 110vh;
-  width: 50%; }
+  min-height: 105vh;
+  width: 45%; }
+  #production-modal form {
+    width: 100%; }
   #production-modal .modal-footer {
-    bottom: -60px; }
+    bottom: 0px; }
 
 .aggregation-table span {
   padding-top: 30px;

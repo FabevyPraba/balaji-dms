@@ -7,11 +7,6 @@
 
     <title>Webpack Config</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    <style>
-        .list-group-item {
-            border: 1px solid rgba(189, 189, 189, 0.125);
-        }
-    </style>
 </head>
 <body>
 
@@ -579,7 +574,7 @@
             </div>
         </div>
 
-        <section class="aggregation-services-model">
+     <section class="aggregation-services-model">
          <div class="" id="modal">
             <div class="modal fade partial-model-box" id="aggregation-1">
                <div class="modal-dialog" id="aggregation-modal">
@@ -614,438 +609,429 @@
                                     <a class="nav-link" id="default-tab-4" data-toggle="tab" href="#tab-item-4" role="tab" aria-controls="tab-item-4" aria-selected="false">Aggregation Table Service</a>
                                  </li>
                               </ul>
-                              <div class="tab-content" id="myTabContent">
-                                 <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
-                                    <span class="mandatory-text">* Fields are mandatory</span>
-                                    <form class="needs-validation" novalidate>
-                                       <div class="row">
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Aggregation Service-id</label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">AGG-FYC <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">AGG-FYC</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-12">
-                                             <div class="form-group">
-                                                <label for="">Description</label>
-                                                <textarea rows="3" placeholder="First year Commission"></textarea>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Input variable-id</label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">BASIC-COMM <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu dropdown-scroll">
-                                                      <li class="dropdown-item">BASIC-COMM</li>
-                                                      <li class="dropdown-item">Date of appointment of agent </li>              
-                                                      <li class="dropdown-item">Policy year</li>              
-                                                      <li class="dropdown-item">Premium type</li>              
-                                                      <li class="dropdown-item">Policy type</li>              
-                                                      <li class="dropdown-item">Product Version</li>              
-                                                      <li class="dropdown-item">Location code</li>              
-                                                      <li class="dropdown-item">Billing frequency</li>              
-                                                      <li class="dropdown-item">Premium received date</li>              
-                                                      <li class="dropdown-item">Premium instalment number</li>              
-                                                      <li class="dropdown-item">Business event</li>              
-                                                      <li class="dropdown-item">Agency year</li>              
-                                                      <li class="dropdown-item">Eligibility Date</li>              
-                                                      <li class="dropdown-item">Basic Commission</li>              
-                                                      <li class="dropdown-item">Temporary accumulation</li>              
-                                                      <li class="dropdown-item">From Day</li>              
-                                                      <li class="dropdown-item">To Day</li>              
-                                                      <li class="dropdown-item">To Month</li>              
-                                                      <li class="dropdown-item">Accumulation Start Date</li>              
-                                                      <li class="dropdown-item">Accumulation End Date</li>              
-                                                      <li class="dropdown-item">Maximum sum insured</li>              
-                                                      <li class="dropdown-item">RNEP Credit</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-12">
-                                             <div class="form-group">
-                                                <label for="" >Description</label>
-                                                <textarea rows="3" placeholder="Basic Commission"></textarea>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Output variable-id </label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Temporary accumulation <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu dropdown-scroll">
-                                                      <li class="dropdown-item">Temporary accumulation</li>
-                                                      <li class="dropdown-item">From Day </li>              
-                                                      <li class="dropdown-item">To Day</li>              
-                                                      <li class="dropdown-item">To Month</li>              
-                                                      <li class="dropdown-item">Accumulation Start Date</li>              
-                                                      <li class="dropdown-item">Accumulation End Date</li>              
-                                                      <li class="dropdown-item">Maximum sum insured</li>              
-                                                      <li class="dropdown-item">RNEP Credit</li>                        
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-12">
-                                             <div class="form-group">
-                                                <label for="" >Description</label>
-                                                <textarea rows="3" placeholder="Basic Commission"></textarea>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label class="required-mark">Aggregation From Date</label>
-                                                <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
-                                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter Aggregation From Date" />
-                                                    <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                                        <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label  class="required-mark">Aggregation to Date</label>
-                                                <div class="input-group input-group-lg date" id="datetimepicker4" data-target-input="nearest">
-                                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Enter Aggregation to Date" />
-                                                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                                        <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
-                                                    </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Aggregation Period basis</label>
-                                                <div class="drop-down-box custom-select-box" >
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Date of Reporting <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu" required="">
-                                                      <li class="dropdown-item">Date of Reporting</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Aggregation for</label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’ <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">All agents in level ‘n’</li>
-                                                      <li class="dropdown-item">One Agent</li>              
-                                                      <li class="dropdown-item">All agents in level 'n' and below</li>                 
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="">Aggregation for ‘n’ </label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">2 <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">One Agent</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Aggregation Level </label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’ <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">All agents in level ‘n’</li>
-                                                      <li class="dropdown-item">One Agent</li>              
-                                                      <li class="dropdown-item">All agents in level 'n'</li>                            
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="">Aggregation Level ‘n’</label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">1 <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-6">
-                                             <div class="form-group">
-                                                <label for="" class="required-mark">Aggregation for output level</label>
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">A value for each eligible agent <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">A value for each eligible agent</li>
-                                                      <li class="dropdown-item">A single value which is the total from all eligible agents</li>
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="modal-footer">
-                                          <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                          <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                          <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                                          <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                       </div>
-                                    </form>
-                                 </div>
-                                 <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                    <form class="aggregation-table">
-                                       <div class="row" id="new-row">
-                                          <div class="col-1 pr-0">
-                                          </div>
-                                          <div class="col-3 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Agent-years-of-service</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item"><=</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu" >
-                                                      <li class="dropdown-item">Select</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control">
-                                             </div>
-                                          </div>
-
-                                          <div class="col-2 pl-0">
-                                             <div class="edit-sec" id="edit-sr-part">
-                                               <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                               <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                            </div>
-                                          </div>
-                                       </div>
-
-                                       <div id="append-new-row"></div>
-                                       <div class="modal-footer modal-btn">
-                                          <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                          <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                          <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                                          <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                       </div>
-                                    </form>
-                                 </div>
-                                 <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
-                                    <form class="aggregation-table">
-                                       <div class="row" id="new-row">
-                                          <div class="col-1 pr-0">
-                                          </div>
-                                          <div class="col-3 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Grade <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Agent-Grade</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item"><=</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Captive agent <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Captive agent</li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control">
-                                             </div>
-                                          </div>
-
-                                          <div class="col-2 pl-0">
-                                             <div class="edit-sec" id="edit-sr-part">
-                                                <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="row">
-                                          <div class="col-1 pr-0">
-                                          </div>
-                                          <div class="col-3 pl-0">
-                                                <div class="form-group">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
+                                        <span class="mandatory-text">* Fields are mandatory</span>
+                                        <form class="needs-validation" novalidate>
+                                           <div class="row">
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Aggregation Service-id</label>
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-type <i class="icon-right-open"></i></a>
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">AGG-FYC <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item">Agent-type</li>
+                                                          <li class="dropdown-item">AGG-FYC</li>
                                                         </ul>
                                                     </div>
-                                                </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                                <div class="form-group">
+                                                 </div>
+                                              </div>
+                                              <div class="col-12">
+                                                 <div class="form-group">
+                                                    <label for="">Description</label>
+                                                    <textarea rows="3" placeholder="First year Commission"></textarea>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Input variable-id</label>
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><</li>              
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">BASIC-COMM <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu dropdown-scroll">
+                                                          <li class="dropdown-item">BASIC-COMM</li>
+                                                          <li class="dropdown-item">Date of appointment of agent </li>              
+                                                          <li class="dropdown-item">Policy year</li>              
+                                                          <li class="dropdown-item">Premium type</li>              
+                                                          <li class="dropdown-item">Policy type</li>              
+                                                          <li class="dropdown-item">Product Version</li>              
+                                                          <li class="dropdown-item">Location code</li>              
+                                                          <li class="dropdown-item">Billing frequency</li>              
+                                                          <li class="dropdown-item">Premium received date</li>              
+                                                          <li class="dropdown-item">Premium instalment number</li>              
+                                                          <li class="dropdown-item">Business event</li>              
+                                                          <li class="dropdown-item">Agency year</li>              
+                                                          <li class="dropdown-item">Eligibility Date</li>              
+                                                          <li class="dropdown-item">Basic Commission</li>              
+                                                          <li class="dropdown-item">Temporary accumulation</li>              
+                                                          <li class="dropdown-item">From Day</li>              
+                                                          <li class="dropdown-item">To Day</li>              
+                                                          <li class="dropdown-item">To Month</li>              
+                                                          <li class="dropdown-item">Accumulation Start Date</li>              
+                                                          <li class="dropdown-item">Accumulation End Date</li>              
+                                                          <li class="dropdown-item">Maximum sum insured</li>              
+                                                          <li class="dropdown-item">RNEP Credit</li>              
                                                         </ul>
                                                     </div>
-                                                </div>    
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Senior <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Senior</li>
-                                                      <li class="dropdown-item">2</li>              
-                                                      <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li>              
-                                                    </ul>
+                                                 </div>
+                                              </div>
+                                              <div class="col-12">
+                                                 <div class="form-group">
+                                                    <label for="" >Description</label>
+                                                    <textarea rows="3" placeholder="Basic Commission"></textarea>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Output variable-id </label>
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Temporary accumulation <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu dropdown-scroll">
+                                                          <li class="dropdown-item">Temporary accumulation</li>
+                                                          <li class="dropdown-item">From Day </li>              
+                                                          <li class="dropdown-item">To Day</li>              
+                                                          <li class="dropdown-item">To Month</li>              
+                                                          <li class="dropdown-item">Accumulation Start Date</li>              
+                                                          <li class="dropdown-item">Accumulation End Date</li>              
+                                                          <li class="dropdown-item">Maximum sum insured</li>              
+                                                          <li class="dropdown-item">RNEP Credit</li>                        
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-12">
+                                                 <div class="form-group">
+                                                    <label for="" >Description</label>
+                                                    <textarea rows="3" placeholder="Basic Commission"></textarea>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label class="required-mark">Aggregation From Date</label>
+                                                    <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter Aggregation From Date" />
+                                                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                                            <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control">
-                                             </div>
-                                          </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label  class="required-mark">Aggregation to Date</label>
+                                                    <div class="input-group input-group-lg date" id="datetimepicker4" data-target-input="nearest">
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Enter Aggregation to Date" />
+                                                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                            <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                                        </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Aggregation Period basis</label>
+                                                    <div class="drop-down-box custom-select-box" >
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Date of Reporting <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" required="">
+                                                          <li class="dropdown-item">Date of Reporting</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Aggregation for</label>
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’ <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">All agents in level ‘n’</li>
+                                                          <li class="dropdown-item">One Agent</li>              
+                                                          <li class="dropdown-item">All agents in level 'n' and below</li>                 
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="">Aggregation for ‘n’ </label>
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">2 <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">One Agent</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Aggregation Level </label>
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">All agents in level ‘n’ <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">All agents in level ‘n’</li>
+                                                          <li class="dropdown-item">One Agent</li>              
+                                                          <li class="dropdown-item">All agents in level 'n'</li>                            
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="">Aggregation Level ‘n’</label>
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">1 <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-6">
+                                                 <div class="form-group">
+                                                    <label for="" class="required-mark">Aggregation for output level</label>
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">A value for each eligible agent <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">A value for each eligible agent</li>
+                                                          <li class="dropdown-item">A single value which is the total from all eligible agents</li>
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                           <div class="modal-footer">
+                                              <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                              <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                           </div>
+                                        </form>
+                                    </div>
+                                     <!-- <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
+                                        <form class="aggregation-table">
+                                           <div class="row" id="new-row">
+                                              <div class="col-1 pr-0">
+                                              </div>
+                                              <div class="col-3 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">Agent-years-of-service</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item"><=</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" >
+                                                          <li class="dropdown-item">Select</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
 
-                                          <div class="col-2 pl-0">
-                                             <div class="edit-sec" id="edit-sr-part">
-                                                <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="modal-footer modal-btn">
-                                          <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                          <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                          <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                                          <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                       </div>
-                                    </form>
-                                 </div>
-                                 <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
-                                    <form class="aggregation-table">
-                                       <div class="row" id="new-row-1">
-                                          <div class="col-1 pr-0">
-                                             <span>Step 1</span>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control" placeholder="Table Structure">
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP Credit <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">RNEP Credit</li>              
-                                                    </ul>
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec" id="edit-sr-part">
+                                                   <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                                   <i class="icon-grid_bin delete-btn" id="delete"></i>
                                                 </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-5 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control">
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                              <div class="edit-sec" id="edit-sr-part" >
-                                                    <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                                    <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                              </div>
+                                           </div>
+
+                                           <div id="append-new-row"></div>
+                                           <div class="modal-footer modal-btn">
+                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                              <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                           </div>
+                                        </form>
+                                     </div>
+                                     <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
+                                        <form class="aggregation-table">
+                                           <div class="row" id="new-row">
+                                              <div class="col-1 pr-0">
+                                              </div>
+                                              <div class="col-3 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Grade <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">Agent-Grade</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item"><=</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Captive agent <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">Captive agent</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
+
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec" id="edit-sr-part">
+                                                    <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                           <div class="row">
+                                              <div class="col-1 pr-0">
+                                              </div>
+                                              <div class="col-3 pl-0">
+                                                    <div class="form-group">
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-type <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">Agent-type</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <div class="drop-down-box custom-select-box">
+                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li class="dropdown-item"><</li>              
+                                                            </ul>
+                                                        </div>
+                                                    </div>    
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Senior <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">Senior</li>
+                                                          <li class="dropdown-item">2</li>              
+                                                          <li class="dropdown-item">3</li>              
+                                                          <li class="dropdown-item">4</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
+
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec" id="edit-sr-part">
+                                                    <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                           <div class="modal-footer modal-btn">
+                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                              <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                           </div>
+                                        </form>
+                                     </div>
+                                     <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
+                                        <form class="aggregation-table">
+                                           <div class="row" id="new-row-1">
+                                              <div class="col-1 pr-0">
+                                                 <span>Step 1</span>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Table Structure">
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP Credit <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">RNEP Credit</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-5 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                  <div class="edit-sec" id="edit-sr-part" >
+                                                        <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                                        <i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                    </div>
+                                              </div>
+                                           </div>
+                                           <div class="row" id="new-row-1">
+                                              <div class="col-1 pr-0">
+                                                 <span>Step 2</span>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Table Structure">
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">% reducti.. <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">% reducti..  </li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-5 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec" id="edit-sr-part">
+                                                   <i class="icon-button_ico_addnew add-btn" id="add"></i>
+                                                   <i class="icon-grid_bin delete-btn" id="delete"></i>
                                                 </div>
-                                          </div>
-                                       </div>
-                                       <div class="row" id="new-row-1">
-                                          <div class="col-1 pr-0">
-                                             <span>Step 2</span>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control" placeholder="Table Structure">
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="form-group">
-                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">% reducti.. <i class="icon-right-open"></i></a>
-                                                    <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">% reducti..  </li>              
-                                                    </ul>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-5 pl-0">
-                                             <div class="form-group">
-                                                <input type="text" name="" class="form-control">
-                                             </div>
-                                          </div>
-                                          <div class="col-2 pl-0">
-                                             <div class="edit-sec" id="edit-sr-part">
-                                               <i class="icon-button_ico_addnew add-btn" id="add"></i>
-                                               <i class="icon-grid_bin delete-btn" id="delete"></i>
-                                            </div>
-                                          </div>
-                                       </div>
-                                       <div id="append-new-row-1"></div>
-                                       <div class="modal-footer modal-btn">
-                                          <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                          <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                          
-                                          <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                       </div>
-                                    </form>
-                                 </div>
-                              </div>
+                                              </div>
+                                           </div>
+                                           <div id="append-new-row-1"></div>
+                                           <div class="modal-footer modal-btn">
+                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                              
+                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                           </div>
+                                        </form>
+                                     </div> -->
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    
+                                </div>
                            </div>
                         </div>
                      </div>
@@ -1053,7 +1039,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section>    
 
 
       <section class="aggregation-services-model production-services-form">
@@ -1248,7 +1234,7 @@
         <p>Powered by <a href="#">Salzzappo</a></p>
     </div>
     
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
@@ -1288,6 +1274,11 @@
             });
             
         });
-    </script>
+    </script> -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../../js/app.js"></script>
 </body>
 </html>
