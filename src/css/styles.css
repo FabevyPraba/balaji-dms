@@ -9760,7 +9760,7 @@ a:hover {
     display: block; }
     .main-menu .menu-list .menu-cont .menu-box:hover {
       border: solid 3px #c6d1e5;
-      background-color: #f59700; }
+      background-color: #fff; }
     .main-menu .menu-list .menu-cont .menu-box:active {
       border: solid 3px #1c2b48;
       background-color: #f2f4f8; }
