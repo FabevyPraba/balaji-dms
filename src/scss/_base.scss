@@ -3073,8 +3073,8 @@ div#variable-model{
 }
 
 .bootstrap-datetimepicker-widget table td span.active{
-    background: #6fbc78;
-    color: #fff;
+    background: transparent;
+    color: #6fbc78;
 }
 .bootstrap-datetimepicker-widget table td span{
         width: 85px;
@@ -3218,6 +3218,6 @@ span.fa.fa-clock-o{
     font-size: 18px;
 }
 
-.table-new-row{
-    display: flex;
+#code-ftr{
+    bottom:-80px;
 }
