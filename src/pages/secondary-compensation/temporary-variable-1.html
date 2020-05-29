@@ -336,7 +336,7 @@
                                 <div class="col-6">
                                     <div class="search-part">
                                         <input type="search" name="" placeholder="Search" class="search-box">
-                                        <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</button>
+                                        <button type="button" class="btn btn-primary btn-icon-left" data-toggle="modal" data-target="#myRightAlignedModal"><i class="icon-button_ico_addnew"></i> Add New</button>
                                     </div>
                                 </div>
                             </div>
@@ -467,6 +467,100 @@
                 </div>
             </div>
         </div>
+        <section class="aggregation-services-model temporary-variable-form">
+         <div class="" id="modal">
+            <div class="modal fade partial-model-box" id="myRightAlignedModal">
+               <div class="modal-dialog" id="variable-model">
+                  <div class="modal-content">
+                     <div class="modal-head">
+                        <div class="row">
+                           <div class="col-8">
+                              <div class="modal-title">
+                                 <h3>Temporary Variable <br> maintenance</h3>
+                                 <a href="#" class="add-btn">Edit</a>
+                                 <span>* Fields are mandatory</span>
+                              </div>
+                           </div>
+                           <div class="col-4">
+                              <div class="btn-part">
+                                 <button class="remove-btn" data-dismiss="modal"><i class="icon-close"></i></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <form class="needs-validation" novalidate>
+                           <div class="row">
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Variable Name</label>
+                                    <input type="text" name=""  class="form-control" placeholder="Enter Variable Name" required="">
+                                    <div class="invalid-feedback">Enter valid Variable Name.</div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark" >Description</label>
+                                    <textarea rows="3" class="form-control" placeholder="Enter Description" required=""></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="required-mark">Type of Variable</label>
+                                    <div class="drop-down-box custom-select-box">
+                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Numeric<i class="icon-right-open"></i></a>
+                                        <ul class="dropdown-menu">
+                                          <li class="dropdown-item">Numeric</li>
+                                          <li class="dropdown-item">Percentage</li>              
+                                          <li class="dropdown-item">Date</li>              
+                                          <li class="dropdown-item">Alpha numeric</li>              
+                                          <li class="dropdown-item">Boolean</li>              
+                                        </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="" class="radio-text required-mark">Drop down  </label>
+                                    <div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                       </div>
+                                       <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                          <label class="custom-control-label" for="customRadioInline2">No</label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="">Minimum Value</label>
+                                    <input type="text" name="" placeholder="Enter Minimum Value"  class="form-control" required="">
+                                    <div class="invalid-feedback">Enter Valid Minimum Value.</div>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label for="">Maximum Value</label>
+                                    <input type="text" name="" placeholder="Enter Maximum Value"  class="form-control" required="">
+                                    <div class="invalid-feedback">Enter Valid Minimum Value.</div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="modal-footer">
+                               <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                              <button data-dismiss="modal" type="button" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Cancel</button>
+                           </div>
+                        </form>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
     </section>
     <div class="footer-sec">
         <p>Powered by <a href="#">Salzzappo</a></p>
