@@ -9629,7 +9629,8 @@ a:hover {
   .btn-primary:hover, .btn-primary:focus,
   .btn-secondary:hover,
   .btn-secondary:focus {
-    background-color: #6fbc78 !important; }
+    background-color: #6fbc78 !important;
+    box-shadow: none; }
 
 .btn-primary {
   color: #fff !important; }
@@ -9641,7 +9642,8 @@ a:hover {
   .btn-secondary:hover, .btn-secondary:focus {
     color: #6fbc78 !important;
     border: solid 2px #6fbc78 !important;
-    background-color: #fff !important; }
+    background-color: #fff !important;
+    box-shadow: none; }
 
 .btn-icon-left {
   padding-right: 30px; }
@@ -9985,7 +9987,6 @@ a:hover {
   outline: none; }
 
 .partial-model-box {
-  height: 100vh;
   position: fixed;
   top: 0;
   right: 0;
@@ -9993,7 +9994,6 @@ a:hover {
   opacity: 1; }
   .partial-model-box .modal-dialog {
     max-width: 50%;
-    height: 100vh;
     background: #fff;
     width: 50%;
     position: absolute;
@@ -10736,8 +10736,7 @@ div#variable-model {
   .aggregation-services-model .modal .modal-dialog .modal-head {
     padding: 0 20px; }
   .aggregation-services-model .modal .modal-dialog .modal-body {
-    position: relative;
-    padding-bottom: 0; }
+    position: relative; }
     .aggregation-services-model .modal .modal-dialog .modal-body .mandatory-text {
       position: absolute;
       right: 25px;
@@ -10786,6 +10785,15 @@ div#variable-model {
       .aggregation-services-model .modal .modal-dialog .modal-body .modal-footer .close-btn {
         margin-bottom: 0;
         padding: 7px 25px; }
+
+.aggregation-services-model #tab-item-3 .aggregation-table .row .edit-sec {
+  display: none; }
+
+.aggregation-services-model #tab-item-3 .aggregation-table .row:last-child .edit-sec {
+  display: block; }
+
+.aggregation-services-model #tab-item-3 .aggregation-table .row:first-child .delete-btn {
+  display: none; }
 
 .compensation-flow-form form {
   width: 95%;
@@ -11071,6 +11079,8 @@ div#variable-model {
   bottom: 0;
   width: 100%;
   left: 0; }
+  .pagination-part.pos-static {
+    position: static; }
   .pagination-part .close-btn-part {
     top: 12px;
     right: 20px;
@@ -11470,21 +11480,17 @@ div#variable-model {
   width: 95%; }
 
 #aggregation-modal {
-  min-height: 110vh;
   width: 55%; }
   #aggregation-modal form {
-    min-height: 100vh;
     width: 100%; }
-  #aggregation-modal .modal-footer {
-    bottom: -100px; }
 
 #production-modal {
-  min-height: 105vh;
   width: 45%; }
   #production-modal form {
     width: 100%; }
-  #production-modal .modal-footer {
-    bottom: 0px; }
+
+.aggregation-tab {
+  padding-bottom: 30px; }
 
 .aggregation-table span {
   padding-top: 30px;
@@ -11696,7 +11702,7 @@ span.fa.fa-clock-o {
 
 #bottom-ftr {
   bottom: auto;
-  margin-top: 50px; }
+  margin-top: 20px; }
 
 .form-checking {
   height: auto !important; }
@@ -11764,12 +11770,23 @@ span.fa.fa-clock-o {
 #code-ftr {
   bottom: -80px; }
 
-#toggle_event_editing {
+.custom-radio-button {
   border: 2px solid #1c2b48;
   padding: 5px;
   border-radius: 25px;
-  width: 80%;
   margin-top: 20px; }
+  .custom-radio-button button {
+    display: inline-block;
+    color: #1c2b48;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    border-radius: 24px !important;
+    padding: 0 10px; }
+  .custom-radio-button button.active-selection {
+    color: #fff !important;
+    background-color: #1c2b48;
+    text-align: center; }
 
 .locked_active {
   color: #1c2b48;

@@ -533,7 +533,7 @@
                                 <span>No Results Found</span>
                             </div> -->
                             <!-- Pagination -->
-                            <div class="pagination-part clearfix" id="sec-pagination">
+                            <div class="pagination-part pos-static clearfix" id="sec-pagination">
                             <div class="pagination">
                                 <div class="">
                                     <nav aria-label="Page navigation example">
@@ -592,6 +592,7 @@
                         </div>
                      </div>
                      <div class="modal-body">
+                         
                         <!-- Tabs -->
                         <div class="aggregation-tab">
                            <div class="aggregation-table">
@@ -610,8 +611,8 @@
                                  </li>
                               </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <!-- <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
-                                        <span class="mandatory-text">* Fields are mandatory</span>
+                                    <div class="tab-pane fade show active" id="tab-item-1" role="tabpanel" aria-labelledby="default-tab-1">
+                                    <!--    <span class="mandatory-text">* Fields are mandatory</span>
                                         <form class="needs-validation" novalidate>
                                            <div class="row">
                                               <div class="col-6">
@@ -792,10 +793,10 @@
                                               <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
                                               <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                                            </div>
-                                        </form>
+                                        </form> -->
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                        <form class="aggregation-table">
+                                      <!--  <form class="aggregation-table">
                                            <div class="row" id="new-row">
                                               <div class="col-1 pr-0">
                                               </div>
@@ -850,16 +851,16 @@
                                               <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
                                               <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                                            </div>
-                                        </form>
-                                    </div> -->
+                                        </form> -->
+                                    </div>
                                     
                                     <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
                                         <form class="aggregation-table">
                                            <div class="row" id="new-row">
                                               <div class="col-2 ">
-                                                <div class="btn-group" id="toggle_event_editing">
-                                                    <button type="button" class="locked_active active-toggle">AND</button>
-                                                    <button type="button" class=" unlocked_inactive">OR</button>
+                                                <div class="btn-group custom-radio-button">
+                                                    <button type="button" class="active-selection">AND</button>
+                                                    <button type="button" class="">OR</button>
                                                 </div>
                                               </div>
                                               <div class="col-3 pl-0">
@@ -900,15 +901,15 @@
 
                                               <div class="col-2 pl-0">
                                                  <div class="edit-sec" id="edit-sr-part">
-                                                    <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
                                                  </div>
                                               </div>
                                            </div>
                                            <div class="row">
                                               <div class="col-2 ">
-                                                <div class="btn-group" id="toggle_event_editing">
-                                                    <button type="button" class="locked_active active-toggle">AND</button>
-                                                    <button type="button" class=" unlocked_inactive">OR</button>
+                                                <div class="btn-group custom-radio-button">
+                                                    <button type="button" class="active-selection">AND</button>
+                                                    <button type="button">OR</button>
                                                 </div>
                                               </div>
                                               <div class="col-3 pl-0">
@@ -951,21 +952,15 @@
                                               </div>
 
                                               <div class="col-2 pl-0">
-                                                 <div class="edit-sec" id="edit-sr-part">
-                                                    <i class="add-btn icon-pencil-edit"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
+                                                 <div class="edit-sec">
+                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
                                                  </div>
                                               </div>
                                            </div>
-                                           <div class="modal-footer modal-btn">
-                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                              <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                           </div>
                                         </form>
                                     </div>
-                                   <!--  <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
-                                        <form class="aggregation-table">
+                                    <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
+                                      <!--  <form class="aggregation-table">
                                            <div class="row" id="new-row-1">
                                               <div class="col-1 pr-0">
                                                  <span>Step 1</span>
@@ -1035,11 +1030,17 @@
                                               
                                               <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                                            </div>
-                                        </form>
-                                    </div> -->
+                                        </form> -->
+                                    </div>
                                 </div>
                            </div>
                         </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                            <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                            <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                            <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                         </div>
                      </div>
                   </div>
                </div>
@@ -1248,14 +1249,26 @@
             $("body").on("click", "#add" , function(){
                 $("#new-row").clone().appendTo("#append-new-row");
             });
-            $("body").on("click", "#delete", function() {
-                $("#new-row").last().remove();
-            });
             $("body").on("click", "#add" , function(){
                 $("#new-row").clone().appendTo("#append-new-row-1");
             });
             $("body").on("click", "#delete", function() {
                 $("#new-row-1").last().remove();
+            });
+
+            $("body").on("click", ".edit-sec .add-btn", function(){
+                var $this = $(this),
+                    $row = $this.closest('.row'),
+                    $cloneRow = $row.clone();
+                
+                $cloneRow.insertAfter($row);
+            });
+
+            $("body").on("click", ".edit-sec .delete-btn", function(){
+                var $this = $(this),
+                    $row = $this.closest('.row');
+                
+                $row.remove();
             });
 
             // $('#toggle_event_editing button').click(function(){

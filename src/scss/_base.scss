@@ -411,6 +411,7 @@ a:hover {
     display: inline-block;
     &:hover, &:focus {
         background-color: #6fbc78 !important;
+        box-shadow: none;
     }
 }
 .btn-primary{
@@ -425,6 +426,7 @@ a:hover {
         color: #6fbc78 !important;
         border: solid 2px #6fbc78 !important;
         background-color: #fff !important;
+        box-shadow: none;
     }
 }
 .btn-icon-left{
@@ -872,7 +874,6 @@ a:hover {
 }
 
 .partial-model-box {
-    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -880,7 +881,6 @@ a:hover {
     opacity: 1;
     .modal-dialog {
         max-width: 50%;
-        height: 100vh;
         background: #fff;
         width: 50%;
         position: absolute;
@@ -1845,7 +1845,6 @@ div#variable-model{
             }
             .modal-body {
                 position: relative;
-                padding-bottom: 0;
                 .mandatory-text {
                     position: absolute;
                     right: 25px;
@@ -1911,6 +1910,21 @@ div#variable-model{
                         padding: 7px 25px;
                     }
                 }
+            }
+        }
+    }
+    #tab-item-3 .aggregation-table .row{
+        .edit-sec{
+            display: none;
+        }
+        &:last-child{
+            .edit-sec{
+                display: block;
+            }
+        }
+        &:first-child{
+            .delete-btn{
+                display: none;
             }
         }
     }
@@ -2302,6 +2316,9 @@ div#variable-model{
     bottom: 0;
     width: 100%;
     left: 0;
+    &.pos-static{
+        position: static;
+    }
     .close-btn-part{
         top: 12px;
         right: 20px;
@@ -2864,28 +2881,25 @@ div#variable-model{
 }
 
 #aggregation-modal{
-    min-height: 110vh;
     width: 55%;
     form{
-        min-height: 100vh;
         width: 100%;
     }
     .modal-footer{
-        bottom:-100px;
     }
 }
 
 #production-modal{
-    min-height: 105vh;
     width: 45%;
     form{
         width: 100%;
     }
     .modal-footer{
-        bottom:0px;
     }
 }
-
+.aggregation-tab{
+    padding-bottom: 30px;
+}
 .aggregation-table{
     span{
         padding-top:30px;
@@ -3154,7 +3168,7 @@ span.fa.fa-clock-o{
 
 #bottom-ftr{
     bottom:auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .form-checking{
@@ -3232,12 +3246,25 @@ span.fa.fa-clock-o{
     bottom:-80px;
 }
 
-#toggle_event_editing{
+.custom-radio-button{
     border:2px solid #1c2b48;
     padding:5px;
     border-radius:25px;
-    width: 80%;
     margin-top: 20px;
+    button{
+        display: inline-block;
+        color: #1c2b48;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        border-radius: 24px !important;
+        padding: 0 10px;
+    }
+    button.active-selection{
+        color: #fff !important;
+        background-color: #1c2b48;
+        text-align: center;
+    }
 }
 .locked_active{
    color: #1c2b48;

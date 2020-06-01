@@ -368,20 +368,29 @@ $(document).ready(function () {
   });
 
   $(window).on('shown.bs.modal', function() { 
+    
     var $modalEle = $(".partial-model-box.show"),
         modalBodyHeight =  $(window).outerHeight() - 50 - $modalEle.find('.modal-head').outerHeight(),
-        $formElementsRow = $modalEle.find('.modal-body').find('.row'),
         $footerWrapper = $modalEle.find('.modal-footer'),
-        $formElementsWrapper = $("<div class='modal-form-wrapper' style='padding: 0 20px 30px 4px;'></div>");
-    
-    $modalEle.find('.modal-body').css('height', modalBodyHeight);
+        $formElementsWrapper = $("<div class='modal-form-wrapper' style='padding: 0 20px 30px 4px;'></div>"),
+        $formElementsRow;
+
+    //if has tab
+    if(true){
+      $formElementsRow = $modalEle.find('.modal-body').find('.aggregation-tab');
+    }
+    else{
+      $formElementsRow = $modalEle.find('.modal-body').find('.row');
+    }
+    console.log(modalBodyHeight); //887
+    $modalEle.find('.modal-body').css('min-height', modalBodyHeight);
     $footerWrapper.css('visibility', 'visible');
 
     //Update scollbar
     if($modalEle.find('.modal-form-wrapper').length <= 0){
       $formElementsWrapper.insertAfter($formElementsRow);
       $formElementsWrapper.append($formElementsRow);
-      $formElementsWrapper.css('height', modalBodyHeight - $footerWrapper.outerHeight() - 40);
+      $formElementsWrapper.css('min-height', modalBodyHeight - $footerWrapper.outerHeight() - 40);
       $formElementsWrapper.mCustomScrollbar({
          theme:"minimal-dark"
       });
@@ -594,23 +603,20 @@ $(".reset-btn").click(function(){
     $(".needs-validation").trigger("reset");
 });
 
+$(document).on('click', '.custom-radio-button button', function(e){
 
+  console.log("Hi")
 
-// Date-picker
+    e.preventDefault();
+  
+    
+    var $this = $(this);
 
-// $(function() {
-//       var $startDate = $('.start-date');
-//       var $endDate = $('.end-date');
+    if(!($this.hasClass('active-selection'))){
 
-//       $startDate.datepicker({
-//         autoHide: true,
-//       });
-//       $endDate.datepicker({
-//         autoHide: true,
-//         startDate: $startDate.datepicker('getDate'),
-//       });
+      $this.addClass('active-selection');
+      $this.siblings('.active-selection').removeClass('active-selection');
 
-//       $startDate.on('change', function () {
-//         $endDate.datepicker('setStartDate', $startDate.datepicker('getDate'));
-//       });
-// });
+    }
+
+  });
