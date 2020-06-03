@@ -11385,7 +11385,15 @@ div#variable-model {
   text-align: center; }
 
 #select_all {
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: pointer;
+  color: #1c2b48;
+  text-decoration: underline; }
+
+#select_remove {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1c2b48; }
 
 .authorisation-menu-role {
   padding: 15px 0 15px 60px;
