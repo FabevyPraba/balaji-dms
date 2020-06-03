@@ -2744,6 +2744,15 @@ div#variable-model{
 
 #select_all{
     margin-right: 10px;
+    cursor: pointer;
+    color: #1c2b48;
+    text-decoration: underline;
+}
+
+#select_remove{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #1c2b48;
 }
 
 .authorisation-menu-role{
