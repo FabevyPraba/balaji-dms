@@ -374,17 +374,14 @@ $(document).ready(function () {
         $footerWrapper = $modalEle.find('.modal-footer'),
         $formElementsWrapper = $("<div class='modal-form-wrapper' style='padding: 0 20px 30px 4px;'></div>"),
         $formElementsRow;
-
-    console.log($modalEle.find('.modal-body').find('.aggregation-tab').length);
-
-    //if has tab
+    
     if($modalEle.find('.modal-body').find('.aggregation-tab').length > 0){
       $formElementsRow = $modalEle.find('.modal-body').find('.aggregation-tab');
     }
     else{
       $formElementsRow = $modalEle.find('.modal-body').find('.row');
     }
-    console.log(modalBodyHeight); //887
+
     $modalEle.find('.modal-body').css('min-height', modalBodyHeight);
     $footerWrapper.css('visibility', 'visible');
 
@@ -393,9 +390,20 @@ $(document).ready(function () {
       $formElementsWrapper.insertAfter($formElementsRow);
       $formElementsWrapper.append($formElementsRow);
       $formElementsWrapper.css('min-height', modalBodyHeight - $footerWrapper.outerHeight() - 40);
-      $formElementsWrapper.mCustomScrollbar({
-         theme:"minimal-dark"
-      });
+
+      if($modalEle.find('.modal-body').find('.aggregation-tab').length > 0){
+        $modalEle.find('.modal-body').find('.aggregation-tab').find('.tab-pane').each(function(){
+        //   $(this).mCustomScrollbar({
+        //     theme:"minimal-dark"
+        //  });
+        });
+      }
+      else{
+        $formElementsWrapper.mCustomScrollbar({
+          theme:"minimal-dark"
+       });
+      }
+      
     }
   });
 

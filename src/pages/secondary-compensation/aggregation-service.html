@@ -526,31 +526,31 @@
                                     </table>
                                 </div>
                             </div>
-                        </div> 
-                        <!-- Pagination -->
-                        <div class="pagination-part pos-static clearfix" id="sec-pagination">
-                        <div class="pagination">
-                            <div class="">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination pagination-default">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item "><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                            <!-- Pagination -->
+                            <div class="pagination-part pos-static clearfix" id="sec-pagination">
+                                <div class="pagination">
+                                    <div class="">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination pagination-default">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> 
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
                             <div class="save-btn">
@@ -621,7 +621,7 @@
                                               <div class="col-12">
                                                  <div class="form-group">
                                                     <label for="">Description</label>
-                                                    <textarea rows="3" placeholder="First year Commission"></textarea>
+                                                    <textarea rows="3" placeholder="Enter Description">First year Commission</textarea>
                                                  </div>
                                               </div>
                                               <div class="col-6">
@@ -659,7 +659,7 @@
                                               <div class="col-12">
                                                  <div class="form-group">
                                                     <label for="" >Description</label>
-                                                    <textarea rows="3" placeholder="Basic Commission"></textarea>
+                                                    <textarea rows="3" placeholder="Enter Description">Basic Commission</textarea>
                                                  </div>
                                               </div>
                                               <div class="col-6">
@@ -683,14 +683,14 @@
                                               <div class="col-12">
                                                  <div class="form-group">
                                                     <label for="" >Description</label>
-                                                    <textarea rows="3" placeholder="Basic Commission"></textarea>
+                                                    <textarea rows="3" placeholder="Enter Description">Basic Commission</textarea>
                                                  </div>
                                               </div>
                                               <div class="col-6">
                                                  <div class="form-group">
                                                     <label class="required-mark">Aggregation From Date</label>
                                                     <div class="input-group input-group-lg date" id="datetimepicker3" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Enter Aggregation From Date" />
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="DD/MM/YYYY" />
                                                         <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
                                                             <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                                         </div>
@@ -701,7 +701,7 @@
                                                  <div class="form-group">
                                                     <label  class="required-mark">Aggregation to Date</label>
                                                     <div class="input-group input-group-lg date" id="datetimepicker4" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Enter Aggregation to Date" />
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="DD/MM/YYYY" />
                                                         <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                             <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                                         </div>
@@ -789,8 +789,12 @@
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
                                        <form class="aggregation-table">
-                                           <div class="row" id="new-row">
+                                           <div class="row">
                                               <div class="col-2 pr-0">
+                                                <div class="btn-group custom-radio-button">
+                                                    <button type="button" class="active-selection">AND</button>
+                                                    <button type="button">OR</button>
+                                                </div>
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
@@ -807,7 +811,12 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><=</li>              
+                                                            <li class="dropdown-item">>=</li>
+                                                            <li class="dropdown-item">=</li>              
+                                                            <li class="dropdown-item">< ></li>              
+                                                            <li class="dropdown-item">></li>              
+                                                            <li class="dropdown-item"><</li>              
+                                                            <li class="dropdown-item"><=</li> 
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -834,7 +843,7 @@
                                                 </div>
                                               </div>
                                            </div>
-                                           <div class="row" id="new-row">
+                                           <div class="row">
                                               <div class="col-2 pr-0">
                                                     <div class="btn-group custom-radio-button">
                                                         <button type="button" class="active-selection">AND</button>
@@ -856,7 +865,12 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><=</li>              
+                                                            <li class="dropdown-item">>=</li>
+                                                            <li class="dropdown-item">=</li>              
+                                                            <li class="dropdown-item">< ></li>              
+                                                            <li class="dropdown-item">></li>              
+                                                            <li class="dropdown-item"><</li>              
+                                                            <li class="dropdown-item"><=</li> 
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -883,15 +897,14 @@
                                                  </div>
                                               </div>
                                            </div>
-
-                                           <div id="append-new-row"></div>
-                                           <div class="modal-footer modal-btn">
-                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                              <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
-                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                           </div>
                                         </form>
+
+                                        <div class="modal-footer modal-btn">
+                                           <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                           <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                           <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                           <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                        </div>
                                     </div>
                                     
                                     <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
@@ -918,7 +931,12 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><=</li>              
+                                                            <li class="dropdown-item">>=</li>
+                                                            <li class="dropdown-item">=</li>              
+                                                            <li class="dropdown-item">< ></li>              
+                                                            <li class="dropdown-item">></li>              
+                                                            <li class="dropdown-item"><</li>              
+                                                            <li class="dropdown-item"><=</li>           
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -968,7 +986,12 @@
                                                         <div class="drop-down-box custom-select-box">
                                                             <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
                                                             <ul class="dropdown-menu">
-                                                              <li class="dropdown-item"><</li>              
+                                                                <li class="dropdown-item">>=</li>
+                                                                <li class="dropdown-item">=</li>              
+                                                                <li class="dropdown-item">< ></li>              
+                                                                <li class="dropdown-item">></li>              
+                                                                <li class="dropdown-item"><</li>              
+                                                                <li class="dropdown-item"><=</li> 
                                                             </ul>
                                                         </div>
                                                     </div>    
@@ -997,16 +1020,22 @@
                                               </div>
                                            </div>
                                         </form>
+                                        <div class="modal-footer modal-btn">
+                                             <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                             <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                             <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                             <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
-                                       <form class="aggregation-table">
+                                       <form class="aggregation-table ">
                                            <div class="row" id="new-row-1">
                                               <div class="col-1 pr-0">
-                                                 <span>Step 1</span>
+                                                 <span class="step">Step 1</span>
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
-                                                    <input type="text" name="" class="form-control" placeholder="Table Structure">
+                                                    <input type="text" name="" class="form-control" placeholder="Enter Value" value="Table Structure">
                                                  </div>
                                               </div>
                                               <div class="col-2 pl-0">
@@ -1032,11 +1061,11 @@
                                            </div>
                                            <div class="row" id="new-row-1">
                                               <div class="col-1 pr-0">
-                                                 <span>Step 2</span>
+                                                 <span class="step">Step 2</span>
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
-                                                    <input type="text" name="" class="form-control" placeholder="Table Structure">
+                                                    <input type="text" name="" class="form-control" placeholder="Enter Value" value="Table Structure">
                                                  </div>
                                               </div>
                                               <div class="col-2 pl-0">
@@ -1060,14 +1089,13 @@
                                                  </div>
                                               </div>
                                            </div>
-                                           <div id="append-new-row-1"></div>
-                                           <div class="modal-footer modal-btn">
-                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
-                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
-                                              
-                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
-                                           </div>
                                         </form>
+                                        <div class="modal-footer modal-btn">
+                                           <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                           <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                           
+                                           <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
+                                        </div>
                                     </div>
                                 </div>
                            </div>
@@ -1132,7 +1160,7 @@
                                 <div class="form-group">
                                     <label class="required-mark">Aggregation From Date</label>
                                     <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Aggregation From Date" />
+                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="DD/MM/YYYY" />
                                         <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                             <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                         </div>
@@ -1143,7 +1171,7 @@
                                  <div class="form-group">
                                     <label  class="required-mark">Aggregation to Date</label>
                                     <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Enter Aggregation to Date" />
+                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="DD/MM/YYY" />
                                         <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                                             <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
                                         </div>
@@ -1283,6 +1311,12 @@
     <script src="../../js/app.js"></script>
     <script>
         $(document).ready(function() {
+
+            function updateStep($parent){
+                $parent.find('.step').each(function(index){
+                    $(this).text("Step "+ (index+1));
+                });
+            }
             $("body").on("click", "#add" , function(){
                 $("#new-row").clone().appendTo("#append-new-row");
             });
@@ -1299,6 +1333,11 @@
                     $cloneRow = $row.clone();
                 
                 $cloneRow.insertAfter($row);
+                
+                console.log("sdf", $row.find('.step').length);
+
+                if($row.find('.step').length > 0)
+                    updateStep($row.closest('.aggregation-table'));
             });
 
             $("body").on("click", ".edit-sec .delete-btn", function(){
@@ -1336,6 +1375,20 @@
     <style>
         .aggregation-table .row:first-child .custom-radio-button{
             display: none;
+        }
+        .aggregation-table .row .delete-btn,
+        .aggregation-table .row .add-btn{
+            display: none;
+        }
+        .aggregation-table .row:last-child .delete-btn,
+        .aggregation-table .row:last-child .add-btn{
+            display: inline;
+        }
+        .aggregation-table .row:first-child .delete-btn{
+            display: none !important;
+        }
+        #aggregation-modal{
+            min-height: 100%;
         }
     </style>
 
