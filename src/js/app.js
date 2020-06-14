@@ -375,8 +375,10 @@ $(document).ready(function () {
         $formElementsWrapper = $("<div class='modal-form-wrapper' style='padding: 0 20px 30px 4px;'></div>"),
         $formElementsRow;
 
+    console.log($modalEle.find('.modal-body').find('.aggregation-tab').length);
+
     //if has tab
-    if(true){
+    if($modalEle.find('.modal-body').find('.aggregation-tab').length > 0){
       $formElementsRow = $modalEle.find('.modal-body').find('.aggregation-tab');
     }
     else{

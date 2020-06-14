@@ -10494,7 +10494,9 @@ div#variable-model {
     max-width: auto !important;
     padding: 0;
     border: none;
-    box-shadow: 0px 2px 5px 0 #dfdfdf; }
+    box-shadow: 0px 2px 5px 0 #dfdfdf;
+    max-height: 200px;
+    overflow: auto; }
     .drop-down-box .dropdown-menu .dropdown-item {
       text-transform: capitalize;
       color: #353535;
@@ -10727,9 +10729,7 @@ div#variable-model {
 
 .aggregation-services-model .modal .modal-dialog {
   width: 70%;
-  max-width: 70%;
-  min-height: 100vh;
-  padding: 30px 0px 30px 0; }
+  max-width: 70%; }
   .aggregation-services-model .modal .modal-dialog .modal-content {
     padding: 0;
     background: transparent; }
@@ -10780,7 +10780,7 @@ div#variable-model {
       padding: 0;
       position: absolute;
       left: 10px;
-      bottom: 30px;
+      bottom: 00px;
       width: 100%; }
       .aggregation-services-model .modal .modal-dialog .modal-body .modal-footer .close-btn {
         margin-bottom: 0;
@@ -10829,7 +10829,7 @@ div#variable-model {
 
 .no-condition-msg {
   text-align: center;
-  margin-top: 30px; }
+  padding: 0 30px 0; }
   .no-condition-msg img {
     max-width: 100%; }
   .no-condition-msg label {
@@ -10839,7 +10839,7 @@ div#variable-model {
     margin-top: 5px; }
 
 .compensation-flow-list {
-  padding: 25px 20px; }
+  padding: 30px 60px 60px; }
   .compensation-flow-list input {
     background: #f2f2f2;
     border: 1px solid #8b8b8b;
@@ -11137,7 +11137,7 @@ div#variable-model {
   width: 50% !important; }
 
 .aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-dialog {
-  width: 500px !important;
+  width: 640px !important;
   background: #fff;
   padding-left: 15px; }
 
@@ -11170,10 +11170,6 @@ div#variable-model {
 
 .aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-dialog {
   background: #fff; }
-
-.aggregation-services-model.production-services-form.variable-master-model.lob-modal .modal-footer {
-  padding-bottom: 20px;
-  margin-top: 0px !important; }
 
 .aggregation-services-model.production-services-form.variable-master-model.lob-modal form label {
   padding-top: 0px; }
@@ -11498,11 +11494,14 @@ div#variable-model {
     width: 100%; }
 
 .aggregation-tab {
-  padding-bottom: 30px; }
+  padding-bottom: 70px; }
 
 .aggregation-table span {
   padding-top: 30px;
   display: inline-block; }
+
+.compensation-flow-row-wrapper .row:first-child {
+  display: none; }
 
 #table-sub-btn {
   margin-top: 30px; }

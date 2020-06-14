@@ -328,37 +328,43 @@
                         </div>
 
                         <div class="compensation-flow-form">
-                            <form>
+                            <form class="needs-validation form-part" id="add-step" novalidate>
                                 <div class="row">
                                     <div class="col-5">
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="validationDatabase">Setup Type *</label>
+                                                <label for="validationDatabase">Setup Type</label>
                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
+                                                    <a class="dropdown-toggle custom-select-toggle setup-type" data-toggle="dropdown" href="#">Built-in-function <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu dropdown-scroll">
-                                                         <li class="dropdown-item">Select</li>
-                                                         <li class="dropdown-item">Built-in-function</li>              
-                                                         <li class="dropdown-item">Formula Builder</li>              
-                                                         <li class="dropdown-item">Domain variable as at date</li>   
-                                                         <li class="dropdown-item">Java method</li>   
-                                                         <li class="dropdown-item">Table Service </li>   
-                                                         <li class="dropdown-item">Aggregation Service</li>
-                                                         <li class="dropdown-item">Production Service</li>              
+                                                         <li class="dropdown-item" data-value="Built-in-function">Built-in-function</li>              
+                                                         <li class="dropdown-item" data-value="Formula Builder">Formula Builder</li>              
+                                                         <li class="dropdown-item" data-value="Domain variable as at date">Domain variable as at date</li>   
+                                                         <li class="dropdown-item" data-value="Java method">Java method</li>   
+                                                         <li class="dropdown-item" data-value="Table Service">Table Service</li>   
+                                                         <li class="dropdown-item" data-value="Aggregation Service">Aggregation Service</li>
+                                                         <li class="dropdown-item" data-value="Production Service">Production Service</li>              
                                                     </ul>
                                                 </div>
                                            </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="validationDatabase">Setup Value *</label>
+                                                <label for="validationDatabase">Setup Value</label>
                                                <div class="drop-down-box custom-select-box">
-                                                    <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
+                                                    <a class="dropdown-toggle custom-select-toggle setup-value" data-toggle="dropdown" href="#">AGG-PREM <i class="icon-right-open"></i></a>
                                                     <ul class="dropdown-menu">
-                                                      <li class="dropdown-item">Select</li>
-                                                      <!-- <li class="dropdown-item">2</li>              
-                                                      <li class="dropdown-item">3</li>              
-                                                      <li class="dropdown-item">4</li> -->              
+                                                        <li class="dropdown-item">Convert DD,MM,YYYY to date</li>
+                                                        <li class="dropdown-item">Minimum</li>              
+                                                        <li class="dropdown-item">Maximum</li>              
+                                                        <li class="dropdown-item">Average</li>              
+                                                        <li class="dropdown-item">Difference in no.of days <br> between two dates</li>              
+                                                        <li class="dropdown-item">Difference in no.of months <br> between two dates</li>              
+                                                        <li class="dropdown-item">Difference in no.of years <br> between two dates</li>              
+                                                        <li class="dropdown-item">Difference in no.of years, no.of months <br>and no.of days between two dates</li>              
+                                                        <li class="dropdown-item">Sub string</li>              
+                                                        <li class="dropdown-item">Concatenate strings</li>              
+                                                        <li class="dropdown-item">Return number of full frequencies<br> and fractional no.of days </li> 
                                                     </ul>
                                                 </div>
                                            </div>
@@ -366,14 +372,17 @@
                                     </div> 
                                     <div class="col-7">
                                         <div class="form-group">
-                                           <label for="validationDatabase">Details *</label>
+                                           <label for="validationDatabase">Details</label>
                                            <textarea rows="3" class="msg-box"></textarea>
                                         </div>
                                     </div>   
                                     <div class="col-7">
                                         <div class="add-step">
-                                            <a href="compensation-flow-1.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New Step</a>
-                                            
+                                            <button type="submit" class="btn btn-primary btn-icon-left add-new-step"><i class="icon-button_ico_addnew"></i> Add New Step</button>
+                                        </div>
+                                        <div class="edit-step" style="display: none;">
+                                            <button type="submit" class="btn btn-primary btn-icon-left add-new-step"><i class="icon-asset-7"></i> Update</button>
+                                            <button type="button" class="btn btn-secondary btn-icon-left cancel-edit"><i class="icon-button_ico_close"></i> Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -384,7 +393,36 @@
                             <img src="../../images/no-condition.svg" alt="no-condition">
                             <label>No conditions added</label>
                         </div>
-                        
+                        <div class="compensation-flow-list" style="display: none;">
+                            <form class="aggregation-table compensation-flow-row-wrapper">
+                              <div class="row">
+                                 <div class="col-1 pr-0">
+                                    <span class="step">Step 1</span>
+                                 </div>
+                                 <div class="col-3 pl-0">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control setup-type" disabled>
+                                     </div>
+                                 </div>
+                                 <div class="col-3 pl-0">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control setup-value" disabled>
+                                     </div>
+                                 </div>
+                                 <div class="col-3 pl-0">
+                                    <div class="form-group">
+                                       <input type="text" name="" class="form-control details" disabled>
+                                    </div>
+                                 </div>
+                                 <div class="col-2 pl-0">
+                                    <div class="edit-sec" >
+                                         <i class="icon-pencil-edit edit-btn"></i>
+                                         <i class="icon-grid_bin delete-btn delete-row"></i>
+                                      </div>
+                                 </div>
+                              </div>
+                           </form>
+                          </div>
                     </div>
                     <div class="col-12 p-0">
                         <div class="data-assign-part clearfix">
@@ -410,5 +448,106 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../../js/jquery.mCustomScrollbar.min.js"></script>
     <script src="../../js/app.js"></script>
+    <script>
+        function updateSteps($displayContainer){
+            $displayContainer.find('.row').each(function(index){
+                $(this).find('.step').text('Step '+index);
+            })
+        }
+
+        $("#add-step").submit(function(e){
+            e.preventDefault();
+            var $this = $(this),
+                $setupType = $this.find('.setup-type'),
+                $setupValue = $this.find('.setup-value'),
+                $detailsEle = $this.find('.msg-box'),
+                setupTypeText = $setupType.text(),
+                setupValueText = $setupValue.text(),
+                detailsValue = $detailsEle.val(),
+                $noDataContainer = $(".no-condition-msg"),
+                $displayContainer = $('.compensation-flow-list'),
+                $row, $targetRow;
+
+            //Show/Hide Display Sections
+            $noDataContainer.hide();
+            $displayContainer.show();
+
+            //Check if new
+            if(!($this.hasClass('update'))){
+                $row = $displayContainer.find('.row').last();
+                $targetRow = $row.clone();
+                $targetRow.insertAfter($row);
+            }else{
+                console.log($this.attr('data-row'));
+                $targetRow = $displayContainer.find('.row').eq($this.attr('data-row'));
+                $this.removeClass('update');
+                $this.find('.add-step').show();
+                $this.find('.edit-step').hide();
+            }
+
+            //Update Value
+            $targetRow.find('.setup-type').val(setupTypeText);
+            $targetRow.find('.setup-value').val(setupValueText);
+            $targetRow.find('.details').val(detailsValue);
+
+            updateSteps($displayContainer);
+
+            //Rest Form Data
+            $setupType.siblings('ul').find('li').first().trigger('click');
+            $setupValue.siblings('ul').find('li').first().trigger('click');
+            $detailsEle.val("");
+        });
+
+        $(document).on('click', '.delete-row', function(e){
+            e.preventDefault();
+            var $this = $(this),
+                $row = $this.closest('.row'),
+                $displayContainer = $this.closest('.compensation-flow-list'),
+                $noDataContainer = $(".no-condition-msg");
+                
+            $row.remove();
+            updateSteps($displayContainer);
+            
+            console.log($displayContainer.find('.row').length);
+
+            if($displayContainer.find('.row').length <= 1){
+                $noDataContainer.show();
+                $displayContainer.hide();
+            }
+        });
+        $(document).on('click', '.cancel-edit', function(e){
+
+            var $form = $("#add-step");
+            $form.removeClass('update');
+            $form.find('.add-step').show();
+            $form.find('.edit-step').hide();
+            
+
+        });
+        $(document).on('click', '.edit-btn', function(e){
+            e.preventDefault();
+            var $this = $(this),
+                $row = $this.closest('.row'),
+                rowIndex = $row.index(),
+                $form = $("#add-step"),
+                $setupTypeFormEle = $form.find('.setup-type'),
+                $setupValueFormEle = $form.find('.setup-value'),
+                $detailsFormEle = $form.find('.msg-box'),
+                setupTypeValue = $row.find('.setup-type').val(),
+                setupValueValue = $row.find('.setup-value').val(),
+                detailsValue = $row.find('.details').val(),
+                iconEle = $setupTypeFormEle.find("i").clone();
+                
+            console.log(rowIndex);
+            $setupTypeFormEle.html(setupTypeValue).append(iconEle.clone());
+            $setupValueFormEle.html(setupValueValue).append(iconEle.clone());
+            $detailsFormEle.html(detailsValue);
+
+            $form.attr('data-row', rowIndex);
+            $form.addClass('update');
+            $form.find('.add-step').hide();
+            $form.find('.edit-step').show();
+        });
+    </script>
 </body>
 </html>
