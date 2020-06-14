@@ -1915,21 +1915,21 @@ div#variable-model{
             }
         }
     }
-    #tab-item-3 .aggregation-table .row{
-        .edit-sec{
-            display: none;
-        }
-        &:last-child{
-            .edit-sec{
-                display: block;
-            }
-        }
-        &:first-child{
-            .delete-btn{
-                display: none;
-            }
-        }
-    }
+    // #tab-item-3 .aggregation-table .row{
+    //     .edit-sec{
+    //         display: none;
+    //     }
+    //     &:last-child{
+    //         .edit-sec{
+    //             display: block;
+    //         }
+    //     }
+    //     &:first-child{
+    //         .delete-btn{
+    //             display: none;
+    //         }
+    //     }
+    // }
 }
 
 .compensation-flow-form {
@@ -2559,9 +2559,6 @@ div#variable-model{
 
 #edit-sr-part{
     padding-top:30px;
-    i{
-        margin-left: 10px;
-    }
 }
 
 #maintain-box{
