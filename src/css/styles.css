@@ -11266,6 +11266,12 @@ div#variable-model {
 #edit-sr-part {
   padding-top: 30px; }
 
+#tap-dropdown {
+  min-width: 14rem; }
+
+.edit-sec .add-btn.icon-button_ico_addnew {
+  color: #1c2b48; }
+
 #maintain-box {
   min-height: 110vh; }
   #maintain-box #maintain-footer {

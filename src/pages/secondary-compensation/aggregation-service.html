@@ -796,8 +796,10 @@
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
+                                                        <ul class="dropdown-menu" id="tap-dropdown">
                                                           <li class="dropdown-item">Agent-years-of-service</li>              
+                                                          <li class="dropdown-item">Agent-Hierarchy-Level-number</li>              
+                                                          <li class="dropdown-item">Agent-Date-appointed</li>              
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -805,9 +807,14 @@
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><=</li>              
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -844,9 +851,11 @@
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Hierarchy-Level-number <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" id="tap-dropdown">
                                                           <li class="dropdown-item">Agent-years-of-service</li>              
+                                                          <li class="dropdown-item">Agent-Hierarchy-Level-number</li>              
+                                                          <li class="dropdown-item">Agent-Date-appointed</li>              
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -856,7 +865,12 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><=</li>              
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -883,6 +897,64 @@
                                                  </div>
                                               </div>
                                            </div>
+
+                                           <div class="row" id="new-row">
+                                              <div class="col-2 pr-0">
+                                                    <div class="btn-group custom-radio-button">
+                                                        <button type="button" >AND</button>
+                                                        <button type="button" class="active-selection">OR</button>
+                                                    </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Date-appointed <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" id="tap-dropdown">
+                                                          <li class="dropdown-item">Agent-years-of-service</li>              
+                                                          <li class="dropdown-item">Agent-Hierarchy-Level-number</li>              
+                                                          <li class="dropdown-item">Agent-Date-appointed</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" >
+                                                          <li class="dropdown-item">Select</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
+
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec">
+                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
+                                                 </div>
+                                              </div>
+                                           </div>
+
 
                                            <div id="append-new-row"></div>
                                            <div class="modal-footer modal-btn">
@@ -918,7 +990,12 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item"><=</li>              
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -968,7 +1045,12 @@
                                                         <div class="drop-down-box custom-select-box">
                                                             <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
                                                             <ul class="dropdown-menu">
+                                                              <li class="dropdown-item">>=</li>
+                                                              <li class="dropdown-item">=</li>              
+                                                              <li class="dropdown-item">< ></li>              
+                                                              <li class="dropdown-item">></li>              
                                                               <li class="dropdown-item"><</li>              
+                                                              <li class="dropdown-item"><=</li>              
                                                             </ul>
                                                         </div>
                                                     </div>    
