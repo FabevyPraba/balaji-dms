@@ -11881,6 +11881,9 @@ span.fa.fa-clock-o {
 .del-active {
   display: inline-block !important; }
 
+#new-row-1:nth-child(1) .custom-radio-button {
+  display: none; }
+
 /* ------  Style-Guide -------  */
 .sg-header {
   margin: 0; }
