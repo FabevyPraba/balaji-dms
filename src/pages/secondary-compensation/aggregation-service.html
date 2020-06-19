@@ -7,6 +7,7 @@
 
     <title>Webpack Config</title>
     <link rel="stylesheet" href="../../css/styles.css">
+
 </head>
 <body>
 
@@ -788,8 +789,8 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                       <form class="aggregation-table">
-                                           <div class="row">
+                                       <form class="aggregation-table" id="service-form">
+                                           <div class="row" id="new-row-1">
                                               <div class="col-2 pr-0">
                                                 <div class="btn-group custom-radio-button">
                                                     <button type="button" class="active-selection">AND</button>
@@ -800,8 +801,10 @@
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
+                                                        <ul class="dropdown-menu" id="tap-dropdown">
                                                           <li class="dropdown-item">Agent-years-of-service</li>              
+                                                          <li class="dropdown-item">Agent-Hierarchy-Level-number</li>              
+                                                          <li class="dropdown-item">Agent-Date-appointed</li>              
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -809,14 +812,14 @@
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                            <li class="dropdown-item">>=</li>
-                                                            <li class="dropdown-item">=</li>              
-                                                            <li class="dropdown-item">< ></li>              
-                                                            <li class="dropdown-item">></li>              
-                                                            <li class="dropdown-item"><</li>              
-                                                            <li class="dropdown-item"><=</li> 
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -833,17 +836,18 @@
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
-                                                    <input type="text" name="" class="form-control">
+                                                    <input type="text" name="" class="form-control bg-white" cl>
                                                  </div>
                                               </div>
 
                                               <div class="col-2 pl-0">
                                                 <div class="edit-sec">
-                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
-                                                </div>
+                                                    <!-- <i class=" icon-button_ico_addnew add-btn" id="add-new-btn"></i> -->
+                                                    <i class="icon-grid_bin delete-btn" id="del-active-btn"></i>
+                                                 </div>
                                               </div>
                                            </div>
-                                           <div class="row">
+                                           <div class="row" id="new-row-1">
                                               <div class="col-2 pr-0">
                                                     <div class="btn-group custom-radio-button">
                                                         <button type="button" class="active-selection">AND</button>
@@ -853,9 +857,11 @@
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-years-of-service <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Hierarchy-Level-number <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" id="tap-dropdown">
                                                           <li class="dropdown-item">Agent-years-of-service</li>              
+                                                          <li class="dropdown-item">Agent-Hierarchy-Level-number</li>              
+                                                          <li class="dropdown-item">Agent-Date-appointed</li>              
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -865,12 +871,12 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                            <li class="dropdown-item">>=</li>
-                                                            <li class="dropdown-item">=</li>              
-                                                            <li class="dropdown-item">< ></li>              
-                                                            <li class="dropdown-item">></li>              
-                                                            <li class="dropdown-item"><</li>              
-                                                            <li class="dropdown-item"><=</li> 
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -887,15 +893,83 @@
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
-                                                    <input type="text" name="" class="form-control">
+                                                    <input type="text" name="" class="form-control bg-white">
                                                  </div>
                                               </div>
 
                                               <div class="col-2 pl-0">
                                                  <div class="edit-sec">
-                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
+                                                    <!-- <i class=" icon-button_ico_addnew add-btn" id="add-new-btn"></i> -->
+                                                    <i class="icon-grid_bin delete-btn"></i>
                                                  </div>
                                               </div>
+                                           </div>
+
+                                           <div class="row" id="new-row-1">
+                                              <div class="col-2 pr-0">
+                                                    <div class="btn-group custom-radio-button">
+                                                        <button type="button" >AND</button>
+                                                        <button type="button" class="active-selection">OR</button>
+                                                    </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Date-appointed <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" id="tap-dropdown">
+                                                          <li class="dropdown-item">Agent-years-of-service</li>              
+                                                          <li class="dropdown-item">Agent-Hierarchy-Level-number</li>              
+                                                          <li class="dropdown-item">Agent-Date-appointed</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Select <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu" >
+                                                          <li class="dropdown-item">Select</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control bg-white" >
+                                                 </div>
+                                              </div>
+
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec">
+                                                    <i class=" icon-button_ico_addnew add-btn" id="add-new-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn"></i>
+                                                 </div>
+                                              </div>
+                                           </div>
+
+
+                                           <div id="append-new-row"></div>
+                                           <div class="modal-footer modal-btn">
+                                              <button type="button" class="btn btn-primary btn-icon-left"><i class="icon-asset-7"></i>Save</button>
+                                              <a type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_leftarrow"></i> Prev</a>
+                                              <a type="button" class="btn btn-primary btn-icon-right">Next <i class="icon-button_ico_rightarrow"></i></a>
+                                              <button type="button" data-dismiss="modal" class="btn btn-secondary btn-icon-left"> <i class="icon-close"></i> Close</button>
                                            </div>
                                         </form>
 
@@ -908,8 +982,8 @@
                                     </div>
                                     
                                     <div class="tab-pane fade" id="tab-item-3" role="tabpanel" aria-labelledby="default-tab-3">
-                                        <form class="aggregation-table">
-                                           <div class="row" id="new-row">
+                                        <form class="aggregation-table" id="service-form">
+                                           <div class="row" id="new-row-1">
                                               <div class="col-2 ">
                                                 <div class="btn-group custom-radio-button">
                                                     <button type="button" class="active-selection">AND</button>
@@ -931,70 +1005,15 @@
                                                     <div class="drop-down-box custom-select-box">
                                                         <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                            <li class="dropdown-item">>=</li>
-                                                            <li class="dropdown-item">=</li>              
-                                                            <li class="dropdown-item">< ></li>              
-                                                            <li class="dropdown-item">></li>              
-                                                            <li class="dropdown-item"><</li>              
-                                                            <li class="dropdown-item"><=</li>           
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
                                                         </ul>
                                                     </div>
                                                  </div>
-                                              </div>
-                                              <div class="col-2 pl-0">
-                                                 <div class="form-group">
-                                                    <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Variable <i class="icon-right-open"></i></a>
-                                                        <ul class="dropdown-menu">
-                                                          <li class="dropdown-item">Variable</li>
-                                                          <li class="dropdown-item">Constant</li>
-                                                        </ul>
-                                                    </div>
-                                                 </div>
-                                              </div>
-                                              <div class="col-2 pl-0">
-                                                 <div class="form-group">
-                                                    <input type="text" name="" class="form-control">
-                                                 </div>
-                                              </div>
-
-                                              <div class="col-2 pl-0">
-                                                 <div class="edit-sec" id="edit-sr-part">
-                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn" id="delete"></i>
-                                                 </div>
-                                              </div>
-                                           </div>
-                                           <div class="row">
-                                              <div class="col-2 ">
-                                                <div class="btn-group custom-radio-button">
-                                                    <button type="button" class="active-selection">AND</button>
-                                                    <button type="button">OR</button>
-                                                </div>
-                                              </div>
-                                              <div class="col-3 pl-0">
-                                                    <div class="form-group">
-                                                        <div class="drop-down-box custom-select-box">
-                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-type <i class="icon-right-open"></i></a>
-                                                            <ul class="dropdown-menu">
-                                                              <li class="dropdown-item">Agent-type</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                              </div>
-                                              <div class="col-1 pl-0">
-                                                    <div class="form-group">
-                                                        <div class="drop-down-box custom-select-box">
-                                                            <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">< <i class="icon-right-open"></i></a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class="dropdown-item">>=</li>
-                                                                <li class="dropdown-item">=</li>              
-                                                                <li class="dropdown-item">< ></li>              
-                                                                <li class="dropdown-item">></li>              
-                                                                <li class="dropdown-item"><</li>              
-                                                                <li class="dropdown-item"><=</li> 
-                                                            </ul>
-                                                        </div>
-                                                    </div>    
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
@@ -1015,7 +1034,64 @@
 
                                               <div class="col-2 pl-0">
                                                  <div class="edit-sec">
-                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
+                                                    <!-- <i class=" icon-button_ico_addnew add-btn-2" id="add-new-btn"></i> -->
+                                                    <i class="icon-grid_bin delete-btn-2" id="del-active-btn"></i>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                           <div class="row" id="new-row-1">
+                                              <div class="col-2 ">
+                                                <div class="btn-group custom-radio-button">
+                                                    <button type="button" class="active-selection">AND</button>
+                                                    <button type="button" class="">OR</button>
+                                                </div>
+                                              </div>
+                                              <div class="col-3 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Agent-Grade <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">Agent-Grade</li>              
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-1 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#"><= <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">>=</li>
+                                                          <li class="dropdown-item">=</li>              
+                                                          <li class="dropdown-item">< ></li>              
+                                                          <li class="dropdown-item">></li>              
+                                                          <li class="dropdown-item"><</li>              
+                                                          <li class="dropdown-item"><=</li>            
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <div class="drop-down-box custom-select-box">
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Variable <i class="icon-right-open"></i></a>
+                                                        <ul class="dropdown-menu">
+                                                          <li class="dropdown-item">Variable</li>
+                                                          <li class="dropdown-item">Constant</li>
+                                                        </ul>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                              <div class="col-2 pl-0">
+                                                 <div class="form-group">
+                                                    <input type="text" name="" class="form-control">
+                                                 </div>
+                                              </div>
+
+                                              <div class="col-2 pl-0">
+                                                 <div class="edit-sec">
+                                                    <i class=" icon-button_ico_addnew add-btn-2" id="add-new-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn-2"></i>
                                                  </div>
                                               </div>
                                            </div>
@@ -1028,10 +1104,10 @@
                                          </div>
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-4" role="tabpanel" aria-labelledby="default-tab-4">
-                                       <form class="aggregation-table ">
-                                           <div class="row" id="new-row-1">
+                                       <form class="aggregation-table" id="service-form">
+                                           <div class="row only-row" id="new-row-1">
                                               <div class="col-1 pr-0">
-                                                 <span class="step">Step 1</span>
+                                                 <span class="sno">Step 1</span>
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
@@ -1055,13 +1131,14 @@
                                               </div>
                                               <div class="col-2 pl-0">
                                                   <div class="edit-sec">
-                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
+                                                    <!-- <i class=" icon-button_ico_addnew add-btn-1" id="add-new-btn"></i> -->
+                                                    <i class="icon-grid_bin delete-btn-1" id="del-active-btn"></i>
                                                  </div>
                                               </div>
                                            </div>
-                                           <div class="row" id="new-row-1">
+                                           <div class="row only-row" id="new-row-1">
                                               <div class="col-1 pr-0">
-                                                 <span class="step">Step 2</span>
+                                                 <span class="sno">Step 2</span>
                                               </div>
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
@@ -1071,9 +1148,9 @@
                                               <div class="col-2 pl-0">
                                                  <div class="form-group">
                                                     <div class="drop-down-box custom-select-box">
-                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">% reducti.. <i class="icon-right-open"></i></a>
+                                                        <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP Credit <i class="icon-right-open"></i></a>
                                                         <ul class="dropdown-menu">
-                                                          <li class="dropdown-item">% reducti..  </li>              
+                                                          <li class="dropdown-item">RNEP Credit</li>              
                                                         </ul>
                                                     </div>
                                                  </div>
@@ -1084,8 +1161,9 @@
                                                  </div>
                                               </div>
                                               <div class="col-2 pl-0">
-                                                 <div class="edit-sec">
-                                                    <i class="add-btn icon-button_ico_addnew"></i><i class="icon-grid_bin delete-btn"></i>
+                                                  <div class="edit-sec">
+                                                    <i class=" icon-button_ico_addnew add-btn-1" id="add-new-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn-1"></i>
                                                  </div>
                                               </div>
                                            </div>
@@ -1310,50 +1388,199 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="../../js/app.js"></script>
     <script>
-        $(document).ready(function() {
 
-            function updateStep($parent){
-                $parent.find('.step').each(function(index){
-                    $(this).text("Step "+ (index+1));
-                });
-            }
-            $("body").on("click", "#add" , function(){
-                $("#new-row").clone().appendTo("#append-new-row");
-            });
-            $("body").on("click", "#add" , function(){
-                $("#new-row").clone().appendTo("#append-new-row-1");
-            });
-            $("body").on("click", "#delete", function() {
-                $("#new-row-1").last().remove();
-            });
+        // Tab-2
+        $("body").on("click", ".edit-sec .add-btn", function(){
+            var $this = $(this),
+                $row = $this.closest('.row'),
+                $cloneRow = $row.clone().addClass('newClass');
+                var $addBth = $(this).closest('.add-btn').hide();
+                var $delBth = $('.delete-btn').addClass('del-active');
 
-            $("body").on("click", ".edit-sec .add-btn", function(){
+            var $newRow = $('.newClass');
+            var $addNewBtn = $('#add-new-btn');
+            $(".newClass .edit-sec .add-btn").addClass('delete-add');
+            var $removeAdd = $('.delete-add').hide();
+            $cloneRow.insertAfter($row);
+        });
+
+        $("body").on("click", ".edit-sec .delete-btn", function(){
+            var $this = $(this),
+                $row = $this.closest('.row');
+            
+            $row.remove();
+        });
+
+        // Tab-3
+        $("body").on("click", ".edit-sec .add-btn-1", function(e){
+            e.preventDefault();
                 var $this = $(this),
                     $row = $this.closest('.row'),
-                    $cloneRow = $row.clone();
-                
+                    $cloneRow = $row.clone().addClass('newClass');
+                    var $addBth = $(this).closest('.add-btn-1').hide();
+                    var $delBth = $('.delete-btn-1').addClass('del-active');
+
+                var $newRow = $('.newClass');
+                var $addNewBtn = $('#add-new-btn');
+                $(".newClass .edit-sec .add-btn-1").addClass('delete-add');
+                var $removeAdd = $('.delete-add-1').hide();
                 $cloneRow.insertAfter($row);
-                
-                console.log("sdf", $row.find('.step').length);
-
-                if($row.find('.step').length > 0)
-                    updateStep($row.closest('.aggregation-table'));
-            });
-
-            $("body").on("click", ".edit-sec .delete-btn", function(){
-                var $this = $(this),
-                    $row = $this.closest('.row');
-                
-                $row.remove();
-            });
-
-            // $('#toggle_event_editing button').click(function(){
-            //     /* reverse locking status */
-            //     $('#toggle_event_editing button').eq(0).toggleClass('unlocked_inactive locked_active active-toggle');
-            //     $('#toggle_event_editing button').eq(1).toggleClass('unlocked_active active-toggle');
-            // });
         });
+
+
+        $("body").on("click", ".edit-sec .delete-btn-1", function(){
+            var $this = $(this),
+                $row = $this.closest('.row');
+            
+            $row.remove();
+        });
+
+
+        //  Tab-4
+        var counter = 2;
+        $("body").on("click", ".edit-sec .add-btn-2", function(){
+                var $this = $(this),
+                    $row = $this.closest('.row'),
+                    $cloneRow = $row.clone().addClass('newClass');
+                    var $addBth = $(this).closest('.add-btn-2').hide();
+                    var $delBth = $('.delete-btn-2').addClass('del-active');
+
+                var $newRow = $('.newClass');
+                var $addNewBtn = $('#add-new-btn');
+                $(".newClass .edit-sec .add-btn-2").addClass('delete-add');
+                var $removeAdd = $('.delete-add-2').hide();
+                
+                console.log($sNo);
+                $cloneRow.insertAfter($row);
+        });
+        
+
+        $("body").on("click", ".edit-sec .delete-btn-2", function(){
+            var $this = $(this),
+                $row = $this.closest('.row');
+            
+            $row.remove();
+        });
+    
+            
     </script>
+
+    <!-- <script>
+        var addBtton = document.getElementsByClassName("add-new-btn");
+        var deletBttn = document.getElementsByClassName("delete-btn");
+        var tb_row = document.getElementsByClassName("list-tr");
+        var td_action = document.getElementsByClassName("action-td");
+        function myFunction(){
+
+            var values = [" % reducti.. ", " RNEP Credit "];
+           
+            var tb_tr = document.createElement("tr");
+            var tb_td_no = document.createElement("td");
+            var tb_td_name = document.createElement("td");
+            var tb_td_adrs = document.createElement("td");
+            var tb_td_mbl = document.createElement("td");
+            var tb_td_action = document.createElement("td");
+            var delBtn = document.createElement("i");
+            var addBtn = document.createElement("i");
+            addBtn.addEventListener("click", myFunction);
+
+            var sNo = tb_td_no.appendChild(document.createElement('span')); 
+            var inputStructure = tb_td_name.appendChild(document.createElement('input'));
+            var selectBox = tb_td_adrs.appendChild(document.createElement('select'));
+            var textBox = tb_td_mbl.appendChild(document.createElement('input'));
+            selectBox.classList.add("dropdown-menu-box");
+            inputStructure.classList.add("form-control");
+            textBox.classList.add("form-control");
+            sNo.classList.add("sno");
+            sNo.innerHTML = "Step";
+            // Dropdown
+            for (const val of values) {
+                var option = document.createElement("option");
+                option.value = val;
+                option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                selectBox.appendChild(option);
+            }
+            
+            tb_tr.setAttribute('class', "list-tr")
+            addBtn.setAttribute('class', "add-new-btn")
+            delBtn.setAttribute('class', "delete-btn")
+            tb_td_action.setAttribute('class', "action-td")
+            tb_tr.appendChild(tb_td_no);
+            tb_tr.appendChild(tb_td_name);
+            tb_tr.appendChild(tb_td_adrs);
+            tb_tr.appendChild(tb_td_mbl);
+            tb_tr.appendChild(tb_td_action);
+            var trEl = Array.prototype.slice.call("list-tr");
+            var trLast = tb_row.length -1;
+            
+            
+            if(!tb_row.length == 0){
+                tb_td_action.appendChild(addBtn);
+                tb_td_action.appendChild(delBtn);
+                addBtn.classList.add("icon-button_ico_addnew");
+                delBtn.classList.add("icon-grid_bin");
+            }
+
+            if(!tb_row.length > 1){
+                td_action.appendChild(document.createElement('i'));
+                // td_action.classList.remove();
+            }
+
+            document.getElementById("tb-body").appendChild(tb_tr);
+            for(var i = 0; i < addBtton.length; i++){
+                addBtton[i].addEventListener("click", function(){
+                    var node = Array.prototype.slice.call(addBtton);
+                    var index = node.indexOf(this)
+                    console.log(index);
+                    
+                    addBtton[index].remove(); 
+                    
+                    addBtn.classList.add("icon-button_ico_addnew");
+                    delBtn.classList.add("icon-grid_bin");
+                })
+            }
+            for(var i = 0; i < deletBttn.length; i++){
+            
+                deletBttn[i].addEventListener("click", function(){
+                    var node = Array.prototype.slice.call(deletBttn);
+                    var index = node.indexOf(this)
+                    tb_row[index].remove();
+                
+                })
+                
+            }
+            
+        }
+        
+        for(var i = 0; i < addBtton.length; i++){
+            addBtton[i].addEventListener("click", myFunction)
+            addBtton[i].addEventListener("click", function(){
+                var node = Array.prototype.slice.call(addBtton);
+                var index = node.indexOf(this)
+                // console.log(index)
+                addBtton[index].remove()
+                var delBtn = document.createElement("i");
+                // delBtn.innerHTML = "Delete";
+                delBtn.setAttribute('class', "delete-btn");
+                 delBtn.classList.add("icon-grid_bin");
+                td_action[index].appendChild(delBtn)
+                for(var i = 0; i < deletBttn.length; i++){
+            
+                    deletBttn[i].addEventListener("click", function(){
+                        var node = Array.prototype.slice.call(deletBttn);
+                        var index = node.indexOf(this)
+                        // console.log(index)
+
+                        tb_row[index].remove();
+                    
+                    })
+                    
+                }
+            })
+            
+        }
+    </script> -->
+
     <script>
         $(function () {
             // init
@@ -1372,25 +1599,7 @@
             
         });
     </script>
-    <style>
-        .aggregation-table .row:first-child .custom-radio-button{
-            display: none;
-        }
-        .aggregation-table .row .delete-btn,
-        .aggregation-table .row .add-btn{
-            display: none;
-        }
-        .aggregation-table .row:last-child .delete-btn,
-        .aggregation-table .row:last-child .add-btn{
-            display: inline;
-        }
-        .aggregation-table .row:first-child .delete-btn{
-            display: none !important;
-        }
-        #aggregation-modal{
-            min-height: 100%;
-        }
-    </style>
+    
 
 </body>
 </html>

@@ -374,7 +374,7 @@
                                                 <div class="col-4">
                                                     <div class="form-group">
                                                         <label for="" class="required-mark">Table ID </label>
-                                                        <input type="text" placeholder="Enter Table ID " class="form-control" id="id-1" required>
+                                                        <input type="text" placeholder="Enter Table ID " class="form-control" id="id-1" required value="T-RNEP-CREDIT">
                                                         <div class="invalid-feedback">Enter Table ID</div>
                                                     </div>
                                                 </div>
@@ -383,7 +383,8 @@
                                                 <div class="col-8">
                                                     <div class="form-group">
                                                         <label for="" class="required-mark">Description</label>
-                                                        <textarea rows="3" placeholder="Enter Description" ></textarea>
+                                                        <textarea rows="3" placeholder="Enter Description" required="">RNEP Credit</textarea>
+                                                        <div class="invalid-feedback">Enter Description</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -395,9 +396,7 @@
                                                             <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Compensation table<i class="icon-right-open"></i></a>
                                                             <ul class="dropdown-menu">
                                                               <li class="dropdown-item">Compensation table</li>
-                                                              <li class="dropdown-item">2</li>              
-                                                              <li class="dropdown-item">3</li>              
-                                                              <li class="dropdown-item">4</li>              
+                                                              <li class="dropdown-item">Eligibility table</li>              
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -409,32 +408,39 @@
                                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">Simple banded<i class="icon-right-open"></i></a>
                                                                 <ul class="dropdown-menu">
                                                                   <li class="dropdown-item">Simple banded</li>
-                                                                  <li class="dropdown-item">2</li>              
-                                                                  <li class="dropdown-item">3</li>              
-                                                                  <li class="dropdown-item">4</li>              
+                                                                  <li class="dropdown-item">Ratchet banded</li>              
+                                                                  <li class="dropdown-item">Not applicable</li>          
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                     </div>    
                                                     <div class="col-4">
                                                         <div class="form-group">
-                                                            <label for="">Date of Creation </label>
-                                                            <input type="text" class="form-control" placeholder="Enter Date of Creation" id="id-1" required>
-                                                            <div class="invalid-feedback">Enter Date of Creation</div>
+                                                            <label for="" class="required-mark">Date of Creation</label>
+                                                            <div class="input-group input-group-lg date" id="datetimepicker1" data-target-input="nearest">
+                                                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="Enter Date of Creation" />
+                                                                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                                                    <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-4">
                                                         <div class="form-group">
-                                                            <label for="" class="required-mark">Date of Termination </label>
-                                                            <input type="text" class="form-control" placeholder="Enter Date of Termination" id="id-1" required>
-                                                            <div class="invalid-feedback">Enter Date of Termination</div>
+                                                            <label for="" class="required-mark">Date of Termination</label>
+                                                            <div class="input-group input-group-lg date" id="datetimepicker2" data-target-input="nearest">
+                                                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="DD/MM/YYYY" />
+                                                                <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                                                    <div class="input-group-text"><img src="../../images/date-icon.svg"></div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-4">
                                                         <div class="form-group">
                                                             <label for="" class="required-mark">No.of Columns</label>
-                                                            <input type="text" class="form-control" placeholder="Enter No.of Columns" id="id-1" required>
-                                                            <div class="invalid-feedback">Enter No.of Columns   </div>
+                                                            <input type="text" class="form-control" placeholder="Enter No.of Columns" id="id-1" required value="4">
+                                                            <div class="invalid-feedback">Enter No.of Columns</div>
                                                         </div>
                                                     </div>
                                                     <div class="col-4">
@@ -442,11 +448,17 @@
                                                             <label for="" class="required-mark">Output Variable ID</label>
                                                             <div class="drop-down-box custom-select-box">
                                                                 <a class="dropdown-toggle custom-select-toggle" data-toggle="dropdown" href="#">RNEP-CREDIT<i class="icon-right-open"></i></a>
-                                                                <ul class="dropdown-menu">
+                                                                <ul class="dropdown-menu dropdown-scroll">
                                                                   <li class="dropdown-item">RNEP-CREDIT</li>
-                                                                  <li class="dropdown-item">2</li>              
-                                                                  <li class="dropdown-item">3</li>              
-                                                                  <li class="dropdown-item">4</li>              
+                                                                  <li class="dropdown-item">Agency year</li>              
+                                                                  <li class="dropdown-item">Eligibility Date</li>              
+                                                                  <li class="dropdown-item">Temporary</li>              
+                                                                  <li class="dropdown-item">From Day</li>              
+                                                                  <li class="dropdown-item">To Day</li>              
+                                                                  <li class="dropdown-item">To Month</li>              
+                                                                  <li class="dropdown-item">Accumulation Start Date</li>              
+                                                                  <li class="dropdown-item">Accumulation End Date</li>              
+                                                                  <li class="dropdown-item">Maximum sum insured</li>              
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -456,8 +468,9 @@
                                             <div class="row">
                                                 <div class="col-8">
                                                     <div class="form-group">
-                                                        <label for="">Description *</label>
-                                                        <textarea rows="3" placeholder="Enter Description"></textarea>
+                                                        <label for="" class="required-mark">Description</label>
+                                                        <textarea rows="3" placeholder="Enter Description" required="">RNEP Credit</textarea>
+                                                        <div class="invalid-feedback">Enter Description</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -467,47 +480,67 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane fade" id="tab-item-2" role="tabpanel" aria-labelledby="default-tab-2">
-                                        <form id="table-form">
+                                        <form id="table-form" action="#">
                                             <div class="row">
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <label for="">Variable 1 value *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
-                                                        <div class="invalid-feedback">Enter Variable 1 Value </div>
+                                                        <label for="" class="required-mark">Variable 1 value</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <label for="">Variable 2 From Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
-                                                        <div class="invalid-feedback">Enter Table ID</div>
+                                                        <label for="" class="required-mark">Variable 2 From Value</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <label for="">Variable 2 To Value  *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
-                                                        <div class="invalid-feedback">Enter Variable 2 Value</div>
+                                                        <label for="" class="required-mark">Variable 2 To Value</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <label for="">Variable 3 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
-                                                        <div class="invalid-feedback">Enter Variable 3 Value</div>
+                                                        <label for="" class="required-mark">Variable 3 Value</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
                                                     <div class="form-group">
-                                                        <label for="">Variable 4 Value *</label>
-                                                        <input type="text" class="form-control" id="id-1" required>
-                                                        <div class="invalid-feedback">Enter Variable 4 Value</div>
+                                                        <label for="" class="required-mark">Variable 4 Value</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row new-row">
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" value="Single" disabled>
                                                     </div>
                                                 </div>
                                                 <div class="col-2 pl-0">
-                                                     <div class="edit-sec" id="table-structure-edit">
-                                                       <button class="delete-btn"><i class="icon-grid_bin"></i></button>
-                                                       <button class="add-btn"><i class="icon-button_ico_addnew"></i></button>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" value="1" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" value="3" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" value="Risk" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" value="V1" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 pl-0">
+                                                    <div class="edit-sec table-structure-edit">
+                                                        <i class="icon-pencil-edit edit-row"></i>
+                                                       <i class="icon-grid_bin delete-btn delete-row"></i>
+                                                       <i class="add-btn icon-button_ico_addnew add-row"></i>
                                                     </div>
                                                 </div>
                                             </div>
