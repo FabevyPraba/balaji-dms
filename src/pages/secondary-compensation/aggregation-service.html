@@ -1035,7 +1035,7 @@
                                               <div class="col-2 pl-0">
                                                  <div class="edit-sec">
                                                     <!-- <i class=" icon-button_ico_addnew add-btn-2" id="add-new-btn"></i> -->
-                                                    <i class="icon-grid_bin delete-btn-2" id="del-active-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn" id="del-active-btn"></i>
                                                  </div>
                                               </div>
                                            </div>
@@ -1090,8 +1090,8 @@
 
                                               <div class="col-2 pl-0">
                                                  <div class="edit-sec">
-                                                    <i class=" icon-button_ico_addnew add-btn-2" id="add-new-btn"></i>
-                                                    <i class="icon-grid_bin delete-btn-2"></i>
+                                                    <i class=" icon-button_ico_addnew add-btn" id="add-new-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn"></i>
                                                  </div>
                                               </div>
                                            </div>
@@ -1132,7 +1132,7 @@
                                               <div class="col-2 pl-0">
                                                   <div class="edit-sec">
                                                     <!-- <i class=" icon-button_ico_addnew add-btn-1" id="add-new-btn"></i> -->
-                                                    <i class="icon-grid_bin delete-btn-1" id="del-active-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn" id="del-active-btn"></i>
                                                  </div>
                                               </div>
                                            </div>
@@ -1162,8 +1162,8 @@
                                               </div>
                                               <div class="col-2 pl-0">
                                                   <div class="edit-sec">
-                                                    <i class=" icon-button_ico_addnew add-btn-1" id="add-new-btn"></i>
-                                                    <i class="icon-grid_bin delete-btn-1"></i>
+                                                    <i class=" icon-button_ico_addnew add-btn" id="add-new-btn"></i>
+                                                    <i class="icon-grid_bin delete-btn"></i>
                                                  </div>
                                               </div>
                                            </div>
@@ -1389,17 +1389,16 @@
     <script src="../../js/app.js"></script>
     <script>
 
-        // Tab-2
+        // Tab
         $("body").on("click", ".edit-sec .add-btn", function(){
             var $this = $(this),
                 $row = $this.closest('.row'),
-                $cloneRow = $row.clone().addClass('newClass');
-                var $addBth = $(this).closest('.add-btn').hide();
-                var $delBth = $('.delete-btn').addClass('del-active');
+                $cloneRow = $row.clone().addClass('newClass');  
 
+            var $addBth = $(this).closest('.add-btn').hide();
+            var $delBth = $('.delete-btn').addClass('del-active');
             var $newRow = $('.newClass');
             var $addNewBtn = $('#add-new-btn');
-            $(".newClass .edit-sec .add-btn").addClass('delete-add');
             var $removeAdd = $('.delete-add').hide();
             $cloneRow.insertAfter($row);
         });
@@ -1407,57 +1406,8 @@
         $("body").on("click", ".edit-sec .delete-btn", function(){
             var $this = $(this),
                 $row = $this.closest('.row');
-            
-            $row.remove();
-        });
-
-        // Tab-3
-        $("body").on("click", ".edit-sec .add-btn-1", function(e){
-            e.preventDefault();
-                var $this = $(this),
-                    $row = $this.closest('.row'),
-                    $cloneRow = $row.clone().addClass('newClass');
-                    var $addBth = $(this).closest('.add-btn-1').hide();
-                    var $delBth = $('.delete-btn-1').addClass('del-active');
-
-                var $newRow = $('.newClass');
-                var $addNewBtn = $('#add-new-btn');
-                $(".newClass .edit-sec .add-btn-1").addClass('delete-add');
-                var $removeAdd = $('.delete-add-1').hide();
-                $cloneRow.insertAfter($row);
-        });
-
-
-        $("body").on("click", ".edit-sec .delete-btn-1", function(){
-            var $this = $(this),
-                $row = $this.closest('.row');
-            
-            $row.remove();
-        });
-
-
-        //  Tab-4
-        var counter = 2;
-        $("body").on("click", ".edit-sec .add-btn-2", function(){
-                var $this = $(this),
-                    $row = $this.closest('.row'),
-                    $cloneRow = $row.clone().addClass('newClass');
-                    var $addBth = $(this).closest('.add-btn-2').hide();
-                    var $delBth = $('.delete-btn-2').addClass('del-active');
-
-                var $newRow = $('.newClass');
-                var $addNewBtn = $('#add-new-btn');
-                $(".newClass .edit-sec .add-btn-2").addClass('delete-add');
-                var $removeAdd = $('.delete-add-2').hide();
-                
-                console.log($sNo);
-                $cloneRow.insertAfter($row);
-        });
-        
-
-        $("body").on("click", ".edit-sec .delete-btn-2", function(){
-            var $this = $(this),
-                $row = $this.closest('.row');
+                $cloneRow = $row.clone().addClass('newClass');
+                $(".newClass .edit-sec .add-btn").addClass('delete-add');
             
             $row.remove();
         });
