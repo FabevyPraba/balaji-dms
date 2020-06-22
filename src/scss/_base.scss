@@ -3367,9 +3367,30 @@ span.fa.fa-clock-o{
 #service-form  #new-row-1:first-of-type .edit-sec .delete-btn-1{
     display: none;
 }
+#service-form  #new-row-1:first-of-type .edit-sec .delete-btn-2{
+    display: none;
+}
 .del-active{
     display: inline-block !important;
 }
 #new-row-1:nth-child(1) .custom-radio-button{
     display: none;
+}
+.delete-btn-1{
+    color: #8695b1;
+    font-size: 16px;
+    border: none;
+    background: transparent
+}
+.delete-btn-2{
+    color: #8695b1;
+    font-size: 16px;
+    border: none;
+    background: transparent
+}
+.add-btn-1{
+    margin-right: 10px;
+}
+.add-btn-2{
+    margin-right: 10px;
 }
