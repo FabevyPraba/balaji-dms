@@ -328,21 +328,7 @@
                             <h3>Table Structures List </h3>
                         </div>
 
-                        <div class="record-part">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h4 class="show-record">Showing the list</h4>
-                                </div>
-                                <div class="col-6">
-                                    <div class="search-part">
-                                        <input type="search" name="" placeholder="Search" class="search-box">
-                                        <a href="table-structure-1.html" type="button" class="btn btn-primary btn-icon-left"><i class="icon-button_ico_addnew"></i> Add New</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="record-list">
+                        <!-- <div class="record-list">
                             <div class="rocord-head clearfix">
                                 <ul>
                                     <li><span>Table ID</span></li>
@@ -355,10 +341,242 @@
                                 <img src="../../images/no-found-img.svg" alt="no-found">
                                 <span>No Results Found</span>
                             </div>
+                        </div> -->
+
+                        <div class="record-part">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4 class="show-record">Showing the list</h4>
+                                </div>
+                                <div class="col-6">
+                                    <div class="search-part">
+                                        <input type="search" name="" placeholder="Search" class="search-box">
+                                        <button type="button" class="btn btn-primary btn-icon-left" data-toggle="modal" data-target="#aggregation-1"><i class="icon-button_ico_addnew"></i> Add New</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
+                        <!-- Table -->
+                        <div id="aggregation-list">
+                            <div class="">
+                                <table class="table table-default table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="w-2"></th>
+                                            <th class="w-20">Table ID</th>
+                                            <th class="w-22">Description</th>
+                                            <th class="w-25">Table Type</th>
+                                            <th class="w-15 text-center">No.of Columns</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-BONUS-RATE</td>
+                                            <td>Bonus rate</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">4</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-PERFACTR</td>
+                                            <td>Persistency factor</td>
+                                            <td>Eligibility table</td>
+                                            <td class="text-center">3</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-RNEP-CREDIT</td>
+                                            <td>RNEP Credit</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">2</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-RNEP-REDUCE</td>
+                                            <td>% reduction in RNEP credit</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">3</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-SEASON</td>
+                                            <td>Seasonality factor</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">4</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-VINTAGE</td>
+                                            <td>Vintage factor</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">2</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-RNEP-ATARGET </td>
+                                            <td>RNEP annual target</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">4</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-PER-ACHIEVED</td>
+                                            <td>Percentage achieved</td>
+                                            <td>Compensation table</td>
+                                            <td class="text-center">3</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-checkbox invisible">
+                                                    <input type="checkbox" class="custom-control-input" id="customRowCheck1">
+                                                    <label class="custom-control-label custom-control-label-speical-1" for="customRowCheck1"></label>
+                                                </div>
+                                            </td>
+                                            <td>T-FP-WT</td>
+                                            <td>First Premium Weight</td>
+                                            <td>Eligibility table</td>
+                                            <td class="text-center">2</td>
+                                            <td class="row-action-cell">
+                                                <div class="row-action-wrapper">
+                                                    <a href="#" class="kebab active-edit"> </a>
+                                                    <ul class="edit-part">
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-pencil-edit"></i> Edit</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-bin"></i> Delete</a></li>
+                                                        <li><a data-toggle="modal" data-target="#aggregation-1" href="#"><i class="icon-rating"></i> Review</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> 
                         <!-- Pagination -->
-                        <div class="pagination-part clearfix" id="sec-pagination">
+                        <div class="pagination-part pos-static clearfix" id="sec-pagination">
                             <div class="pagination">
                                 <div class="">
                                     <nav aria-label="Page navigation example">
